@@ -1,0 +1,87 @@
+---
+title: "HWE chi-square eider duck"
+format: html
+editor: visual
+---
+
+```{r}
+# Hardy-Weinberg Equilibrium Chi-Squared Test
+# Eider duck protein polymorphism data
+
+# Observed genotype counts
+obs_FF <- 37
+obs_FS <- 24
+obs_SS <- 6
+N <- obs_FF + obs_FS + obs_SS  # Total individuals = 67
+
+# Step 1: Calculate allele frequencies
+total_alleles <- 2 * N
+freq_F <- (2 * obs_FF + obs_FS) / total_alleles  # p
+freq_S <- (obs_FS + 2 * obs_SS) / total_alleles  # q
+
+cat("Allele Frequencies:\n")
+cat(sprintf("p (F allele) = %.4f\n", freq_F))
+cat(sprintf("q (S allele) = %.4f\n", freq_S))
+cat(sprintf("p + q = %.4f\n\n", freq_F + freq_S))
+
+# Step 2: Calculate expected genotype frequencies under HWE
+exp_FF <- N * freq_F^2
+exp_FS <- N * 2 * freq_F * freq_S
+exp_SS <- N * freq_S^2
+
+cat("Expected Genotype Counts (under HWE):\n")
+cat(sprintf("FF: %.2f\n", exp_FF))
+cat(sprintf("FS: %.2f\n", exp_FS))
+cat(sprintf("SS: %.2f\n\n", exp_SS))
+
+# Step 3: Chi-squared test using chisq.test()
+observed <- c(obs_FF, obs_FS, obs_SS)
+expected <- c(exp_FF, exp_FS, exp_SS)
+
+# Create a summary table
+results_table <- data.frame(
+  Genotype = c("FF", "FS", "SS"),
+  Observed = observed,
+  Expected = round(expected, 2),
+  Difference = observed - expected,
+  Chi_sq_component = (observed - expected)^2 / expected
+)
+
+cat("Chi-Squared Analysis Table:\n")
+print(results_table)
+cat("\n")
+
+# Perform chi-squared test
+# Note: We use df = 1 because we estimated 1 parameter (p) from the data
+chi_test <- chisq.test(observed, p = expected/N, rescale.p = TRUE)
+
+cat("Chi-Squared Test Results:\n")
+cat(sprintf("χ² statistic: %.4f\n", chi_test$statistic))
+cat(sprintf("Degrees of freedom: %d\n", chi_test$parameter))
+cat(sprintf("P-value: %.4f\n\n", chi_test$p.value))
+
+# Alternative: Manual calculation
+chi_sq_manual <- sum((observed - expected)^2 / expected)
+p_value_manual <- pchisq(chi_sq_manual, df = 1, lower.tail = FALSE)
+
+cat("Manual Calculation (for verification):\n")
+cat(sprintf("χ² statistic: %.4f\n", chi_sq_manual))
+cat(sprintf("P-value (df=1): %.4f\n\n", p_value_manual))
+
+# Conclusion
+alpha <- 0.05
+critical_value <- qchisq(1 - alpha, df = 1)
+
+cat("Statistical Decision:\n")
+cat(sprintf("Significance level (α): %.2f\n", alpha))
+cat(sprintf("Critical value (χ²₀.₀₅,₁): %.3f\n", critical_value))
+
+if (chi_sq_manual < critical_value) {
+  cat("\nConclusion: Fail to reject the null hypothesis.\n")
+  cat("The population appears to be in Hardy-Weinberg equilibrium.\n")
+} else {
+  cat("\nConclusion: Reject the null hypothesis.\n")
+  cat("The population shows significant deviation from Hardy-Weinberg equilibrium.\n")
+}
+```
+

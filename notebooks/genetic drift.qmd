@@ -1,0 +1,31 @@
+---
+title: "Genetic drift"
+date: "02/12/2025"
+format: html
+editor: visual
+---
+
+
+```{r}
+library(tidyverse)
+```
+
+```{r}
+N<- 10
+population <- tibble(ID = 1:(2*N), allele = c(rep("blue", N), rep("red",N)), value=c(rep(0,N),rep(1,N)))
+```
+
+```{r}
+generation<-0
+new_population<-slice_sample(population,n=nrow(population), replace = TRUE)
+n_red <- sum(new_population$value)
+while (n_red>0 & n_red<2*N){
+  generation <- generation + 1
+  n_red <- sum(new_population$value)
+  print(paste(generation, n_red))
+  new_population<-slice_sample(new_population,n=nrow(population), replace = TRUE)
+}
+
+```
+
+

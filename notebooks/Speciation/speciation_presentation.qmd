@@ -1,0 +1,776 @@
+---
+title: "Speciation: Mechanisms of Biodiversity Generation"
+subtitle: "How Diversity Arises in Ecosystems"
+author: "Michael Hunt"
+institute: "Newquay University Centre"
+format:
+  pdf: default
+  # revealjs:
+  #   theme: sky
+  #   transition: slide
+  #   slide-number: true
+  #   chalkboard: true
+  #   preview-links: auto
+  #   css: custom.css
+  # html:
+  #   code-fold: true
+  #   include-in-header:
+  #     text: |
+  #       <style>
+  #       .note-font {
+  #         font-size: 0.8em;
+  #       }
+  #       </style>
+execute:
+  echo: false
+---
+
+## Learning Objectives {.smaller}
+
+By the end of this session, you will be able to:
+
+1.  Define speciation and explain its role in generating biodiversity
+2.  Distinguish between allopatric, sympatric, parapatric, and peripatric speciation
+3.  Identify geographic and reproductive barriers that facilitate speciation
+4.  Apply speciation concepts to real-world conservation scenarios
+5.  Evaluate evidence for different speciation mechanisms in case studies
+
+## Opening Question
+
+::: {.callout-important icon="false"}
+## Where Does Biodiversity Come From?
+
+We've established that biodiversity supports ecosystem resilience and function.
+
+**But how do we get \~10 million species from common ancestors?**
+:::
+
+## What is Speciation?
+
+::: {.callout-note icon="false"}
+## Definition
+
+**Speciation:** The evolutionary process by which populations evolve to become distinct species
+:::
+
+**Critical Requirements:**
+
+1.  **Reproductive isolation** (reduced gene flow)
+2.  **Genetic divergence** (populations accumulate different mutations)
+3.  **Time** (typically thousands to millions of years)
+
+## The Biological Species Concept
+
+::: {.callout-note icon="false"}
+**Species:** Groups of interbreeding natural populations that are reproductively isolated from other such groups
+:::
+
+**Limitations to Consider:**
+
+-   Asexual organisms (no interbreeding)
+-   Ring species (continuous variation)
+-   Chronospecies (fossils - temporal separation)
+-   Microorganisms with horizontal gene transfer
+
+::: fragment
+**No single species concept works for all organisms!**
+:::
+
+:::: {.content-visible unless-format="revealjs"}
+::: note-font
+**Ring species**: where a species is divided by some geographical barrier into two close but separate populations that can interbreed. In turn, the one to the east (say ) is separated from another close by population with which it can also interbreed. This process of variation goes on continuously around a ring of locations until a population finds itself next to the original population. By now, differences between adjacent populations have accumulated to the point where these two populations *cannot* interbreed and are effectively two different species.
+
+**Chrono species** - Where a evolutionary change occurs over time within a single lineage, so that a species at one part of this lineage is very different from one at another, without the lineage having split into two diverging branches.
+
+**Horizontal gene transfer** This is where a bacterial organism transfers genetic material to another organism that is not its offspring. By this process bacteria are able to respond and adapt to their environment much more rapidly than is possible by the process of mutation.
+:::
+::::
+
+## The Speciation Continuum
+
+::: {.callout-warning icon="false"}
+## Key Concept
+
+Speciation is a **PROCESS**, not an event
+:::
+
+```         
+Panmixia → Population structure → Subspecies → Incipient species → Good species
+```
+
+*Complete gene flow* ←―――――→ *Complete isolation*
+
+:::: fragment
+::: {.callout-tip icon="false"}
+**Discussion:** Why is this continuum important for conservation?
+
+*Hint: Evolutionarily Significant Units (ESUs)*
+:::
+::::
+
+:::: {.content-visible unless-format="revealjs"}
+::: note-font
+**An evolutionary significant unit (ESU)** is a population or group of populations that is considered genetically and evolutionarily distinct enough to warrant separate conservation efforts. ESUs are identified by their historical isolation and unique evolutionary trajectory, possessing unique genetic diversity that requires protection. They are crucial for conservation because they allow for management actions to be taken for specific populations, not just entire species.
+:::
+::::
+
+## Interactive Activity
+
+### Place these examples on the continuum
+
+-   Herring gulls (ring species)
+-   Ensatina salamanders in California (ring species?)
+-   Polar bears and grizzly bears (fertile hybrids possible)
+-   Lions and tigers (hybrids usually sterile)
+-   European and American robins (different genera)
+
+:::: {.content-visible unless-format="revealjs"}
+::: note-font
+The **Ensatina** (*Ensatina eschscholtzii*) salamander has been described a ring species complex in the mountains that surround the Californian Grand Central Valley. In a hoseshoe around this valley, 19 subspecies can each interbreed with the subspecies next to them on the horseshoe, but the subspecies on the western and eastern ends of the horseshoe cannot do so. As such, the species complex can be regarded as an example of incipient speciation.
+
+Note that some authors, notably Jerry Coyne, have argued that 'ring species' is an unnecessary term - they are simply instances of parapatric speciation, where speciation occurs between adjacent populations along a gradient.
+
+**Polar bears** and **grizzly bears** are closer on the species continuum than **lions** and **tigers**.
+
+The two bear populations can interbreed in the wild. Although this does not happen very often, it is becoming more frequent as climate change forces grizzly bears north into arctic territories. Their offspring are also sometimes viable, particularly females, so that there can be gene flow between the two. Further, genetic analysis shows that polar bears and grizzly bears diverged only a few hundred thousand years ago. Hence thw two are regarded as an example of incipient speciation, meaning that they are populations in the process of diverging but still genetially compatible enough to produce ferticle offspring.
+
+Lions and tigers on the other hand are more distantly related. They share the same genus *Panthera* so that they can in principle produce offspring, but there is (now) almost no overlap of their geographic ranges, with lions almost exclusively in Africa and tigers exclusiely in Asia. Interbreeding only occurs in captivity and the offspring (ligers and tigons) are mostly sterile, which is a significant barrier to gene flow.
+
+Hence, lions and tigers are at a more advanced stage of speciation than are polar bears and grizzly bears.
+
+**European** (*Erithacus rubecula*) and **American** (*Turdus migratorius*) **robins** are not closely related. They are in different families and are separated by an ocean and by millions of years of evolution since they shared a common ancestor. Their similar appearance is an example of convergent evolution, whereby different species independently evolve similar traits in response to having to adapt to similar environmental niches.
+
+Hence on the speciation continuum from complete gene flow to complete isolation, the two ring species would be towards but not fully at the complete gene flow end, then would come polar bears and grzzlys, then lions and tigers and finally at the complete isolation end would come European and American robins.
+:::
+::::
+
+## Geographic Modes of Speciation
+
+::::: columns
+::: {.column width="50%"}
+**Allopatric**
+
+Complete geographic separation
+
+**Parapatric**
+
+Adjacent populations along gradient
+:::
+
+::: {.column width="50%"}
+**Peripatric**
+
+Small isolated population at range edge
+
+**Sympatric**
+
+Within same geographic area
+:::
+:::::
+
+## Allopatric Speciation
+
+::: {.callout-note icon="false"}
+**Definition:** Speciation occurring when populations are geographically separated. Reproductive isolation can then arise by natural selection, genetic drift or sexual selection in the isolated populations.
+:::
+
+**Classic Model:**
+
+1.  Continuous population → geographic barrier arises
+2.  Gene flow ceases between populations
+3.  Populations diverge (drift, selection, mutations)
+4.  Reproductive isolation evolves (often as byproduct)
+5.  Populations can no longer interbreed even if reunited
+
+::: fragment
+**Most common mode of speciation**
+:::
+
+## Example: Darwin's Finches
+
+![Examples of Darwin’s finches or Galapagos finches. Note the stark variation in beak sizes among the four species. Drawn by John Gould](images_2/darwin_finches_examples_john_gould.jpg){width=70%}
+
+::: {.callout-tip icon="false"}
+### Galápagos Islands
+
+-   18 species evolved from single colonizing species
+-   Island isolation + different ecological niches
+-   Divergence in beak morphology related to food sources
+-   Some islands have multiple species (secondary contact)
+:::
+
+**Key insight:** Geographic isolation provides opportunity for ecological specialization
+
+## Example: Grand Canyon Squirrels
+
+### Kaibab vs. Abert's Squirrels
+
+:::: columns
+
+::: {.column width="70%"}
+![](images_2/squirrels.png)
+
+:::
+
+::: {.column width="30%"}
+
+-   Separated by Grand Canyon \~5 million years ago
+-   North rim: Kaibab squirrel
+-   South rim: Abert's squirrel
+-   Distinct colour patterns, slight size differences
+-   **Status:** Subspecies or full species? (Debated!)
+:::
+
+::::
+
+**Demonstrates the speciation continuum in action**
+
+## Conservation Relevance
+
+### Habitat Fragmentation
+
+::: {.callout-warning icon="false"}
+**Can initiate speciation processes...**
+
+BUT modern fragmentation is too rapid for adaptation
+:::
+
+**Result:**
+
+-   Creates isolated populations vulnerable to extinction
+-   Reduced genetic diversity
+-   Limited gene flow
+-   Demographic stochasticity
+
+**Timescale matters: evolutionary time vs. ecological time**
+
+:::: {.content-visible unless-format="revealjs"}
+::: note-font
+**Demographic stochasticity** refers to the impact that deaths of individuals can have on the viability of small populations.
+:::
+::::
+
+## Exercise {.smaller}
+
+::: {.callout-important icon="false"}
+### The Isthmus of Panama
+
+The Isthmus of Panama formed \~3 million years ago, separating Caribbean and Pacific populations of marine organisms.
+
+**Predict:** What factors would influence whether sister species on either side show complete reproductive isolation today?
+
+*5 minutes - discuss with neighbour*
+:::
+
+:::: {.content-visible unless-format="revealjs"}
+::: note-font
+Assuming that the isthmus prevented gene flow between marine species on each side of it, reproductive isolation today would most likely occur if significant genetic divergence had taken place in the 3 million years since the isthmus formed. This would be encouraged if the biotic and abiotic environments differed significantly on each side of the isthmus, so that populations on each side that derived from the same original species would evolve differently to better fill their respective niches.
+
+The Kaibab / Abert's squirrel case at the Grand Canyon shows that speciation, or at least something close to it, can occur if a population is divided into two and left for 5 million years, even if the environments are similar for each sub population. Thus the 3 million years since the isthmus was formed could be enough time for full reproductive isolation to arise, so long as the rate of divergence is sufficient.
+:::
+::::
+
+## Peripatric Speciation
+
+::: {.callout-note icon="false"}
+**Definition:** Special case of allopatric speciation where a small population at the edge of the range becomes isolated
+:::
+
+**Key Mechanism: Founder Effect**
+
+-   Small population implies reduced genetic diversity
+-   Genetic drift more powerful in small populations
+-   Rapid divergence possible
+
+**Why Different from Standard Allopatric?**
+
+-   Asymmetric process (small vs. large population)
+-   Greater role for drift
+-   Potentially faster speciation
+
+:::: {.content-visible unless-format="revealjs"}
+::: note-font
+**Genetic drift**
+:::
+::::
+
+## Example: Hawaiian Drosophila
+
+::: {.callout-tip icon="false"}
+### Island Hopping Speciation
+
+-   \~1,000 species evolved from 1-2 founding species
+-   Island hopping creates serial founder events
+-   Some species restricted to single volcanic cone
+-   **Fastest known rates of speciation in animals**
+:::
+
+**Hawaiian Islands:** A natural laboratory for studying speciation
+
+## Parapatric Speciation
+
+::: {.callout-note icon="false"}
+**Definition:** Speciation along an environmental gradient where populations are adjacent but not completely intermingled and gene flow is reduced, though not eliminated.
+:::
+
+**Key Feature:** No complete geographic barrier, but selection against migrants or hybrids arising from an environmental gradient giving rise to selection pressures. If strong enough then selection can overcome gene flow.
+
+**Critical Question:** What level of gene flow prevents parapatric speciation? : it depends on the degree of selection pressure.
+
+## Example: Grass on Mine Tailings
+
+::: {.callout-tip icon="false"}
+### *Anthoxanthum odoratum* (Sweet vernal grass)
+
+-   Grasses evolved heavy metal tolerance on contaminated soil
+-   Distinct populations within **metres** of each other
+-   Some gene flow occurs but selection is strong
+-   Flowering time divergence reduces gene flow further
+:::
+
+**Key insight:** Strong selection can overcome gene flow
+
+:::: {.content-visible unless-format="revealjs"}
+::: note-font
+See for example: Antonovics, J. (2006) ‘Evolution in closely adjacent plant populations X: long-term persistence of prereproductive isolation at a mine boundary’, Heredity, 97(1), pp. 33–37. Available at: https://doi.org/10.1038/sj.hdy.6800835.
+:::
+::::
+
+## Sympatric Speciation
+
+::: {.callout-note icon="false"}
+**Definition:** Speciation within a single population in the same geographic area
+:::
+
+::: {.callout-warning icon="false"}
+### Why Controversial?
+
+Gene flow should homogenize the population
+:::
+
+**What Makes It Possible?**
+
+-   **Polyploidy** (especially in plants) - instant reproductive isolation
+-   **Disruptive selection + Assortative mating**
+
+## Polyploidy
+
+::::: columns
+::: {.column width="50%"}
+**Autopolyploidy**
+
+Chromosome doubling within species
+:::
+
+::: {.column width="50%"}
+**Allopolyploidy**
+
+Hybridization + chromosome doubling
+:::
+:::::
+
+::: fragment
+**\~50-70% of flowering plants have polyploidy in their evolutionary history**
+
+**Result:** Instant reproductive isolation from parent species
+:::
+
+## Example: African Cichlid Fishes
+
+::: {.callout-tip icon="false"}
+### Lakes Tanganyika, Malawi and Victoria
+
+See [The Cichlid fishes of Lake Malawi](https://malawicichlids.com)
+
+-   \~500 species in a single lake
+-   Evidence for in-situ speciation
+-   Divergence in colour, morphology, feeding ecology
+-   Mate choice based on colouration (assortative mating)
+-   **Debate:** Truly sympatric or microallopatric?
+:::
+
+**Fastest vertebrate radiation known**
+
+## Example: Apple Maggot Fly
+
+::: {.callout-tip icon="false"}
+### *Rhagoletis pomonella* - "Speciation in Action"
+
+-   Originally fed on hawthorn
+-   \~150 years ago, some shifted to introduced apples
+-   Host plant choice linked to mating site
+-   Behavioral isolation emerging
+-   Observable divergence in our lifetimes!
+:::
+
+**Important:** Shows speciation can be observed, not just inferred
+
+## Reproductive Barriers
+
+::::: columns
+::: {.column width="50%"}
+**Prezygotic**
+
+*Prevent mating or fertilization*
+
+-   Habitat isolation
+-   Temporal isolation
+-   Behavioral isolation
+-   Mechanical isolation
+-   Gametic isolation
+:::
+
+::: {.column width="50%"}
+**Postzygotic**
+
+*Reduce hybrid fitness*
+
+-   Hybrid inviability
+-   Hybrid sterility
+-   Hybrid breakdown
+:::
+:::::
+
+## Barrier Efficiency
+
+::: {.callout-important icon="false"}
+### Question for Class:
+
+Which type of barrier is "better" from an evolutionary perspective?
+
+Prezygotic or Postzygotic?
+:::
+
+:::: fragment
+::: {.callout-note icon="false"}
+**Answer:** Prezygotic barriers
+
+*Why?* Less wasted reproductive effort. No resources spent on inviable or sterile offspring.
+:::
+::::
+
+## Interactive Exercise 
+
+### Barrier Identification 
+
+Work in pairs to identify barriers in the following case studies (20 minutes)
+
+**Four Case Studies:**
+
+1.  European Fire-bellied and Yellow-bellied Toad. 
+
+:::{.content-visible unless-format="revealjs"}
+:::{.note-font}
+
+::: {layout-ncol=2}
+![](images_2/fire_bellied_toad_bombina_bombina_2025-10-30_Liubov_Ilminska.jpg){width=90%}
+
+
+![](images_2/yellow_bellied_toad_bombina_variegata_2025-10-30_Michael_Hykel.jpg){width=90%}
+:::
+
+
+
+*left*: European fire-bellied toad *Bombina bombina*, *right*: Yellow-bellied toad *B. variegata*.
+
+The eastern European fire-bellied toad(*Bombina bombina*) and the western European yellow-bellied toad (*B. variegata*)  diverged from a common ancestor in the last glacial maximum, ~25,000 years ago. Their ranges meet in a long hybrid zone that is only about 6 km wide, with the eastern toad preferring the lowlands and the western European toad the uplands
+
+* Narrow hybrid zone (\~6 km wide) has persisted for thousands of years
+* Hybrids are viable but slightly less fit. 
+* What maintains this zone?  
+* What barriers are operating?  
+
+:::
+:::
+
+
+
+2.  Eastern and Western Meadowlarks
+
+:::{.content-visible unless-format="revealjs"}
+:::{.note-font}
+
+::: {layout-ncol=2}
+
+![](images_2/eastern_ML_Birdfy_2025-10-29.jpg){width=90%}
+
+![](images_2/western_ML_Birdfy_2025-10-29.jpg){width=90%}
+:::
+
+*left*: Eastern meadowlark, *right*: Western meadowlark. Similar appearance, different songs.
+
+
+Eastern *Sturnella magna* and western *S. neglecta* meadowlarks are distinct species that look very similar, but their main differences are their songs and some minor plumage details. The eastern meadowlark has a simpler, whistled song, while the western meadowlark has a more complex, bubbly warble. The western meadowlark often has less white in its tail and fainter head markings than the eastern meadowlark. 
+
+* Broadly overlapping ranges across the midwestern USA
+* Very similar appearance
+* Different songs
+* Rarely hybridize
+* What type of isolation?
+* What might have initiated divergence?
+
+:::
+:::
+
+3.  Blue Mussels (*Mytilus spp.*)
+
+:::{.content-visible unless-format="revealjs"}
+:::{.note-font}
+
+* Two species overlap on Atlantic coasts
+* Spawn at different temperatures
+* Hybrids occur but are selected against in intermediate habitats
+* What barriers?
+* What mode of speciation?
+
+:::
+:::
+
+4.  Palms on Lord Howe Island
+
+:::{.content-visible unless-format="revealjs"}
+:::{.note-font}
+
+* *Howea belmoreana* (acid volcanic soil) and *H. forsteriana* (calcareous coralderived soil)
+* Separated by ~100m in places
+* Flower at different times (5 weeks apart)
+* Likely sympatric speciation
+* What barriers? 
+* Why didn't gene flow prevent divergence?
+
+:::
+:::
+
+
+## Key Insights: Reproductive Barriers
+
+::: incremental
+1.  **Multiple Barriers Usually Accumulate** - Speciation rarely depends on a single barrier
+
+2.  **Reinforcement** - Selection strengthens prezygotic barriers in sympatry (when hybrids are less fit)
+
+3.  **Cascade Effect** - One barrier can facilitate evolution of others
+:::
+
+## How Long Does Speciation Take?
+
+### Short Answer: It varies enormously!
+
+::::: columns
+::: {.column width="50%"}
+**Fast End**
+
+-   Some cichlids: \<100,000 years
+-   Polyploid plants: instantaneous (reproductive isolation)
+-   Hawaiian Drosophila: \~500,000 years average
+:::
+
+::: {.column width="50%"}
+**Slow End**
+
+-   Marine invertebrates: 2-10 million years
+-   "Living fossils": little change over tens of millions of years
+:::
+:::::
+
+## Factors Affecting Speciation Rate
+
+-   **Generation time** - shorter = faster evolution
+-   **Population size** - small populations = stronger drift
+-   **Strength of selection** - strong divergent selection accelerates divergence
+-   **Geographic opportunity** - islands, fragmentation
+-   **Reproductive system** - polyploidy, sexual selection
+
+## The Speciation Puzzle {.smaller}
+
+::: {.callout-important icon="false"}
+Imagine two populations of beetles that become separated by a new river. After 1 million years, you bring them back together in the lab and find they produce healthy, fertile offspring.
+
+**Are they different species?**
+:::
+
+::: fragment
+**Follow-up Questions:**
+
+-   What additional information would you want?
+-   Does it matter if they would interbreed in nature?
+-   How does this relate to the speciation continuum?
+:::
+
+## Why Understanding Speciation Matters
+
+### Conservation Applications
+
+::: incremental
+1.  **Defining Units of Conservation** - What should we protect? Species? Subspecies? ESUs? Populations?
+
+2.  **Habitat Fragmentation** - Does it increase or decrease diversity?
+
+    -   Short term: reduces diversity (extinctions)
+    -   Long term: could increase diversity (speciation)
+    -   Reality: current fragmentation too rapid
+:::
+
+## Conservation Challenges
+
+::: {.callout-warning icon="false"}
+### 3. Hybrid Zones: To Protect or Not?
+
+-   Source of genetic diversity?
+-   Or dilution of distinct gene pools?
+:::
+
+::: {.callout-warning icon="false"}
+### 4. Island Conservation
+
+-   High endemism (unique species)
+-   Products of isolation
+-   Vulnerable to invasive species
+:::
+
+## Case Study: The Red Wolf Problem {.smaller}
+
+::: {.callout-tip icon="false"}
+### Background:
+
+-   Red wolf (*Canis rufus*) declared extinct in wild (1980)
+-   Captive breeding program started
+-   Reintroduced to North Carolina
+-   **Problem:** Genetic studies suggest red wolves might be hybrids between gray wolves and coyotes
+:::
+
+**Debate:** Is the red wolf a distinct species or an admixed population?
+
+## Red Wolf Discussion Questions
+
+::: {.callout-important icon="false"}
+Work in groups (10 minutes):
+
+1.  If red wolves are of hybrid origin, should we still conserve them?
+2.  How does the speciation continuum concept apply here?
+3.  What criteria should we use for conservation decisions?
+4.  Does evolutionary history matter, or just current distinctiveness?
+:::
+
+::: fragment
+**There's no single "right" answer - this is an active debate!**
+:::
+
+## Conservation Decision Framework
+
+### Consider Multiple Factors:
+
+-   **Adaptive uniqueness** - Does it have unique adaptations?
+-   **Ecological role** - What function does it serve?
+-   **Evolutionary potential** - Can it adapt to change?
+-   **Legal/social factors** - Cultural value, legislation
+
+::: fragment
+**Conservation often operates in the "gray areas" of speciation**
+:::
+
+## Ring Species
+
+::: {.callout-note icon="false"}
+**Definition:** A chain of neighbouring populations that can interbreed with adjacent populations, but the populations at the two "ends" cannot interbreed
+:::
+
+**Key Features:**
+
+-   Continuous variation along the chain
+-   No clear boundary between "species"
+-   Terminal populations act as distinct species
+-   Perfect illustration of the speciation continuum
+
+## Ring Species Examples
+
+::: {.callout-tip icon="false"}
+### Ensatina Salamanders (California)
+
+-   Ring around Central Valley
+-   neighbouring populations can interbreed
+-   Southern California: two forms that don't interbreed
+:::
+
+::: {.callout-tip icon="false"}
+### Herring Gulls (*Larus argentatus*)
+
+-   Ring around Arctic/North Atlantic
+-   Populations grade into each other across Siberia and North America
+-   In Europe: herring gulls and lesser black-backed gulls rarely hybridize
+:::
+
+## Looking Forward
+
+### Next: The Genetic Basis of Speciation
+
+**Questions We'll Explore:**
+
+-   What genes cause reproductive isolation?
+-   How many genetic changes are needed for speciation?
+-   Role of chromosome rearrangements
+-   Genomic islands of divergence
+-   Speciation genes
+
+## Bridge to Community Ecology
+
+### Connecting Concepts
+
+-   **Speciation creates** the diversity we measure
+-   **Rates of speciation vs. extinction** determine community diversity
+-   **Ecological opportunity** can drive adaptive radiation
+-   **Priority effects** in community assembly
+
+::: fragment
+**Speciation is the engine that generates biodiversity in ecosystems**
+:::
+
+## Concept Check
+
+### Quick Quiz
+
+1.  Which speciation mode requires complete geographic separation?
+2.  True/False: Sympatric speciation is impossible in animals.
+3.  Name two prezygotic barriers.
+4.  Why are island systems hotspots of speciation?
+5.  Can speciation be reversed?
+
+## Concept Check - Answers
+
+1.  **Allopatric** speciation
+2.  **False** - cichlids, apple maggot fly (though debated)
+3.  Any two: **habitat, temporal, behavioral, mechanical, gametic**
+4.  **Geographic isolation + ecological opportunity + small populations**
+5.  **Yes!** If gene flow resumes before complete isolation (e.g., Darwin's finch "despeciation")
+
+## Take-Home Problem Set {.smaller}
+
+*Due next session - discuss in small groups*
+
+**Problem 1:** New island with 15 bird species from single colonist (2 MYA). Predict patterns in: geographic distributions, morphological traits, genetic relationships.
+
+**Problem 2:** Design an experiment to test if two butterfly populations are incipient species. What would you measure?
+
+**Problem 3:** Climate change causes poleward range shifts. Effects on: hybrid zones, speciation opportunities, endemic species?
+
+## Take-Home Problem Set (cont.)
+
+**Problem 4:** British Isles recolonized after last ice age (\~10,000 years ago). Why don't we see extensive speciation in British fauna compared to African rift lake fishes?
+
+::: fragment
+**Hint:** Think about time scales, geographic isolation, ecological opportunity, and population sizes.
+:::
+
+## Key Takeaways
+
+-   Speciation is a **process, not an event** - populations exist on a continuum
+-   **Four geographic modes:** allopatric, peripatric, parapatric, sympatric
+-   **Multiple barriers** typically accumulate during speciation
+-   **Time scales vary enormously** depending on many factors
+-   Understanding speciation is **critical for conservation** decision-making
+
+## Questions?
+
+### Next Session: Genetic Mechanisms of Speciation
+
+Office hours: \[Thursday and Friday afternoons\]

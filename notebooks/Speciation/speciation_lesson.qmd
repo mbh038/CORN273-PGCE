@@ -1,0 +1,563 @@
+---
+title: "Speciation"
+format: html
+editor: visual
+---
+
+# Speciation: Mechanisms of Biodiversity Generation
+
+## Level 5 Applied Zoology & Conservation - 2 Hour Lesson Plan
+
+### Learning Objectives
+
+By the end of this session, students will be able to:
+
+1.  Define speciation and explain its role in generating biodiversity/
+2.  Distinguish between allopatric, sympatric, parapatric, and peripatric speciation/
+3.  Identify geographic and reproductive barriers that facilitate speciation/
+4.  Apply speciation concepts to real-world conservation scenarios
+5.  Evaluate evidence for different/ speciation mechanisms in case studies /
+
+## PART 1: Introduction & Core Concepts (30 minutes)
+
+### Opening Hook (5 minutes)
+
+**Discussion Question**: "We've established that biodiversity supports ecosystem resilience. But where does this diversity come from? How do we get \~10 million species from common ancestors?"
+
+### What is Speciation? (10 minutes)
+
+**Definition**: The evolutionary process by which populations evolve to become distinct species.
+
+**Key Concept - The Biological Species Concept (BSC)** - Species = groups of interbreeding natural populations that are reproductively isolated from other such groups
+
+**Limitations to discuss**:
+
+1.  Asexual organisms
+
+2.  Ring species eg Ensatina salamanders in California - like Chinese whispers
+
+3.  Chronospecies (fossils)
+
+4.  Microorganisms with horizontal gene transfer
+
+**Critical Requirements for Speciation**:
+
+1.  **Reproductive isolation** (reduced gene flow)
+
+2.  **Genetic divergence** (populations accumulate different mutations)
+
+3.  **Time** (typically thousands to millions of years)
+
+### The Speciation Continuum (15 minutes)
+
+**Important Framework**: Speciation is a *process*, not an event. Populations exist on a continuum:
+
+```         
+Panmixia → Population structure → Subspecies → Incipient species → Good species
+(Complete gene flow) ←――――――――――――――――――――――――――――→ (Complete isolation)
+```
+
+**Interactive Activity**: Place these examples on the continuum
+
+-   Herring gulls (*Larus argentatus*)
+
+-   ring species - Ensatina salamanders in California
+
+-   Polar bears and grizzly bears (fertile hybrids possible)
+
+-   Lions and tigers (hybrids usually sterile)
+
+-   European and American robins (different genera, no interbreeding)
+
+**Discussion point**:
+
+Why is this continuum important for conservation? (Hint: ESUs - Evolutionarily Significant Units)
+
+------------------------------------------------------------------------
+
+## PART 2: Geographic Modes of Speciation (40 minutes)
+
+### 1. Allopatric Speciation (15 minutes)
+
+**Definition**: Speciation occurring when populations are geographically separated
+
+**Classic Model**:
+
+1.  Continuous population → geographic barrier arises
+
+2.  Gene flow ceases between populations
+
+3.  Populations diverge through drift, different selection pressures, different mutations
+
+4.  Reproductive isolation evolves (often as byproduct)
+
+5.  Even if barrier removed, populations no longer interbreed
+
+**Examples to Discuss**:
+
+**Example A - Darwin's Finches (Galápagos)**
+
+-   18 species evolved from single colonizing species
+
+-   Island isolation + different ecological niches
+
+-   Divergence in beak morphology related to food sources
+
+-   Some islands have multiple species (secondary contact)
+
+**Example B - Grand Canyon Squirrels**
+
+-   Kaibab squirrel (north rim) vs. Abert's squirrel (south rim)
+
+-   Separated \~5 million years ago
+
+-   Distinct colour patterns, slight size differences
+
+-   Status: subspecies or full species? (Debated - demonstrates continuum!)
+
+**Conservation Relevance**:
+
+-   Habitat fragmentation can initiate speciation processes
+
+-   But modern fragmentation too rapid for adaptation
+
+-   Creates isolated populations vulnerable to extinction
+
+**Student Exercise 1 (5 min)**: *The Isthmus of Panama formed \~3 million years ago, separating Caribbean and Pacific populations of marine organisms. Predict what factors would influence whether sister species on either side show complete reproductive isolation today.*
+
+### 2. Peripatric Speciation (8 minutes)
+
+**Definition**: Special case of allopatric speciation where a small population at the edge of the range becomes isolated
+
+**Key Mechanism - Founder Effect**:
+
+-   Small population = reduced genetic diversity
+
+-   Genetic drift more powerful in small populations
+
+-   Rapid divergence possible
+
+**Example - Hawaiian Drosophila**:
+
+-   \~1,000 species evolved from 1-2 founding species
+
+-   Island hopping creates serial founder events
+
+-   Some species restricted to single volcanic cone
+
+-   Fastest known rates of speciation in animals
+
+**Why Different from Standard Allopatric?**
+
+-   Asymmetric process (small vs. large population)
+
+-   Greater role for drift
+
+-   Potentially faster
+
+### 3. Parapatric Speciation (8 minutes)
+
+**Definition**: Speciation occurring along an environmental gradient where populations are adjacent but gene flow is reduced (not eliminated)
+
+**Key Feature**: No complete geographic barrier, but selection against migrants or hybrids
+
+**Example - Grass on Mine Tailings (*Anthoxanthum odoratum*)**:
+
+-   Grasses evolved heavy metal tolerance on contaminated soil
+
+-   Distinct populations within metres of each other
+
+-   Some gene flow occurs but selection is strong
+
+-   Flowering time divergence reduces gene flow further
+
+**Example - Alpine-Lowland Divergence**:
+
+-   Many examples in mountain systems
+
+-   Altitudinal gradients create different selection pressures
+
+-   Limited gene flow due to adaptation to local conditions
+
+**Discussion**: What level of gene flow prevents parapatric speciation? (Theoretical threshold: \~1 migrant per generation can homogenize populations)
+
+### 4. Sympatric Speciation (9 minutes)
+
+**Definition**: Speciation within a single population in the same geographic area
+
+**Controversial Because**: Gene flow should homogenize the population
+
+**Mechanisms That Make It Possible**:
+
+**A. Polyploidy (especially in plants)**
+
+-   Instant reproductive isolation
+
+-   Autopolyploidy: chromosome doubling within species
+
+-   Allopolyploidy: hybridization + chromosome doubling
+
+-   \~50-70% of flowering plants have polyploidy in their history
+
+**B. Disruptive Selection + Assortative Mating**
+
+-   Strong selection for extreme phenotypes
+
+-   Individuals preferentially mate with similar phenotypes
+
+-   Reduces gene flow between emerging groups
+
+**Example - Cichlid Fishes (African Lakes)**:
+
+-   Hundreds of species in single lakes (e.g., Lake Victoria: \~500 species)
+
+-   Evidence for in-situ speciation
+
+-   Divergence in colour, morphology, feeding ecology
+
+-   Mate choice based on colouration (assortative mating)
+
+-   Debate: truly sympatric or microallopatric?
+
+**Example - Apple Maggot Fly (*Rhagoletis pomonella*)**:
+
+-   Originally fed on hawthorn
+
+-   \~150 years ago, some shifted to introduced apples
+
+-   Host plant choice linked to mating site
+
+-   Behavioral isolation emerging
+
+-   "Speciation in action"
+
+------------------------------------------------------------------------
+
+## BREAK (10 minutes)
+
+------------------------------------------------------------------------
+
+## PART 3: Reproductive Barriers (25 minutes)
+
+### Framework: Prezygotic vs. Postzygotic Barriers (5 minutes)
+
+**Prezygotic** (prevent mating or fertilization):
+
+1.  Habitat/ecological isolation
+
+2.  Temporal isolation
+
+3.  Behavioral isolation
+
+4.  Mechanical isolation
+
+5.  Gametic isolation
+
+**Postzygotic** (reduce hybrid fitness):
+
+1.  Hybrid inviability
+
+2.  Hybrid sterility
+
+3.  Hybrid breakdown
+
+**Question for Class**: Which type is "better" from an evolutionary perspective? Why? (Answer: Prezygotic - less wasted reproductive effort)
+
+### Interactive Exercise: Barrier Identification (20 minutes)
+
+**Activity**: Students work in pairs to identify barriers in case studies
+
+**Case Study 1 - European Fire-bellied Toad and Yellow-bellied Toad**:
+
+-   Narrow hybrid zone (\~10 km wide) has persisted for thousands of years
+
+-   Hybrids are viable but slightly less fit
+
+-   What maintains this zone?
+
+-   What barriers are operating?
+
+**Case Study 2 - Eastern and Western Meadowlarks (North America)**:
+
+-   Broadly overlapping ranges
+
+-   Very similar appearance
+
+-   Different songs
+
+-   Rarely hybridize
+
+-   What type of isolation?
+
+-   What might have initiated divergence?
+
+**Case Study 3 - Blue Mussels (*Mytilus spp.*)**:
+
+-   Two species overlap on Atlantic coasts
+
+-   Spawn at different temperatures
+
+-   Hybrids occur but are selected against in intermediate habitats
+
+-   What barriers? What mode of speciation?
+
+**Case Study 4 - Palms on Lord Howe Island**:
+
+-   *Howea belmoreana* (acid volcanic soil) and *H. forsteriana* (calcareous coralderived soil)
+
+-   Separated by \~100m in places
+
+-   Flower at different times (5 weeks apart)
+
+-   Likely sympatric speciation
+
+-   What barriers? Why didn't gene flow prevent divergence?
+
+**Discussion Points**:
+
+-   Multiple barriers usually accumulate
+
+-   Reinforcement: selection strengthens prezygotic barriers in sympatry
+
+-   Cascade effect: one barrier can facilitate others
+
+------------------------------------------------------------------------
+
+## PART 4: Time Scales and Rates (15 minutes)
+
+### How Long Does Speciation Take? (8 minutes)
+
+**Short Answer**: It varies enormously!
+
+**Fast End**:
+
+-   Some cichlids: \<100,000 years
+
+-   Polyploid plants: instantaneous reproductive isolation (but still need ecological divergence)
+
+-   Hawaiian Drosophila: average \~500,000 years per species
+
+**Slow End**:
+
+-   Many marine invertebrates: 2-10 million years
+
+-   Some "living fossils" show little change over tens of millions of years
+
+**Factors Affecting Rate**:
+
+-   Generation time
+
+-   Population size (genetic drift)
+
+-   Strength of selection
+
+-   Geographic opportunity (islands, fragmentation)
+
+-   Reproductive system (polyploidy, sexual selection)
+
+### Student Challenge Question (7 minutes)
+
+**The Speciation Puzzle**:
+
+"Imagine two populations of beetles that become separated by a new river. After 1 million years, you bring them back together in the lab and find they produce healthy, fertile offspring. Are they different species?"
+
+**Follow-up questions**:
+
+-   What additional information would you want?
+
+-   Does it matter if they would interbreed in nature?
+
+-   How does this relate to the speciation continuum?
+
+-   What are the conservation implications?
+
+**Key Teaching Point**: Species concepts are human constructs trying to categorize a continuous natural process. Different concepts are useful in different contexts (taxonomy, conservation, ecology).
+
+------------------------------------------------------------------------
+
+## PART 5: Conservation Applications (15 minutes)
+
+### Why Does Understanding Speciation Matter for Conservation? (5 minutes)
+
+**Discussion points**:
+
+1.  **Defining units of conservation**: What should we protect? - Species? Subspecies? ESUs? Populations?
+
+2.  **Habitat fragmentation**: Does it increase or decrease diversity?
+
+    -   Short term: reduces diversity (extinctions)
+    -   Long term: could increase diversity (speciation)
+    -   But: current fragmentation too rapid for speciation
+
+3.  **Hybrid zones**: To protect or not?
+
+    -   Source of genetic diversity?
+    -   Or dilution of distinct gene pools?
+
+4.  **Island conservation**: Special considerations
+
+    -   High endemism (unique species)
+    -   Products of isolation
+    -   Vulnerable to invasive species
+
+### Case Study Discussion: The Red Wolf Problem (10 minutes)
+
+**Background**:
+
+-   Red wolf (*Canis rufus*) declared extinct in wild (1980), captive breeding program started
+
+-   Recently reintroduced to North Carolina in US
+
+-   Genetic studies suggest red wolves might be hybrids between gray wolves and coyotes
+
+-   Debate: Is the red wolf a distinct species or an admixed population?
+
+**Questions for Student Groups**:
+
+1.  If red wolves are of hybrid origin, should we still conserve them?
+
+2.  How does the speciation continuum concept apply here?
+
+3.  What criteria should we use for conservation decisions?
+
+4.  Does evolutionary history matter, or just current distinctiveness?
+
+**No Right Answer** - this is an active debate in conservation biology!
+
+**Teaching Point**: Conservation often operates in the "gray areas" of speciation. Need clear frameworks for decision-making that consider:
+
+-   Adaptive uniqueness
+
+-   Ecological role
+
+-   Evolutionary potential
+
+-   Legal/social factors
+
+------------------------------------------------------------------------
+
+## PART 6: Synthesis & Looking Forward (10 minutes)
+
+### Connecting to Future Content (5 minutes)
+
+**Preview**: "We'll next explore the genetic mechanisms underlying speciation":
+
+-   What genes cause reproductive isolation?
+
+-   How many genetic changes are needed?
+
+-   Role of chromosome rearrangements
+
+-   Genomic islands of divergence
+
+-   Speciation genes
+
+**Bridge to Community Ecology**:
+
+-   Speciation creates the diversity we measure
+
+-   Rates of speciation vs. extinction determine community diversity
+
+-   Ecological opportunity can drive adaptive radiation
+
+-   Priority effects in community assembly
+
+### Concept Check Questions (5 minutes)
+
+**Quick Quiz** (can be done as clickers, show-of-hands, or written):
+
+1.  Which speciation mode requires complete geographic separation?
+2.  True/False: Sympatric speciation is impossible in animals.
+3.  Name two prezygotic barriers.
+4.  Why are island systems hotspots of speciation?
+5.  Can speciation be reversed?
+
+**Answers**:
+
+1.  Allopatric
+
+2.  False (cichlids, apple maggot fly, though debated)
+
+3.  Any two: habitat, temporal, behavioral, mechanical, gametic
+
+4.  Geographic isolation + ecological opportunity + often small populations
+
+5.  Yes! If gene flow resumes before complete isolation (e.g., "despeciation" in Darwin's finches during drought)
+
+------------------------------------------------------------------------
+
+## Take-Home Problem Set
+
+**Due next session - to be discussed in small groups:**
+
+**Problem 1**: You discover a new island with a radiation of 15 bird species, all descended from a single colonist 2 million years ago. Describe what patterns you might expect in: (a) geographic distributions, (b) morphological traits, (c) genetic relationships.
+
+**Problem 2**: Propose an experiment to test whether two similar butterfly populations represent incipient species. What would you measure? What results would support the hypothesis that they are diverging?
+
+**Problem 3**: Climate change is causing many species to shift their ranges poleward. How might this affect: (a) existing hybrid zones, (b) opportunities for speciation, (c) conservation of endemic species?
+
+**Problem 4**: The British Isles were recolonized after the last ice age (\~10,000 years ago). Why don't we see extensive speciation events in British fauna compared to, say, African rift lake fishes?
+
+------------------------------------------------------------------------
+
+## Additional Resources for Students
+
+**Key Papers** (optional, for interested students):
+
+-   Coyne & Orr (2004) - *Speciation* (textbook, comprehensive)
+
+-   Mayr (1942) - *Systematics and the Origin of Species* (historical context)
+
+-   Bolnick & Fitzpatrick (2007) - "Sympatric speciation: models and empirical evidence" (review)
+
+**Online Resources**:
+
+-   UCMP Berkeley Speciation Tutorial
+
+-   Understanding Evolution (UC Berkeley)
+
+-   Tree of Life Web Project
+
+**Documentary Recommendation**:
+
+-   David Attenborough's "First Life" - includes examples of adaptive radiation
+
+------------------------------------------------------------------------
+
+## Notes for Instructor
+
+**Anticipated Student Difficulties**:
+
+-   **Confusing isolation with speciation**: Emphasize that isolation is necessary but not sufficient
+
+-   **Binary thinking about species**: Keep returning to the continuum concept
+
+-   **Timescales**: Help students grasp deep time - use analogies
+
+-   **Assuming all speciation is allopatric**: Emphasize diversity of mechanisms
+
+**Extensions if Time Permits**:
+
+-   Ring species in detail (Ensatina, Larus gulls)
+
+-   Reinforcement and character displacement
+
+-   Role of sexual selection in speciation
+
+-   Hybrid speciation
+
+-   Ancient vs. recent polyploidy
+
+**Adjustments for Different Levels**:
+
+-   If students struggle: focus primarily on allopatric speciation, use more concrete examples
+
+-   If students are advanced: introduce genetics earlier, discuss speciation gene research
+
+**Assessment Opportunities**:
+
+-   This material lends itself well to exam questions requiring application
+
+-   Case studies for essays
+
+-   Practical sessions examining hybrid zones or ring species data

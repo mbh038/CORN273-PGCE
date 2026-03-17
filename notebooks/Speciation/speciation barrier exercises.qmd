@@ -1,0 +1,61 @@
+---
+title: "Barriers leading to speciation: Exercises"
+format: html
+editor: visual
+---
+
+### Interactive Exercise: Barrier Identification (20 minutes)
+
+**Activity**: Students work in pairs to identify barriers in case studies
+
+**Case Study 1 - European Fire-bellied Toad and Yellow-bellied Toad**:
+
+-   Narrow hybrid zone (\~10 km wide) has persisted for thousands of years
+
+-   Hybrids are viable but slightly less fit
+
+-   What maintains this zone?
+
+-   What barriers are operating?
+
+**Case Study 2 - Eastern and Western Meadowlarks (North America)**:
+
+-   Broadly overlapping ranges
+
+-   Very similar appearance
+
+-   Different songs
+
+-   Rarely hybridize
+
+-   What type of isolation? What might have initiated divergence?
+
+**Case Study 3 - Blue Mussels (*Mytilus spp.*)**:
+
+-   Two species overlap on Atlantic coasts
+
+-   Spawn at different temperatures
+
+-   Hybrids occur but are selected against in intermediate habitats
+
+-   What barriers? What mode of speciation?
+
+**Case Study 4 - Palms on Lord Howe Island**:
+
+-   *Howea belmoreana* (acid volcanic soil) and *H. forsteriana* (calcareous coralderived soil)
+
+-   Separated by \~100m in places
+
+-   Flower at different times (5 weeks apart)
+
+-   Likely sympatric speciation
+
+-   What barriers? Why didn't gene flow prevent divergence?
+
+**Discussion Points**:
+
+-   Multiple barriers usually accumulate
+
+-   Reinforcement: selection strengthens prezygotic barriers in sympatry
+
+-   Cascade effect: one barrier can facilitate others
