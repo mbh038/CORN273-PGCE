@@ -1,0 +1,16 @@
+project:
+  type: book
+output-dir: docs
+
+book:
+  title: "CORN273 Population Genetics and Community Ecology"
+  author: "Michael Hunt"
+  chapters:
+    - index.qmd
+    - notebooks/PVA/PVA.qmd
+# list your .qmd files here in order
+
+format:
+  html:
+    theme:
+      - cosmo
