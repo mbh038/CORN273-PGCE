@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Michael Hunt">
+<meta name="dcterms.date" content="2025-11-11">
 
-<title>6&nbsp; Population Viability Analysis (PVA) – CORN273 Population Genetics and Community Ecology</title>
+<title>4&nbsp; Hardy-Weinberg Equilibrium – CORN273 Population Genetics and Community Ecology</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,7 +32,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../notebooks/genetic-drift.html" rel="prev">
+<link href="../../notebooks/genetic-drift.html" rel="next">
+<link href="../../notebooks/darwins-lizards/darwins-lizards.html" rel="prev">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -109,7 +112,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../notebooks/PVA/PVA.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Population Viability Analysis (PVA)</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../notebooks/hardy-weinberg/hardy-weinberg.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Hardy-Weinberg Equilibrium</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -154,7 +157,7 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../notebooks/hardy-weinberg/hardy-weinberg.html" class="sidebar-item-text sidebar-link">
+  <a href="../../notebooks/hardy-weinberg/hardy-weinberg.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Hardy-Weinberg Equilibrium</span></span></a>
   </div>
 </li>
@@ -166,7 +169,7 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../notebooks/PVA/PVA.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../notebooks/PVA/PVA.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Population Viability Analysis (PVA)</span></span></a>
   </div>
 </li>
@@ -180,19 +183,30 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#insightmaker-a-simulation-modeling-framework-for-dynamic-systems" id="toc-insightmaker-a-simulation-modeling-framework-for-dynamic-systems" class="nav-link active" data-scroll-target="#insightmaker-a-simulation-modeling-framework-for-dynamic-systems"><span class="header-section-number">6.1</span> InsightMaker: a simulation modeling framework for dynamic systems!</a></li>
-  <li><a href="#a-basic-simulation-model" id="toc-a-basic-simulation-model" class="nav-link" data-scroll-target="#a-basic-simulation-model"><span class="header-section-number">6.2</span> A basic simulation model</a>
+  <li><a href="#hardy-weinberg-equilibrium" id="toc-hardy-weinberg-equilibrium" class="nav-link active" data-scroll-target="#hardy-weinberg-equilibrium"><span class="header-section-number">4.1</span> Hardy-Weinberg equilibrium</a></li>
+  <li><a href="#violation-of-hw-assumptions" id="toc-violation-of-hw-assumptions" class="nav-link" data-scroll-target="#violation-of-hw-assumptions"><span class="header-section-number">4.2</span> Violation of HW assumptions</a></li>
+  <li><a href="#evolution-is-the-norm" id="toc-evolution-is-the-norm" class="nav-link" data-scroll-target="#evolution-is-the-norm"><span class="header-section-number">4.3</span> Evolution is the Norm</a></li>
+  <li><a href="#hardy-weinberg-equilibrium-1" id="toc-hardy-weinberg-equilibrium-1" class="nav-link" data-scroll-target="#hardy-weinberg-equilibrium-1"><span class="header-section-number">4.4</span> Hardy-Weinberg Equilibrium</a></li>
+  <li><a href="#beetle-example" id="toc-beetle-example" class="nav-link" data-scroll-target="#beetle-example"><span class="header-section-number">4.5</span> Beetle example</a></li>
+  <li><a href="#allele-frequencies" id="toc-allele-frequencies" class="nav-link" data-scroll-target="#allele-frequencies"><span class="header-section-number">4.6</span> Allele Frequencies</a></li>
+  <li><a href="#hardy-weinberg-equation" id="toc-hardy-weinberg-equation" class="nav-link" data-scroll-target="#hardy-weinberg-equation"><span class="header-section-number">4.7</span> Hardy Weinberg Equation</a></li>
+  <li><a href="#the-next-generation" id="toc-the-next-generation" class="nav-link" data-scroll-target="#the-next-generation"><span class="header-section-number">4.8</span> The next generation?</a></li>
+  <li><a href="#assumptions-made" id="toc-assumptions-made" class="nav-link" data-scroll-target="#assumptions-made"><span class="header-section-number">4.9</span> Assumptions made</a></li>
+  <li><a href="#the-next-generation-1" id="toc-the-next-generation-1" class="nav-link" data-scroll-target="#the-next-generation-1"><span class="header-section-number">4.10</span> The next generation</a></li>
+  <li><a href="#in-summary" id="toc-in-summary" class="nav-link" data-scroll-target="#in-summary"><span class="header-section-number">4.11</span> In summary</a></li>
+  <li><a href="#a-population-in-hardy-weinberg-equilibrium-is-not-evolving" id="toc-a-population-in-hardy-weinberg-equilibrium-is-not-evolving" class="nav-link" data-scroll-target="#a-population-in-hardy-weinberg-equilibrium-is-not-evolving"><span class="header-section-number">4.12</span> A population in Hardy-Weinberg equilibrium is not evolving</a></li>
+  <li><a href="#is-hardy-weinburg-equilibrium-realistic" id="toc-is-hardy-weinburg-equilibrium-realistic" class="nav-link" data-scroll-target="#is-hardy-weinburg-equilibrium-realistic"><span class="header-section-number">4.13</span> Is Hardy-Weinburg equilibrium realistic?</a></li>
+  <li><a href="#hardy-weinberg-assumptions" id="toc-hardy-weinberg-assumptions" class="nav-link" data-scroll-target="#hardy-weinberg-assumptions"><span class="header-section-number">4.14</span> Hardy-Weinberg assumptions</a></li>
+  <li><a href="#what-if-the-assumptions-are-not-met" id="toc-what-if-the-assumptions-are-not-met" class="nav-link" data-scroll-target="#what-if-the-assumptions-are-not-met"><span class="header-section-number">4.15</span> What if the assumptions are not met?</a></li>
+  <li><a href="#would-all-genes-satisfy-h-w" id="toc-would-all-genes-satisfy-h-w" class="nav-link" data-scroll-target="#would-all-genes-satisfy-h-w"><span class="header-section-number">4.16</span> Would all genes satisfy H-W?</a></li>
+  <li><a href="#mechanisms-of-evolution-mutation" id="toc-mechanisms-of-evolution-mutation" class="nav-link" data-scroll-target="#mechanisms-of-evolution-mutation"><span class="header-section-number">4.17</span> Mechanisms of evolution : Mutation</a></li>
+  <li><a href="#non-random-mating." id="toc-non-random-mating." class="nav-link" data-scroll-target="#non-random-mating."><span class="header-section-number">4.18</span> Non-random mating.</a></li>
+  <li><a href="#gene-flow." id="toc-gene-flow." class="nav-link" data-scroll-target="#gene-flow."><span class="header-section-number">4.19</span> Gene flow.</a></li>
+  <li><a href="#non-infinite-population-size-genetic-drift." id="toc-non-infinite-population-size-genetic-drift." class="nav-link" data-scroll-target="#non-infinite-population-size-genetic-drift."><span class="header-section-number">4.20</span> Non-infinite population size (genetic drift).</a></li>
+  <li><a href="#natural-selection." id="toc-natural-selection." class="nav-link" data-scroll-target="#natural-selection."><span class="header-section-number">4.21</span> Natural selection.</a></li>
+  <li><a href="#example-calculations" id="toc-example-calculations" class="nav-link" data-scroll-target="#example-calculations"><span class="header-section-number">4.22</span> Example calculations</a>
   <ul class="collapse">
-  <li><a href="#simple-stock-and-flow-model" id="toc-simple-stock-and-flow-model" class="nav-link" data-scroll-target="#simple-stock-and-flow-model"><span class="header-section-number">6.2.1</span> Simple stock and flow model!</a></li>
-  <li><a href="#a-more-realistic-model-exponential-growth" id="toc-a-more-realistic-model-exponential-growth" class="nav-link" data-scroll-target="#a-more-realistic-model-exponential-growth"><span class="header-section-number">6.2.2</span> A more realistic model: exponential growth!</a></li>
-  </ul></li>
-  <li><a href="#an-even-more-realistic-model" id="toc-an-even-more-realistic-model" class="nav-link" data-scroll-target="#an-even-more-realistic-model"><span class="header-section-number">6.3</span> An even more realistic model!!</a>
-  <ul class="collapse">
-  <li><a href="#wildlife-populations-fluctuate-over-time" id="toc-wildlife-populations-fluctuate-over-time" class="nav-link" data-scroll-target="#wildlife-populations-fluctuate-over-time"><span class="header-section-number">6.3.1</span> Wildlife populations fluctuate over time!</a></li>
-  <li><a href="#the-future-is-uncertain" id="toc-the-future-is-uncertain" class="nav-link" data-scroll-target="#the-future-is-uncertain"><span class="header-section-number">6.3.2</span> The future is uncertain!</a></li>
-  <li><a href="#how-to-model-uncertainty" id="toc-how-to-model-uncertainty" class="nav-link" data-scroll-target="#how-to-model-uncertainty"><span class="header-section-number">6.3.3</span> How to model uncertainty</a></li>
-  <li><a href="#random-number-generation" id="toc-random-number-generation" class="nav-link" data-scroll-target="#random-number-generation"><span class="header-section-number">6.3.4</span> Random number generation</a></li>
-  <li><a href="#return-to-insightmaker--add-randomness" id="toc-return-to-insightmaker--add-randomness" class="nav-link" data-scroll-target="#return-to-insightmaker--add-randomness"><span class="header-section-number">6.3.5</span> Return to InsightMaker- add randomness!</a></li>
+  <li><a href="#calculate-allele-frequencies-from-phenotype-frequencies" id="toc-calculate-allele-frequencies-from-phenotype-frequencies" class="nav-link" data-scroll-target="#calculate-allele-frequencies-from-phenotype-frequencies"><span class="header-section-number">4.22.1</span> Calculate allele frequencies from phenotype frequencies</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -202,14 +216,26 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Population Viability Analysis (PVA)</span></h1>
+<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Hardy-Weinberg Equilibrium</span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Michael Hunt </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">November 11, 2025</p>
+    </div>
+  </div>
   
     
   </div>
@@ -219,182 +245,187 @@ window.Quarto = {
 </header>
 
 
-<section id="insightmaker-a-simulation-modeling-framework-for-dynamic-systems" class="level2" data-number="6.1">
-<h2 data-number="6.1" class="anchored" data-anchor-id="insightmaker-a-simulation-modeling-framework-for-dynamic-systems"><span class="header-section-number">6.1</span> InsightMaker: a simulation modeling framework for dynamic systems!</h2>
-<p><a href="https://insightmaker.com">InsightMaker</a> is a web-based visual programming language for modeling the dynamics of inter-connected systems.</p>
-<p>Any dynamic system (like a wildlife population) essentially consists of [Stocks] and [Flows].</p>
-<p>A [Stock] simply represents a quantity of something. The [Stock] changes over time ONLY via [Flows In] or [Flows Out].</p>
-<p>A [Stock] of stuff increases over time via what [Flows] in. Imagine our stock represents <em>Moose</em>!</p>
-<p><em>Moose Births</em> would then be the input [Flow] to the population of <em>Moose</em> over time.</p>
-<p>A [Stock] of stuff decreases over time via what [Flows] out. For example, <em>Moose Death</em>s could represent the [Flow] out of the population of <em>Moose</em>.</p>
-<div class="cell">
-<div class="cell-output-display">
-<div id="fig-moose1" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-moose1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../../figures/moose1.jpg" class="img-fluid figure-img" width="394">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-moose1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;6.1: :“The simplest Moose population model”
-</figcaption>
-</figure>
-</div>
-</div>
-</div>
-<p>If the [Flow] into the stock is larger than the [Flow] out of the stock, then the [Stock] increases over time.</p>
-<p>If the [Flow] out is larger than the [Flow] in, then the [Stock] decreases over time.</p>
-<p>If the [Flow] in equals the [Flow] out then the amount in the [Stock] will not change over time. In this case, the system is in <strong>equilibrium</strong>.</p>
+<section id="hardy-weinberg-equilibrium" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="hardy-weinberg-equilibrium"><span class="header-section-number">4.1</span> Hardy-Weinberg equilibrium</h2>
+<ul>
+<li><p>When a population is in Hardy-Weinberg equilibrium for a gene, it is not evolving, and allele frequencies will stay the same across generations.</p></li>
+<li><p>There are five basic Hardy-Weinberg assumptions:</p>
+<ul>
+<li>no mutation</li>
+<li>random mating</li>
+<li>no gene flow</li>
+<li>infinite population size</li>
+<li>no selection.</li>
+</ul></li>
+</ul>
 </section>
-<section id="a-basic-simulation-model" class="level2" data-number="6.2">
-<h2 data-number="6.2" class="anchored" data-anchor-id="a-basic-simulation-model"><span class="header-section-number">6.2</span> A basic simulation model</h2>
-<p>It is often stated that “all models are wrong, some are useful” (attributed to statistician George Box).</p>
-<p>This demonstration model is wrong, and not super useful! But it’s a start!</p>
-<section id="simple-stock-and-flow-model" class="level3" data-number="6.2.1">
-<h3 data-number="6.2.1" class="anchored" data-anchor-id="simple-stock-and-flow-model"><span class="header-section-number">6.2.1</span> Simple stock and flow model!</h3>
+<section id="violation-of-hw-assumptions" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="violation-of-hw-assumptions"><span class="header-section-number">4.2</span> Violation of HW assumptions</h2>
+<ul>
+<li><p>If the assumptions are not met for a gene, the population may evolve for that gene (the gene’s allele frequencies may change).</p></li>
+<li><p>Mechanisms of evolution correspond to violations of different Hardy-Weinberg assumptions. They are:</p>
+<ul>
+<li>mutation</li>
+<li>non-random mating</li>
+<li>gene flow</li>
+<li>finite population size (genetic drift)</li>
+<li>natural selection</li>
+</ul></li>
+</ul>
+</section>
+<section id="evolution-is-the-norm" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="evolution-is-the-norm"><span class="header-section-number">4.3</span> Evolution is the Norm</h2>
+<ul>
+<li>In nature, populations are usually evolving.</li>
+<li>All of these populations are likely to be evolving for at least some of their genes.</li>
+<li>Evolution is happening right here, right now!</li>
+<li>Evolution means is that a population is changing in its genetic makeup over generations.</li>
+<li>Sometimes, this type of change is due to natural selection. Other times, it comes from migration of new organisms into the population, or from random events—the evolutionary “luck of the draw.”</li>
+</ul>
+</section>
+<section id="hardy-weinberg-equilibrium-1" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="hardy-weinberg-equilibrium-1"><span class="header-section-number">4.4</span> Hardy-Weinberg Equilibrium</h2>
+<p>What does it look like when a population is not evolving?</p>
+<ul>
+<li>If a population is in a state called <strong>Hardy-Weinberg equilibrium</strong>, the frequencies of alleles, or gene versions, and genotypes, or sets of alleles, in that population will stay the same over generations</li>
+<li>They will also satisfy the Hardy-Weinberg equation).</li>
+<li>Evolution is a change in allele frequencies in a population over time - so a population in Hardy-Weinberg equilibrium is not evolving.</li>
+</ul>
+</section>
+<section id="beetle-example" class="level2" data-number="4.5">
+<h2 data-number="4.5" class="anchored" data-anchor-id="beetle-example"><span class="header-section-number">4.5</span> Beetle example</h2>
+<p>Imagine we have a large population of beetles.</p>
+<ul>
+<li>This population is infinitely large.</li>
+<li><strong>Phenotype</strong>: The beetles of our infinitely large population come in two colours, dark grey and light grey.</li>
+<li>Their colour is determined by the A gene.</li>
+<li><strong>Genotype</strong>: AA and Aa beetles are dark grey, and aa beetles are light grey.</li>
+</ul>
+</section>
+<section id="allele-frequencies" class="level2" data-number="4.6">
+<h2 data-number="4.6" class="anchored" data-anchor-id="allele-frequencies"><span class="header-section-number">4.6</span> Allele Frequencies</h2>
+<p>Suppose the A allele has a frequency of 0.3, while the a allele has a frequency of 0.7.</p>
+<ul>
+<li>If a population is in Hardy-Weinberg equilibrium, genotype frequencies will be related to allele frequencies by the Hardy-Weinberg equation.</li>
+<li>So, we can predict the genotype frequencies we’d expect to see (if the population is in Hardy-Weinberg equilibrium) by plugging in allele frequencies as shown below:</li>
+</ul>
+</section>
+<section id="hardy-weinberg-equation" class="level2" data-number="4.7">
+<h2 data-number="4.7" class="anchored" data-anchor-id="hardy-weinberg-equation"><span class="header-section-number">4.7</span> Hardy Weinberg Equation</h2>
+<p><img src="images/hardy weinberg1.png" class="img-fluid"></p>
+</section>
+<section id="the-next-generation" class="level2" data-number="4.8">
+<h2 data-number="4.8" class="anchored" data-anchor-id="the-next-generation"><span class="header-section-number">4.8</span> The next generation?</h2>
+<p>Let’s imagine that these are, in fact, the genotype frequencies we see in our beetle population:</p>
+<p><span class="math display">\[9\% \text{AA}, \quad 42\% \text{Aa}, \quad 49\% \text{aa}\]</span></p>
+<ul>
+<li>This means that the beetles are in Hardy-Weinberg equilibrium!</li>
+<li>Now, let’s imagine that the beetles reproduce to make a next generation.</li>
+<li>What will the allele and genotype frequencies will be in that generation?</li>
+</ul>
+</section>
+<section id="assumptions-made" class="level2" data-number="4.9">
+<h2 data-number="4.9" class="anchored" data-anchor-id="assumptions-made"><span class="header-section-number">4.9</span> Assumptions made</h2>
+<ul>
+<li><p><strong>None of the genotypes is any better than the others at surviving or getting mates</strong>. ie the frequency of A and a alleles in the pool of gametes (sperm and eggs) that meet to make the next</p></li>
+<li><p><strong>The beetles mate randomly (as opposed to, say, black beetles preferring other black beetles)</strong>. ie reproduction is the result of two random events: selection of a sperm from the population’s gene pool and selection of an egg from the same gene pool. The probability of getting any offspring genotype is just the probability of getting the egg and sperm combinations that produce that genotype.</p></li>
+</ul>
+</section>
+<section id="the-next-generation-1" class="level2" data-number="4.10">
+<h2 data-number="4.10" class="anchored" data-anchor-id="the-next-generation-1"><span class="header-section-number">4.10</span> The next generation</h2>
+<p><img src="images/hardy weinberg2.png" class="img-fluid"></p>
+</section>
+<section id="in-summary" class="level2" data-number="4.11">
+<h2 data-number="4.11" class="anchored" data-anchor-id="in-summary"><span class="header-section-number">4.11</span> In summary</h2>
+<p>What we’ve just seen is the essence of Hardy-Weinberg equilibrium.</p>
+<ul>
+<li><em>If</em> alleles in the gamete pool exactly mirror those in the parent generation, <em>and</em></li>
+<li><em>if</em> they meet up randomly (in an infinitely large number of events), <em>then</em></li>
+</ul>
+<p>there is no reason—in fact, no way—for allele and genotype frequencies to change from one generation to the next.</p>
+</section>
+<section id="a-population-in-hardy-weinberg-equilibrium-is-not-evolving" class="level2" data-number="4.12">
+<h2 data-number="4.12" class="anchored" data-anchor-id="a-population-in-hardy-weinberg-equilibrium-is-not-evolving"><span class="header-section-number">4.12</span> A population in Hardy-Weinberg equilibrium is not evolving</h2>
+<ul>
+<li><p>In the absence of other factors, you can imagine this process repeating over and over, generation after generation, keeping allele and genotype frequencies the same.</p></li>
+<li><p>Since evolution is a change in allele frequencies in a population over generations, a population in Hardy-Weinberg equilibrium is, by definition, not evolving.</p></li>
+</ul>
+</section>
+<section id="is-hardy-weinburg-equilibrium-realistic" class="level2" data-number="4.13">
+<h2 data-number="4.13" class="anchored" data-anchor-id="is-hardy-weinburg-equilibrium-realistic"><span class="header-section-number">4.13</span> Is Hardy-Weinburg equilibrium realistic?</h2>
+<ul>
+<li><p>Populations are usually not in Hardy-Weinberg equilibrium (at least, not for all of the genes in their genome).</p></li>
+<li><p>Instead, populations tend to evolve: the allele frequencies of at least some of their genes change from one generation to the next.</p></li>
+<li><p>If a population’s allele and genotype frequencies are changing over generations (or if the allele and genotype frequencies don’t match the predictions of the Hardy-Weinberg equation), the question is: why?</p></li>
+</ul>
+</section>
+<section id="hardy-weinberg-assumptions" class="level2" data-number="4.14">
+<h2 data-number="4.14" class="anchored" data-anchor-id="hardy-weinberg-assumptions"><span class="header-section-number">4.14</span> Hardy-Weinberg assumptions</h2>
+<ul>
+<li><strong>No mutation</strong>. No new alleles are generated by mutation, nor are genes duplicated or deleted.</li>
+<li><strong>Random mating</strong>. Organisms mate randomly with each other, with no preference for particular genotypes.</li>
+<li><strong>No gene flow</strong>. Neither individuals nor their gametes (e.g., windborne pollen) enter or exit the population.</li>
+<li><strong>Very large population size</strong>. The population should be effectively infinite in size.</li>
+<li><strong>No natural selection</strong>. All alleles confer equal fitness (make organisms equally likely to survive and reproduce).</li>
+</ul>
+</section>
+<section id="what-if-the-assumptions-are-not-met" class="level2" data-number="4.15">
+<h2 data-number="4.15" class="anchored" data-anchor-id="what-if-the-assumptions-are-not-met"><span class="header-section-number">4.15</span> What if the assumptions are not met?</h2>
+<ul>
+<li>If any one of these assumptions is not met, the population will not be in Hardy-Weinberg equilibrium.</li>
+<li>Instead, it may evolve: allele frequencies may change from one generation to the next.</li>
+<li>Allele and genotype frequencies within a single generation may also fail to satisfy the Hardy-Weinberg equation</li>
+</ul>
+</section>
+<section id="would-all-genes-satisfy-h-w" class="level2 smaller" data-number="4.16">
+<h2 class="smaller anchored" data-number="4.16" data-anchor-id="would-all-genes-satisfy-h-w"><span class="header-section-number">4.16</span> Would all genes satisfy H-W?</h2>
+<p>We can think about Hardy-Weinberg equilibrium in two ways: for just one gene, or for all the genes in the genome.</p>
+<ul>
+<li>For just one gene, we could check whether the above criteria are true. For example, we would ask if there were mutations in that gene, or if organisms mated randomly with regards to their genotype for that gene.</li>
+<li>If we look at all the genes in the genome, the conditions have to be met for every single gene. While it’s possible that the conditions will be more or less met for a single gene under certain circumstances, it’s very unlikely that they would be met for all the genes in the genome.</li>
+</ul>
+<p>So, while a population may be in Hardy-Weinberg equilibrium for some genes (not evolving for those genes), it’s unlikely to be in Hardy-Weinberg equilibrium for all of its genes (not evolving at all).</p>
+</section>
+<section id="mechanisms-of-evolution-mutation" class="level2 smaller" data-number="4.17">
+<h2 class="smaller anchored" data-number="4.17" data-anchor-id="mechanisms-of-evolution-mutation"><span class="header-section-number">4.17</span> Mechanisms of evolution : Mutation</h2>
+<p><img src="images/hardy weinburg3.png" class="img-fluid"></p>
+<ul>
+<li>Mutation is the original source of all genetic variation, but the mutation rate for most organisms is pretty low.</li>
+<li>So, the impact of brand-new mutations on allele frequencies from one generation to the next is usually not large.</li>
+<li>However, natural selection acting on the results of a mutation can be a powerful mechanism of evolution!</li>
+</ul>
+</section>
+<section id="non-random-mating." class="level2 smaller" data-number="4.18">
+<h2 class="smaller anchored" data-number="4.18" data-anchor-id="non-random-mating."><span class="header-section-number">4.18</span> Non-random mating.</h2>
+<p><img src="images/hardy weinburg4.png" class="img-fluid"></p>
+<p>In non-random mating, organisms may prefer to mate with others of the same genotype or of different genotypes. Non-random mating won’t make allele frequencies in the population change by itself, though it can alter genotype frequencies. This keeps the population from being in Hardy-Weinberg equilibrium, but it’s debatable whether it counts as evolution, since the allele frequencies are staying the same.</p>
+</section>
+<section id="gene-flow." class="level2 smaller" data-number="4.19">
+<h2 class="smaller anchored" data-number="4.19" data-anchor-id="gene-flow."><span class="header-section-number">4.19</span> Gene flow.</h2>
+<p>Gene flow involves the movement of genes into or out of a population, due to either the movement of individual organisms or their gametes (eggs and sperm, e.g., through pollen dispersal by a plant). Organisms and gametes that enter a population may have new alleles, or may bring in existing alleles but in different proportions than those already in the population. Gene flow can be a strong agent of evolution.</p>
+<p><img src="images/hardy weinburg5.png" class="img-fluid"></p>
+</section>
+<section id="non-infinite-population-size-genetic-drift." class="level2 smaller" data-number="4.20">
+<h2 class="smaller anchored" data-number="4.20" data-anchor-id="non-infinite-population-size-genetic-drift."><span class="header-section-number">4.20</span> Non-infinite population size (genetic drift).</h2>
+<p>Genetic drift involves changes in allele frequency due to chance events – literally, “sampling error” in selecting alleles for the next generation. Drift can occur in any population of non-infinite size, but it has a stronger effect on small populations.</p>
+<p><img src="images/hardy weinberg6.png" class="img-fluid"></p>
+</section>
+<section id="natural-selection." class="level2 smaller" data-number="4.21">
+<h2 class="smaller anchored" data-number="4.21" data-anchor-id="natural-selection."><span class="header-section-number">4.21</span> Natural selection.</h2>
+<p>Finally, the most famous mechanism of evolution! Natural selection occurs when one allele (or combination of alleles of different genes) makes an organism more or less fit, that is, able to survive and reproduce in a given environment. If an allele reduces fitness, its frequency will tend to drop from one generation to the next.</p>
+<p><img src="images/hardy weinberg7.png" class="img-fluid"></p>
+</section>
+<section id="example-calculations" class="level2" data-number="4.22">
+<h2 data-number="4.22" class="anchored" data-anchor-id="example-calculations"><span class="header-section-number">4.22</span> Example calculations</h2>
+<section id="calculate-allele-frequencies-from-phenotype-frequencies" class="level3" data-number="4.22.1">
+<h3 data-number="4.22.1" class="anchored" data-anchor-id="calculate-allele-frequencies-from-phenotype-frequencies"><span class="header-section-number">4.22.1</span> Calculate allele frequencies from phenotype frequencies</h3>
+<p>Suppose in tigers there is a gene for fur colour with alleles <em>O</em> and <em>w</em>, <em>O</em> being dominant and <em>w</em> being recessive. Individuals with genotype <em>AA</em> or <em>Aw</em> have orange fur, while only those individuals that are homozygous in the recessive gene <em>ww</em> have white fur.</p>
+<p>Consider a small population of 15 of these tigers, 10 of which have orange fur, while 5 have white fur.</p>
+<p>!. What are the possible genotypes of the orange tigers? 2. What are the possible genotypes of the white tigers?</p>
 <ol type="1">
-<li>Open up <a href="https://insightmaker.com">InsightMaker</a>. If you have never used it before you need to sign up first with a username and password. InsightMaker is free!</li>
-<li>Click on <a href="https://insightmaker.com/insight/3XrVz4HGZdJbjffDyDjnPv">this link</a> to load up the first population modeling demo.</li>
-<li>In the upper right-hand corner of the screen, click on the “Clone Insight” link at the top and click on the “Clone” button on the following screen (so you can make edits to this model!). If you want, you can change the name of the model by clicking on the white space anywhere in the workspace and then clicking the “Edit Info” button on the left-hand context menu.</li>
-<li>Now click Run Simulation. You have run your first population simulation!</li>
+<li><p>What are the allele frequencies? That is, for the fur colour gene, what proportion of the alleles in the population is the dominant type <em>W</em> and what proportion is the recessive type <em>w</em></p></li>
+<li><p>If this population was in Hardy-Weinberg equilibrium, what would be the frequencies of the possible genotypes <em>AA</em>, <em>Aw</em> and <em>ww</em>?</p></li>
 </ol>
-<p>Q: What is the first thing you would like to change to make the model more realistic?</p>
-</section>
-<section id="a-more-realistic-model-exponential-growth" class="level3" data-number="6.2.2">
-<h3 data-number="6.2.2" class="anchored" data-anchor-id="a-more-realistic-model-exponential-growth"><span class="header-section-number">6.2.2</span> A more realistic model: exponential growth!</h3>
-<ol type="1">
-<li>Now let’s assume that per-capita birth and death rates in the population are constant across time. This way, if the population is bigger, more individuals will be added to the population in the next time step, making the population even bigger! This is a positive feedback!</li>
-</ol>
-<p>Click on <a href="https://insightmaker.com/insight/6scOhNQUInZ8wMlpw2pjB0">this link</a> to load up the next population modeling demonstration.</p>
-<ol start="2" type="1">
-<li>In the upper right-hand corner of the screen, click on the “Clone Insight” link at the top and click on the “Clone” button on the following screen (so you can make edits to this model!). If you want, you can change the name of the model by clicking on the whitespace anywhere in your InsightMaker workspace and then clicking the “Edit Info” button on the left-hand context menu.</li>
-</ol>
-<p>Your model should look something like this:</p>
-<div class="cell">
-<div class="cell-output-display">
-<div id="fig-moose2" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-moose2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../../figures/moose2.jpg" class="img-fluid figure-img" width="427">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-moose2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;6.2: :“A better Moose population model that incorporates exponential change”
-</figcaption>
-</figure>
-</div>
-</div>
-</div>
-<ol start="3" type="1">
-<li><p>Click on the two [Flows] (Births and Deaths) and note the equation displayed on the right-hand menu. Do these equations make sense?</p></li>
-<li><p>Make sure the initial number of moose is set to 50, the birth rate is set to 0.5, and the death rate is set to 0.4. Now click [Run Simulation]. How would you describe the results?</p></li>
-</ol>
-<p><strong>Q</strong>: what happens if you set the birth rate equal to the death rate?</p>
-<p><strong>Q</strong>: what happens if you set the birth rate less than the death rate?</p>
-<p>One of the most fundamental quantities in population ecology is called the “intrinsic rate of growth” or <em>r</em>. <em>r</em> is simply the difference between birth and death rate:</p>
-<p><span class="math inline">\(r=birth\ rate-death\ rate\)</span></p>
-<p><strong>Q</strong>: What is the intrinsic rate of growth for this population (when birth rate is set to 0.5 and the death rate is set to 0.4)?</p>
-<p><strong>Q</strong>: What is the next thing you would like to change to make the model more realistic?</p>
-</section>
-</section>
-<section id="an-even-more-realistic-model" class="level2" data-number="6.3">
-<h2 data-number="6.3" class="anchored" data-anchor-id="an-even-more-realistic-model"><span class="header-section-number">6.3</span> An even more realistic model!!</h2>
-<p>Which one of these figures is most likely to be from a real wildlife population??</p>
-<div class="cell">
-<div class="cell-output-display">
-<div id="fig-fluct1" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-fluct1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../../figures/fluct1.jpg" class="img-fluid figure-img" width="316">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fluct1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;6.3: :“”
-</figcaption>
-</figure>
-</div>
-</div>
-</div>
-<p>OR</p>
-<div class="cell">
-<div class="cell-output-display">
-<div id="fig-nofluct1" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-nofluct1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../../figures/nofluct1.jpg" class="img-fluid figure-img" width="315">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-nofluct1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;6.4: :“”
-</figcaption>
-</figure>
-</div>
-</div>
-</div>
-<section id="wildlife-populations-fluctuate-over-time" class="level3" data-number="6.3.1">
-<h3 data-number="6.3.1" class="anchored" data-anchor-id="wildlife-populations-fluctuate-over-time"><span class="header-section-number">6.3.1</span> Wildlife populations fluctuate over time!</h3>
-<p>… And these fluctuations are often difficult to predict!</p>
-<p>That is to say…</p>
-</section>
-<section id="the-future-is-uncertain" class="level3" data-number="6.3.2">
-<h3 data-number="6.3.2" class="anchored" data-anchor-id="the-future-is-uncertain"><span class="header-section-number">6.3.2</span> The future is uncertain!</h3>
-<p>All ecological systems are full of uncertainty. We all know it intuitively. But what exactly do we mean by that? And how can we deal with it? How can we incorporate it into our models?</p>
-<p>Q: if you were to re-run the basic population model you just made in InsightMaker ten times, how many different results would you get?</p>
-<p>When a model outcome is the same every time (when starting with the same input values) we say that the model is <strong>deterministic</strong>.</p>
-<p>BUT… ecological systems (e.g., dynamic populations) have inherent variability.</p>
-<p>We can’t predict with certainty whether or not an individual will mate, or die.</p>
-<p>We can’t be certain whether next year or the year after that will be a good year or a bad year for offspring production or mortality!</p>
-<p>The key is to <strong>embrace uncertainty</strong>. As population ecologists, we have some tricks to help us manage and account for unpredictable variation in our study systems:</p>
-<div class="cell">
-<div class="cell-output-display">
-<div id="fig-dice" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-dice-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../../figures/dice1.png" class="img-fluid figure-img" width="478">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-dice-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;6.5: :“”
-</figcaption>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="how-to-model-uncertainty" class="level3" data-number="6.3.3">
-<h3 data-number="6.3.3" class="anchored" data-anchor-id="how-to-model-uncertainty"><span class="header-section-number">6.3.3</span> How to model uncertainty</h3>
-<p>Typically, we ‘embrace uncertainty’ in our models by incorporating <strong>random-number generators</strong>. These types of simulation models are called <strong>stochastic models</strong>.</p>
-<p>When we incorporate random processes into models, the result will be different each time we run the model!</p>
-<p>When we use stochastic models, we often want to run lots of <strong>replicates</strong>. Each replicate represents a possible future.</p>
-<p>We can then interpret the <em>cloud of possible futures</em> rather than just the results from a single model run!</p>
-<div class="cell">
-<div class="cell-output-display">
-<div id="fig-futures-cloud" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-futures-cloud-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../../figures/futures-cloud.jpg" class="img-fluid figure-img" width="315">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-futures-cloud-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;6.6: :“”
-</figcaption>
-</figure>
-</div>
-</div>
-</div>
-<p>Here we see that the population went extinct three times out of a total of 50 replicates.</p>
-</section>
-<section id="random-number-generation" class="level3" data-number="6.3.4">
-<h3 data-number="6.3.4" class="anchored" data-anchor-id="random-number-generation"><span class="header-section-number">6.3.4</span> Random number generation</h3>
-<p>To ensure that each model run (replicate) – or each year of each model run – is different from one another, we need to include at least one random number generator in our models!</p>
-<p>A <strong>random number generator</strong> is like a box of (potentially infinite) possible numbers – a lottery ball machine for example! Each time we want a new number we reach in and pull one out randomly, record the number, put it back in and shake it up again.</p>
-</section>
-<section id="return-to-insightmaker--add-randomness" class="level3" data-number="6.3.5">
-<h3 data-number="6.3.5" class="anchored" data-anchor-id="return-to-insightmaker--add-randomness"><span class="header-section-number">6.3.5</span> Return to InsightMaker- add randomness!</h3>
-<p>The term <strong>stochasticity</strong> just means randomness. A <strong>stochastic population model</strong> is a model with one or more random number generators included!</p>
-<ol type="1">
-<li>Click on <a href="https://insightmaker.com/insight/7lMVIIpHWolcgKEyO0GOGw">this link</a> to load up the next population modeling demonstration.</li>
-<li>In the upper right-hand corner of the screen, click on the “Clone Insight” link at the top and click on the “Clone” button on the following screen (so you can make edits to this model!). If you want, you can change the name of the model by clicking on the whitespace anywhere in your InsightMaker environment and then clicking the “Edit Info” button on the left-hand context menu.</li>
-<li>Make sure the Birth rate is set to 0.5 and Death rate is set to 0.4. Set initial abundance to 10. Under the “Settings” menu make sure the model is set to run for 20 years.</li>
-<li>Run the simulation. What does it look like?</li>
-<li>Use the “Sensitivity Testing” tool (in the “Tools” menu, upper right corner) to run the model 100 times. Choose your [Population] (Moose) as the “Monitored Primitive”. View the results!</li>
-</ol>
-<p>Now, change the initial abundance to 500 and re-run the “Sensitivity Testing” tool.</p>
-<p><strong>Q</strong>: what key differences do you notice when you initialize the population with 10 individuals vs 500 individuals??</p>
 
 
 </section>
@@ -820,11 +851,14 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../notebooks/genetic-drift.html" class="pagination-link" aria-label="Genetic drift">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Genetic drift</span></span>
+      <a href="../../notebooks/darwins-lizards/darwins-lizards.html" class="pagination-link" aria-label="Darwin's Lizards">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Darwin’s Lizards</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
+      <a href="../../notebooks/genetic-drift.html" class="pagination-link" aria-label="Genetic drift">
+        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Genetic drift</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
   </div>
 </nav>
 </div> <!-- /content -->
