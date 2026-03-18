@@ -1,10 +1,12 @@
----
-title: "Speciation: Mechanisms of Biodiversity Generation"
-subtitle: "How Diversity Arises in Ecosystems"
-author: "Michael Hunt"
-institute: "Newquay University Centre"
-format:
-  pdf: default
+# Speciation: Mechanisms of Biodiversity Generation
+
+# ---
+# title: "Speciation: Mechanisms of Biodiversity Generation"
+# subtitle: "How Diversity Arises in Ecosystems"
+# author: "Michael Hunt"
+# institute: "Newquay University Centre"
+# format:
+#   pdf: default
   # revealjs:
   #   theme: sky
   #   transition: slide
@@ -23,7 +25,7 @@ format:
   #       </style>
 execute:
   echo: false
----
+# ---
 
 ## Learning Objectives {.smaller}
 

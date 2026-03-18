@@ -1,11 +1,6 @@
----
-title: "Darwin's Lizards"
-author: "Jonathan B. Losos and Kevin de Queiroz"
-format: html
-editor: visual
----
+# Darwin's Lizards
 
-# **DARWIN'S LIZARDS**
+author: "Jonathan B. Losos and Kevin de Queiroz"
 
 Natural History. Dec97/Jan98, Vol. 106 Issue 11, p34. 6p. 10 Color Photographs.
 

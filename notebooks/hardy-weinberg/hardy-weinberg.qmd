@@ -1,11 +1,13 @@
----
-title: "Hardy-Weinberg Equilibrium"
-author: "Michael Hunt"
-date: "11/11/2025"
-format: revealjs
-# format: pdf
-editor: visual
----
+# Hardy-Weinberg Equilibrium
+
+# ---
+# title: "Hardy-Weinberg Equilibrium"
+# author: "Michael Hunt"
+# date: "11/11/2025"
+# format: revealjs
+# # format: pdf
+# editor: visual
+# ---
 
 ## Hardy-Weinberg equilibrium
 
@@ -169,17 +171,12 @@ Finally, the most famous mechanism of evolution! Natural selection occurs when o
 
 ### Calculate allele frequencies from phenotype frequencies
 
-Suppose in tigers there is a gene for fur colour with alleles *O* and *w*, *O* being dominant and *w* being recessive. Individuals with genotype *AA* or *Aw* have orange fur, while only those individuals that are homozygous in the recessive gene *ww* have white fur. 
+Suppose in tigers there is a gene for fur colour with alleles *O* and *w*, *O* being dominant and *w* being recessive. Individuals with genotype *AA* or *Aw* have orange fur, while only those individuals that are homozygous in the recessive gene *ww* have white fur.
 
 Consider a small population of 15 of these tigers, 10 of which have orange fur, while 5 have white fur.
 
-!. What are the possible genotypes of the orange tigers?
-2. What are the possible genotypes of the white tigers?
+!. What are the possible genotypes of the orange tigers? 2. What are the possible genotypes of the white tigers?
 
-1. What are the allele frequencies? That is, for the fur colour gene, what proportion of the alleles in the population is the dominant type *W* and what proportion is the recessive type *w*
+1.  What are the allele frequencies? That is, for the fur colour gene, what proportion of the alleles in the population is the dominant type *W* and what proportion is the recessive type *w*
 
-
-
-2. If this population was in Hardy-Weinberg equilibrium, what would be the frequencies of the possible genotypes *AA*, *Aw* and *ww*?
-
-
+2.  If this population was in Hardy-Weinberg equilibrium, what would be the frequencies of the possible genotypes *AA*, *Aw* and *ww*?
