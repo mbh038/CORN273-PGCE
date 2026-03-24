@@ -7,11 +7,12 @@ book:
   author: "Michael Hunt"
   chapters:
     - index.qmd
-    - notebooks/speciation/speciation-lesson.qmd
+    - notebooks/speciation/speciation-presentation.qmd
     - notebooks/darwins-lizards/darwins-lizards.qmd
     - notebooks/hardy-weinberg/hardy-weinberg.qmd
     - notebooks/genetic-drift.qmd
     - notebooks/PVA/PVA.qmd
+    - notebooks/PVA/PVA_grizzly.qmd
 # list your .qmd files here in order
 
 format:

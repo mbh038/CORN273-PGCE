@@ -10,123 +10,433 @@
     ]
   },
   {
-    "objectID": "notebooks/speciation/speciation-lesson.html",
-    "href": "notebooks/speciation/speciation-lesson.html",
-    "title": "2  Speciation",
+    "objectID": "notebooks/speciation/speciation-presentation.html",
+    "href": "notebooks/speciation/speciation-presentation.html",
+    "title": "2  Speciation: Mechanisms of Biodiversity Generation",
     "section": "",
-    "text": "2.1 Speciation: Mechanisms of Biodiversity Generation",
+    "text": "3 —",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Speciation</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Speciation: Mechanisms of Biodiversity Generation</span>"
     ]
   },
   {
-    "objectID": "notebooks/speciation/speciation-lesson.html#level-5-applied-zoology-conservation---2-hour-lesson-plan",
-    "href": "notebooks/speciation/speciation-lesson.html#level-5-applied-zoology-conservation---2-hour-lesson-plan",
-    "title": "2  Speciation",
-    "section": "2.2 Level 5 Applied Zoology & Conservation - 2 Hour Lesson Plan",
-    "text": "2.2 Level 5 Applied Zoology & Conservation - 2 Hour Lesson Plan\n\n2.2.1 Learning Objectives\nBy the end of this session, students will be able to:\n\nDefine speciation and explain its role in generating biodiversity/\nDistinguish between allopatric, sympatric, parapatric, and peripatric speciation/\nIdentify geographic and reproductive barriers that facilitate speciation/\nApply speciation concepts to real-world conservation scenarios\nEvaluate evidence for different/ speciation mechanisms in case studies /",
+    "objectID": "notebooks/speciation/speciation-presentation.html#learning-objectives",
+    "href": "notebooks/speciation/speciation-presentation.html#learning-objectives",
+    "title": "2  Speciation: Mechanisms of Biodiversity Generation",
+    "section": "9.1 Learning Objectives",
+    "text": "9.1 Learning Objectives\nBy the end of this session, you will be able to:\n\nDefine speciation and explain its role in generating biodiversity\nDistinguish between allopatric, sympatric, parapatric, and peripatric speciation\nIdentify geographic and reproductive barriers that facilitate speciation\nApply speciation concepts to real-world conservation scenarios\nEvaluate evidence for different speciation mechanisms in case studies",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Speciation</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Speciation: Mechanisms of Biodiversity Generation</span>"
     ]
   },
   {
-    "objectID": "notebooks/speciation/speciation-lesson.html#part-1-introduction-core-concepts-30-minutes",
-    "href": "notebooks/speciation/speciation-lesson.html#part-1-introduction-core-concepts-30-minutes",
-    "title": "2  Speciation",
-    "section": "2.3 PART 1: Introduction & Core Concepts (30 minutes)",
-    "text": "2.3 PART 1: Introduction & Core Concepts (30 minutes)\n\n2.3.1 Opening Hook (5 minutes)\nDiscussion Question: “We’ve established that biodiversity supports ecosystem resilience. But where does this diversity come from? How do we get ~10 million species from common ancestors?”\n\n\n2.3.2 What is Speciation? (10 minutes)\nDefinition: The evolutionary process by which populations evolve to become distinct species.\nKey Concept - The Biological Species Concept (BSC) - Species = groups of interbreeding natural populations that are reproductively isolated from other such groups\nLimitations to discuss:\n\nAsexual organisms\nRing species eg Ensatina salamanders in California - like Chinese whispers\nChronospecies (fossils)\nMicroorganisms with horizontal gene transfer\n\nCritical Requirements for Speciation:\n\nReproductive isolation (reduced gene flow)\nGenetic divergence (populations accumulate different mutations)\nTime (typically thousands to millions of years)\n\n\n\n2.3.3 The Speciation Continuum (15 minutes)\nImportant Framework: Speciation is a process, not an event. Populations exist on a continuum:\nPanmixia → Population structure → Subspecies → Incipient species → Good species\n(Complete gene flow) ←――――――――――――――――――――――――――――→ (Complete isolation)\nInteractive Activity: Place these examples on the continuum\n\nHerring gulls (Larus argentatus)\nring species - Ensatina salamanders in California\nPolar bears and grizzly bears (fertile hybrids possible)\nLions and tigers (hybrids usually sterile)\nEuropean and American robins (different genera, no interbreeding)\n\nDiscussion point:\nWhy is this continuum important for conservation? (Hint: ESUs - Evolutionarily Significant Units)",
+    "objectID": "notebooks/speciation/speciation-presentation.html#opening-question",
+    "href": "notebooks/speciation/speciation-presentation.html#opening-question",
+    "title": "2  Speciation: Mechanisms of Biodiversity Generation",
+    "section": "9.2 Opening Question",
+    "text": "9.2 Opening Question\n\n\n\n\n\n\nWhere Does Biodiversity Come From?\n\n\n\nWe’ve established that biodiversity supports ecosystem resilience and function.\nBut how do we get ~10 million species from common ancestors?",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Speciation</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Speciation: Mechanisms of Biodiversity Generation</span>"
     ]
   },
   {
-    "objectID": "notebooks/speciation/speciation-lesson.html#part-2-geographic-modes-of-speciation-40-minutes",
-    "href": "notebooks/speciation/speciation-lesson.html#part-2-geographic-modes-of-speciation-40-minutes",
-    "title": "2  Speciation",
-    "section": "2.4 PART 2: Geographic Modes of Speciation (40 minutes)",
-    "text": "2.4 PART 2: Geographic Modes of Speciation (40 minutes)\n\n2.4.1 1. Allopatric Speciation (15 minutes)\nDefinition: Speciation occurring when populations are geographically separated\nClassic Model:\n\nContinuous population → geographic barrier arises\nGene flow ceases between populations\nPopulations diverge through drift, different selection pressures, different mutations\nReproductive isolation evolves (often as byproduct)\nEven if barrier removed, populations no longer interbreed\n\nExamples to Discuss:\nExample A - Darwin’s Finches (Galápagos)\n\n18 species evolved from single colonizing species\nIsland isolation + different ecological niches\nDivergence in beak morphology related to food sources\nSome islands have multiple species (secondary contact)\n\nExample B - Grand Canyon Squirrels\n\nKaibab squirrel (north rim) vs. Abert’s squirrel (south rim)\nSeparated ~5 million years ago\nDistinct colour patterns, slight size differences\nStatus: subspecies or full species? (Debated - demonstrates continuum!)\n\nConservation Relevance:\n\nHabitat fragmentation can initiate speciation processes\nBut modern fragmentation too rapid for adaptation\nCreates isolated populations vulnerable to extinction\n\nStudent Exercise 1 (5 min): The Isthmus of Panama formed ~3 million years ago, separating Caribbean and Pacific populations of marine organisms. Predict what factors would influence whether sister species on either side show complete reproductive isolation today.\n\n\n2.4.2 2. Peripatric Speciation (8 minutes)\nDefinition: Special case of allopatric speciation where a small population at the edge of the range becomes isolated\nKey Mechanism - Founder Effect:\n\nSmall population = reduced genetic diversity\nGenetic drift more powerful in small populations\nRapid divergence possible\n\nExample - Hawaiian Drosophila:\n\n~1,000 species evolved from 1-2 founding species\nIsland hopping creates serial founder events\nSome species restricted to single volcanic cone\nFastest known rates of speciation in animals\n\nWhy Different from Standard Allopatric?\n\nAsymmetric process (small vs. large population)\nGreater role for drift\nPotentially faster\n\n\n\n2.4.3 3. Parapatric Speciation (8 minutes)\nDefinition: Speciation occurring along an environmental gradient where populations are adjacent but gene flow is reduced (not eliminated)\nKey Feature: No complete geographic barrier, but selection against migrants or hybrids\nExample - Grass on Mine Tailings (Anthoxanthum odoratum):\n\nGrasses evolved heavy metal tolerance on contaminated soil\nDistinct populations within metres of each other\nSome gene flow occurs but selection is strong\nFlowering time divergence reduces gene flow further\n\nExample - Alpine-Lowland Divergence:\n\nMany examples in mountain systems\nAltitudinal gradients create different selection pressures\nLimited gene flow due to adaptation to local conditions\n\nDiscussion: What level of gene flow prevents parapatric speciation? (Theoretical threshold: ~1 migrant per generation can homogenize populations)\n\n\n2.4.4 4. Sympatric Speciation (9 minutes)\nDefinition: Speciation within a single population in the same geographic area\nControversial Because: Gene flow should homogenize the population\nMechanisms That Make It Possible:\nA. Polyploidy (especially in plants)\n\nInstant reproductive isolation\nAutopolyploidy: chromosome doubling within species\nAllopolyploidy: hybridization + chromosome doubling\n~50-70% of flowering plants have polyploidy in their history\n\nB. Disruptive Selection + Assortative Mating\n\nStrong selection for extreme phenotypes\nIndividuals preferentially mate with similar phenotypes\nReduces gene flow between emerging groups\n\nExample - Cichlid Fishes (African Lakes):\n\nHundreds of species in single lakes (e.g., Lake Victoria: ~500 species)\nEvidence for in-situ speciation\nDivergence in colour, morphology, feeding ecology\nMate choice based on colouration (assortative mating)\nDebate: truly sympatric or microallopatric?\n\nExample - Apple Maggot Fly (Rhagoletis pomonella):\n\nOriginally fed on hawthorn\n~150 years ago, some shifted to introduced apples\nHost plant choice linked to mating site\nBehavioral isolation emerging\n“Speciation in action”",
+    "objectID": "notebooks/speciation/speciation-presentation.html#what-is-speciation",
+    "href": "notebooks/speciation/speciation-presentation.html#what-is-speciation",
+    "title": "2  Speciation: Mechanisms of Biodiversity Generation",
+    "section": "9.3 What is Speciation?",
+    "text": "9.3 What is Speciation?\n\n\n\n\n\n\nDefinition\n\n\n\nSpeciation: The evolutionary process by which populations evolve to become distinct species\n\n\nCritical Requirements:\n\nReproductive isolation (reduced gene flow)\nGenetic divergence (populations accumulate different mutations)\nTime (typically thousands to millions of years)",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Speciation</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Speciation: Mechanisms of Biodiversity Generation</span>"
     ]
   },
   {
-    "objectID": "notebooks/speciation/speciation-lesson.html#break-10-minutes",
-    "href": "notebooks/speciation/speciation-lesson.html#break-10-minutes",
-    "title": "2  Speciation",
-    "section": "2.5 BREAK (10 minutes)",
-    "text": "2.5 BREAK (10 minutes)",
+    "objectID": "notebooks/speciation/speciation-presentation.html#the-biological-species-concept",
+    "href": "notebooks/speciation/speciation-presentation.html#the-biological-species-concept",
+    "title": "2  Speciation: Mechanisms of Biodiversity Generation",
+    "section": "9.4 The Biological Species Concept",
+    "text": "9.4 The Biological Species Concept\n\n\n\n\n\n\nNote\n\n\n\nSpecies: Groups of interbreeding natural populations that are reproductively isolated from other such groups\n\n\nLimitations to Consider:\n\nAsexual organisms (no interbreeding)\nRing species (continuous variation)\nChronospecies (fossils - temporal separation)\nMicroorganisms with horizontal gene transfer\n\n\nNo single species concept works for all organisms!\n\n\nRing species: where a species is divided by some geographical barrier into two close but separate populations that can interbreed. In turn, the one to the east (say ) is separated from another close by population with which it can also interbreed. This process of variation goes on continuously around a ring of locations until a population finds itself next to the original population. By now, differences between adjacent populations have accumulated to the point where these two populations cannot interbreed and are effectively two different species.\nChrono species - Where a evolutionary change occurs over time within a single lineage, so that a species at one part of this lineage is very different from one at another, without the lineage having split into two diverging branches.\nHorizontal gene transfer This is where a bacterial organism transfers genetic material to another organism that is not its offspring. By this process bacteria are able to respond and adapt to their environment much more rapidly than is possible by the process of mutation.",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Speciation</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Speciation: Mechanisms of Biodiversity Generation</span>"
     ]
   },
   {
-    "objectID": "notebooks/speciation/speciation-lesson.html#part-3-reproductive-barriers-25-minutes",
-    "href": "notebooks/speciation/speciation-lesson.html#part-3-reproductive-barriers-25-minutes",
-    "title": "2  Speciation",
-    "section": "2.6 PART 3: Reproductive Barriers (25 minutes)",
-    "text": "2.6 PART 3: Reproductive Barriers (25 minutes)\n\n2.6.1 Framework: Prezygotic vs. Postzygotic Barriers (5 minutes)\nPrezygotic (prevent mating or fertilization):\n\nHabitat/ecological isolation\nTemporal isolation\nBehavioral isolation\nMechanical isolation\nGametic isolation\n\nPostzygotic (reduce hybrid fitness):\n\nHybrid inviability\nHybrid sterility\nHybrid breakdown\n\nQuestion for Class: Which type is “better” from an evolutionary perspective? Why? (Answer: Prezygotic - less wasted reproductive effort)\n\n\n2.6.2 Interactive Exercise: Barrier Identification (20 minutes)\nActivity: Students work in pairs to identify barriers in case studies\nCase Study 1 - European Fire-bellied Toad and Yellow-bellied Toad:\n\nNarrow hybrid zone (~10 km wide) has persisted for thousands of years\nHybrids are viable but slightly less fit\nWhat maintains this zone?\nWhat barriers are operating?\n\nCase Study 2 - Eastern and Western Meadowlarks (North America):\n\nBroadly overlapping ranges\nVery similar appearance\nDifferent songs\nRarely hybridize\nWhat type of isolation?\nWhat might have initiated divergence?\n\nCase Study 3 - Blue Mussels (Mytilus spp.):\n\nTwo species overlap on Atlantic coasts\nSpawn at different temperatures\nHybrids occur but are selected against in intermediate habitats\nWhat barriers? What mode of speciation?\n\nCase Study 4 - Palms on Lord Howe Island:\n\nHowea belmoreana (acid volcanic soil) and H. forsteriana (calcareous coralderived soil)\nSeparated by ~100m in places\nFlower at different times (5 weeks apart)\nLikely sympatric speciation\nWhat barriers? Why didn’t gene flow prevent divergence?\n\nDiscussion Points:\n\nMultiple barriers usually accumulate\nReinforcement: selection strengthens prezygotic barriers in sympatry\nCascade effect: one barrier can facilitate others",
+    "objectID": "notebooks/speciation/speciation-presentation.html#the-speciation-continuum",
+    "href": "notebooks/speciation/speciation-presentation.html#the-speciation-continuum",
+    "title": "2  Speciation: Mechanisms of Biodiversity Generation",
+    "section": "9.5 The Speciation Continuum",
+    "text": "9.5 The Speciation Continuum\n\n\n\n\n\n\nKey Concept\n\n\n\nSpeciation is a PROCESS, not an event\n\n\nPanmixia → Population structure → Subspecies → Incipient species → Good species\nComplete gene flow ←―――――→ Complete isolation\n\n\n\n\n\n\n\nTip\n\n\n\nDiscussion: Why is this continuum important for conservation?\nHint: Evolutionarily Significant Units (ESUs)\n\n\n\n\nAn evolutionary significant unit (ESU) is a population or group of populations that is considered genetically and evolutionarily distinct enough to warrant separate conservation efforts. ESUs are identified by their historical isolation and unique evolutionary trajectory, possessing unique genetic diversity that requires protection. They are crucial for conservation because they allow for management actions to be taken for specific populations, not just entire species.",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Speciation</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Speciation: Mechanisms of Biodiversity Generation</span>"
     ]
   },
   {
-    "objectID": "notebooks/speciation/speciation-lesson.html#part-4-time-scales-and-rates-15-minutes",
-    "href": "notebooks/speciation/speciation-lesson.html#part-4-time-scales-and-rates-15-minutes",
-    "title": "2  Speciation",
-    "section": "2.7 PART 4: Time Scales and Rates (15 minutes)",
-    "text": "2.7 PART 4: Time Scales and Rates (15 minutes)\n\n2.7.1 How Long Does Speciation Take? (8 minutes)\nShort Answer: It varies enormously!\nFast End:\n\nSome cichlids: &lt;100,000 years\nPolyploid plants: instantaneous reproductive isolation (but still need ecological divergence)\nHawaiian Drosophila: average ~500,000 years per species\n\nSlow End:\n\nMany marine invertebrates: 2-10 million years\nSome “living fossils” show little change over tens of millions of years\n\nFactors Affecting Rate:\n\nGeneration time\nPopulation size (genetic drift)\nStrength of selection\nGeographic opportunity (islands, fragmentation)\nReproductive system (polyploidy, sexual selection)\n\n\n\n2.7.2 Student Challenge Question (7 minutes)\nThe Speciation Puzzle:\n“Imagine two populations of beetles that become separated by a new river. After 1 million years, you bring them back together in the lab and find they produce healthy, fertile offspring. Are they different species?”\nFollow-up questions:\n\nWhat additional information would you want?\nDoes it matter if they would interbreed in nature?\nHow does this relate to the speciation continuum?\nWhat are the conservation implications?\n\nKey Teaching Point: Species concepts are human constructs trying to categorize a continuous natural process. Different concepts are useful in different contexts (taxonomy, conservation, ecology).",
+    "objectID": "notebooks/speciation/speciation-presentation.html#interactive-activity",
+    "href": "notebooks/speciation/speciation-presentation.html#interactive-activity",
+    "title": "2  Speciation: Mechanisms of Biodiversity Generation",
+    "section": "9.6 Interactive Activity",
+    "text": "9.6 Interactive Activity\n\n9.6.1 Place these examples on the continuum\n\nHerring gulls (ring species)\nEnsatina salamanders in California (ring species?)\nPolar bears and grizzly bears (fertile hybrids possible)\nLions and tigers (hybrids usually sterile)\nEuropean and American robins (different genera)\n\n\nThe Ensatina (Ensatina eschscholtzii) salamander has been described a ring species complex in the mountains that surround the Californian Grand Central Valley. In a hoseshoe around this valley, 19 subspecies can each interbreed with the subspecies next to them on the horseshoe, but the subspecies on the western and eastern ends of the horseshoe cannot do so. As such, the species complex can be regarded as an example of incipient speciation.\nNote that some authors, notably Jerry Coyne, have argued that ‘ring species’ is an unnecessary term - they are simply instances of parapatric speciation, where speciation occurs between adjacent populations along a gradient.\nPolar bears and grizzly bears are closer on the species continuum than lions and tigers.\nThe two bear populations can interbreed in the wild. Although this does not happen very often, it is becoming more frequent as climate change forces grizzly bears north into arctic territories. Their offspring are also sometimes viable, particularly females, so that there can be gene flow between the two. Further, genetic analysis shows that polar bears and grizzly bears diverged only a few hundred thousand years ago. Hence thw two are regarded as an example of incipient speciation, meaning that they are populations in the process of diverging but still genetially compatible enough to produce ferticle offspring.\nLions and tigers on the other hand are more distantly related. They share the same genus Panthera so that they can in principle produce offspring, but there is (now) almost no overlap of their geographic ranges, with lions almost exclusively in Africa and tigers exclusiely in Asia. Interbreeding only occurs in captivity and the offspring (ligers and tigons) are mostly sterile, which is a significant barrier to gene flow.\nHence, lions and tigers are at a more advanced stage of speciation than are polar bears and grizzly bears.\nEuropean (Erithacus rubecula) and American (Turdus migratorius) robins are not closely related. They are in different families and are separated by an ocean and by millions of years of evolution since they shared a common ancestor. Their similar appearance is an example of convergent evolution, whereby different species independently evolve similar traits in response to having to adapt to similar environmental niches.\nHence on the speciation continuum from complete gene flow to complete isolation, the two ring species would be towards but not fully at the complete gene flow end, then would come polar bears and grzzlys, then lions and tigers and finally at the complete isolation end would come European and American robins.",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Speciation</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Speciation: Mechanisms of Biodiversity Generation</span>"
     ]
   },
   {
-    "objectID": "notebooks/speciation/speciation-lesson.html#part-5-conservation-applications-15-minutes",
-    "href": "notebooks/speciation/speciation-lesson.html#part-5-conservation-applications-15-minutes",
-    "title": "2  Speciation",
-    "section": "2.8 PART 5: Conservation Applications (15 minutes)",
-    "text": "2.8 PART 5: Conservation Applications (15 minutes)\n\n2.8.1 Why Does Understanding Speciation Matter for Conservation? (5 minutes)\nDiscussion points:\n\nDefining units of conservation: What should we protect? - Species? Subspecies? ESUs? Populations?\nHabitat fragmentation: Does it increase or decrease diversity?\n\nShort term: reduces diversity (extinctions)\nLong term: could increase diversity (speciation)\nBut: current fragmentation too rapid for speciation\n\nHybrid zones: To protect or not?\n\nSource of genetic diversity?\nOr dilution of distinct gene pools?\n\nIsland conservation: Special considerations\n\nHigh endemism (unique species)\nProducts of isolation\nVulnerable to invasive species\n\n\n\n\n2.8.2 Case Study Discussion: The Red Wolf Problem (10 minutes)\nBackground:\n\nRed wolf (Canis rufus) declared extinct in wild (1980), captive breeding program started\nRecently reintroduced to North Carolina in US\nGenetic studies suggest red wolves might be hybrids between gray wolves and coyotes\nDebate: Is the red wolf a distinct species or an admixed population?\n\nQuestions for Student Groups:\n\nIf red wolves are of hybrid origin, should we still conserve them?\nHow does the speciation continuum concept apply here?\nWhat criteria should we use for conservation decisions?\nDoes evolutionary history matter, or just current distinctiveness?\n\nNo Right Answer - this is an active debate in conservation biology!\nTeaching Point: Conservation often operates in the “gray areas” of speciation. Need clear frameworks for decision-making that consider:\n\nAdaptive uniqueness\nEcological role\nEvolutionary potential\nLegal/social factors",
+    "objectID": "notebooks/speciation/speciation-presentation.html#geographic-modes-of-speciation",
+    "href": "notebooks/speciation/speciation-presentation.html#geographic-modes-of-speciation",
+    "title": "2  Speciation: Mechanisms of Biodiversity Generation",
+    "section": "9.7 Geographic Modes of Speciation",
+    "text": "9.7 Geographic Modes of Speciation\n\n\nAllopatric\nComplete geographic separation\nParapatric\nAdjacent populations along gradient\n\nPeripatric\nSmall isolated population at range edge\nSympatric\nWithin same geographic area",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Speciation</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Speciation: Mechanisms of Biodiversity Generation</span>"
     ]
   },
   {
-    "objectID": "notebooks/speciation/speciation-lesson.html#part-6-synthesis-looking-forward-10-minutes",
-    "href": "notebooks/speciation/speciation-lesson.html#part-6-synthesis-looking-forward-10-minutes",
-    "title": "2  Speciation",
-    "section": "2.9 PART 6: Synthesis & Looking Forward (10 minutes)",
-    "text": "2.9 PART 6: Synthesis & Looking Forward (10 minutes)\n\n2.9.1 Connecting to Future Content (5 minutes)\nPreview: “We’ll next explore the genetic mechanisms underlying speciation”:\n\nWhat genes cause reproductive isolation?\nHow many genetic changes are needed?\nRole of chromosome rearrangements\nGenomic islands of divergence\nSpeciation genes\n\nBridge to Community Ecology:\n\nSpeciation creates the diversity we measure\nRates of speciation vs. extinction determine community diversity\nEcological opportunity can drive adaptive radiation\nPriority effects in community assembly\n\n\n\n2.9.2 Concept Check Questions (5 minutes)\nQuick Quiz (can be done as clickers, show-of-hands, or written):\n\nWhich speciation mode requires complete geographic separation?\nTrue/False: Sympatric speciation is impossible in animals.\nName two prezygotic barriers.\nWhy are island systems hotspots of speciation?\nCan speciation be reversed?\n\nAnswers:\n\nAllopatric\nFalse (cichlids, apple maggot fly, though debated)\nAny two: habitat, temporal, behavioral, mechanical, gametic\nGeographic isolation + ecological opportunity + often small populations\nYes! If gene flow resumes before complete isolation (e.g., “despeciation” in Darwin’s finches during drought)",
+    "objectID": "notebooks/speciation/speciation-presentation.html#allopatric-speciation",
+    "href": "notebooks/speciation/speciation-presentation.html#allopatric-speciation",
+    "title": "2  Speciation: Mechanisms of Biodiversity Generation",
+    "section": "9.8 Allopatric Speciation",
+    "text": "9.8 Allopatric Speciation\n\n\n\n\n\n\nNote\n\n\n\nDefinition: Speciation occurring when populations are geographically separated. Reproductive isolation can then arise by natural selection, genetic drift or sexual selection in the isolated populations.\n\n\nClassic Model:\n\nContinuous population → geographic barrier arises\nGene flow ceases between populations\nPopulations diverge (drift, selection, mutations)\nReproductive isolation evolves (often as byproduct)\nPopulations can no longer interbreed even if reunited\n\n\nMost common mode of speciation",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Speciation</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Speciation: Mechanisms of Biodiversity Generation</span>"
     ]
   },
   {
-    "objectID": "notebooks/speciation/speciation-lesson.html#take-home-problem-set",
-    "href": "notebooks/speciation/speciation-lesson.html#take-home-problem-set",
-    "title": "2  Speciation",
-    "section": "2.10 Take-Home Problem Set",
-    "text": "2.10 Take-Home Problem Set\nDue next session - to be discussed in small groups:\nProblem 1: You discover a new island with a radiation of 15 bird species, all descended from a single colonist 2 million years ago. Describe what patterns you might expect in: (a) geographic distributions, (b) morphological traits, (c) genetic relationships.\nProblem 2: Propose an experiment to test whether two similar butterfly populations represent incipient species. What would you measure? What results would support the hypothesis that they are diverging?\nProblem 3: Climate change is causing many species to shift their ranges poleward. How might this affect: (a) existing hybrid zones, (b) opportunities for speciation, (c) conservation of endemic species?\nProblem 4: The British Isles were recolonized after the last ice age (~10,000 years ago). Why don’t we see extensive speciation events in British fauna compared to, say, African rift lake fishes?",
+    "objectID": "notebooks/speciation/speciation-presentation.html#example-darwins-finches",
+    "href": "notebooks/speciation/speciation-presentation.html#example-darwins-finches",
+    "title": "2  Speciation: Mechanisms of Biodiversity Generation",
+    "section": "9.9 Example: Darwin’s Finches",
+    "text": "9.9 Example: Darwin’s Finches\n\n\n\nExamples of Darwin’s finches or Galapagos finches. Note the stark variation in beak sizes among the four species. Drawn by John Gould\n\n\n\n\n\n\n\n\nGalápagos Islands\n\n\n\n\n18 species evolved from single colonizing species\nIsland isolation + different ecological niches\nDivergence in beak morphology related to food sources\nSome islands have multiple species (secondary contact)\n\n\n\nKey insight: Geographic isolation provides opportunity for ecological specialization",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Speciation</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Speciation: Mechanisms of Biodiversity Generation</span>"
     ]
   },
   {
-    "objectID": "notebooks/speciation/speciation-lesson.html#additional-resources-for-students",
-    "href": "notebooks/speciation/speciation-lesson.html#additional-resources-for-students",
-    "title": "2  Speciation",
-    "section": "2.11 Additional Resources for Students",
-    "text": "2.11 Additional Resources for Students\nKey Papers (optional, for interested students):\n\nCoyne & Orr (2004) - Speciation (textbook, comprehensive)\nMayr (1942) - Systematics and the Origin of Species (historical context)\nBolnick & Fitzpatrick (2007) - “Sympatric speciation: models and empirical evidence” (review)\n\nOnline Resources:\n\nUCMP Berkeley Speciation Tutorial\nUnderstanding Evolution (UC Berkeley)\nTree of Life Web Project\n\nDocumentary Recommendation:\n\nDavid Attenborough’s “First Life” - includes examples of adaptive radiation",
+    "objectID": "notebooks/speciation/speciation-presentation.html#example-grand-canyon-squirrels",
+    "href": "notebooks/speciation/speciation-presentation.html#example-grand-canyon-squirrels",
+    "title": "2  Speciation: Mechanisms of Biodiversity Generation",
+    "section": "9.10 Example: Grand Canyon Squirrels",
+    "text": "9.10 Example: Grand Canyon Squirrels\n\n9.10.1 Kaibab vs. Abert’s Squirrels\n\n\n\n\n\nSeparated by Grand Canyon ~5 million years ago\nNorth rim: Kaibab squirrel\nSouth rim: Abert’s squirrel\nDistinct colour patterns, slight size differences\nStatus: Subspecies or full species? (Debated!)\n\n\n\nDemonstrates the speciation continuum in action",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Speciation</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Speciation: Mechanisms of Biodiversity Generation</span>"
     ]
   },
   {
-    "objectID": "notebooks/speciation/speciation-lesson.html#notes-for-instructor",
-    "href": "notebooks/speciation/speciation-lesson.html#notes-for-instructor",
-    "title": "2  Speciation",
-    "section": "2.12 Notes for Instructor",
-    "text": "2.12 Notes for Instructor\nAnticipated Student Difficulties:\n\nConfusing isolation with speciation: Emphasize that isolation is necessary but not sufficient\nBinary thinking about species: Keep returning to the continuum concept\nTimescales: Help students grasp deep time - use analogies\nAssuming all speciation is allopatric: Emphasize diversity of mechanisms\n\nExtensions if Time Permits:\n\nRing species in detail (Ensatina, Larus gulls)\nReinforcement and character displacement\nRole of sexual selection in speciation\nHybrid speciation\nAncient vs. recent polyploidy\n\nAdjustments for Different Levels:\n\nIf students struggle: focus primarily on allopatric speciation, use more concrete examples\nIf students are advanced: introduce genetics earlier, discuss speciation gene research\n\nAssessment Opportunities:\n\nThis material lends itself well to exam questions requiring application\nCase studies for essays\nPractical sessions examining hybrid zones or ring species data",
+    "objectID": "notebooks/speciation/speciation-presentation.html#conservation-relevance",
+    "href": "notebooks/speciation/speciation-presentation.html#conservation-relevance",
+    "title": "2  Speciation: Mechanisms of Biodiversity Generation",
+    "section": "9.11 Conservation Relevance",
+    "text": "9.11 Conservation Relevance\n\n9.11.1 Habitat Fragmentation\n\n\n\n\n\n\nWarning\n\n\n\nCan initiate speciation processes…\nBUT modern fragmentation is too rapid for adaptation\n\n\nResult:\n\nCreates isolated populations vulnerable to extinction\nReduced genetic diversity\nLimited gene flow\nDemographic stochasticity\n\nTimescale matters: evolutionary time vs. ecological time\n\nDemographic stochasticity refers to the impact that deaths of individuals can have on the viability of small populations.",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Speciation</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Speciation: Mechanisms of Biodiversity Generation</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/speciation/speciation-presentation.html#exercise",
+    "href": "notebooks/speciation/speciation-presentation.html#exercise",
+    "title": "2  Speciation: Mechanisms of Biodiversity Generation",
+    "section": "9.12 Exercise",
+    "text": "9.12 Exercise\n\n\n\n\n\n\nThe Isthmus of Panama\n\n\n\nThe Isthmus of Panama formed ~3 million years ago, separating Caribbean and Pacific populations of marine organisms.\nPredict: What factors would influence whether sister species on either side show complete reproductive isolation today?\n5 minutes - discuss with neighbour\n\n\n\nAssuming that the isthmus prevented gene flow between marine species on each side of it, reproductive isolation today would most likely occur if significant genetic divergence had taken place in the 3 million years since the isthmus formed. This would be encouraged if the biotic and abiotic environments differed significantly on each side of the isthmus, so that populations on each side that derived from the same original species would evolve differently to better fill their respective niches.\nThe Kaibab / Abert’s squirrel case at the Grand Canyon shows that speciation, or at least something close to it, can occur if a population is divided into two and left for 5 million years, even if the environments are similar for each sub population. Thus the 3 million years since the isthmus was formed could be enough time for full reproductive isolation to arise, so long as the rate of divergence is sufficient.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Speciation: Mechanisms of Biodiversity Generation</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/speciation/speciation-presentation.html#peripatric-speciation",
+    "href": "notebooks/speciation/speciation-presentation.html#peripatric-speciation",
+    "title": "2  Speciation: Mechanisms of Biodiversity Generation",
+    "section": "9.13 Peripatric Speciation",
+    "text": "9.13 Peripatric Speciation\n\n\n\n\n\n\nNote\n\n\n\nDefinition: Special case of allopatric speciation where a small population at the edge of the range becomes isolated\n\n\nKey Mechanism: Founder Effect\n\nSmall population implies reduced genetic diversity\nGenetic drift more powerful in small populations\nRapid divergence possible\n\nWhy Different from Standard Allopatric?\n\nAsymmetric process (small vs. large population)\nGreater role for drift\nPotentially faster speciation\n\n\nGenetic drift",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Speciation: Mechanisms of Biodiversity Generation</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/speciation/speciation-presentation.html#example-hawaiian-drosophila",
+    "href": "notebooks/speciation/speciation-presentation.html#example-hawaiian-drosophila",
+    "title": "2  Speciation: Mechanisms of Biodiversity Generation",
+    "section": "9.14 Example: Hawaiian Drosophila",
+    "text": "9.14 Example: Hawaiian Drosophila\n\n\n\n\n\n\nIsland Hopping Speciation\n\n\n\n\n~1,000 species evolved from 1-2 founding species\nIsland hopping creates serial founder events\nSome species restricted to single volcanic cone\nFastest known rates of speciation in animals\n\n\n\nHawaiian Islands: A natural laboratory for studying speciation",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Speciation: Mechanisms of Biodiversity Generation</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/speciation/speciation-presentation.html#parapatric-speciation",
+    "href": "notebooks/speciation/speciation-presentation.html#parapatric-speciation",
+    "title": "2  Speciation: Mechanisms of Biodiversity Generation",
+    "section": "9.15 Parapatric Speciation",
+    "text": "9.15 Parapatric Speciation\n\n\n\n\n\n\nNote\n\n\n\nDefinition: Speciation along an environmental gradient where populations are adjacent but not completely intermingled and gene flow is reduced, though not eliminated.\n\n\nKey Feature: No complete geographic barrier, but selection against migrants or hybrids arising from an environmental gradient giving rise to selection pressures. If strong enough then selection can overcome gene flow.\nCritical Question: What level of gene flow prevents parapatric speciation? : it depends on the degree of selection pressure.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Speciation: Mechanisms of Biodiversity Generation</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/speciation/speciation-presentation.html#example-grass-on-mine-tailings",
+    "href": "notebooks/speciation/speciation-presentation.html#example-grass-on-mine-tailings",
+    "title": "2  Speciation: Mechanisms of Biodiversity Generation",
+    "section": "9.16 Example: Grass on Mine Tailings",
+    "text": "9.16 Example: Grass on Mine Tailings\n\n\n\n\n\n\nAnthoxanthum odoratum (Sweet vernal grass)\n\n\n\n\nGrasses evolved heavy metal tolerance on contaminated soil\nDistinct populations within metres of each other\nSome gene flow occurs but selection is strong\nFlowering time divergence reduces gene flow further\n\n\n\nKey insight: Strong selection can overcome gene flow\n\nSee for example: Antonovics, J. (2006) ‘Evolution in closely adjacent plant populations X: long-term persistence of prereproductive isolation at a mine boundary’, Heredity, 97(1), pp. 33–37. Available at: https://doi.org/10.1038/sj.hdy.6800835.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Speciation: Mechanisms of Biodiversity Generation</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/speciation/speciation-presentation.html#sympatric-speciation",
+    "href": "notebooks/speciation/speciation-presentation.html#sympatric-speciation",
+    "title": "2  Speciation: Mechanisms of Biodiversity Generation",
+    "section": "9.17 Sympatric Speciation",
+    "text": "9.17 Sympatric Speciation\n\n\n\n\n\n\nNote\n\n\n\nDefinition: Speciation within a single population in the same geographic area\n\n\n\n\n\n\n\n\nWhy Controversial?\n\n\n\nGene flow should homogenize the population\n\n\nWhat Makes It Possible?\n\nPolyploidy (especially in plants) - instant reproductive isolation\nDisruptive selection + Assortative mating",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Speciation: Mechanisms of Biodiversity Generation</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/speciation/speciation-presentation.html#polyploidy",
+    "href": "notebooks/speciation/speciation-presentation.html#polyploidy",
+    "title": "2  Speciation: Mechanisms of Biodiversity Generation",
+    "section": "9.18 Polyploidy",
+    "text": "9.18 Polyploidy\n\n\nAutopolyploidy\nChromosome doubling within species\n\nAllopolyploidy\nHybridization + chromosome doubling\n\n\n\n~50-70% of flowering plants have polyploidy in their evolutionary history\nResult: Instant reproductive isolation from parent species",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Speciation: Mechanisms of Biodiversity Generation</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/speciation/speciation-presentation.html#example-african-cichlid-fishes",
+    "href": "notebooks/speciation/speciation-presentation.html#example-african-cichlid-fishes",
+    "title": "2  Speciation: Mechanisms of Biodiversity Generation",
+    "section": "9.19 Example: African Cichlid Fishes",
+    "text": "9.19 Example: African Cichlid Fishes\n\n\n\n\n\n\nLakes Tanganyika, Malawi and Victoria\n\n\n\nSee The Cichlid fishes of Lake Malawi\n\n~500 species in a single lake\nEvidence for in-situ speciation\nDivergence in colour, morphology, feeding ecology\nMate choice based on colouration (assortative mating)\nDebate: Truly sympatric or microallopatric?\n\n\n\nFastest vertebrate radiation known",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Speciation: Mechanisms of Biodiversity Generation</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/speciation/speciation-presentation.html#example-apple-maggot-fly",
+    "href": "notebooks/speciation/speciation-presentation.html#example-apple-maggot-fly",
+    "title": "2  Speciation: Mechanisms of Biodiversity Generation",
+    "section": "9.20 Example: Apple Maggot Fly",
+    "text": "9.20 Example: Apple Maggot Fly\n\n\n\n\n\n\nRhagoletis pomonella - “Speciation in Action”\n\n\n\n\nOriginally fed on hawthorn\n~150 years ago, some shifted to introduced apples\nHost plant choice linked to mating site\nBehavioral isolation emerging\nObservable divergence in our lifetimes!\n\n\n\nImportant: Shows speciation can be observed, not just inferred",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Speciation: Mechanisms of Biodiversity Generation</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/speciation/speciation-presentation.html#reproductive-barriers",
+    "href": "notebooks/speciation/speciation-presentation.html#reproductive-barriers",
+    "title": "2  Speciation: Mechanisms of Biodiversity Generation",
+    "section": "9.21 Reproductive Barriers",
+    "text": "9.21 Reproductive Barriers\n\n\nPrezygotic\nPrevent mating or fertilization\n\nHabitat isolation\nTemporal isolation\nBehavioral isolation\nMechanical isolation\nGametic isolation\n\n\nPostzygotic\nReduce hybrid fitness\n\nHybrid inviability\nHybrid sterility\nHybrid breakdown",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Speciation: Mechanisms of Biodiversity Generation</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/speciation/speciation-presentation.html#barrier-efficiency",
+    "href": "notebooks/speciation/speciation-presentation.html#barrier-efficiency",
+    "title": "2  Speciation: Mechanisms of Biodiversity Generation",
+    "section": "9.22 Barrier Efficiency",
+    "text": "9.22 Barrier Efficiency\n\n\n\n\n\n\nQuestion for Class:\n\n\n\nWhich type of barrier is “better” from an evolutionary perspective?\nPrezygotic or Postzygotic?\n\n\n\n\n\n\n\n\n\nNote\n\n\n\nAnswer: Prezygotic barriers\nWhy? Less wasted reproductive effort. No resources spent on inviable or sterile offspring.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Speciation: Mechanisms of Biodiversity Generation</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/speciation/speciation-presentation.html#interactive-exercise",
+    "href": "notebooks/speciation/speciation-presentation.html#interactive-exercise",
+    "title": "2  Speciation: Mechanisms of Biodiversity Generation",
+    "section": "9.23 Interactive Exercise",
+    "text": "9.23 Interactive Exercise\n\n9.23.1 Barrier Identification\nWork in pairs to identify barriers in the following case studies (20 minutes)\nFour Case Studies:\n\nEuropean Fire-bellied and Yellow-bellied Toad.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nleft: European fire-bellied toad Bombina bombina, right: Yellow-bellied toad B. variegata.\nThe eastern European fire-bellied toad(Bombina bombina) and the western European yellow-bellied toad (B. variegata) diverged from a common ancestor in the last glacial maximum, ~25,000 years ago. Their ranges meet in a long hybrid zone that is only about 6 km wide, with the eastern toad preferring the lowlands and the western European toad the uplands\n\nNarrow hybrid zone (~6 km wide) has persisted for thousands of years\nHybrids are viable but slightly less fit.\nWhat maintains this zone?\n\nWhat barriers are operating?\n\n\n\nEastern and Western Meadowlarks\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nleft: Eastern meadowlark, right: Western meadowlark. Similar appearance, different songs.\nEastern Sturnella magna and western S. neglecta meadowlarks are distinct species that look very similar, but their main differences are their songs and some minor plumage details. The eastern meadowlark has a simpler, whistled song, while the western meadowlark has a more complex, bubbly warble. The western meadowlark often has less white in its tail and fainter head markings than the eastern meadowlark.\n\nBroadly overlapping ranges across the midwestern USA\nVery similar appearance\nDifferent songs\nRarely hybridize\nWhat type of isolation?\nWhat might have initiated divergence?\n\n\n\nBlue Mussels (Mytilus spp.)\n\n\n\nTwo species overlap on Atlantic coasts\nSpawn at different temperatures\nHybrids occur but are selected against in intermediate habitats\nWhat barriers?\nWhat mode of speciation?\n\n\n\nPalms on Lord Howe Island\n\n\n\nHowea belmoreana (acid volcanic soil) and H. forsteriana (calcareous coralderived soil)\nSeparated by ~100m in places\nFlower at different times (5 weeks apart)\nLikely sympatric speciation\nWhat barriers?\nWhy didn’t gene flow prevent divergence?",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Speciation: Mechanisms of Biodiversity Generation</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/speciation/speciation-presentation.html#key-insights-reproductive-barriers",
+    "href": "notebooks/speciation/speciation-presentation.html#key-insights-reproductive-barriers",
+    "title": "2  Speciation: Mechanisms of Biodiversity Generation",
+    "section": "9.24 Key Insights: Reproductive Barriers",
+    "text": "9.24 Key Insights: Reproductive Barriers\n\n\nMultiple Barriers Usually Accumulate - Speciation rarely depends on a single barrier\nReinforcement - Selection strengthens prezygotic barriers in sympatry (when hybrids are less fit)\nCascade Effect - One barrier can facilitate evolution of others",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Speciation: Mechanisms of Biodiversity Generation</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/speciation/speciation-presentation.html#how-long-does-speciation-take",
+    "href": "notebooks/speciation/speciation-presentation.html#how-long-does-speciation-take",
+    "title": "2  Speciation: Mechanisms of Biodiversity Generation",
+    "section": "9.25 How Long Does Speciation Take?",
+    "text": "9.25 How Long Does Speciation Take?\n\n9.25.1 Short Answer: It varies enormously!\n\n\nFast End\n\nSome cichlids: &lt;100,000 years\nPolyploid plants: instantaneous (reproductive isolation)\nHawaiian Drosophila: ~500,000 years average\n\n\nSlow End\n\nMarine invertebrates: 2-10 million years\n“Living fossils”: little change over tens of millions of years",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Speciation: Mechanisms of Biodiversity Generation</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/speciation/speciation-presentation.html#factors-affecting-speciation-rate",
+    "href": "notebooks/speciation/speciation-presentation.html#factors-affecting-speciation-rate",
+    "title": "2  Speciation: Mechanisms of Biodiversity Generation",
+    "section": "9.26 Factors Affecting Speciation Rate",
+    "text": "9.26 Factors Affecting Speciation Rate\n\nGeneration time - shorter = faster evolution\nPopulation size - small populations = stronger drift\nStrength of selection - strong divergent selection accelerates divergence\nGeographic opportunity - islands, fragmentation\nReproductive system - polyploidy, sexual selection",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Speciation: Mechanisms of Biodiversity Generation</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/speciation/speciation-presentation.html#the-speciation-puzzle",
+    "href": "notebooks/speciation/speciation-presentation.html#the-speciation-puzzle",
+    "title": "2  Speciation: Mechanisms of Biodiversity Generation",
+    "section": "9.27 The Speciation Puzzle",
+    "text": "9.27 The Speciation Puzzle\n\n\n\n\n\n\nImportant\n\n\n\nImagine two populations of beetles that become separated by a new river. After 1 million years, you bring them back together in the lab and find they produce healthy, fertile offspring.\nAre they different species?\n\n\n\nFollow-up Questions:\n\nWhat additional information would you want?\nDoes it matter if they would interbreed in nature?\nHow does this relate to the speciation continuum?",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Speciation: Mechanisms of Biodiversity Generation</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/speciation/speciation-presentation.html#why-understanding-speciation-matters",
+    "href": "notebooks/speciation/speciation-presentation.html#why-understanding-speciation-matters",
+    "title": "2  Speciation: Mechanisms of Biodiversity Generation",
+    "section": "9.28 Why Understanding Speciation Matters",
+    "text": "9.28 Why Understanding Speciation Matters\n\n9.28.1 Conservation Applications\n\n\nDefining Units of Conservation - What should we protect? Species? Subspecies? ESUs? Populations?\nHabitat Fragmentation - Does it increase or decrease diversity?\n\nShort term: reduces diversity (extinctions)\nLong term: could increase diversity (speciation)\nReality: current fragmentation too rapid",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Speciation: Mechanisms of Biodiversity Generation</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/speciation/speciation-presentation.html#conservation-challenges",
+    "href": "notebooks/speciation/speciation-presentation.html#conservation-challenges",
+    "title": "2  Speciation: Mechanisms of Biodiversity Generation",
+    "section": "9.29 Conservation Challenges",
+    "text": "9.29 Conservation Challenges\n\n\n\n\n\n\n3. Hybrid Zones: To Protect or Not?\n\n\n\n\nSource of genetic diversity?\nOr dilution of distinct gene pools?\n\n\n\n\n\n\n\n\n\n4. Island Conservation\n\n\n\n\nHigh endemism (unique species)\nProducts of isolation\nVulnerable to invasive species",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Speciation: Mechanisms of Biodiversity Generation</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/speciation/speciation-presentation.html#case-study-the-red-wolf-problem",
+    "href": "notebooks/speciation/speciation-presentation.html#case-study-the-red-wolf-problem",
+    "title": "2  Speciation: Mechanisms of Biodiversity Generation",
+    "section": "9.30 Case Study: The Red Wolf Problem",
+    "text": "9.30 Case Study: The Red Wolf Problem\n\n\n\n\n\n\nBackground:\n\n\n\n\nRed wolf (Canis rufus) declared extinct in wild (1980)\nCaptive breeding program started\nReintroduced to North Carolina\nProblem: Genetic studies suggest red wolves might be hybrids between gray wolves and coyotes\n\n\n\nDebate: Is the red wolf a distinct species or an admixed population?",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Speciation: Mechanisms of Biodiversity Generation</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/speciation/speciation-presentation.html#red-wolf-discussion-questions",
+    "href": "notebooks/speciation/speciation-presentation.html#red-wolf-discussion-questions",
+    "title": "2  Speciation: Mechanisms of Biodiversity Generation",
+    "section": "9.31 Red Wolf Discussion Questions",
+    "text": "9.31 Red Wolf Discussion Questions\n\n\n\n\n\n\nImportant\n\n\n\nWork in groups (10 minutes):\n\nIf red wolves are of hybrid origin, should we still conserve them?\nHow does the speciation continuum concept apply here?\nWhat criteria should we use for conservation decisions?\nDoes evolutionary history matter, or just current distinctiveness?\n\n\n\n\nThere’s no single “right” answer - this is an active debate!",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Speciation: Mechanisms of Biodiversity Generation</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/speciation/speciation-presentation.html#conservation-decision-framework",
+    "href": "notebooks/speciation/speciation-presentation.html#conservation-decision-framework",
+    "title": "2  Speciation: Mechanisms of Biodiversity Generation",
+    "section": "9.32 Conservation Decision Framework",
+    "text": "9.32 Conservation Decision Framework\n\n9.32.1 Consider Multiple Factors:\n\nAdaptive uniqueness - Does it have unique adaptations?\nEcological role - What function does it serve?\nEvolutionary potential - Can it adapt to change?\nLegal/social factors - Cultural value, legislation\n\n\nConservation often operates in the “gray areas” of speciation",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Speciation: Mechanisms of Biodiversity Generation</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/speciation/speciation-presentation.html#ring-species",
+    "href": "notebooks/speciation/speciation-presentation.html#ring-species",
+    "title": "2  Speciation: Mechanisms of Biodiversity Generation",
+    "section": "9.33 Ring Species",
+    "text": "9.33 Ring Species\n\n\n\n\n\n\nNote\n\n\n\nDefinition: A chain of neighbouring populations that can interbreed with adjacent populations, but the populations at the two “ends” cannot interbreed\n\n\nKey Features:\n\nContinuous variation along the chain\nNo clear boundary between “species”\nTerminal populations act as distinct species\nPerfect illustration of the speciation continuum",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Speciation: Mechanisms of Biodiversity Generation</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/speciation/speciation-presentation.html#ring-species-examples",
+    "href": "notebooks/speciation/speciation-presentation.html#ring-species-examples",
+    "title": "2  Speciation: Mechanisms of Biodiversity Generation",
+    "section": "9.34 Ring Species Examples",
+    "text": "9.34 Ring Species Examples\n\n\n\n\n\n\nEnsatina Salamanders (California)\n\n\n\n\nRing around Central Valley\nneighbouring populations can interbreed\nSouthern California: two forms that don’t interbreed\n\n\n\n\n\n\n\n\n\nHerring Gulls (Larus argentatus)\n\n\n\n\nRing around Arctic/North Atlantic\nPopulations grade into each other across Siberia and North America\nIn Europe: herring gulls and lesser black-backed gulls rarely hybridize",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Speciation: Mechanisms of Biodiversity Generation</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/speciation/speciation-presentation.html#looking-forward",
+    "href": "notebooks/speciation/speciation-presentation.html#looking-forward",
+    "title": "2  Speciation: Mechanisms of Biodiversity Generation",
+    "section": "9.35 Looking Forward",
+    "text": "9.35 Looking Forward\n\n9.35.1 Next: The Genetic Basis of Speciation\nQuestions We’ll Explore:\n\nWhat genes cause reproductive isolation?\nHow many genetic changes are needed for speciation?\nRole of chromosome rearrangements\nGenomic islands of divergence\nSpeciation genes",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Speciation: Mechanisms of Biodiversity Generation</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/speciation/speciation-presentation.html#bridge-to-community-ecology",
+    "href": "notebooks/speciation/speciation-presentation.html#bridge-to-community-ecology",
+    "title": "2  Speciation: Mechanisms of Biodiversity Generation",
+    "section": "9.36 Bridge to Community Ecology",
+    "text": "9.36 Bridge to Community Ecology\n\n9.36.1 Connecting Concepts\n\nSpeciation creates the diversity we measure\nRates of speciation vs. extinction determine community diversity\nEcological opportunity can drive adaptive radiation\nPriority effects in community assembly\n\n\nSpeciation is the engine that generates biodiversity in ecosystems",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Speciation: Mechanisms of Biodiversity Generation</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/speciation/speciation-presentation.html#concept-check",
+    "href": "notebooks/speciation/speciation-presentation.html#concept-check",
+    "title": "2  Speciation: Mechanisms of Biodiversity Generation",
+    "section": "9.37 Concept Check",
+    "text": "9.37 Concept Check\n\n9.37.1 Quick Quiz\n\nWhich speciation mode requires complete geographic separation?\nTrue/False: Sympatric speciation is impossible in animals.\nName two prezygotic barriers.\nWhy are island systems hotspots of speciation?\nCan speciation be reversed?",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Speciation: Mechanisms of Biodiversity Generation</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/speciation/speciation-presentation.html#concept-check---answers",
+    "href": "notebooks/speciation/speciation-presentation.html#concept-check---answers",
+    "title": "2  Speciation: Mechanisms of Biodiversity Generation",
+    "section": "9.38 Concept Check - Answers",
+    "text": "9.38 Concept Check - Answers\n\nAllopatric speciation\nFalse - cichlids, apple maggot fly (though debated)\nAny two: habitat, temporal, behavioral, mechanical, gametic\nGeographic isolation + ecological opportunity + small populations\nYes! If gene flow resumes before complete isolation (e.g., Darwin’s finch “despeciation”)",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Speciation: Mechanisms of Biodiversity Generation</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/speciation/speciation-presentation.html#take-home-problem-set",
+    "href": "notebooks/speciation/speciation-presentation.html#take-home-problem-set",
+    "title": "2  Speciation: Mechanisms of Biodiversity Generation",
+    "section": "9.39 Take-Home Problem Set",
+    "text": "9.39 Take-Home Problem Set\nDue next session - discuss in small groups\nProblem 1: New island with 15 bird species from single colonist (2 MYA). Predict patterns in: geographic distributions, morphological traits, genetic relationships.\nProblem 2: Design an experiment to test if two butterfly populations are incipient species. What would you measure?\nProblem 3: Climate change causes poleward range shifts. Effects on: hybrid zones, speciation opportunities, endemic species?",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Speciation: Mechanisms of Biodiversity Generation</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/speciation/speciation-presentation.html#take-home-problem-set-cont.",
+    "href": "notebooks/speciation/speciation-presentation.html#take-home-problem-set-cont.",
+    "title": "2  Speciation: Mechanisms of Biodiversity Generation",
+    "section": "9.40 Take-Home Problem Set (cont.)",
+    "text": "9.40 Take-Home Problem Set (cont.)\nProblem 4: British Isles recolonized after last ice age (~10,000 years ago). Why don’t we see extensive speciation in British fauna compared to African rift lake fishes?\n\nHint: Think about time scales, geographic isolation, ecological opportunity, and population sizes.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Speciation: Mechanisms of Biodiversity Generation</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/speciation/speciation-presentation.html#key-takeaways",
+    "href": "notebooks/speciation/speciation-presentation.html#key-takeaways",
+    "title": "2  Speciation: Mechanisms of Biodiversity Generation",
+    "section": "9.41 Key Takeaways",
+    "text": "9.41 Key Takeaways\n\nSpeciation is a process, not an event - populations exist on a continuum\nFour geographic modes: allopatric, peripatric, parapatric, sympatric\nMultiple barriers typically accumulate during speciation\nTime scales vary enormously depending on many factors\nUnderstanding speciation is critical for conservation decision-making",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Speciation: Mechanisms of Biodiversity Generation</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/speciation/speciation-presentation.html#questions",
+    "href": "notebooks/speciation/speciation-presentation.html#questions",
+    "title": "2  Speciation: Mechanisms of Biodiversity Generation",
+    "section": "9.42 Questions?",
+    "text": "9.42 Questions?\n\n9.42.1 Next Session: Genetic Mechanisms of Speciation\nOffice hours: [Thursday and Friday afternoons]",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Speciation: Mechanisms of Biodiversity Generation</span>"
     ]
   },
   {
@@ -374,7 +684,7 @@
     "href": "notebooks/genetic-drift.html",
     "title": "5  Genetic drift",
     "section": "",
-    "text": "library(tidyverse)\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.6\n✔ forcats   1.0.1     ✔ stringr   1.6.0\n✔ ggplot2   4.0.1     ✔ tibble    3.3.1\n✔ lubridate 1.9.4     ✔ tidyr     1.3.2\n✔ purrr     1.2.1     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\n\n\nN&lt;- 10\npopulation &lt;- tibble(ID = 1:(2*N), allele = c(rep(\"blue\", N), rep(\"red\",N)), value=c(rep(0,N),rep(1,N)))\n\n\ngeneration&lt;-0\nnew_population&lt;-slice_sample(population,n=nrow(population), replace = TRUE)\nn_red &lt;- sum(new_population$value)\nwhile (n_red&gt;0 & n_red&lt;2*N){\n  generation &lt;- generation + 1\n  n_red &lt;- sum(new_population$value)\n  print(paste(generation, n_red))\n  new_population&lt;-slice_sample(new_population,n=nrow(population), replace = TRUE)\n}\n\n[1] \"1 9\"\n[1] \"2 8\"\n[1] \"3 6\"\n[1] \"4 5\"\n[1] \"5 0\"",
+    "text": "5.1 Binomial version\n# Initial state\nnpops &lt;- 5\npop_size &lt;- 100\ntotal_alleles &lt;- 2 * pop_size\np &lt;- 0.5 # Frequency of allele A\ngenerations &lt;- 300\nps &lt;- matrix(rep(0, npops*generations), ncol = npops)\ni &lt;-0\nfor (pop in 1:npops){\n  p &lt;-0.5\n  for (i in 1:generations){\n      # Randomly draw 2N alleles based on frequency p\n      # Each draw is binomial sampling\n      num_A &lt;- rbinom(1,total_alleles, p)\n      \n      # Update frequency\n      p &lt;- num_A / total_alleles\n      ps[i,pop] &lt;- p\n      \n      # print(f\"Gen {gen+1}: Freq A = {p}\")\n      \n      # If allele is fixed or lost, stop\n  }\n}\nps_df &lt;- as.tibble(ps)\n\nWarning: `as.tibble()` was deprecated in tibble 2.0.0.\nℹ Please use `as_tibble()` instead.\nℹ The signature and semantics have changed, see `?as_tibble`.\n\n\nWarning: The `x` argument of `as_tibble.matrix()` must have unique column names if\n`.name_repair` is omitted as of tibble 2.0.0.\nℹ Using compatibility `.name_repair`.\nℹ The deprecated feature was likely used in the tibble package.\n  Please report the issue at &lt;https://github.com/tidyverse/tibble/issues&gt;.\n\nnames(ps_df) &lt;- LETTERS[1:npops] \nps_df &lt;-   mutate(ps_df, generation = 1:generations) |&gt;\n  select(generation,names(ps_df))\nps_df |&gt;\n  pivot_longer(A:E,names_to= \"population\", values_to = \"allele_frequency\") |&gt;\n  ggplot(aes(x = generation, y = allele_frequency, colour = population)) +\n    geom_point(size = 1) +\n    geom_line(linewidth = 0.3) +\n    labs(x = \"Generation\",\n         y = \"Allele Frequency\") +\n    theme_minimal()",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Genetic drift</span>"
     ]
@@ -384,7 +694,7 @@
     "href": "notebooks/PVA/PVA.html",
     "title": "6  Population Viability Analysis (PVA)",
     "section": "",
-    "text": "6.1 InsightMaker: a simulation modeling framework for dynamic systems!\nInsightMaker is a web-based visual programming language for modeling the dynamics of inter-connected systems.\nAny dynamic system (like a wildlife population) essentially consists of [Stocks] and [Flows].\nA [Stock] simply represents a quantity of something. The [Stock] changes over time ONLY via [Flows In] or [Flows Out].\nA [Stock] of stuff increases over time via what [Flows] in. Imagine our stock represents Moose!\nMoose Births would then be the input [Flow] to the population of Moose over time.\nA [Stock] of stuff decreases over time via what [Flows] out. For example, Moose Deaths could represent the [Flow] out of the population of Moose.\nFigure 6.1: :“The simplest Moose population model”\nIf the [Flow] into the stock is larger than the [Flow] out of the stock, then the [Stock] increases over time.\nIf the [Flow] out is larger than the [Flow] in, then the [Stock] decreases over time.\nIf the [Flow] in equals the [Flow] out then the amount in the [Stock] will not change over time. In this case, the system is in equilibrium.",
+    "text": "6.1 InsightMaker: a simulation modeling framework for dynamic systems!\nInsightMaker is a web-based visual programming language for modelling the dynamics of inter-connected systems.\nAny dynamic system (like a wildlife population) essentially consists of [Stocks] and [Flows].\nA [Stock] simply represents a quantity of something. The [Stock] changes over time ONLY via [Flows In] or [Flows Out].\nA [Stock] of stuff increases over time via what [Flows] in. Imagine our stock represents Amur Tiger\nAmur Tiger Births would then be the input [Flow] to the population of Amur Tiger over time.\nA [Stock] of stuff decreases over time via what [Flows] out. For example, Amur Tiger Deaths could represent the [Flow] out of the population of Amur Tiger.\nFigure 6.1: :“The simplest Amur Tiger population model”\nIf the [Flow] into the stock is larger than the [Flow] out of the stock, then the [Stock] increases over time.\nIf the [Flow] out is larger than the [Flow] in, then the [Stock] decreases over time.\nIf the [Flow] in equals the [Flow] out then the amount in the [Stock] will not change over time. In this case, the system is in equilibrium.",
     "crumbs": [
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Population Viability Analysis (PVA)</span>"
     ]
@@ -394,7 +704,7 @@
     "href": "notebooks/PVA/PVA.html#a-basic-simulation-model",
     "title": "6  Population Viability Analysis (PVA)",
     "section": "6.2 A basic simulation model",
-    "text": "6.2 A basic simulation model\nIt is often stated that “all models are wrong, some are useful” (attributed to statistician George Box).\nThis demonstration model is wrong, and not super useful! But it’s a start!\n\n6.2.1 Simple stock and flow model!\n\nOpen up InsightMaker. If you have never used it before you need to sign up first with a username and password. InsightMaker is free!\nClick on this link to load up the first population modeling demo.\nIn the upper right-hand corner of the screen, click on the “Clone Insight” link at the top and click on the “Clone” button on the following screen (so you can make edits to this model!). If you want, you can change the name of the model by clicking on the white space anywhere in the workspace and then clicking the “Edit Info” button on the left-hand context menu.\nNow click Run Simulation. You have run your first population simulation!\n\nQ: What is the first thing you would like to change to make the model more realistic?\n\n\n6.2.2 A more realistic model: exponential growth!\n\nNow let’s assume that per-capita birth and death rates in the population are constant across time. This way, if the population is bigger, more individuals will be added to the population in the next time step, making the population even bigger! This is a positive feedback!\n\nClick on this link to load up the next population modeling demonstration.\n\nIn the upper right-hand corner of the screen, click on the “Clone Insight” link at the top and click on the “Clone” button on the following screen (so you can make edits to this model!). If you want, you can change the name of the model by clicking on the whitespace anywhere in your InsightMaker workspace and then clicking the “Edit Info” button on the left-hand context menu.\n\nYour model should look something like this:\n\n\n\n\n\n\n\n\nFigure 6.2: :“A better Moose population model that incorporates exponential change”\n\n\n\n\n\n\nClick on the two [Flows] (Births and Deaths) and note the equation displayed on the right-hand menu. Do these equations make sense?\nMake sure the initial number of moose is set to 50, the birth rate is set to 0.5, and the death rate is set to 0.4. Now click [Run Simulation]. How would you describe the results?\n\nQ: what happens if you set the birth rate equal to the death rate?\nQ: what happens if you set the birth rate less than the death rate?\nOne of the most fundamental quantities in population ecology is called the “intrinsic rate of growth” or r. r is simply the difference between birth and death rate:\n\\(r=birth\\ rate-death\\ rate\\)\nQ: What is the intrinsic rate of growth for this population (when birth rate is set to 0.5 and the death rate is set to 0.4)?\nQ: What is the next thing you would like to change to make the model more realistic?",
+    "text": "6.2 A basic simulation model\nIt is often stated that “all models are wrong, some are useful” (attributed to statistician George Box).\nThis demonstration model is wrong, and not super useful! But it’s a start!\n\n6.2.1 Simple stock and flow model!\n\nOpen up InsightMaker. If you have never used it before you need to sign up first with a username and password. InsightMaker is free!\nClick on this link to load up the first population modeling demo.\nIn the upper right-hand corner of the screen, click on the “Clone Insight” link at the top and click on the “Clone” button on the following screen (so you can make edits to this model!). If you want, you can change the name of the model by clicking on the white space anywhere in the workspace and then clicking the “Edit Info” button on the left-hand context menu.\nNow click the blue Simulate button. You have run your first population simulation!\n\nQ: What is the first thing you would like to change to make the model more realistic?\n\n\n6.2.2 A more realistic model: exponential growth!\n\nNow let’s assume that per-capita birth and death rates in the population are constant across time. This way, if the population is bigger, more individuals will be added to the population in the next time step, making the population even bigger. This is a positive feedback!\n\nClick on this link to load up the next population modeling demonstration.\n\nIn the upper right-hand corner of the screen, click on the “Clone Insight” link at the top and click on the “Clone” button on the following screen (so you can make edits to this model!). If you want, you can change the name of the model by clicking on the whitespace anywhere in your InsightMaker workspace and then clicking the “Edit Info” button on the left-hand context menu.\n\nYour model should look something like this:\n\n\n\n\n\n\n\n\nFigure 6.2: :“A better Amur tiger population model that incorporates exponential change”\n\n\n\n\n\n\nClick on the two [Flows] (Births and Deaths) and note the equation displayed on the right-hand menu. Do these equations make sense?\nMake sure the initial number of Amur tiger is set to 50, the birth rate is set to 0.5, and the death rate is set to 0.4. Now click [Run Simulation]. How would you describe the results?\n\nQ: what happens if you set the birth rate equal to the death rate?\nQ: what happens if you set the birth rate less than the death rate?\nOne of the most fundamental quantities in population ecology is called the “intrinsic rate of growth” or r. r is simply the difference between birth and death rate:\n\\(r=birth\\ rate-death\\ rate\\)\nQ: What is the intrinsic rate of growth for this population (when birth rate is set to 0.5 and the death rate is set to 0.4)?\nQ: What is the next thing you would like to change to make the model more realistic?",
     "crumbs": [
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Population Viability Analysis (PVA)</span>"
     ]
@@ -404,9 +714,29 @@
     "href": "notebooks/PVA/PVA.html#an-even-more-realistic-model",
     "title": "6  Population Viability Analysis (PVA)",
     "section": "6.3 An even more realistic model!!",
-    "text": "6.3 An even more realistic model!!\nWhich one of these figures is most likely to be from a real wildlife population??\n\n\n\n\n\n\n\n\nFigure 6.3: :“”\n\n\n\n\n\nOR\n\n\n\n\n\n\n\n\nFigure 6.4: :“”\n\n\n\n\n\n\n6.3.1 Wildlife populations fluctuate over time!\n… And these fluctuations are often difficult to predict!\nThat is to say…\n\n\n6.3.2 The future is uncertain!\nAll ecological systems are full of uncertainty. We all know it intuitively. But what exactly do we mean by that? And how can we deal with it? How can we incorporate it into our models?\nQ: if you were to re-run the basic population model you just made in InsightMaker ten times, how many different results would you get?\nWhen a model outcome is the same every time (when starting with the same input values) we say that the model is deterministic.\nBUT… ecological systems (e.g., dynamic populations) have inherent variability.\nWe can’t predict with certainty whether or not an individual will mate, or die.\nWe can’t be certain whether next year or the year after that will be a good year or a bad year for offspring production or mortality!\nThe key is to embrace uncertainty. As population ecologists, we have some tricks to help us manage and account for unpredictable variation in our study systems:\n\n\n\n\n\n\n\n\nFigure 6.5: :“”\n\n\n\n\n\n\n\n6.3.3 How to model uncertainty\nTypically, we ‘embrace uncertainty’ in our models by incorporating random-number generators. These types of simulation models are called stochastic models.\nWhen we incorporate random processes into models, the result will be different each time we run the model!\nWhen we use stochastic models, we often want to run lots of replicates. Each replicate represents a possible future.\nWe can then interpret the cloud of possible futures rather than just the results from a single model run!\n\n\n\n\n\n\n\n\nFigure 6.6: :“”\n\n\n\n\n\nHere we see that the population went extinct three times out of a total of 50 replicates.\n\n\n6.3.4 Random number generation\nTo ensure that each model run (replicate) – or each year of each model run – is different from one another, we need to include at least one random number generator in our models!\nA random number generator is like a box of (potentially infinite) possible numbers – a lottery ball machine for example! Each time we want a new number we reach in and pull one out randomly, record the number, put it back in and shake it up again.\n\n\n6.3.5 Return to InsightMaker- add randomness!\nThe term stochasticity just means randomness. A stochastic population model is a model with one or more random number generators included!\n\nClick on this link to load up the next population modeling demonstration.\nIn the upper right-hand corner of the screen, click on the “Clone Insight” link at the top and click on the “Clone” button on the following screen (so you can make edits to this model!). If you want, you can change the name of the model by clicking on the whitespace anywhere in your InsightMaker environment and then clicking the “Edit Info” button on the left-hand context menu.\nMake sure the Birth rate is set to 0.5 and Death rate is set to 0.4. Set initial abundance to 10. Under the “Settings” menu make sure the model is set to run for 20 years.\nRun the simulation. What does it look like?\nUse the “Sensitivity Testing” tool (in the “Tools” menu, upper right corner) to run the model 100 times. Choose your [Population] (Moose) as the “Monitored Primitive”. View the results!\n\nNow, change the initial abundance to 500 and re-run the “Sensitivity Testing” tool.\nQ: what key differences do you notice when you initialize the population with 10 individuals vs 500 individuals??",
+    "text": "6.3 An even more realistic model!!\nWhich one of these figures is most likely to be from a real wildlife population??\n\n\n\n\n\n\n\n\nFigure 6.3: A realistic pattern of population change for a wild animal species\n\n\n\n\n\nOR\n\n\n\n\n\n\n\n\nFigure 6.4: An unrealistic pattern of population change for a wild animal species. In reality, the population would most likely fluctuate.\n\n\n\n\n\n\n6.3.1 Wildlife populations fluctuate over time!\n… And these fluctuations are often difficult to predict!\nThat is to say…\n\n\n6.3.2 The future is uncertain!\nAll ecological systems are full of uncertainty. We all know it intuitively. But what exactly do we mean by that? And how can we deal with it? How can we incorporate it into our models?\nQ: if you were to re-run the basic population model you just made in InsightMaker ten times, how many different results would you get?\nWhen a model outcome is the same every time (when starting with the same input values) we say that the model is deterministic.\nBUT… ecological systems (e.g., dynamic populations) have inherent variability.\nWe can’t predict with certainty whether or not an individual will mate, or die.\nWe can’t be certain whether next year or the year after that will be a good year or a bad year for offspring production or mortality!\nThe key is to embrace uncertainty. As population ecologists, we have some tricks to help us manage and account for unpredictable variation in our study systems:\n\n\n\n\n\n\n\n\nFigure 6.5\n\n\n\n\n\n\n\n6.3.3 How to model uncertainty\nTypically, we ‘embrace uncertainty’ in our models by incorporating random-number generators. These types of simulation models are called stochastic models.\nWhen we incorporate random processes into models, the result will be different each time we run the model!\nWhen we use stochastic models, we often want to run lots of replicates. Each replicate represents a possible future.\nWe can then interpret the cloud of possible futures rather than just the results from a single model run!\n\n\n\n\n\n\n\n\nFigure 6.6: :“”\n\n\n\n\n\nHere we see that the population went extinct three times out of a total of 50 replicates.\n\n\n6.3.4 Random number generation\nTo ensure that each model run (replicate) – or each year of each model run – is different from one another, we need to include at least one random number generator in our models!\nA random number generator is like a box of (potentially infinite) possible numbers – a lottery ball machine for example! Each time we want a new number we reach in and pull one out randomly, record the number, put it back in and shake it up again.\n\n\n6.3.5 Return to InsightMaker- add randomness!\nThe term stochasticity just means randomness. A stochastic population model is a model with one or more random number generators included!\n\nClick on this link to load up the next population modeling demonstration.\nIn the upper right-hand corner of the screen, click on the “Clone Insight” link at the top and click on the “Clone” button on the following screen (so you can make edits to this model!). If you want, you can change the name of the model by clicking on the whitespace anywhere in your InsightMaker environment and then clicking the “Edit Info” button on the left-hand context menu.\nMake sure the Birth rate is set to 0.5 and Death rate is set to 0.4. Set initial abundance to 10. Under the “Settings” menu make sure the model is set to run for 20 years.\nRun the simulation. What does it look like?\nUse the “Sensitivity Testing” tool (in the “Tools” menu, upper right corner) to run the model 100 times. Choose your [Population] (Moose) as the “Monitored Primitive”. View the results!\n\nNow, change the initial abundance to 500 and re-run the “Sensitivity Testing” tool.\nQ: what key differences do you notice when you initialize the population with 10 individuals vs 500 individuals??",
     "crumbs": [
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Population Viability Analysis (PVA)</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/PVA/PVA_grizzly.html",
+    "href": "notebooks/PVA/PVA_grizzly.html",
+    "title": "7  Grizzly bear PVA example",
+    "section": "",
+    "text": "7.1 PVA for Yellowstone grizzly bears\nFrom a lecture by Kevin Shoemaker\nFigure 7.1\nOur goal is to better understand the future of the grizzly bear population in Yellowstone park, and the processes that may regulate this population!\nLet’s walk through the basic steps in building and running a PVA model:",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Grizzly bear PVA example</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/PVA/PVA_grizzly.html#pva-for-yellowstone-grizzly-bears",
+    "href": "notebooks/PVA/PVA_grizzly.html#pva-for-yellowstone-grizzly-bears",
+    "title": "7  Grizzly bear PVA example",
+    "section": "",
+    "text": "7.1.0.1 Step 1: life history diagram\nBased on the literature that we have read, we determine that there are four main stages in the grizzly bear life history: cub, yearling, subadult and adult! The adult stage is the only one that is reproductive!\nTherefore, our conceptual life history diagram looks something like this!\n\n\n\n\n\n\n\n\nFigure 7.2\n\n\n\n\n\nYou can clone the base grizzly bear model here. This model has not yet been parameterized!\n\n\n7.1.0.2 Step 2: parameterize!\nLet’s use this table to parameterize the population vital rates in our model!\nThis table actually has two alternative parameterizations, one representing the period from 1983 to 2001, and the other representing the period from 2002-2011.\nRemember that we are not paying any attention to males!\n\n\n\n\n\n\n\n\nFigure 7.3\n\n\n\n\n\nThe table is from this scientific report (alternative link)\nWhat about population size? For any simulation we always need to initialize abundance!\nFrom Schwartz et al 2006 we know that:\n\nAdult females represent approximately a quarter (25%) of the (female0.553) population.\nTotal abundance of adult females in the greater Yellowstone park area was approximately 5 in 1983 and approximately 30 in 2002\n\n\n\n\n\n\n\n\n\nFigure 7.4\n\n\n\n\n\nLet’s use the initial (1983) abundances (all female!) to initialize our model:\nCubs: 5\nYearlings: 5\nSubadults: 5\nAdults: 5\nTake a moment to parameterize the model!\n\n\n7.1.0.3 Step 3: Spatial structure\nWe are ignoring spatial structure for this PVA!\n\n\n7.1.0.4 Step 4: Simulate!\nOkay, let’s run the model!\nAgain, you can clone the base grizzly bear model here if you haven’t already.\n\nTry running the model with the parameterization we discussed above. What do you notice? Is the population growing?\n\nREALITY CHECK:\nQ: Given that the population of adult females is known to have increased to around 30 individuals by the year 2002, is this model realistic??\n\nWhat if we configure the model to run for 100 years? What happens now?\n\nQ: NOW do you think this is biologically realistic? Why or why not?\n\nLet’s change the parameterization to reflect the vital rates observed for the period 2002 to 2011 in the table:\n\n\n\n\n\n\n\n\n\nFigure 7.5\n\n\n\n\n\nIn 2002 the population was more like 30 females- so let’s use the following parameterization!\nCubs: 30\nYearlings: 30\nSubadults: 30\nAdults: 30\nQ: What do you notice about this model? Is it still growing? What about the overall rate of growth of the population?\nQ: Which vital rates changed the most from 1983 to 2002?\nQ: Can you think of any reason for this change?\n\n7.1.0.4.1 Density-dependence\n\nLet’s implement a new process into our model- density-dependence!\n\nWe know that when the adult (female) population size was around 5, yearling survival was around 82%\nWe also know that when the adult (female) population size was around 30, yearling survival dropped to around 54%\nCan you calculate a linear relationship between population size and yearling survival? When abundance increased by 25, yearling survival decreased by a little more than 25% (28% to be exact).\nSLOPE: For each additional individual in the adult population, yearling survival decreased by 1.12.\nINTERCEPT: When there were 5 adults, yearling survival was 81.7%. If there were 0 individuals in the adult population, yearling survival would be \\(81.7 + 1.12\\cdot 5\\), which is 87.6%.\nTo convert back to a fraction, we divide this linear model by 100!\nSo the linear formula for computing yearling survival as a function of adult female abundance should be:\n\\(Surv_{yearling} = \\frac{\\left (  87.6 - 1.12*N_{female} \\right )}{100}\\)\nLet’s implement this density-dependent process in Insightmaker!\n\nCreate a [Link] between female abundance and yearling survival.\nOpen the equation editor for yearling survival, and input the linear equation above!\n\nRun the model! What do you notice?\nQ: What is the carrying capacity of this population? NOTE: you may need to run the model for longer than 100 years! NOTE: this is an emergent property of our new model!\nQ: Do you notice an oscillatory pattern in abundance over time? NOTE: this is also an emergent property of our new model!\nQ: Why is this type of model called density-dependent?\nNOTE: if necessary, you can clone a density-dependent version of the grizzly model here\n\n\n\n7.1.1 Grizzly bear exercise\nAnswer the following questions:\n\nRun the grizzly bear PVA with and without the density-dependence process. In each case, what is the extinction risk after 100 years? In each case (with and without density-dependence), what is the approximate 95% confidence interval for the total population abundance after 100 years? Under which scenario is the conservation outlook best for grizzly bears in Yellowstone park?\nFor the density-independent model, what is the extinction risk if you changed yearling survival to its lower confidence limit in the above table (from 2002-2011)? Does the parameter uncertainty in the above table make a difference for the conservation outlook for this population?? NOTE: remember to change yearling survival back to 0.539 for the density-independent model!\nIn each case (with and without density-dependence), what is the extinction risk if you changed the initial abundance in each stage to 2? Given that a viable population is defined as a risk of extinction of &lt; 10% over 100 years, can you identify a minimum viable population for this population?\n\nHELPFUL HINTS:\n\nFor the density-independent scenario, set the yearling survival rate to 0.54 – the value estimated from 2002 to 2011.\nAll parameters aside from yearling survival should be the same between the two scenarios (so that the presence/absence of the density-dependence process is the only difference between the scenarios). I suggest you use all parameters estimated for the period 2002 to 2011, just to be consistent!\nFor both scenarios, set the initial abundance to 5 for each stage (the numbers observed inside the park in 1983).\nUse the “sensitivity testing” option in the “Tools” menu to run multiple simulations (&gt;100 replicates). You can assess extinction risk using the following formula:\n\n\\(\\frac{extinctions}{replicates}\\)\nWhere extinctions is the total number of replicates where the abundance declined to zero, and replicates is the total number of independent simulation replicates you ran. Similarly, you can assess the probability of failing to meet an important conervation criterion (e.g., population remaining above MVP) as the fraction of replicates that failed to meet the specified criterion.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Grizzly bear PVA example</span>"
     ]
   }
 ]

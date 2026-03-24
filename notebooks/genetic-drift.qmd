@@ -2,6 +2,7 @@
 
 ```{r}
 library(tidyverse)
+library(janitor)
 ```
 
 ```{r}
@@ -21,3 +22,61 @@ while (n_red>0 & n_red<2*N){
 }
 
 ```
+
+
+## Binomial version
+
+```{r}
+# Initial state
+npops <- 5
+pop_size <- 100
+total_alleles <- 2 * pop_size
+p <- 0.5 # Frequency of allele A
+generations <- 300
+```
+
+
+```{r}
+ps <- matrix(rep(0, npops*generations), ncol = npops)
+i <-0
+for (pop in 1:npops){
+  p <-0.5
+  for (i in 1:generations){
+      # Randomly draw 2N alleles based on frequency p
+      # Each draw is binomial sampling
+      num_A <- rbinom(1,total_alleles, p)
+      
+      # Update frequency
+      p <- num_A / total_alleles
+      ps[i,pop] <- p
+      
+      # print(f"Gen {gen+1}: Freq A = {p}")
+      
+      # If allele is fixed or lost, stop
+  }
+}
+```
+
+```{r}
+ps_df <- as.tibble(ps)
+names(ps_df) <- LETTERS[1:npops] 
+ps_df <-   mutate(ps_df, generation = 1:generations) |>
+  select(generation,names(ps_df))
+```
+
+```{r}
+ps_df |>
+  pivot_longer(A:E,names_to= "population", values_to = "allele_frequency") |>
+  ggplot(aes(x = generation, y = allele_frequency, colour = population)) +
+    geom_point(size = 1) +
+    geom_line(linewidth = 0.3) +
+    labs(x = "Generation",
+         y = "Allele Frequency") +
+    theme_minimal()
+    
+```
+
+
+
+
+

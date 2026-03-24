@@ -30,6 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
+<link href="../../notebooks/PVA/PVA_grizzly.html" rel="next">
 <link href="../../notebooks/genetic-drift.html" rel="prev">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
@@ -142,8 +143,8 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../notebooks/speciation/speciation-lesson.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Speciation</span></span></a>
+  <a href="../../notebooks/speciation/speciation-presentation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Speciation: Mechanisms of Biodiversity Generation</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -168,6 +169,12 @@ window.Quarto = {
   <div class="sidebar-item-container"> 
   <a href="../../notebooks/PVA/PVA.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Population Viability Analysis (PVA)</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../notebooks/PVA/PVA_grizzly.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Grizzly bear PVA example</span></span></a>
   </div>
 </li>
     </ul>
@@ -221,21 +228,21 @@ window.Quarto = {
 
 <section id="insightmaker-a-simulation-modeling-framework-for-dynamic-systems" class="level2" data-number="6.1">
 <h2 data-number="6.1" class="anchored" data-anchor-id="insightmaker-a-simulation-modeling-framework-for-dynamic-systems"><span class="header-section-number">6.1</span> InsightMaker: a simulation modeling framework for dynamic systems!</h2>
-<p><a href="https://insightmaker.com">InsightMaker</a> is a web-based visual programming language for modeling the dynamics of inter-connected systems.</p>
+<p><a href="https://insightmaker.com">InsightMaker</a> is a web-based visual programming language for modelling the dynamics of inter-connected systems.</p>
 <p>Any dynamic system (like a wildlife population) essentially consists of [Stocks] and [Flows].</p>
 <p>A [Stock] simply represents a quantity of something. The [Stock] changes over time ONLY via [Flows In] or [Flows Out].</p>
-<p>A [Stock] of stuff increases over time via what [Flows] in. Imagine our stock represents <em>Moose</em>!</p>
-<p><em>Moose Births</em> would then be the input [Flow] to the population of <em>Moose</em> over time.</p>
-<p>A [Stock] of stuff decreases over time via what [Flows] out. For example, <em>Moose Death</em>s could represent the [Flow] out of the population of <em>Moose</em>.</p>
-<div class="cell">
+<p>A [Stock] of stuff increases over time via what [Flows] in. Imagine our stock represents <em>Amur Tiger</em></p>
+<p><em>Amur Tiger Births</em> would then be the input [Flow] to the population of <em>Amur Tiger</em> over time.</p>
+<p>A [Stock] of stuff decreases over time via what [Flows] out. For example, <em>Amur Tiger Death</em>s could represent the [Flow] out of the population of <em>Amur Tiger</em>.</p>
+<div class="cell" data-layout-align="center">
 <div class="cell-output-display">
-<div id="fig-moose1" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="fig-amur-tiger1" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-pos="h" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-moose1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../../figures/moose1.jpg" class="img-fluid figure-img" width="394">
+<div aria-describedby="fig-amur-tiger1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../../figures/amur-tiger1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%" data-fig-pos="h">
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-moose1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;6.1: :“The simplest Moose population model”
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-amur-tiger1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6.1: :“The simplest Amur Tiger population model”
 </figcaption>
 </figure>
 </div>
@@ -255,29 +262,29 @@ Figure&nbsp;6.1: :“The simplest Moose population model”
 <li>Open up <a href="https://insightmaker.com">InsightMaker</a>. If you have never used it before you need to sign up first with a username and password. InsightMaker is free!</li>
 <li>Click on <a href="https://insightmaker.com/insight/3XrVz4HGZdJbjffDyDjnPv">this link</a> to load up the first population modeling demo.</li>
 <li>In the upper right-hand corner of the screen, click on the “Clone Insight” link at the top and click on the “Clone” button on the following screen (so you can make edits to this model!). If you want, you can change the name of the model by clicking on the white space anywhere in the workspace and then clicking the “Edit Info” button on the left-hand context menu.</li>
-<li>Now click Run Simulation. You have run your first population simulation!</li>
+<li>Now click the blue Simulate button. You have run your first population simulation!</li>
 </ol>
 <p>Q: What is the first thing you would like to change to make the model more realistic?</p>
 </section>
 <section id="a-more-realistic-model-exponential-growth" class="level3" data-number="6.2.2">
 <h3 data-number="6.2.2" class="anchored" data-anchor-id="a-more-realistic-model-exponential-growth"><span class="header-section-number">6.2.2</span> A more realistic model: exponential growth!</h3>
 <ol type="1">
-<li>Now let’s assume that per-capita birth and death rates in the population are constant across time. This way, if the population is bigger, more individuals will be added to the population in the next time step, making the population even bigger! This is a positive feedback!</li>
+<li>Now let’s assume that <em>per-capita</em> birth and death rates in the population are constant across time. This way, if the population is bigger, more individuals will be added to the population in the next time step, making the population even bigger. This is a positive feedback!</li>
 </ol>
 <p>Click on <a href="https://insightmaker.com/insight/6scOhNQUInZ8wMlpw2pjB0">this link</a> to load up the next population modeling demonstration.</p>
 <ol start="2" type="1">
 <li>In the upper right-hand corner of the screen, click on the “Clone Insight” link at the top and click on the “Clone” button on the following screen (so you can make edits to this model!). If you want, you can change the name of the model by clicking on the whitespace anywhere in your InsightMaker workspace and then clicking the “Edit Info” button on the left-hand context menu.</li>
 </ol>
 <p>Your model should look something like this:</p>
-<div class="cell">
+<div class="cell" data-layout-align="center">
 <div class="cell-output-display">
-<div id="fig-moose2" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="fig-amur-tiger2" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-pos="h" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-moose2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../../figures/moose2.jpg" class="img-fluid figure-img" width="427">
+<div aria-describedby="fig-amur-tiger2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../../figures/amur-tiger2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%" data-fig-pos="h">
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-moose2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;6.2: :“A better Moose population model that incorporates exponential change”
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-amur-tiger2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6.2: :“A better Amur tiger population model that incorporates exponential change”
 </figcaption>
 </figure>
 </div>
@@ -285,7 +292,7 @@ Figure&nbsp;6.2: :“A better Moose population model that incorporates exponenti
 </div>
 <ol start="3" type="1">
 <li><p>Click on the two [Flows] (Births and Deaths) and note the equation displayed on the right-hand menu. Do these equations make sense?</p></li>
-<li><p>Make sure the initial number of moose is set to 50, the birth rate is set to 0.5, and the death rate is set to 0.4. Now click [Run Simulation]. How would you describe the results?</p></li>
+<li><p>Make sure the initial number of Amur tiger is set to 50, the birth rate is set to 0.5, and the death rate is set to 0.4. Now click [Run Simulation]. How would you describe the results?</p></li>
 </ol>
 <p><strong>Q</strong>: what happens if you set the birth rate equal to the death rate?</p>
 <p><strong>Q</strong>: what happens if you set the birth rate less than the death rate?</p>
@@ -298,30 +305,30 @@ Figure&nbsp;6.2: :“A better Moose population model that incorporates exponenti
 <section id="an-even-more-realistic-model" class="level2" data-number="6.3">
 <h2 data-number="6.3" class="anchored" data-anchor-id="an-even-more-realistic-model"><span class="header-section-number">6.3</span> An even more realistic model!!</h2>
 <p>Which one of these figures is most likely to be from a real wildlife population??</p>
-<div class="cell">
+<div class="cell" data-layout-align="center">
 <div class="cell-output-display">
-<div id="fig-fluct1" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="fig-fluct2" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-pos="h" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-fluct1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../../figures/fluct1.jpg" class="img-fluid figure-img" width="316">
+<div aria-describedby="fig-fluct2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../../figures/fluct2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%" data-fig-pos="h">
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fluct1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;6.3: :“”
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fluct2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6.3: A realistic pattern of population change for a wild animal species
 </figcaption>
 </figure>
 </div>
 </div>
 </div>
 <p>OR</p>
-<div class="cell">
+<div class="cell" data-layout-align="center">
 <div class="cell-output-display">
-<div id="fig-nofluct1" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="fig-nofluct2" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-pos="h" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-nofluct1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../../figures/nofluct1.jpg" class="img-fluid figure-img" width="315">
+<div aria-describedby="fig-nofluct2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../../figures/nofluct2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%" data-fig-pos="h">
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-nofluct1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;6.4: :“”
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-nofluct2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6.4: An unrealistic pattern of population change for a wild animal species. In reality, the population would most likely fluctuate.
 </figcaption>
 </figure>
 </div>
@@ -341,15 +348,15 @@ Figure&nbsp;6.4: :“”
 <p>We can’t predict with certainty whether or not an individual will mate, or die.</p>
 <p>We can’t be certain whether next year or the year after that will be a good year or a bad year for offspring production or mortality!</p>
 <p>The key is to <strong>embrace uncertainty</strong>. As population ecologists, we have some tricks to help us manage and account for unpredictable variation in our study systems:</p>
-<div class="cell">
+<div class="cell" data-layout-align="center">
 <div class="cell-output-display">
-<div id="fig-dice" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="fig-dice" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-pos="h" width="90%" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-dice-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../../figures/dice1.png" class="img-fluid figure-img" width="478">
+<img src="../../figures/dice1.png" id="fig-dice" class="img-fluid quarto-figure quarto-figure-center anchored figure-img" style="width:90.0%" data-fig-pos="h">
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-dice-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;6.5: :“”
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-dice-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6.5
 </figcaption>
 </figure>
 </div>
@@ -362,12 +369,12 @@ Figure&nbsp;6.5: :“”
 <p>When we incorporate random processes into models, the result will be different each time we run the model!</p>
 <p>When we use stochastic models, we often want to run lots of <strong>replicates</strong>. Each replicate represents a possible future.</p>
 <p>We can then interpret the <em>cloud of possible futures</em> rather than just the results from a single model run!</p>
-<div class="cell">
+<div class="cell" data-layout-align="center">
 <div class="cell-output-display">
-<div id="fig-futures-cloud" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="fig-futures-cloud" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-pos="h" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-futures-cloud-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../../figures/futures-cloud.jpg" class="img-fluid figure-img" width="315">
+<img src="../../figures/futures-cloud.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%" data-fig-pos="h">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-futures-cloud-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;6.6: :“”
@@ -825,6 +832,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
+      <a href="../../notebooks/PVA/PVA_grizzly.html" class="pagination-link" aria-label="Grizzly bear PVA example">
+        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Grizzly bear PVA example</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
   </div>
 </nav>
 </div> <!-- /content -->
