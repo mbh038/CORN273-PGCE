@@ -63,7 +63,7 @@ The table is from [this scientific report](YellowstoneScience-BearIssue.pdf)
 
 What about population size? For any simulation we always need to initialize abundance!
 
-From [Schwartz et al 2006](figures/schwarz_grizzly1.pdf) we know that:
+From [Schwartz et al 2006](schwarz_grizzly1.pdf) we know that:
 
 1.  Adult females represent approximately a quarter (25%) of the (female0.553) population.
 2.  Total abundance of adult females in the greater Yellowstone park area was approximately 5 in 1983 and approximately 30 in 2002
