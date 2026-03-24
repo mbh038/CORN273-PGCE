@@ -59,7 +59,7 @@ Remember that we are not paying any attention to males!
 knitr::include_graphics(here("figures","grizzly_table1.jpg"))
 ```
 
-The table is from [this scientific report](YellowstoneScience-BearIssue.pdf) ([alternative link](https://www.nps.gov/yell/learn/upload/YellowstoneScience-BearIssue.pdf))
+The table is from [this scientific report](YellowstoneScience-BearIssue.pdf)
 
 What about population size? For any simulation we always need to initialize abundance!
 
