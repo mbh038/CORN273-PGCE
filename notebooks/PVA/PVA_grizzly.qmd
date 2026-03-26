@@ -42,11 +42,11 @@ Therefore, our conceptual life history diagram looks something like this!
 knitr::include_graphics(here("figures","IM16.jpg"))
 ```
 
-You can clone the base grizzly bear model [here](https://insightmaker.com/insight/3cyvDTKAvL24DSvdyQSidb). This model has not yet been parameterized!
+You can clone the base grizzly bear model [here](https://insightmaker.com/insight/3cyvDTKAvL24DSvdyQSidb/Yellowstone-Grizzlies-basic). This model has not yet been parameterized.
 
-#### Step 2: parameterize!
+#### Step 2: parameterize
 
-Let's use this table to parameterize the population vital rates in our model!
+Let's use this table to parameterize the population vital rates in our model.
 
 This table actually has *two alternative parameterizations*, one representing the period from 1983 to 2001, and the other representing the period from 2002-2011.
 
@@ -93,7 +93,7 @@ We are ignoring spatial structure for this PVA!
 
 Okay, let's run the model!
 
-Again, you can clone the base grizzly bear model [here](https://insightmaker.com/insight/3cyvDTKAvL24DSvdyQSidb) if you haven't already.
+Again, you can clone the base grizzly bear model [here](https://insightmaker.com/insight/3cyvDTKAvL24DSvdyQSidb/Yellowstone-Grizzlies-basic) if you haven't already.
 
 1.  Try running the model with the parameterization we discussed above. What do you notice? Is the population growing?
 
@@ -129,7 +129,7 @@ In 2002 the population was more like 30 females- so let's use the following para
 
 ##### Density-dependence
 
-4.  Let's implement a new process into our model- **density-dependence**!
+4.  Let's implement a new process into our model- **density-dependence**.
 
 We know that when the adult (female) population size was around 5, yearling survival was around 82%
 
@@ -145,22 +145,22 @@ To convert back to a fraction, we divide this linear model by 100!
 
 So the linear formula for computing yearling survival as a function of adult female abundance should be:
 
-$Surv_{yearling} = \frac{\left (  87.6 - 1.12*N_{female} \right )}{100}$
+$Surv_{yearling} = \frac{\left (87.6 - 1.12*N_{female} \right )}{100}$
 
-Let's implement this *density-dependent process* in Insightmaker!
+Let's implement this *density-dependent process* in Insightmaker.
 
 -   Create a [Link] between female abundance and yearling survival.
--   Open the *equation editor* for yearling survival, and input the linear equation above!
+-   Open the *equation editor* for yearling survival, and input the linear equation above.
 
-Run the model! What do you notice?
+Run the model.  What do you notice?
 
-**Q**: What is the **carrying capacity** of this population? NOTE: you may need to run the model for longer than 100 years! NOTE: this is an **emergent property** of our new model!
+**Q**: What is the **carrying capacity** of this population? NOTE: you may need to run the model for longer than 100 years. NOTE: this is an **emergent property** of our new model.
 
 **Q**: Do you notice an *oscillatory pattern* in abundance over time? NOTE: this is also an **emergent property** of our new model!
 
 **Q**: Why is this type of model called **density-dependent**?
 
-NOTE: if necessary, you can clone a density-dependent version of the grizzly model [here](https://insightmaker.com/insight/77058/Yellowstone-Grizzlies-DD)
+NOTE: if necessary, you can clone a density-dependent version of the grizzly model [here](https://insightmaker.com/insight/7s0bt8E1u5nqvZaQ4zwdma/Yellowstone-Grizzlies-density-dependent)
 
 ### Grizzly bear exercise
 
