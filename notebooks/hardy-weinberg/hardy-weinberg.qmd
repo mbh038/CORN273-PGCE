@@ -1,17 +1,6 @@
 # Hardy-Weinberg Equilibrium
 
-# ---
-# title: "Hardy-Weinberg Equilibrium"
-# author: "Michael Hunt"
-# date: "11/11/2025"
-# format: revealjs
-# # format: pdf
-# editor: visual
-# ---
-
-## Hardy-Weinberg equilibrium
-
--   When a population is in Hardy-Weinberg equilibrium for a gene, it is not evolving, and allele frequencies will stay the same across generations.
+-   When a population is in Hardy-Weinberg equilibrium for a gene, it is not evolving for that gene, and allele frequencies for that gene will stay the same across generations.
 
 -   There are five basic Hardy-Weinberg assumptions:
 

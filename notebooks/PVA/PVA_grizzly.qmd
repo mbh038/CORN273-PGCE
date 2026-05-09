@@ -183,5 +183,11 @@ $\frac{extinctions}{replicates}$
 
 Where *extinctions* is the total number of replicates where the abundance declined to zero, and *replicates* is the total number of independent simulation replicates you ran. Similarly, you can assess the probability of failing to meet an important conervation criterion (e.g., population remaining above MVP) as the fraction of replicates that failed to meet the specified criterion.
 
+## Running the model in R.
+
+```{r}
+
+```
+
 
 

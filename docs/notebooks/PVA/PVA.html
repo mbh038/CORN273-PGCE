@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>6&nbsp; Population Viability Analysis (PVA) – CORN273 Population Genetics and Community Ecology</title>
+<title>7&nbsp; Population Viability Analysis (PVA) – CORN273 Population Genetics and Community Ecology</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,7 +31,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
 <link href="../../notebooks/PVA/PVA_grizzly.html" rel="next">
-<link href="../../notebooks/genetic-drift.html" rel="prev">
+<link href="../../notebooks/metapopulations.html" rel="prev">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -110,7 +110,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../notebooks/PVA/PVA.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Population Viability Analysis (PVA)</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../notebooks/PVA/PVA.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Population Viability Analysis (PVA)</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -167,14 +167,20 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../notebooks/metapopulations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Metapoplations</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../notebooks/PVA/PVA.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Population Viability Analysis (PVA)</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Population Viability Analysis (PVA)</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../notebooks/PVA/PVA_grizzly.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Grizzly bear PVA example</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Grizzly bear PVA example</span></span></a>
   </div>
 </li>
     </ul>
@@ -187,19 +193,19 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#insightmaker-a-simulation-modeling-framework-for-dynamic-systems" id="toc-insightmaker-a-simulation-modeling-framework-for-dynamic-systems" class="nav-link active" data-scroll-target="#insightmaker-a-simulation-modeling-framework-for-dynamic-systems"><span class="header-section-number">6.1</span> InsightMaker: a simulation modeling framework for dynamic systems!</a></li>
-  <li><a href="#a-basic-simulation-model" id="toc-a-basic-simulation-model" class="nav-link" data-scroll-target="#a-basic-simulation-model"><span class="header-section-number">6.2</span> A basic simulation model</a>
+  <li><a href="#insightmaker" id="toc-insightmaker" class="nav-link active" data-scroll-target="#insightmaker"><span class="header-section-number">7.1</span> InsightMaker</a></li>
+  <li><a href="#a-basic-simulation-model" id="toc-a-basic-simulation-model" class="nav-link" data-scroll-target="#a-basic-simulation-model"><span class="header-section-number">7.2</span> A basic simulation model</a>
   <ul class="collapse">
-  <li><a href="#simple-stock-and-flow-model" id="toc-simple-stock-and-flow-model" class="nav-link" data-scroll-target="#simple-stock-and-flow-model"><span class="header-section-number">6.2.1</span> Simple stock and flow model!</a></li>
-  <li><a href="#a-more-realistic-model-exponential-growth" id="toc-a-more-realistic-model-exponential-growth" class="nav-link" data-scroll-target="#a-more-realistic-model-exponential-growth"><span class="header-section-number">6.2.2</span> A more realistic model: exponential growth!</a></li>
+  <li><a href="#simple-stock-and-flow-model" id="toc-simple-stock-and-flow-model" class="nav-link" data-scroll-target="#simple-stock-and-flow-model"><span class="header-section-number">7.2.1</span> Simple stock and flow model</a></li>
+  <li><a href="#a-more-realistic-model-exponential-growth." id="toc-a-more-realistic-model-exponential-growth." class="nav-link" data-scroll-target="#a-more-realistic-model-exponential-growth."><span class="header-section-number">7.2.2</span> A more realistic model: <strong>exponential growth</strong>.</a></li>
   </ul></li>
-  <li><a href="#an-even-more-realistic-model" id="toc-an-even-more-realistic-model" class="nav-link" data-scroll-target="#an-even-more-realistic-model"><span class="header-section-number">6.3</span> An even more realistic model!!</a>
+  <li><a href="#an-even-more-realistic-model" id="toc-an-even-more-realistic-model" class="nav-link" data-scroll-target="#an-even-more-realistic-model"><span class="header-section-number">7.3</span> An even more realistic model</a>
   <ul class="collapse">
-  <li><a href="#wildlife-populations-fluctuate-over-time" id="toc-wildlife-populations-fluctuate-over-time" class="nav-link" data-scroll-target="#wildlife-populations-fluctuate-over-time"><span class="header-section-number">6.3.1</span> Wildlife populations fluctuate over time!</a></li>
-  <li><a href="#the-future-is-uncertain" id="toc-the-future-is-uncertain" class="nav-link" data-scroll-target="#the-future-is-uncertain"><span class="header-section-number">6.3.2</span> The future is uncertain!</a></li>
-  <li><a href="#how-to-model-uncertainty" id="toc-how-to-model-uncertainty" class="nav-link" data-scroll-target="#how-to-model-uncertainty"><span class="header-section-number">6.3.3</span> How to model uncertainty</a></li>
-  <li><a href="#random-number-generation" id="toc-random-number-generation" class="nav-link" data-scroll-target="#random-number-generation"><span class="header-section-number">6.3.4</span> Random number generation</a></li>
-  <li><a href="#return-to-insightmaker--add-randomness" id="toc-return-to-insightmaker--add-randomness" class="nav-link" data-scroll-target="#return-to-insightmaker--add-randomness"><span class="header-section-number">6.3.5</span> Return to InsightMaker- add randomness!</a></li>
+  <li><a href="#wildlife-populations-fluctuate-over-time" id="toc-wildlife-populations-fluctuate-over-time" class="nav-link" data-scroll-target="#wildlife-populations-fluctuate-over-time"><span class="header-section-number">7.3.1</span> Wildlife populations fluctuate over time</a></li>
+  <li><a href="#the-future-is-uncertain" id="toc-the-future-is-uncertain" class="nav-link" data-scroll-target="#the-future-is-uncertain"><span class="header-section-number">7.3.2</span> The future is uncertain</a></li>
+  <li><a href="#how-to-model-uncertainty" id="toc-how-to-model-uncertainty" class="nav-link" data-scroll-target="#how-to-model-uncertainty"><span class="header-section-number">7.3.3</span> How to model uncertainty</a></li>
+  <li><a href="#random-number-generation" id="toc-random-number-generation" class="nav-link" data-scroll-target="#random-number-generation"><span class="header-section-number">7.3.4</span> Random number generation</a></li>
+  <li><a href="#return-to-insightmaker--add-randomness" id="toc-return-to-insightmaker--add-randomness" class="nav-link" data-scroll-target="#return-to-insightmaker--add-randomness"><span class="header-section-number">7.3.5</span> Return to InsightMaker- add randomness</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -209,7 +215,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Population Viability Analysis (PVA)</span></h1>
+<h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Population Viability Analysis (PVA)</span></h1>
 </div>
 
 
@@ -226,8 +232,8 @@ window.Quarto = {
 </header>
 
 
-<section id="insightmaker-a-simulation-modeling-framework-for-dynamic-systems" class="level2" data-number="6.1">
-<h2 data-number="6.1" class="anchored" data-anchor-id="insightmaker-a-simulation-modeling-framework-for-dynamic-systems"><span class="header-section-number">6.1</span> InsightMaker: a simulation modeling framework for dynamic systems!</h2>
+<section id="insightmaker" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="insightmaker"><span class="header-section-number">7.1</span> InsightMaker</h2>
 <p><a href="https://insightmaker.com">InsightMaker</a> is a web-based visual programming language for modelling the dynamics of inter-connected systems.</p>
 <p>Any dynamic system (like a wildlife population) essentially consists of [Stocks] and [Flows].</p>
 <p>A [Stock] simply represents a quantity of something. The [Stock] changes over time ONLY via [Flows In] or [Flows Out].</p>
@@ -242,7 +248,7 @@ window.Quarto = {
 <img src="../../figures/amur-tiger1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%" data-fig-pos="h">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-amur-tiger1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;6.1: :“The simplest Amur Tiger population model”
+Figure&nbsp;7.1: :“The simplest Amur Tiger population model”
 </figcaption>
 </figure>
 </div>
@@ -252,28 +258,28 @@ Figure&nbsp;6.1: :“The simplest Amur Tiger population model”
 <p>If the [Flow] out is larger than the [Flow] in, then the [Stock] decreases over time.</p>
 <p>If the [Flow] in equals the [Flow] out then the amount in the [Stock] will not change over time. In this case, the system is in <strong>equilibrium</strong>.</p>
 </section>
-<section id="a-basic-simulation-model" class="level2" data-number="6.2">
-<h2 data-number="6.2" class="anchored" data-anchor-id="a-basic-simulation-model"><span class="header-section-number">6.2</span> A basic simulation model</h2>
+<section id="a-basic-simulation-model" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="a-basic-simulation-model"><span class="header-section-number">7.2</span> A basic simulation model</h2>
 <p>It is often stated that “all models are wrong, some are useful” (attributed to statistician George Box).</p>
-<p>This demonstration model is wrong, and not super useful! But it’s a start!</p>
-<section id="simple-stock-and-flow-model" class="level3" data-number="6.2.1">
-<h3 data-number="6.2.1" class="anchored" data-anchor-id="simple-stock-and-flow-model"><span class="header-section-number">6.2.1</span> Simple stock and flow model!</h3>
+<p>This demonstration model is wrong, and not super useful, but it’s a start!</p>
+<section id="simple-stock-and-flow-model" class="level3" data-number="7.2.1">
+<h3 data-number="7.2.1" class="anchored" data-anchor-id="simple-stock-and-flow-model"><span class="header-section-number">7.2.1</span> Simple stock and flow model</h3>
 <ol type="1">
-<li>Open up <a href="https://insightmaker.com">InsightMaker</a>. If you have never used it before you need to sign up first with a username and password. InsightMaker is free!</li>
+<li>Open up <a href="https://insightmaker.com">InsightMaker</a>. If you have never used it before you need to sign up first with a username and password. InsightMaker is free.</li>
 <li>Click on <a href="https://insightmaker.com/insight/3XrVz4HGZdJbjffDyDjnPv">this link</a> to load up the first population modeling demo.</li>
-<li>In the upper right-hand corner of the screen, click on the “Clone Insight” link at the top and click on the “Clone” button on the following screen (so you can make edits to this model!). If you want, you can change the name of the model by clicking on the white space anywhere in the workspace and then clicking the “Edit Info” button on the left-hand context menu.</li>
+<li>In the upper right-hand corner of the screen, click on the “Clone Insight” link at the top and click on the “Clone” button on the following screen (so you can make edits to this model). If you want, you can change the name of the model by clicking on the white space anywhere in the workspace and then clicking the “Edit Info” button on the left-hand context menu.</li>
 <li>Now click the blue Simulate button. You have run your first population simulation!</li>
 </ol>
 <p>Q: What is the first thing you would like to change to make the model more realistic?</p>
 </section>
-<section id="a-more-realistic-model-exponential-growth" class="level3" data-number="6.2.2">
-<h3 data-number="6.2.2" class="anchored" data-anchor-id="a-more-realistic-model-exponential-growth"><span class="header-section-number">6.2.2</span> A more realistic model: exponential growth!</h3>
+<section id="a-more-realistic-model-exponential-growth." class="level3" data-number="7.2.2">
+<h3 data-number="7.2.2" class="anchored" data-anchor-id="a-more-realistic-model-exponential-growth."><span class="header-section-number">7.2.2</span> A more realistic model: <strong>exponential growth</strong>.</h3>
 <ol type="1">
-<li>Now let’s assume that <em>per-capita</em> birth and death rates in the population are constant across time. This way, if the population is bigger, more individuals will be added to the population in the next time step, making the population even bigger. This is a positive feedback!</li>
+<li>Now let’s assume that <em>per-capita</em> birth and death rates in the population are constant across time. This way, if the population is bigger, more individuals will be added to the population in the next time step, making the population even bigger. This is a positive feedback.</li>
 </ol>
 <p>Click on <a href="https://insightmaker.com/insight/6scOhNQUInZ8wMlpw2pjB0">this link</a> to load up the next population modeling demonstration.</p>
 <ol start="2" type="1">
-<li>In the upper right-hand corner of the screen, click on the “Clone Insight” link at the top and click on the “Clone” button on the following screen (so you can make edits to this model!). If you want, you can change the name of the model by clicking on the whitespace anywhere in your InsightMaker workspace and then clicking the “Edit Info” button on the left-hand context menu.</li>
+<li>In the upper right-hand corner of the screen, click on the “Clone Insight” link at the top and click on the “Clone” button on the following screen (so you can make edits to this model). If you want, you can change the name of the model by clicking on the whitespace anywhere in your InsightMaker workspace and then clicking the “Edit Info” button on the left-hand context menu.</li>
 </ol>
 <p>Your model should look something like this:</p>
 <div class="cell" data-layout-align="center">
@@ -284,7 +290,7 @@ Figure&nbsp;6.1: :“The simplest Amur Tiger population model”
 <img src="../../figures/amur-tiger2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%" data-fig-pos="h">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-amur-tiger2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;6.2: :“A better Amur tiger population model that incorporates exponential change”
+Figure&nbsp;7.2: :“A better Amur tiger population model that incorporates exponential change”
 </figcaption>
 </figure>
 </div>
@@ -294,16 +300,16 @@ Figure&nbsp;6.2: :“A better Amur tiger population model that incorporates expo
 <li><p>Click on the two [Flows] (Births and Deaths) and note the equation displayed on the right-hand menu. Do these equations make sense?</p></li>
 <li><p>Make sure the initial number of Amur tiger is set to 50, the birth rate is set to 0.5, and the death rate is set to 0.4. Now click [Run Simulation]. How would you describe the results?</p></li>
 </ol>
-<p><strong>Q</strong>: what happens if you set the birth rate equal to the death rate?</p>
-<p><strong>Q</strong>: what happens if you set the birth rate less than the death rate?</p>
+<p><strong>Q</strong>: What happens if you set the birth rate equal to the death rate?</p>
+<p><strong>Q</strong>: What happens if you set the birth rate less than the death rate?</p>
 <p>One of the most fundamental quantities in population ecology is called the “intrinsic rate of growth” or <em>r</em>. <em>r</em> is simply the difference between birth and death rate:</p>
 <p><span class="math inline">\(r=birth\ rate-death\ rate\)</span></p>
 <p><strong>Q</strong>: What is the intrinsic rate of growth for this population (when birth rate is set to 0.5 and the death rate is set to 0.4)?</p>
 <p><strong>Q</strong>: What is the next thing you would like to change to make the model more realistic?</p>
 </section>
 </section>
-<section id="an-even-more-realistic-model" class="level2" data-number="6.3">
-<h2 data-number="6.3" class="anchored" data-anchor-id="an-even-more-realistic-model"><span class="header-section-number">6.3</span> An even more realistic model!!</h2>
+<section id="an-even-more-realistic-model" class="level2" data-number="7.3">
+<h2 data-number="7.3" class="anchored" data-anchor-id="an-even-more-realistic-model"><span class="header-section-number">7.3</span> An even more realistic model</h2>
 <p>Which one of these figures is most likely to be from a real wildlife population??</p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
@@ -313,7 +319,7 @@ Figure&nbsp;6.2: :“A better Amur tiger population model that incorporates expo
 <img src="../../figures/fluct2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%" data-fig-pos="h">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fluct2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;6.3: A realistic pattern of population change for a wild animal species
+Figure&nbsp;7.3: A realistic pattern of population change for a wild animal species
 </figcaption>
 </figure>
 </div>
@@ -328,19 +334,19 @@ Figure&nbsp;6.3: A realistic pattern of population change for a wild animal spec
 <img src="../../figures/nofluct2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%" data-fig-pos="h">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-nofluct2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;6.4: An unrealistic pattern of population change for a wild animal species. In reality, the population would most likely fluctuate.
+Figure&nbsp;7.4: An unrealistic pattern of population change for a wild animal species. In reality, the population would most likely fluctuate.
 </figcaption>
 </figure>
 </div>
 </div>
 </div>
-<section id="wildlife-populations-fluctuate-over-time" class="level3" data-number="6.3.1">
-<h3 data-number="6.3.1" class="anchored" data-anchor-id="wildlife-populations-fluctuate-over-time"><span class="header-section-number">6.3.1</span> Wildlife populations fluctuate over time!</h3>
-<p>… And these fluctuations are often difficult to predict!</p>
+<section id="wildlife-populations-fluctuate-over-time" class="level3" data-number="7.3.1">
+<h3 data-number="7.3.1" class="anchored" data-anchor-id="wildlife-populations-fluctuate-over-time"><span class="header-section-number">7.3.1</span> Wildlife populations fluctuate over time</h3>
+<p>… and these fluctuations are often difficult to predict.</p>
 <p>That is to say…</p>
 </section>
-<section id="the-future-is-uncertain" class="level3" data-number="6.3.2">
-<h3 data-number="6.3.2" class="anchored" data-anchor-id="the-future-is-uncertain"><span class="header-section-number">6.3.2</span> The future is uncertain!</h3>
+<section id="the-future-is-uncertain" class="level3" data-number="7.3.2">
+<h3 data-number="7.3.2" class="anchored" data-anchor-id="the-future-is-uncertain"><span class="header-section-number">7.3.2</span> The future is uncertain</h3>
 <p>All ecological systems are full of uncertainty. We all know it intuitively. But what exactly do we mean by that? And how can we deal with it? How can we incorporate it into our models?</p>
 <p>Q: if you were to re-run the basic population model you just made in InsightMaker ten times, how many different results would you get?</p>
 <p>When a model outcome is the same every time (when starting with the same input values) we say that the model is <strong>deterministic</strong>.</p>
@@ -356,19 +362,19 @@ Figure&nbsp;6.4: An unrealistic pattern of population change for a wild animal s
 <img src="../../figures/dice1.png" id="fig-dice" class="img-fluid quarto-figure quarto-figure-center anchored figure-img" style="width:90.0%" data-fig-pos="h">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-dice-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;6.5
+Figure&nbsp;7.5
 </figcaption>
 </figure>
 </div>
 </div>
 </div>
 </section>
-<section id="how-to-model-uncertainty" class="level3" data-number="6.3.3">
-<h3 data-number="6.3.3" class="anchored" data-anchor-id="how-to-model-uncertainty"><span class="header-section-number">6.3.3</span> How to model uncertainty</h3>
+<section id="how-to-model-uncertainty" class="level3" data-number="7.3.3">
+<h3 data-number="7.3.3" class="anchored" data-anchor-id="how-to-model-uncertainty"><span class="header-section-number">7.3.3</span> How to model uncertainty</h3>
 <p>Typically, we ‘embrace uncertainty’ in our models by incorporating <strong>random-number generators</strong>. These types of simulation models are called <strong>stochastic models</strong>.</p>
-<p>When we incorporate random processes into models, the result will be different each time we run the model!</p>
+<p>When we incorporate random processes into models, the result will be different each time we run the model.</p>
 <p>When we use stochastic models, we often want to run lots of <strong>replicates</strong>. Each replicate represents a possible future.</p>
-<p>We can then interpret the <em>cloud of possible futures</em> rather than just the results from a single model run!</p>
+<p>We can then interpret the <em>cloud of possible futures</em> rather than just the results from a single model run.</p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div id="fig-futures-cloud" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center" data-fig-pos="h">
@@ -377,7 +383,7 @@ Figure&nbsp;6.5
 <img src="../../figures/futures-cloud.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%" data-fig-pos="h">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-futures-cloud-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;6.6: :“”
+Figure&nbsp;7.6: :“”
 </figcaption>
 </figure>
 </div>
@@ -385,14 +391,14 @@ Figure&nbsp;6.6: :“”
 </div>
 <p>Here we see that the population went extinct three times out of a total of 50 replicates.</p>
 </section>
-<section id="random-number-generation" class="level3" data-number="6.3.4">
-<h3 data-number="6.3.4" class="anchored" data-anchor-id="random-number-generation"><span class="header-section-number">6.3.4</span> Random number generation</h3>
-<p>To ensure that each model run (replicate) – or each year of each model run – is different from one another, we need to include at least one random number generator in our models!</p>
+<section id="random-number-generation" class="level3" data-number="7.3.4">
+<h3 data-number="7.3.4" class="anchored" data-anchor-id="random-number-generation"><span class="header-section-number">7.3.4</span> Random number generation</h3>
+<p>To ensure that each model run (replicate) – or each year of each model run – is different from one another, we need to include at least one random number generator in our models.</p>
 <p>A <strong>random number generator</strong> is like a box of (potentially infinite) possible numbers – a lottery ball machine for example! Each time we want a new number we reach in and pull one out randomly, record the number, put it back in and shake it up again.</p>
 </section>
-<section id="return-to-insightmaker--add-randomness" class="level3" data-number="6.3.5">
-<h3 data-number="6.3.5" class="anchored" data-anchor-id="return-to-insightmaker--add-randomness"><span class="header-section-number">6.3.5</span> Return to InsightMaker- add randomness!</h3>
-<p>The term <strong>stochasticity</strong> just means randomness. A <strong>stochastic population model</strong> is a model with one or more random number generators included!</p>
+<section id="return-to-insightmaker--add-randomness" class="level3" data-number="7.3.5">
+<h3 data-number="7.3.5" class="anchored" data-anchor-id="return-to-insightmaker--add-randomness"><span class="header-section-number">7.3.5</span> Return to InsightMaker- add randomness</h3>
+<p>The term <strong>stochasticity</strong> just means randomness. A <strong>stochastic population model</strong> is a model with one or more random number generators included.</p>
 <ol type="1">
 <li>Click on <a href="https://insightmaker.com/insight/7lMVIIpHWolcgKEyO0GOGw">this link</a> to load up the next population modeling demonstration.</li>
 <li>In the upper right-hand corner of the screen, click on the “Clone Insight” link at the top and click on the “Clone” button on the following screen (so you can make edits to this model!). If you want, you can change the name of the model by clicking on the whitespace anywhere in your InsightMaker environment and then clicking the “Edit Info” button on the left-hand context menu.</li>
@@ -827,13 +833,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../notebooks/genetic-drift.html" class="pagination-link" aria-label="Genetic drift">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Genetic drift</span></span>
+      <a href="../../notebooks/metapopulations.html" class="pagination-link" aria-label="Metapoplations">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Metapoplations</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="../../notebooks/PVA/PVA_grizzly.html" class="pagination-link" aria-label="Grizzly bear PVA example">
-        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Grizzly bear PVA example</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Grizzly bear PVA example</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

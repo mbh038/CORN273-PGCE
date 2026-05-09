@@ -5,6 +5,10 @@ library(tidyverse)
 library(janitor)
 ```
 
+## Marbles in a jar example
+
+See Wikipedia
+
 ```{r}
 N<- 10
 population <- tibble(ID = 1:(2*N), allele = c(rep("blue", N), rep("red",N)), value=c(rep(0,N),rep(1,N)))
@@ -68,10 +72,13 @@ ps_df <-   mutate(ps_df, generation = 1:generations) |>
 ps_df |>
   pivot_longer(A:E,names_to= "population", values_to = "allele_frequency") |>
   ggplot(aes(x = generation, y = allele_frequency, colour = population)) +
-    geom_point(size = 1) +
+    # geom_point(size = 0.4) +
     geom_line(linewidth = 0.3) +
     labs(x = "Generation",
-         y = "Allele Frequency") +
+         y = "Allele A~1~ Frequency",
+         colour = "Population") +
+  scale_x_continuous(breaks = seq(0,generations,50)) +
+  scale_y_continuous(breaks = seq(0,1,0.1)) +
     theme_minimal()
     
 ```

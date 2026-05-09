@@ -1,0 +1,82 @@
+# Fst calculations
+
+# Snake genotype data
+```{r}
+
+```
+
+
+## Observed genotype data
+```{r}
+genotypes <- data.frame(
+  genotype = rep(c("n_AA", "n_Aa", "n_aa"),2),
+  site = c(rep("S1",6), rep("S2",6)),
+  EW = rep(c(rep("W",3), rep("E",3)),2),
+  freq_obs = c(14,8,3,4,4,12,10,15,8,6,10,8)
+)
+genotypes
+```
+## Calculate Allele frequencies
+```{r}
+genotypes |>
+  pivot_wider(names_from = genotype, values_from = freq_obs) |>
+  mutate(N = (AA + Aa + aa),
+         AA_o = n_AA / N,
+         Aa_o = n_Aa / N,
+         aa_o = n_aa,
+         p = (2 * AA + Aa) / (2*N),
+         q = (2 * aa + Aa) / (2*N),
+         AA_e = p^2,
+         Aa_e = 2 * p * q,
+         aa_e = q^2,
+         Fst = 1 - Aa_o / Aa_e)
+
+```
+
+
+
+```{r}
+AA_o<- 22
+Aa_o <- 38
+aa_o <- 20
+observed <- c(AA_o, Aa_o, aa_o)
+N <- AA + Aa + aa
+```
+
+## Calculate allele frequencies
+```{r}
+p <- (2*AA_o + Aa_o)/(2*N)
+q <- (2*aa_o + Aa_o)/(2*N)
+```
+
+## Calculate Expected Genotype Frequencies
+```{r}
+fAA_e <- p*p
+fAa_e <- 2*p*q
+faa_e <- q*q
+f_expected <- c(fAA_e, fAa_e, faa_e)
+```
+
+## Calculate Expected Genotype Numbers
+```{r}
+AA_e <- N * fAA_e
+Aa_e <- N * fAa_e
+aa_e <- N * faa_e
+expected <- c(AA_e, Aa_e, aa_e)
+```
+
+# Do we deviate from HWE?
+```{r}
+chisq.test(observed, p = f_expected)
+```
+
+
+
+
+
+
+
+
+
+
+

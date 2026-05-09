@@ -1,5 +1,5 @@
 # _common.R based on R4DS: https://github.com/hadley/r4ds/blob/master/_common.R
-set.seed(25)
+set.seed(26)
 options(digits = 3)
 
 # packages ---------------------------------------------------------------------
@@ -39,6 +39,11 @@ suppressMessages(library(GGally))
 suppressMessages(library(mosaicData))
 suppressMessages(library(cowplot))
 suppressMessages(library(here))
+suppressMessages(library(sf))
+suppressMessages(library(readxl))
+suppressMessages(library(terra))
+suppressMessages(library(rstatix))
+suppressMessages(library(gt))
 
 # knitr chunk options ----------------------------------------------------------
 
@@ -89,6 +94,8 @@ ggplot2::update_geom_defaults("point", list(color = openintro::IMSCOL["blue","fu
 ggplot2::update_geom_defaults("bar", list(fill = openintro::IMSCOL["blue","full"], 
                                           color = "#FFFFFF"))
 ggplot2::update_geom_defaults("col", list(fill = openintro::IMSCOL["blue","full"], 
+                                          color = "#FFFFFF"))
+ggplot2::update_geom_defaults("violin", list(fill = openintro::IMSCOL["blue","full"], 
                                           color = "#FFFFFF"))
 ggplot2::update_geom_defaults("boxplot", list(color = openintro::IMSCOL["blue","full"]))
 ggplot2::update_geom_defaults("density", list(color = openintro::IMSCOL["blue","full"]))

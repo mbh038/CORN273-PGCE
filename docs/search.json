@@ -454,17 +454,7 @@
     "href": "notebooks/hardy-weinberg/hardy-weinberg.html",
     "title": "4  Hardy-Weinberg Equilibrium",
     "section": "",
-    "text": "5 —",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Hardy-Weinberg Equilibrium</span>"
-    ]
-  },
-  {
-    "objectID": "notebooks/hardy-weinberg/hardy-weinberg.html#hardy-weinberg-equilibrium",
-    "href": "notebooks/hardy-weinberg/hardy-weinberg.html#hardy-weinberg-equilibrium",
-    "title": "4  Hardy-Weinberg Equilibrium",
-    "section": "12.1 Hardy-Weinberg equilibrium",
-    "text": "12.1 Hardy-Weinberg equilibrium\n\nWhen a population is in Hardy-Weinberg equilibrium for a gene, it is not evolving, and allele frequencies will stay the same across generations.\nThere are five basic Hardy-Weinberg assumptions:\n\nno mutation\nrandom mating\nno gene flow\ninfinite population size\nno selection.",
+    "text": "4.1 Violation of HW assumptions",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Hardy-Weinberg Equilibrium</span>"
     ]
@@ -473,8 +463,8 @@
     "objectID": "notebooks/hardy-weinberg/hardy-weinberg.html#violation-of-hw-assumptions",
     "href": "notebooks/hardy-weinberg/hardy-weinberg.html#violation-of-hw-assumptions",
     "title": "4  Hardy-Weinberg Equilibrium",
-    "section": "12.2 Violation of HW assumptions",
-    "text": "12.2 Violation of HW assumptions\n\nIf the assumptions are not met for a gene, the population may evolve for that gene (the gene’s allele frequencies may change).\nMechanisms of evolution correspond to violations of different Hardy-Weinberg assumptions. They are:\n\nmutation\nnon-random mating\ngene flow\nfinite population size (genetic drift)\nnatural selection",
+    "section": "",
+    "text": "If the assumptions are not met for a gene, the population may evolve for that gene (the gene’s allele frequencies may change).\nMechanisms of evolution correspond to violations of different Hardy-Weinberg assumptions. They are:\n\nmutation\nnon-random mating\ngene flow\nfinite population size (genetic drift)\nnatural selection",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Hardy-Weinberg Equilibrium</span>"
     ]
@@ -483,18 +473,18 @@
     "objectID": "notebooks/hardy-weinberg/hardy-weinberg.html#evolution-is-the-norm",
     "href": "notebooks/hardy-weinberg/hardy-weinberg.html#evolution-is-the-norm",
     "title": "4  Hardy-Weinberg Equilibrium",
-    "section": "12.3 Evolution is the Norm",
-    "text": "12.3 Evolution is the Norm\n\nIn nature, populations are usually evolving.\nAll of these populations are likely to be evolving for at least some of their genes.\nEvolution is happening right here, right now!\nEvolution means is that a population is changing in its genetic makeup over generations.\nSometimes, this type of change is due to natural selection. Other times, it comes from migration of new organisms into the population, or from random events—the evolutionary “luck of the draw.”",
+    "section": "4.2 Evolution is the Norm",
+    "text": "4.2 Evolution is the Norm\n\nIn nature, populations are usually evolving.\nAll of these populations are likely to be evolving for at least some of their genes.\nEvolution is happening right here, right now!\nEvolution means is that a population is changing in its genetic makeup over generations.\nSometimes, this type of change is due to natural selection. Other times, it comes from migration of new organisms into the population, or from random events—the evolutionary “luck of the draw.”",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Hardy-Weinberg Equilibrium</span>"
     ]
   },
   {
-    "objectID": "notebooks/hardy-weinberg/hardy-weinberg.html#hardy-weinberg-equilibrium-1",
-    "href": "notebooks/hardy-weinberg/hardy-weinberg.html#hardy-weinberg-equilibrium-1",
+    "objectID": "notebooks/hardy-weinberg/hardy-weinberg.html#hardy-weinberg-equilibrium",
+    "href": "notebooks/hardy-weinberg/hardy-weinberg.html#hardy-weinberg-equilibrium",
     "title": "4  Hardy-Weinberg Equilibrium",
-    "section": "12.4 Hardy-Weinberg Equilibrium",
-    "text": "12.4 Hardy-Weinberg Equilibrium\nWhat does it look like when a population is not evolving?\n\nIf a population is in a state called Hardy-Weinberg equilibrium, the frequencies of alleles, or gene versions, and genotypes, or sets of alleles, in that population will stay the same over generations\nThey will also satisfy the Hardy-Weinberg equation).\nEvolution is a change in allele frequencies in a population over time - so a population in Hardy-Weinberg equilibrium is not evolving.",
+    "section": "4.3 Hardy-Weinberg Equilibrium",
+    "text": "4.3 Hardy-Weinberg Equilibrium\nWhat does it look like when a population is not evolving?\n\nIf a population is in a state called Hardy-Weinberg equilibrium, the frequencies of alleles, or gene versions, and genotypes, or sets of alleles, in that population will stay the same over generations\nThey will also satisfy the Hardy-Weinberg equation).\nEvolution is a change in allele frequencies in a population over time - so a population in Hardy-Weinberg equilibrium is not evolving.",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Hardy-Weinberg Equilibrium</span>"
     ]
@@ -503,8 +493,8 @@
     "objectID": "notebooks/hardy-weinberg/hardy-weinberg.html#beetle-example",
     "href": "notebooks/hardy-weinberg/hardy-weinberg.html#beetle-example",
     "title": "4  Hardy-Weinberg Equilibrium",
-    "section": "12.5 Beetle example",
-    "text": "12.5 Beetle example\nImagine we have a large population of beetles.\n\nThis population is infinitely large.\nPhenotype: The beetles of our infinitely large population come in two colours, dark grey and light grey.\nTheir colour is determined by the A gene.\nGenotype: AA and Aa beetles are dark grey, and aa beetles are light grey.",
+    "section": "4.4 Beetle example",
+    "text": "4.4 Beetle example\nImagine we have a large population of beetles.\n\nThis population is infinitely large.\nPhenotype: The beetles of our infinitely large population come in two colours, dark grey and light grey.\nTheir colour is determined by the A gene.\nGenotype: AA and Aa beetles are dark grey, and aa beetles are light grey.",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Hardy-Weinberg Equilibrium</span>"
     ]
@@ -513,8 +503,8 @@
     "objectID": "notebooks/hardy-weinberg/hardy-weinberg.html#allele-frequencies",
     "href": "notebooks/hardy-weinberg/hardy-weinberg.html#allele-frequencies",
     "title": "4  Hardy-Weinberg Equilibrium",
-    "section": "12.6 Allele Frequencies",
-    "text": "12.6 Allele Frequencies\nSuppose the A allele has a frequency of 0.3, while the a allele has a frequency of 0.7.\n\nIf a population is in Hardy-Weinberg equilibrium, genotype frequencies will be related to allele frequencies by the Hardy-Weinberg equation.\nSo, we can predict the genotype frequencies we’d expect to see (if the population is in Hardy-Weinberg equilibrium) by plugging in allele frequencies as shown below:",
+    "section": "4.5 Allele Frequencies",
+    "text": "4.5 Allele Frequencies\nSuppose the A allele has a frequency of 0.3, while the a allele has a frequency of 0.7.\n\nIf a population is in Hardy-Weinberg equilibrium, genotype frequencies will be related to allele frequencies by the Hardy-Weinberg equation.\nSo, we can predict the genotype frequencies we’d expect to see (if the population is in Hardy-Weinberg equilibrium) by plugging in allele frequencies as shown below:",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Hardy-Weinberg Equilibrium</span>"
     ]
@@ -523,8 +513,8 @@
     "objectID": "notebooks/hardy-weinberg/hardy-weinberg.html#hardy-weinberg-equation",
     "href": "notebooks/hardy-weinberg/hardy-weinberg.html#hardy-weinberg-equation",
     "title": "4  Hardy-Weinberg Equilibrium",
-    "section": "12.7 Hardy Weinberg Equation",
-    "text": "12.7 Hardy Weinberg Equation",
+    "section": "4.6 Hardy Weinberg Equation",
+    "text": "4.6 Hardy Weinberg Equation",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Hardy-Weinberg Equilibrium</span>"
     ]
@@ -533,8 +523,8 @@
     "objectID": "notebooks/hardy-weinberg/hardy-weinberg.html#the-next-generation",
     "href": "notebooks/hardy-weinberg/hardy-weinberg.html#the-next-generation",
     "title": "4  Hardy-Weinberg Equilibrium",
-    "section": "12.8 The next generation?",
-    "text": "12.8 The next generation?\nLet’s imagine that these are, in fact, the genotype frequencies we see in our beetle population:\n\\[9\\% \\text{AA}, \\quad 42\\% \\text{Aa}, \\quad 49\\% \\text{aa}\\]\n\nThis means that the beetles are in Hardy-Weinberg equilibrium!\nNow, let’s imagine that the beetles reproduce to make a next generation.\nWhat will the allele and genotype frequencies will be in that generation?",
+    "section": "4.7 The next generation?",
+    "text": "4.7 The next generation?\nLet’s imagine that these are, in fact, the genotype frequencies we see in our beetle population:\n\\[9\\% \\text{AA}, \\quad 42\\% \\text{Aa}, \\quad 49\\% \\text{aa}\\]\n\nThis means that the beetles are in Hardy-Weinberg equilibrium!\nNow, let’s imagine that the beetles reproduce to make a next generation.\nWhat will the allele and genotype frequencies will be in that generation?",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Hardy-Weinberg Equilibrium</span>"
     ]
@@ -543,8 +533,8 @@
     "objectID": "notebooks/hardy-weinberg/hardy-weinberg.html#assumptions-made",
     "href": "notebooks/hardy-weinberg/hardy-weinberg.html#assumptions-made",
     "title": "4  Hardy-Weinberg Equilibrium",
-    "section": "12.9 Assumptions made",
-    "text": "12.9 Assumptions made\n\nNone of the genotypes is any better than the others at surviving or getting mates. ie the frequency of A and a alleles in the pool of gametes (sperm and eggs) that meet to make the next\nThe beetles mate randomly (as opposed to, say, black beetles preferring other black beetles). ie reproduction is the result of two random events: selection of a sperm from the population’s gene pool and selection of an egg from the same gene pool. The probability of getting any offspring genotype is just the probability of getting the egg and sperm combinations that produce that genotype.",
+    "section": "4.8 Assumptions made",
+    "text": "4.8 Assumptions made\n\nNone of the genotypes is any better than the others at surviving or getting mates. ie the frequency of A and a alleles in the pool of gametes (sperm and eggs) that meet to make the next\nThe beetles mate randomly (as opposed to, say, black beetles preferring other black beetles). ie reproduction is the result of two random events: selection of a sperm from the population’s gene pool and selection of an egg from the same gene pool. The probability of getting any offspring genotype is just the probability of getting the egg and sperm combinations that produce that genotype.",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Hardy-Weinberg Equilibrium</span>"
     ]
@@ -553,8 +543,8 @@
     "objectID": "notebooks/hardy-weinberg/hardy-weinberg.html#the-next-generation-1",
     "href": "notebooks/hardy-weinberg/hardy-weinberg.html#the-next-generation-1",
     "title": "4  Hardy-Weinberg Equilibrium",
-    "section": "12.10 The next generation",
-    "text": "12.10 The next generation",
+    "section": "4.9 The next generation",
+    "text": "4.9 The next generation",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Hardy-Weinberg Equilibrium</span>"
     ]
@@ -563,8 +553,8 @@
     "objectID": "notebooks/hardy-weinberg/hardy-weinberg.html#in-summary",
     "href": "notebooks/hardy-weinberg/hardy-weinberg.html#in-summary",
     "title": "4  Hardy-Weinberg Equilibrium",
-    "section": "12.11 In summary",
-    "text": "12.11 In summary\nWhat we’ve just seen is the essence of Hardy-Weinberg equilibrium.\n\nIf alleles in the gamete pool exactly mirror those in the parent generation, and\nif they meet up randomly (in an infinitely large number of events), then\n\nthere is no reason—in fact, no way—for allele and genotype frequencies to change from one generation to the next.",
+    "section": "4.10 In summary",
+    "text": "4.10 In summary\nWhat we’ve just seen is the essence of Hardy-Weinberg equilibrium.\n\nIf alleles in the gamete pool exactly mirror those in the parent generation, and\nif they meet up randomly (in an infinitely large number of events), then\n\nthere is no reason—in fact, no way—for allele and genotype frequencies to change from one generation to the next.",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Hardy-Weinberg Equilibrium</span>"
     ]
@@ -573,8 +563,8 @@
     "objectID": "notebooks/hardy-weinberg/hardy-weinberg.html#a-population-in-hardy-weinberg-equilibrium-is-not-evolving",
     "href": "notebooks/hardy-weinberg/hardy-weinberg.html#a-population-in-hardy-weinberg-equilibrium-is-not-evolving",
     "title": "4  Hardy-Weinberg Equilibrium",
-    "section": "12.12 A population in Hardy-Weinberg equilibrium is not evolving",
-    "text": "12.12 A population in Hardy-Weinberg equilibrium is not evolving\n\nIn the absence of other factors, you can imagine this process repeating over and over, generation after generation, keeping allele and genotype frequencies the same.\nSince evolution is a change in allele frequencies in a population over generations, a population in Hardy-Weinberg equilibrium is, by definition, not evolving.",
+    "section": "4.11 A population in Hardy-Weinberg equilibrium is not evolving",
+    "text": "4.11 A population in Hardy-Weinberg equilibrium is not evolving\n\nIn the absence of other factors, you can imagine this process repeating over and over, generation after generation, keeping allele and genotype frequencies the same.\nSince evolution is a change in allele frequencies in a population over generations, a population in Hardy-Weinberg equilibrium is, by definition, not evolving.",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Hardy-Weinberg Equilibrium</span>"
     ]
@@ -583,8 +573,8 @@
     "objectID": "notebooks/hardy-weinberg/hardy-weinberg.html#is-hardy-weinburg-equilibrium-realistic",
     "href": "notebooks/hardy-weinberg/hardy-weinberg.html#is-hardy-weinburg-equilibrium-realistic",
     "title": "4  Hardy-Weinberg Equilibrium",
-    "section": "12.13 Is Hardy-Weinburg equilibrium realistic?",
-    "text": "12.13 Is Hardy-Weinburg equilibrium realistic?\n\nPopulations are usually not in Hardy-Weinberg equilibrium (at least, not for all of the genes in their genome).\nInstead, populations tend to evolve: the allele frequencies of at least some of their genes change from one generation to the next.\nIf a population’s allele and genotype frequencies are changing over generations (or if the allele and genotype frequencies don’t match the predictions of the Hardy-Weinberg equation), the question is: why?",
+    "section": "4.12 Is Hardy-Weinburg equilibrium realistic?",
+    "text": "4.12 Is Hardy-Weinburg equilibrium realistic?\n\nPopulations are usually not in Hardy-Weinberg equilibrium (at least, not for all of the genes in their genome).\nInstead, populations tend to evolve: the allele frequencies of at least some of their genes change from one generation to the next.\nIf a population’s allele and genotype frequencies are changing over generations (or if the allele and genotype frequencies don’t match the predictions of the Hardy-Weinberg equation), the question is: why?",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Hardy-Weinberg Equilibrium</span>"
     ]
@@ -593,8 +583,8 @@
     "objectID": "notebooks/hardy-weinberg/hardy-weinberg.html#hardy-weinberg-assumptions",
     "href": "notebooks/hardy-weinberg/hardy-weinberg.html#hardy-weinberg-assumptions",
     "title": "4  Hardy-Weinberg Equilibrium",
-    "section": "12.14 Hardy-Weinberg assumptions",
-    "text": "12.14 Hardy-Weinberg assumptions\n\nNo mutation. No new alleles are generated by mutation, nor are genes duplicated or deleted.\nRandom mating. Organisms mate randomly with each other, with no preference for particular genotypes.\nNo gene flow. Neither individuals nor their gametes (e.g., windborne pollen) enter or exit the population.\nVery large population size. The population should be effectively infinite in size.\nNo natural selection. All alleles confer equal fitness (make organisms equally likely to survive and reproduce).",
+    "section": "4.13 Hardy-Weinberg assumptions",
+    "text": "4.13 Hardy-Weinberg assumptions\n\nNo mutation. No new alleles are generated by mutation, nor are genes duplicated or deleted.\nRandom mating. Organisms mate randomly with each other, with no preference for particular genotypes.\nNo gene flow. Neither individuals nor their gametes (e.g., windborne pollen) enter or exit the population.\nVery large population size. The population should be effectively infinite in size.\nNo natural selection. All alleles confer equal fitness (make organisms equally likely to survive and reproduce).",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Hardy-Weinberg Equilibrium</span>"
     ]
@@ -603,8 +593,8 @@
     "objectID": "notebooks/hardy-weinberg/hardy-weinberg.html#what-if-the-assumptions-are-not-met",
     "href": "notebooks/hardy-weinberg/hardy-weinberg.html#what-if-the-assumptions-are-not-met",
     "title": "4  Hardy-Weinberg Equilibrium",
-    "section": "12.15 What if the assumptions are not met?",
-    "text": "12.15 What if the assumptions are not met?\n\nIf any one of these assumptions is not met, the population will not be in Hardy-Weinberg equilibrium.\nInstead, it may evolve: allele frequencies may change from one generation to the next.\nAllele and genotype frequencies within a single generation may also fail to satisfy the Hardy-Weinberg equation",
+    "section": "4.14 What if the assumptions are not met?",
+    "text": "4.14 What if the assumptions are not met?\n\nIf any one of these assumptions is not met, the population will not be in Hardy-Weinberg equilibrium.\nInstead, it may evolve: allele frequencies may change from one generation to the next.\nAllele and genotype frequencies within a single generation may also fail to satisfy the Hardy-Weinberg equation",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Hardy-Weinberg Equilibrium</span>"
     ]
@@ -613,8 +603,8 @@
     "objectID": "notebooks/hardy-weinberg/hardy-weinberg.html#would-all-genes-satisfy-h-w",
     "href": "notebooks/hardy-weinberg/hardy-weinberg.html#would-all-genes-satisfy-h-w",
     "title": "4  Hardy-Weinberg Equilibrium",
-    "section": "12.16 Would all genes satisfy H-W?",
-    "text": "12.16 Would all genes satisfy H-W?\nWe can think about Hardy-Weinberg equilibrium in two ways: for just one gene, or for all the genes in the genome.\n\nFor just one gene, we could check whether the above criteria are true. For example, we would ask if there were mutations in that gene, or if organisms mated randomly with regards to their genotype for that gene.\nIf we look at all the genes in the genome, the conditions have to be met for every single gene. While it’s possible that the conditions will be more or less met for a single gene under certain circumstances, it’s very unlikely that they would be met for all the genes in the genome.\n\nSo, while a population may be in Hardy-Weinberg equilibrium for some genes (not evolving for those genes), it’s unlikely to be in Hardy-Weinberg equilibrium for all of its genes (not evolving at all).",
+    "section": "4.15 Would all genes satisfy H-W?",
+    "text": "4.15 Would all genes satisfy H-W?\nWe can think about Hardy-Weinberg equilibrium in two ways: for just one gene, or for all the genes in the genome.\n\nFor just one gene, we could check whether the above criteria are true. For example, we would ask if there were mutations in that gene, or if organisms mated randomly with regards to their genotype for that gene.\nIf we look at all the genes in the genome, the conditions have to be met for every single gene. While it’s possible that the conditions will be more or less met for a single gene under certain circumstances, it’s very unlikely that they would be met for all the genes in the genome.\n\nSo, while a population may be in Hardy-Weinberg equilibrium for some genes (not evolving for those genes), it’s unlikely to be in Hardy-Weinberg equilibrium for all of its genes (not evolving at all).",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Hardy-Weinberg Equilibrium</span>"
     ]
@@ -623,8 +613,8 @@
     "objectID": "notebooks/hardy-weinberg/hardy-weinberg.html#mechanisms-of-evolution-mutation",
     "href": "notebooks/hardy-weinberg/hardy-weinberg.html#mechanisms-of-evolution-mutation",
     "title": "4  Hardy-Weinberg Equilibrium",
-    "section": "12.17 Mechanisms of evolution : Mutation",
-    "text": "12.17 Mechanisms of evolution : Mutation\n\n\nMutation is the original source of all genetic variation, but the mutation rate for most organisms is pretty low.\nSo, the impact of brand-new mutations on allele frequencies from one generation to the next is usually not large.\nHowever, natural selection acting on the results of a mutation can be a powerful mechanism of evolution!",
+    "section": "4.16 Mechanisms of evolution : Mutation",
+    "text": "4.16 Mechanisms of evolution : Mutation\n\n\nMutation is the original source of all genetic variation, but the mutation rate for most organisms is pretty low.\nSo, the impact of brand-new mutations on allele frequencies from one generation to the next is usually not large.\nHowever, natural selection acting on the results of a mutation can be a powerful mechanism of evolution!",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Hardy-Weinberg Equilibrium</span>"
     ]
@@ -633,8 +623,8 @@
     "objectID": "notebooks/hardy-weinberg/hardy-weinberg.html#non-random-mating.",
     "href": "notebooks/hardy-weinberg/hardy-weinberg.html#non-random-mating.",
     "title": "4  Hardy-Weinberg Equilibrium",
-    "section": "12.18 Non-random mating.",
-    "text": "12.18 Non-random mating.\n\nIn non-random mating, organisms may prefer to mate with others of the same genotype or of different genotypes. Non-random mating won’t make allele frequencies in the population change by itself, though it can alter genotype frequencies. This keeps the population from being in Hardy-Weinberg equilibrium, but it’s debatable whether it counts as evolution, since the allele frequencies are staying the same.",
+    "section": "4.17 Non-random mating.",
+    "text": "4.17 Non-random mating.\n\nIn non-random mating, organisms may prefer to mate with others of the same genotype or of different genotypes. Non-random mating won’t make allele frequencies in the population change by itself, though it can alter genotype frequencies. This keeps the population from being in Hardy-Weinberg equilibrium, but it’s debatable whether it counts as evolution, since the allele frequencies are staying the same.",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Hardy-Weinberg Equilibrium</span>"
     ]
@@ -643,8 +633,8 @@
     "objectID": "notebooks/hardy-weinberg/hardy-weinberg.html#gene-flow.",
     "href": "notebooks/hardy-weinberg/hardy-weinberg.html#gene-flow.",
     "title": "4  Hardy-Weinberg Equilibrium",
-    "section": "12.19 Gene flow.",
-    "text": "12.19 Gene flow.\nGene flow involves the movement of genes into or out of a population, due to either the movement of individual organisms or their gametes (eggs and sperm, e.g., through pollen dispersal by a plant). Organisms and gametes that enter a population may have new alleles, or may bring in existing alleles but in different proportions than those already in the population. Gene flow can be a strong agent of evolution.",
+    "section": "4.18 Gene flow.",
+    "text": "4.18 Gene flow.\nGene flow involves the movement of genes into or out of a population, due to either the movement of individual organisms or their gametes (eggs and sperm, e.g., through pollen dispersal by a plant). Organisms and gametes that enter a population may have new alleles, or may bring in existing alleles but in different proportions than those already in the population. Gene flow can be a strong agent of evolution.",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Hardy-Weinberg Equilibrium</span>"
     ]
@@ -653,8 +643,8 @@
     "objectID": "notebooks/hardy-weinberg/hardy-weinberg.html#non-infinite-population-size-genetic-drift.",
     "href": "notebooks/hardy-weinberg/hardy-weinberg.html#non-infinite-population-size-genetic-drift.",
     "title": "4  Hardy-Weinberg Equilibrium",
-    "section": "12.20 Non-infinite population size (genetic drift).",
-    "text": "12.20 Non-infinite population size (genetic drift).\nGenetic drift involves changes in allele frequency due to chance events – literally, “sampling error” in selecting alleles for the next generation. Drift can occur in any population of non-infinite size, but it has a stronger effect on small populations.",
+    "section": "4.19 Non-infinite population size (genetic drift).",
+    "text": "4.19 Non-infinite population size (genetic drift).\nGenetic drift involves changes in allele frequency due to chance events – literally, “sampling error” in selecting alleles for the next generation. Drift can occur in any population of non-infinite size, but it has a stronger effect on small populations.",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Hardy-Weinberg Equilibrium</span>"
     ]
@@ -663,8 +653,8 @@
     "objectID": "notebooks/hardy-weinberg/hardy-weinberg.html#natural-selection.",
     "href": "notebooks/hardy-weinberg/hardy-weinberg.html#natural-selection.",
     "title": "4  Hardy-Weinberg Equilibrium",
-    "section": "12.21 Natural selection.",
-    "text": "12.21 Natural selection.\nFinally, the most famous mechanism of evolution! Natural selection occurs when one allele (or combination of alleles of different genes) makes an organism more or less fit, that is, able to survive and reproduce in a given environment. If an allele reduces fitness, its frequency will tend to drop from one generation to the next.",
+    "section": "4.20 Natural selection.",
+    "text": "4.20 Natural selection.\nFinally, the most famous mechanism of evolution! Natural selection occurs when one allele (or combination of alleles of different genes) makes an organism more or less fit, that is, able to survive and reproduce in a given environment. If an allele reduces fitness, its frequency will tend to drop from one generation to the next.",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Hardy-Weinberg Equilibrium</span>"
     ]
@@ -673,8 +663,8 @@
     "objectID": "notebooks/hardy-weinberg/hardy-weinberg.html#example-calculations",
     "href": "notebooks/hardy-weinberg/hardy-weinberg.html#example-calculations",
     "title": "4  Hardy-Weinberg Equilibrium",
-    "section": "12.22 Example calculations",
-    "text": "12.22 Example calculations\n\n12.22.1 Calculate allele frequencies from phenotype frequencies\nSuppose in tigers there is a gene for fur colour with alleles O and w, O being dominant and w being recessive. Individuals with genotype AA or Aw have orange fur, while only those individuals that are homozygous in the recessive gene ww have white fur.\nConsider a small population of 15 of these tigers, 10 of which have orange fur, while 5 have white fur.\n!. What are the possible genotypes of the orange tigers? 2. What are the possible genotypes of the white tigers?\n\nWhat are the allele frequencies? That is, for the fur colour gene, what proportion of the alleles in the population is the dominant type W and what proportion is the recessive type w\nIf this population was in Hardy-Weinberg equilibrium, what would be the frequencies of the possible genotypes AA, Aw and ww?",
+    "section": "4.21 Example calculations",
+    "text": "4.21 Example calculations\n\n4.21.1 Calculate allele frequencies from phenotype frequencies\nSuppose in tigers there is a gene for fur colour with alleles O and w, O being dominant and w being recessive. Individuals with genotype AA or Aw have orange fur, while only those individuals that are homozygous in the recessive gene ww have white fur.\nConsider a small population of 15 of these tigers, 10 of which have orange fur, while 5 have white fur.\n!. What are the possible genotypes of the orange tigers? 2. What are the possible genotypes of the white tigers?\n\nWhat are the allele frequencies? That is, for the fur colour gene, what proportion of the alleles in the population is the dominant type W and what proportion is the recessive type w\nIf this population was in Hardy-Weinberg equilibrium, what would be the frequencies of the possible genotypes AA, Aw and ww?",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Hardy-Weinberg Equilibrium</span>"
     ]
@@ -684,7 +674,17 @@
     "href": "notebooks/genetic-drift.html",
     "title": "5  Genetic drift",
     "section": "",
-    "text": "5.1 Binomial version\n# Initial state\nnpops &lt;- 5\npop_size &lt;- 100\ntotal_alleles &lt;- 2 * pop_size\np &lt;- 0.5 # Frequency of allele A\ngenerations &lt;- 300\nps &lt;- matrix(rep(0, npops*generations), ncol = npops)\ni &lt;-0\nfor (pop in 1:npops){\n  p &lt;-0.5\n  for (i in 1:generations){\n      # Randomly draw 2N alleles based on frequency p\n      # Each draw is binomial sampling\n      num_A &lt;- rbinom(1,total_alleles, p)\n      \n      # Update frequency\n      p &lt;- num_A / total_alleles\n      ps[i,pop] &lt;- p\n      \n      # print(f\"Gen {gen+1}: Freq A = {p}\")\n      \n      # If allele is fixed or lost, stop\n  }\n}\nps_df &lt;- as.tibble(ps)\n\nWarning: `as.tibble()` was deprecated in tibble 2.0.0.\nℹ Please use `as_tibble()` instead.\nℹ The signature and semantics have changed, see `?as_tibble`.\n\n\nWarning: The `x` argument of `as_tibble.matrix()` must have unique column names if\n`.name_repair` is omitted as of tibble 2.0.0.\nℹ Using compatibility `.name_repair`.\nℹ The deprecated feature was likely used in the tibble package.\n  Please report the issue at &lt;https://github.com/tidyverse/tibble/issues&gt;.\n\nnames(ps_df) &lt;- LETTERS[1:npops] \nps_df &lt;-   mutate(ps_df, generation = 1:generations) |&gt;\n  select(generation,names(ps_df))\nps_df |&gt;\n  pivot_longer(A:E,names_to= \"population\", values_to = \"allele_frequency\") |&gt;\n  ggplot(aes(x = generation, y = allele_frequency, colour = population)) +\n    geom_point(size = 1) +\n    geom_line(linewidth = 0.3) +\n    labs(x = \"Generation\",\n         y = \"Allele Frequency\") +\n    theme_minimal()",
+    "text": "5.1 Marbles in a jar example\nSee Wikipedia\nN&lt;- 10\npopulation &lt;- tibble(ID = 1:(2*N), allele = c(rep(\"blue\", N), rep(\"red\",N)), value=c(rep(0,N),rep(1,N)))\ngeneration&lt;-0\nnew_population&lt;-slice_sample(population,n=nrow(population), replace = TRUE)\nn_red &lt;- sum(new_population$value)\nwhile (n_red&gt;0 & n_red&lt;2*N){\n  generation &lt;- generation + 1\n  n_red &lt;- sum(new_population$value)\n  print(paste(generation, n_red))\n  new_population&lt;-slice_sample(new_population,n=nrow(population), replace = TRUE)\n}\n\n[1] \"1 13\"\n[1] \"2 7\"\n[1] \"3 6\"\n[1] \"4 6\"\n[1] \"5 2\"\n[1] \"6 1\"\n[1] \"7 0\"",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Genetic drift</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/genetic-drift.html#binomial-version",
+    "href": "notebooks/genetic-drift.html#binomial-version",
+    "title": "5  Genetic drift",
+    "section": "5.2 Binomial version",
+    "text": "5.2 Binomial version\n\n# Initial state\nnpops &lt;- 5\npop_size &lt;- 100\ntotal_alleles &lt;- 2 * pop_size\np &lt;- 0.5 # Frequency of allele A\ngenerations &lt;- 300\n\n\nps &lt;- matrix(rep(0, npops*generations), ncol = npops)\ni &lt;-0\nfor (pop in 1:npops){\n  p &lt;-0.5\n  for (i in 1:generations){\n      # Randomly draw 2N alleles based on frequency p\n      # Each draw is binomial sampling\n      num_A &lt;- rbinom(1,total_alleles, p)\n      \n      # Update frequency\n      p &lt;- num_A / total_alleles\n      ps[i,pop] &lt;- p\n      \n      # print(f\"Gen {gen+1}: Freq A = {p}\")\n      \n      # If allele is fixed or lost, stop\n  }\n}\n\n\nps_df &lt;- as.tibble(ps)\n\nWarning: `as.tibble()` was deprecated in tibble 2.0.0.\nℹ Please use `as_tibble()` instead.\nℹ The signature and semantics have changed, see `?as_tibble`.\n\n\nWarning: The `x` argument of `as_tibble.matrix()` must have unique column names if\n`.name_repair` is omitted as of tibble 2.0.0.\nℹ Using compatibility `.name_repair`.\nℹ The deprecated feature was likely used in the tibble package.\n  Please report the issue at &lt;https://github.com/tidyverse/tibble/issues&gt;.\n\nnames(ps_df) &lt;- LETTERS[1:npops] \nps_df &lt;-   mutate(ps_df, generation = 1:generations) |&gt;\n  select(generation,names(ps_df))\n\n\nps_df |&gt;\n  pivot_longer(A:E,names_to= \"population\", values_to = \"allele_frequency\") |&gt;\n  ggplot(aes(x = generation, y = allele_frequency, colour = population)) +\n    # geom_point(size = 0.4) +\n    geom_line(linewidth = 0.3) +\n    labs(x = \"Generation\",\n         y = \"Allele A~1~ Frequency\",\n         colour = \"Population\") +\n  scale_x_continuous(breaks = seq(0,generations,50)) +\n  scale_y_continuous(breaks = seq(0,1,0.1)) +\n    theme_minimal()",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Genetic drift</span>"
     ]
@@ -692,51 +692,61 @@
   {
     "objectID": "notebooks/PVA/PVA.html",
     "href": "notebooks/PVA/PVA.html",
-    "title": "6  Population Viability Analysis (PVA)",
+    "title": "7  Population Viability Analysis (PVA)",
     "section": "",
-    "text": "6.1 InsightMaker: a simulation modeling framework for dynamic systems!\nInsightMaker is a web-based visual programming language for modelling the dynamics of inter-connected systems.\nAny dynamic system (like a wildlife population) essentially consists of [Stocks] and [Flows].\nA [Stock] simply represents a quantity of something. The [Stock] changes over time ONLY via [Flows In] or [Flows Out].\nA [Stock] of stuff increases over time via what [Flows] in. Imagine our stock represents Amur Tiger\nAmur Tiger Births would then be the input [Flow] to the population of Amur Tiger over time.\nA [Stock] of stuff decreases over time via what [Flows] out. For example, Amur Tiger Deaths could represent the [Flow] out of the population of Amur Tiger.\nFigure 6.1: :“The simplest Amur Tiger population model”\nIf the [Flow] into the stock is larger than the [Flow] out of the stock, then the [Stock] increases over time.\nIf the [Flow] out is larger than the [Flow] in, then the [Stock] decreases over time.\nIf the [Flow] in equals the [Flow] out then the amount in the [Stock] will not change over time. In this case, the system is in equilibrium.",
+    "text": "7.1 InsightMaker\nInsightMaker is a web-based visual programming language for modelling the dynamics of inter-connected systems.\nAny dynamic system (like a wildlife population) essentially consists of [Stocks] and [Flows].\nA [Stock] simply represents a quantity of something. The [Stock] changes over time ONLY via [Flows In] or [Flows Out].\nA [Stock] of stuff increases over time via what [Flows] in. Imagine our stock represents Amur Tiger\nAmur Tiger Births would then be the input [Flow] to the population of Amur Tiger over time.\nA [Stock] of stuff decreases over time via what [Flows] out. For example, Amur Tiger Deaths could represent the [Flow] out of the population of Amur Tiger.\nFigure 7.1: :“The simplest Amur Tiger population model”\nIf the [Flow] into the stock is larger than the [Flow] out of the stock, then the [Stock] increases over time.\nIf the [Flow] out is larger than the [Flow] in, then the [Stock] decreases over time.\nIf the [Flow] in equals the [Flow] out then the amount in the [Stock] will not change over time. In this case, the system is in equilibrium.",
     "crumbs": [
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Population Viability Analysis (PVA)</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Population Viability Analysis (PVA)</span>"
     ]
   },
   {
     "objectID": "notebooks/PVA/PVA.html#a-basic-simulation-model",
     "href": "notebooks/PVA/PVA.html#a-basic-simulation-model",
-    "title": "6  Population Viability Analysis (PVA)",
-    "section": "6.2 A basic simulation model",
-    "text": "6.2 A basic simulation model\nIt is often stated that “all models are wrong, some are useful” (attributed to statistician George Box).\nThis demonstration model is wrong, and not super useful! But it’s a start!\n\n6.2.1 Simple stock and flow model!\n\nOpen up InsightMaker. If you have never used it before you need to sign up first with a username and password. InsightMaker is free!\nClick on this link to load up the first population modeling demo.\nIn the upper right-hand corner of the screen, click on the “Clone Insight” link at the top and click on the “Clone” button on the following screen (so you can make edits to this model!). If you want, you can change the name of the model by clicking on the white space anywhere in the workspace and then clicking the “Edit Info” button on the left-hand context menu.\nNow click the blue Simulate button. You have run your first population simulation!\n\nQ: What is the first thing you would like to change to make the model more realistic?\n\n\n6.2.2 A more realistic model: exponential growth!\n\nNow let’s assume that per-capita birth and death rates in the population are constant across time. This way, if the population is bigger, more individuals will be added to the population in the next time step, making the population even bigger. This is a positive feedback!\n\nClick on this link to load up the next population modeling demonstration.\n\nIn the upper right-hand corner of the screen, click on the “Clone Insight” link at the top and click on the “Clone” button on the following screen (so you can make edits to this model!). If you want, you can change the name of the model by clicking on the whitespace anywhere in your InsightMaker workspace and then clicking the “Edit Info” button on the left-hand context menu.\n\nYour model should look something like this:\n\n\n\n\n\n\n\n\nFigure 6.2: :“A better Amur tiger population model that incorporates exponential change”\n\n\n\n\n\n\nClick on the two [Flows] (Births and Deaths) and note the equation displayed on the right-hand menu. Do these equations make sense?\nMake sure the initial number of Amur tiger is set to 50, the birth rate is set to 0.5, and the death rate is set to 0.4. Now click [Run Simulation]. How would you describe the results?\n\nQ: what happens if you set the birth rate equal to the death rate?\nQ: what happens if you set the birth rate less than the death rate?\nOne of the most fundamental quantities in population ecology is called the “intrinsic rate of growth” or r. r is simply the difference between birth and death rate:\n\\(r=birth\\ rate-death\\ rate\\)\nQ: What is the intrinsic rate of growth for this population (when birth rate is set to 0.5 and the death rate is set to 0.4)?\nQ: What is the next thing you would like to change to make the model more realistic?",
+    "title": "7  Population Viability Analysis (PVA)",
+    "section": "7.2 A basic simulation model",
+    "text": "7.2 A basic simulation model\nIt is often stated that “all models are wrong, some are useful” (attributed to statistician George Box).\nThis demonstration model is wrong, and not super useful, but it’s a start!\n\n7.2.1 Simple stock and flow model\n\nOpen up InsightMaker. If you have never used it before you need to sign up first with a username and password. InsightMaker is free.\nClick on this link to load up the first population modeling demo.\nIn the upper right-hand corner of the screen, click on the “Clone Insight” link at the top and click on the “Clone” button on the following screen (so you can make edits to this model). If you want, you can change the name of the model by clicking on the white space anywhere in the workspace and then clicking the “Edit Info” button on the left-hand context menu.\nNow click the blue Simulate button. You have run your first population simulation!\n\nQ: What is the first thing you would like to change to make the model more realistic?\n\n\n7.2.2 A more realistic model: exponential growth.\n\nNow let’s assume that per-capita birth and death rates in the population are constant across time. This way, if the population is bigger, more individuals will be added to the population in the next time step, making the population even bigger. This is a positive feedback.\n\nClick on this link to load up the next population modeling demonstration.\n\nIn the upper right-hand corner of the screen, click on the “Clone Insight” link at the top and click on the “Clone” button on the following screen (so you can make edits to this model). If you want, you can change the name of the model by clicking on the whitespace anywhere in your InsightMaker workspace and then clicking the “Edit Info” button on the left-hand context menu.\n\nYour model should look something like this:\n\n\n\n\n\n\n\n\nFigure 7.2: :“A better Amur tiger population model that incorporates exponential change”\n\n\n\n\n\n\nClick on the two [Flows] (Births and Deaths) and note the equation displayed on the right-hand menu. Do these equations make sense?\nMake sure the initial number of Amur tiger is set to 50, the birth rate is set to 0.5, and the death rate is set to 0.4. Now click [Run Simulation]. How would you describe the results?\n\nQ: What happens if you set the birth rate equal to the death rate?\nQ: What happens if you set the birth rate less than the death rate?\nOne of the most fundamental quantities in population ecology is called the “intrinsic rate of growth” or r. r is simply the difference between birth and death rate:\n\\(r=birth\\ rate-death\\ rate\\)\nQ: What is the intrinsic rate of growth for this population (when birth rate is set to 0.5 and the death rate is set to 0.4)?\nQ: What is the next thing you would like to change to make the model more realistic?",
     "crumbs": [
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Population Viability Analysis (PVA)</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Population Viability Analysis (PVA)</span>"
     ]
   },
   {
     "objectID": "notebooks/PVA/PVA.html#an-even-more-realistic-model",
     "href": "notebooks/PVA/PVA.html#an-even-more-realistic-model",
-    "title": "6  Population Viability Analysis (PVA)",
-    "section": "6.3 An even more realistic model!!",
-    "text": "6.3 An even more realistic model!!\nWhich one of these figures is most likely to be from a real wildlife population??\n\n\n\n\n\n\n\n\nFigure 6.3: A realistic pattern of population change for a wild animal species\n\n\n\n\n\nOR\n\n\n\n\n\n\n\n\nFigure 6.4: An unrealistic pattern of population change for a wild animal species. In reality, the population would most likely fluctuate.\n\n\n\n\n\n\n6.3.1 Wildlife populations fluctuate over time!\n… And these fluctuations are often difficult to predict!\nThat is to say…\n\n\n6.3.2 The future is uncertain!\nAll ecological systems are full of uncertainty. We all know it intuitively. But what exactly do we mean by that? And how can we deal with it? How can we incorporate it into our models?\nQ: if you were to re-run the basic population model you just made in InsightMaker ten times, how many different results would you get?\nWhen a model outcome is the same every time (when starting with the same input values) we say that the model is deterministic.\nBUT… ecological systems (e.g., dynamic populations) have inherent variability.\nWe can’t predict with certainty whether or not an individual will mate, or die.\nWe can’t be certain whether next year or the year after that will be a good year or a bad year for offspring production or mortality!\nThe key is to embrace uncertainty. As population ecologists, we have some tricks to help us manage and account for unpredictable variation in our study systems:\n\n\n\n\n\n\n\n\nFigure 6.5\n\n\n\n\n\n\n\n6.3.3 How to model uncertainty\nTypically, we ‘embrace uncertainty’ in our models by incorporating random-number generators. These types of simulation models are called stochastic models.\nWhen we incorporate random processes into models, the result will be different each time we run the model!\nWhen we use stochastic models, we often want to run lots of replicates. Each replicate represents a possible future.\nWe can then interpret the cloud of possible futures rather than just the results from a single model run!\n\n\n\n\n\n\n\n\nFigure 6.6: :“”\n\n\n\n\n\nHere we see that the population went extinct three times out of a total of 50 replicates.\n\n\n6.3.4 Random number generation\nTo ensure that each model run (replicate) – or each year of each model run – is different from one another, we need to include at least one random number generator in our models!\nA random number generator is like a box of (potentially infinite) possible numbers – a lottery ball machine for example! Each time we want a new number we reach in and pull one out randomly, record the number, put it back in and shake it up again.\n\n\n6.3.5 Return to InsightMaker- add randomness!\nThe term stochasticity just means randomness. A stochastic population model is a model with one or more random number generators included!\n\nClick on this link to load up the next population modeling demonstration.\nIn the upper right-hand corner of the screen, click on the “Clone Insight” link at the top and click on the “Clone” button on the following screen (so you can make edits to this model!). If you want, you can change the name of the model by clicking on the whitespace anywhere in your InsightMaker environment and then clicking the “Edit Info” button on the left-hand context menu.\nMake sure the Birth rate is set to 0.5 and Death rate is set to 0.4. Set initial abundance to 10. Under the “Settings” menu make sure the model is set to run for 20 years.\nRun the simulation. What does it look like?\nUse the “Sensitivity Testing” tool (in the “Tools” menu, upper right corner) to run the model 100 times. Choose your [Population] (Moose) as the “Monitored Primitive”. View the results!\n\nNow, change the initial abundance to 500 and re-run the “Sensitivity Testing” tool.\nQ: what key differences do you notice when you initialize the population with 10 individuals vs 500 individuals??",
+    "title": "7  Population Viability Analysis (PVA)",
+    "section": "7.3 An even more realistic model",
+    "text": "7.3 An even more realistic model\nWhich one of these figures is most likely to be from a real wildlife population??\n\n\n\n\n\n\n\n\nFigure 7.3: A realistic pattern of population change for a wild animal species\n\n\n\n\n\nOR\n\n\n\n\n\n\n\n\nFigure 7.4: An unrealistic pattern of population change for a wild animal species. In reality, the population would most likely fluctuate.\n\n\n\n\n\n\n7.3.1 Wildlife populations fluctuate over time\n… and these fluctuations are often difficult to predict.\nThat is to say…\n\n\n7.3.2 The future is uncertain\nAll ecological systems are full of uncertainty. We all know it intuitively. But what exactly do we mean by that? And how can we deal with it? How can we incorporate it into our models?\nQ: if you were to re-run the basic population model you just made in InsightMaker ten times, how many different results would you get?\nWhen a model outcome is the same every time (when starting with the same input values) we say that the model is deterministic.\nBUT… ecological systems (e.g., dynamic populations) have inherent variability.\nWe can’t predict with certainty whether or not an individual will mate, or die.\nWe can’t be certain whether next year or the year after that will be a good year or a bad year for offspring production or mortality!\nThe key is to embrace uncertainty. As population ecologists, we have some tricks to help us manage and account for unpredictable variation in our study systems:\n\n\n\n\n\n\n\n\nFigure 7.5\n\n\n\n\n\n\n\n7.3.3 How to model uncertainty\nTypically, we ‘embrace uncertainty’ in our models by incorporating random-number generators. These types of simulation models are called stochastic models.\nWhen we incorporate random processes into models, the result will be different each time we run the model.\nWhen we use stochastic models, we often want to run lots of replicates. Each replicate represents a possible future.\nWe can then interpret the cloud of possible futures rather than just the results from a single model run.\n\n\n\n\n\n\n\n\nFigure 7.6: :“”\n\n\n\n\n\nHere we see that the population went extinct three times out of a total of 50 replicates.\n\n\n7.3.4 Random number generation\nTo ensure that each model run (replicate) – or each year of each model run – is different from one another, we need to include at least one random number generator in our models.\nA random number generator is like a box of (potentially infinite) possible numbers – a lottery ball machine for example! Each time we want a new number we reach in and pull one out randomly, record the number, put it back in and shake it up again.\n\n\n7.3.5 Return to InsightMaker- add randomness\nThe term stochasticity just means randomness. A stochastic population model is a model with one or more random number generators included.\n\nClick on this link to load up the next population modeling demonstration.\nIn the upper right-hand corner of the screen, click on the “Clone Insight” link at the top and click on the “Clone” button on the following screen (so you can make edits to this model!). If you want, you can change the name of the model by clicking on the whitespace anywhere in your InsightMaker environment and then clicking the “Edit Info” button on the left-hand context menu.\nMake sure the Birth rate is set to 0.5 and Death rate is set to 0.4. Set initial abundance to 10. Under the “Settings” menu make sure the model is set to run for 20 years.\nRun the simulation. What does it look like?\nUse the “Sensitivity Testing” tool (in the “Tools” menu, upper right corner) to run the model 100 times. Choose your [Population] (Moose) as the “Monitored Primitive”. View the results!\n\nNow, change the initial abundance to 500 and re-run the “Sensitivity Testing” tool.\nQ: what key differences do you notice when you initialize the population with 10 individuals vs 500 individuals??",
     "crumbs": [
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Population Viability Analysis (PVA)</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Population Viability Analysis (PVA)</span>"
     ]
   },
   {
     "objectID": "notebooks/PVA/PVA_grizzly.html",
     "href": "notebooks/PVA/PVA_grizzly.html",
-    "title": "7  Grizzly bear PVA example",
+    "title": "8  Grizzly bear PVA example",
     "section": "",
-    "text": "7.1 PVA for Yellowstone grizzly bears\nFrom a lecture by Kevin Shoemaker\nFigure 7.1\nOur goal is to better understand the future of the grizzly bear population in Yellowstone park, and the processes that may regulate this population!\nLet’s walk through the basic steps in building and running a PVA model:",
+    "text": "8.1 PVA for Yellowstone grizzly bears\nFrom a lecture by Kevin Shoemaker\nFigure 8.1\nOur goal is to better understand the future of the grizzly bear population in Yellowstone park, and the processes that may regulate this population!\nLet’s walk through the basic steps in building and running a PVA model:",
     "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Grizzly bear PVA example</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Grizzly bear PVA example</span>"
     ]
   },
   {
     "objectID": "notebooks/PVA/PVA_grizzly.html#pva-for-yellowstone-grizzly-bears",
     "href": "notebooks/PVA/PVA_grizzly.html#pva-for-yellowstone-grizzly-bears",
-    "title": "7  Grizzly bear PVA example",
+    "title": "8  Grizzly bear PVA example",
     "section": "",
-    "text": "7.1.0.1 Step 1: life history diagram\nBased on the literature that we have read, we determine that there are four main stages in the grizzly bear life history: cub, yearling, subadult and adult! The adult stage is the only one that is reproductive!\nTherefore, our conceptual life history diagram looks something like this!\n\n\n\n\n\n\n\n\nFigure 7.2\n\n\n\n\n\nYou can clone the base grizzly bear model here. This model has not yet been parameterized.\n\n\n7.1.0.2 Step 2: parameterize\nLet’s use this table to parameterize the population vital rates in our model.\nThis table actually has two alternative parameterizations, one representing the period from 1983 to 2001, and the other representing the period from 2002-2011.\nRemember that we are not paying any attention to males!\n\n\n\n\n\n\n\n\nFigure 7.3\n\n\n\n\n\nThe table is from this scientific report\nWhat about population size? For any simulation we always need to initialize abundance!\nFrom Schwartz et al 2006 we know that:\n\nAdult females represent approximately a quarter (25%) of the (female0.553) population.\nTotal abundance of adult females in the greater Yellowstone park area was approximately 5 in 1983 and approximately 30 in 2002\n\n\n\n\n\n\n\n\n\nFigure 7.4\n\n\n\n\n\nLet’s use the initial (1983) abundances (all female!) to initialize our model:\nCubs: 5\nYearlings: 5\nSubadults: 5\nAdults: 5\nTake a moment to parameterize the model!\n\n\n7.1.0.3 Step 3: Spatial structure\nWe are ignoring spatial structure for this PVA!\n\n\n7.1.0.4 Step 4: Simulate!\nOkay, let’s run the model!\nAgain, you can clone the base grizzly bear model here if you haven’t already.\n\nTry running the model with the parameterization we discussed above. What do you notice? Is the population growing?\n\nREALITY CHECK:\nQ: Given that the population of adult females is known to have increased to around 30 individuals by the year 2002, is this model realistic??\n\nWhat if we configure the model to run for 100 years? What happens now?\n\nQ: NOW do you think this is biologically realistic? Why or why not?\n\nLet’s change the parameterization to reflect the vital rates observed for the period 2002 to 2011 in the table:\n\n\n\n\n\n\n\n\n\nFigure 7.5\n\n\n\n\n\nIn 2002 the population was more like 30 females- so let’s use the following parameterization!\nCubs: 30\nYearlings: 30\nSubadults: 30\nAdults: 30\nQ: What do you notice about this model? Is it still growing? What about the overall rate of growth of the population?\nQ: Which vital rates changed the most from 1983 to 2002?\nQ: Can you think of any reason for this change?\n\n7.1.0.4.1 Density-dependence\n\nLet’s implement a new process into our model- density-dependence.\n\nWe know that when the adult (female) population size was around 5, yearling survival was around 82%\nWe also know that when the adult (female) population size was around 30, yearling survival dropped to around 54%\nCan you calculate a linear relationship between population size and yearling survival? When abundance increased by 25, yearling survival decreased by a little more than 25% (28% to be exact).\nSLOPE: For each additional individual in the adult population, yearling survival decreased by 1.12.\nINTERCEPT: When there were 5 adults, yearling survival was 81.7%. If there were 0 individuals in the adult population, yearling survival would be \\(81.7 + 1.12\\cdot 5\\), which is 87.6%.\nTo convert back to a fraction, we divide this linear model by 100!\nSo the linear formula for computing yearling survival as a function of adult female abundance should be:\n\\(Surv_{yearling} = \\frac{\\left (87.6 - 1.12*N_{female} \\right )}{100}\\)\nLet’s implement this density-dependent process in Insightmaker.\n\nCreate a [Link] between female abundance and yearling survival.\nOpen the equation editor for yearling survival, and input the linear equation above.\n\nRun the model. What do you notice?\nQ: What is the carrying capacity of this population? NOTE: you may need to run the model for longer than 100 years. NOTE: this is an emergent property of our new model.\nQ: Do you notice an oscillatory pattern in abundance over time? NOTE: this is also an emergent property of our new model!\nQ: Why is this type of model called density-dependent?\nNOTE: if necessary, you can clone a density-dependent version of the grizzly model here\n\n\n\n7.1.1 Grizzly bear exercise\nAnswer the following questions:\n\nRun the grizzly bear PVA with and without the density-dependence process. In each case, what is the extinction risk after 100 years? In each case (with and without density-dependence), what is the approximate 95% confidence interval for the total population abundance after 100 years? Under which scenario is the conservation outlook best for grizzly bears in Yellowstone park?\nFor the density-independent model, what is the extinction risk if you changed yearling survival to its lower confidence limit in the above table (from 2002-2011)? Does the parameter uncertainty in the above table make a difference for the conservation outlook for this population?? NOTE: remember to change yearling survival back to 0.539 for the density-independent model!\nIn each case (with and without density-dependence), what is the extinction risk if you changed the initial abundance in each stage to 2? Given that a viable population is defined as a risk of extinction of &lt; 10% over 100 years, can you identify a minimum viable population for this population?\n\nHELPFUL HINTS:\n\nFor the density-independent scenario, set the yearling survival rate to 0.54 – the value estimated from 2002 to 2011.\nAll parameters aside from yearling survival should be the same between the two scenarios (so that the presence/absence of the density-dependence process is the only difference between the scenarios). I suggest you use all parameters estimated for the period 2002 to 2011, just to be consistent!\nFor both scenarios, set the initial abundance to 5 for each stage (the numbers observed inside the park in 1983).\nUse the “sensitivity testing” option in the “Tools” menu to run multiple simulations (&gt;100 replicates). You can assess extinction risk using the following formula:\n\n\\(\\frac{extinctions}{replicates}\\)\nWhere extinctions is the total number of replicates where the abundance declined to zero, and replicates is the total number of independent simulation replicates you ran. Similarly, you can assess the probability of failing to meet an important conervation criterion (e.g., population remaining above MVP) as the fraction of replicates that failed to meet the specified criterion.",
+    "text": "8.1.0.1 Step 1: life history diagram\nBased on the literature that we have read, we determine that there are four main stages in the grizzly bear life history: cub, yearling, subadult and adult! The adult stage is the only one that is reproductive!\nTherefore, our conceptual life history diagram looks something like this!\n\n\n\n\n\n\n\n\nFigure 8.2\n\n\n\n\n\nYou can clone the base grizzly bear model here. This model has not yet been parameterized.\n\n\n8.1.0.2 Step 2: parameterize\nLet’s use this table to parameterize the population vital rates in our model.\nThis table actually has two alternative parameterizations, one representing the period from 1983 to 2001, and the other representing the period from 2002-2011.\nRemember that we are not paying any attention to males!\n\n\n\n\n\n\n\n\nFigure 8.3\n\n\n\n\n\nThe table is from this scientific report\nWhat about population size? For any simulation we always need to initialize abundance!\nFrom Schwartz et al 2006 we know that:\n\nAdult females represent approximately a quarter (25%) of the (female0.553) population.\nTotal abundance of adult females in the greater Yellowstone park area was approximately 5 in 1983 and approximately 30 in 2002\n\n\n\n\n\n\n\n\n\nFigure 8.4\n\n\n\n\n\nLet’s use the initial (1983) abundances (all female!) to initialize our model:\nCubs: 5\nYearlings: 5\nSubadults: 5\nAdults: 5\nTake a moment to parameterize the model!\n\n\n8.1.0.3 Step 3: Spatial structure\nWe are ignoring spatial structure for this PVA!\n\n\n8.1.0.4 Step 4: Simulate!\nOkay, let’s run the model!\nAgain, you can clone the base grizzly bear model here if you haven’t already.\n\nTry running the model with the parameterization we discussed above. What do you notice? Is the population growing?\n\nREALITY CHECK:\nQ: Given that the population of adult females is known to have increased to around 30 individuals by the year 2002, is this model realistic??\n\nWhat if we configure the model to run for 100 years? What happens now?\n\nQ: NOW do you think this is biologically realistic? Why or why not?\n\nLet’s change the parameterization to reflect the vital rates observed for the period 2002 to 2011 in the table:\n\n\n\n\n\n\n\n\n\nFigure 8.5\n\n\n\n\n\nIn 2002 the population was more like 30 females- so let’s use the following parameterization!\nCubs: 30\nYearlings: 30\nSubadults: 30\nAdults: 30\nQ: What do you notice about this model? Is it still growing? What about the overall rate of growth of the population?\nQ: Which vital rates changed the most from 1983 to 2002?\nQ: Can you think of any reason for this change?\n\n8.1.0.4.1 Density-dependence\n\nLet’s implement a new process into our model- density-dependence.\n\nWe know that when the adult (female) population size was around 5, yearling survival was around 82%\nWe also know that when the adult (female) population size was around 30, yearling survival dropped to around 54%\nCan you calculate a linear relationship between population size and yearling survival? When abundance increased by 25, yearling survival decreased by a little more than 25% (28% to be exact).\nSLOPE: For each additional individual in the adult population, yearling survival decreased by 1.12.\nINTERCEPT: When there were 5 adults, yearling survival was 81.7%. If there were 0 individuals in the adult population, yearling survival would be \\(81.7 + 1.12\\cdot 5\\), which is 87.6%.\nTo convert back to a fraction, we divide this linear model by 100!\nSo the linear formula for computing yearling survival as a function of adult female abundance should be:\n\\(Surv_{yearling} = \\frac{\\left (87.6 - 1.12*N_{female} \\right )}{100}\\)\nLet’s implement this density-dependent process in Insightmaker.\n\nCreate a [Link] between female abundance and yearling survival.\nOpen the equation editor for yearling survival, and input the linear equation above.\n\nRun the model. What do you notice?\nQ: What is the carrying capacity of this population? NOTE: you may need to run the model for longer than 100 years. NOTE: this is an emergent property of our new model.\nQ: Do you notice an oscillatory pattern in abundance over time? NOTE: this is also an emergent property of our new model!\nQ: Why is this type of model called density-dependent?\nNOTE: if necessary, you can clone a density-dependent version of the grizzly model here\n\n\n\n8.1.1 Grizzly bear exercise\nAnswer the following questions:\n\nRun the grizzly bear PVA with and without the density-dependence process. In each case, what is the extinction risk after 100 years? In each case (with and without density-dependence), what is the approximate 95% confidence interval for the total population abundance after 100 years? Under which scenario is the conservation outlook best for grizzly bears in Yellowstone park?\nFor the density-independent model, what is the extinction risk if you changed yearling survival to its lower confidence limit in the above table (from 2002-2011)? Does the parameter uncertainty in the above table make a difference for the conservation outlook for this population?? NOTE: remember to change yearling survival back to 0.539 for the density-independent model!\nIn each case (with and without density-dependence), what is the extinction risk if you changed the initial abundance in each stage to 2? Given that a viable population is defined as a risk of extinction of &lt; 10% over 100 years, can you identify a minimum viable population for this population?\n\nHELPFUL HINTS:\n\nFor the density-independent scenario, set the yearling survival rate to 0.54 – the value estimated from 2002 to 2011.\nAll parameters aside from yearling survival should be the same between the two scenarios (so that the presence/absence of the density-dependence process is the only difference between the scenarios). I suggest you use all parameters estimated for the period 2002 to 2011, just to be consistent!\nFor both scenarios, set the initial abundance to 5 for each stage (the numbers observed inside the park in 1983).\nUse the “sensitivity testing” option in the “Tools” menu to run multiple simulations (&gt;100 replicates). You can assess extinction risk using the following formula:\n\n\\(\\frac{extinctions}{replicates}\\)\nWhere extinctions is the total number of replicates where the abundance declined to zero, and replicates is the total number of independent simulation replicates you ran. Similarly, you can assess the probability of failing to meet an important conervation criterion (e.g., population remaining above MVP) as the fraction of replicates that failed to meet the specified criterion.",
     "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Grizzly bear PVA example</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Grizzly bear PVA example</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks/PVA/PVA_grizzly.html#running-the-model-in-r.",
+    "href": "notebooks/PVA/PVA_grizzly.html#running-the-model-in-r.",
+    "title": "8  Grizzly bear PVA example",
+    "section": "8.2 Running the model in R.",
+    "text": "8.2 Running the model in R.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Grizzly bear PVA example</span>"
     ]
   }
 ]
