@@ -2,13 +2,15 @@
 
 -   When a population is in Hardy-Weinberg equilibrium for a gene, it is not evolving for that gene, and allele frequencies for that gene will stay the same across generations.
 
--   There are five basic Hardy-Weinberg assumptions:
+-   For a population to actually be in Hardy-Weinberg equilibrium, five things must be true at once:
 
     -   no mutation
     -   random mating
     -   no gene flow
     -   infinite population size
     -   no selection.
+    
+Thee are often referred to as the Hardy-Weinberg assumptions.
 
 ## Violation of HW assumptions
 

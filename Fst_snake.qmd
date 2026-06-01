@@ -1,5 +1,10 @@
 # Fst calculations
 
+```{r}
+#| include: false
+source(here::here("_common.R"))
+```
+
 # Snake genotype data
 ```{r}
 
@@ -8,66 +13,85 @@
 
 ## Observed genotype data
 ```{r}
-genotypes <- data.frame(
+genotypes_sub_sites <- data.frame(
   genotype = rep(c("n_AA", "n_Aa", "n_aa"),2),
   site = c(rep("S1",6), rep("S2",6)),
   EW = rep(c(rep("W",3), rep("E",3)),2),
-  freq_obs = c(14,8,3,4,4,12,10,15,8,6,10,8)
+  n_obs = c(14,8,3,4,4,12,10,15,8,6,10,8)
 )
-genotypes
+genotypes_sub_sites
 ```
 ## Calculate Allele frequencies
 ```{r}
-genotypes |>
-  pivot_wider(names_from = genotype, values_from = freq_obs) |>
-  mutate(N = (AA + Aa + aa),
-         AA_o = n_AA / N,
-         Aa_o = n_Aa / N,
-         aa_o = n_aa,
-         p = (2 * AA + Aa) / (2*N),
-         q = (2 * aa + Aa) / (2*N),
-         AA_e = p^2,
-         Aa_e = 2 * p * q,
-         aa_e = q^2,
-         Fst = 1 - Aa_o / Aa_e)
+sub_sites <- genotypes_sub_sites |>
+  pivot_wider(names_from = genotype, values_from = n_obs) |>
+  mutate(N = (n_AA + n_Aa + n_aa),
+         p = (2 * n_AA + n_Aa) / (2*N),
+         q = (2 * n_aa + n_Aa) / (2*N),
+         H_se = 2 * p * q) # expected heterozygosity by subsite
+sub_sites
+
+S1W<-sub_sites |> filter(site == "S1", EW == "W")
+S1E<-sub_sites |> filter(site == "S1", EW == "E")
+S2W<-sub_sites |> filter(site == "S2", EW == "W")
+S2E<-sub_sites |> filter(site == "S2", EW == "E")
+```
+
+```{r}
+genotypes_sites <- genotypes_sub_sites |>
+  summarise(.by = c(genotype, site),
+            n_obs = sum(n_obs))
+genotypes_sites
+```
+
+```{r}
+sites <- genotypes_sites |>
+  pivot_wider(names_from = genotype, values_from = n_obs) |>
+  mutate(N = (n_AA + n_Aa + n_aa),
+         p = (2 * n_AA + n_Aa) / (2*N),
+         q = (2 * n_aa + n_Aa) / (2*N),
+         H_se = 2 * p * q) # expected heterozygosity by subsite
+sites
+
+S1<-sites |> filter(site == "S1")
+S2<-sites |> filter(site == "S2")
 
 ```
 
 
+## Calculate Fst for sites 1 and 2
 
+
+First calculate averaged heterozygosity over the subsites 
 ```{r}
-AA_o<- 22
-Aa_o <- 38
-aa_o <- 20
-observed <- c(AA_o, Aa_o, aa_o)
-N <- AA + Aa + aa
+
+Hs1 = (S1W$N/S1$N)*S1W$H_se +  (S1E$N/S1$N)*S1E$H_se
+Hs1
+
+Hs2 = (S2W$N/S2$N)*S2W$H_se +  (S2E$N/S2$N)*S2E$H_se
+Hs2
 ```
 
-## Calculate allele frequencies
+Now the total site  heterozgosity, considering each them as one population, ie ignoring subsite
+
 ```{r}
-p <- (2*AA_o + Aa_o)/(2*N)
-q <- (2*aa_o + Aa_o)/(2*N)
+Ht1 <-S1$H_se
+Ht2 <-S2$H_se
 ```
 
-## Calculate Expected Genotype Frequencies
-```{r}
-fAA_e <- p*p
-fAa_e <- 2*p*q
-faa_e <- q*q
-f_expected <- c(fAA_e, fAa_e, faa_e)
-```
 
-## Calculate Expected Genotype Numbers
-```{r}
-AA_e <- N * fAA_e
-Aa_e <- N * fAa_e
-aa_e <- N * faa_e
-expected <- c(AA_e, Aa_e, aa_e)
-```
 
-# Do we deviate from HWE?
+Now calculate Fst for each site:
 ```{r}
-chisq.test(observed, p = f_expected)
+Fst1 = 1 - Hs1/Ht1
+Hs1
+Ht1
+Fst1
+
+Fst2 = 1 - Hs2/Ht2
+Hs2
+Ht2
+Fst2
 ```
 
 
