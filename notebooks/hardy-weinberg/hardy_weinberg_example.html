@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.42">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>hardy_weinberg_example</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="hardy_weinberg_example_files/libs/clipboard/clipboard.min.js"></script>
+<script src="hardy_weinberg_example_files/libs/quarto-html/quarto.js"></script>
+<script src="hardy_weinberg_example_files/libs/quarto-html/popper.min.js"></script>
+<script src="hardy_weinberg_example_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="hardy_weinberg_example_files/libs/quarto-html/anchor.min.js"></script>
+<link href="hardy_weinberg_example_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="hardy_weinberg_example_files/libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="hardy_weinberg_example_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="hardy_weinberg_example_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="hardy_weinberg_example_files/libs/bootstrap/bootstrap-c0367b04c37547644fece4185067e4a7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+
+
+
+<section id="hw-example" class="level1">
+<h1>HW example</h1>
+</section>
+<section id="section" class="level1">
+<h1>—</h1>
+</section>
+<section id="title-hardy-weinberg-example" class="level1">
+<h1>title: “Hardy-Weinberg example”</h1>
+</section>
+<section id="subtitle-how-can-we-tell-if-a-population-seems-to-be-in-h-w-equilibrium" class="level1">
+<h1>subtitle: “How can we tell if a population seems to be in H-W equilibrium?”</h1>
+</section>
+<section id="author-michael-hunt" class="level1">
+<h1>author: “Michael Hunt”</h1>
+</section>
+<section id="institute-cornwall-college-university-centre-newquay" class="level1">
+<h1>institute: “Cornwall College University Centre: Newquay”</h1>
+</section>
+<section id="format" class="level1">
+<h1>format:</h1>
+</section>
+<section id="pdf-default" class="level1">
+<h1>pdf: default</h1>
+# revealjs: # theme: sky # transition: slide # slide-number: true # chalkboard: true # preview-links: auto # css: custom.css # html: # code-fold: true # include-in-header: # text: | #
+<style>
+  #       .note-font {
+  #         font-size: 0.8em;
+  #       }
+  #       </style>
+<p>execute: echo: false # —</p>
+<p>Suppose hedgehogs have a gene for spine colouration that has two alleles, A and a. Let allele A be dominant and give dark coloured spines, while allele a is recessive and gives light coloued spines.</p>
+<p>Hence there are two <strong>phenotypes</strong> - hedgehogs with dark spines and hedgehogs with light coloured spines.</p>
+<p>A sample of <em>N</em> = 50 hedgehogs is gathered, through arrivals at a local rescue centre. Of these it is found that 39 have dark spines and 11 have light spines.</p>
+<p>What about the <strong>genotypes</strong> of these hedgehogs? Given that there are two alleles of this gene, and that each individal has two copies of the allele, three genotypes are possible: Homozygous AA, heterozygous Aa and homozygous aa. Further, the total number of alleles in the sample must be 2* <em>N</em> = 100</p>
+<p>We know that the hedgehogs with light coloured spines must be homozygous in the recessive allele aa. If they had even a single copy of the dominant A allele, they would have dark cooloured spines.</p>
+<p>The 39 dark coloured hedgehogs must have genotype AA or Aa, but we cannot tell from simple observation how many of each there are among all 39.</p>
+<p>To determine the genotype numbers among the dark hedgehogs, we send genetic material away to a genetic sequencing lab, they tell us that there 16 homozygous AA hedgehogs and 23 heterozygous Aa hedgehogs. So, in summary, our populations consists of</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Genotype</th>
+<th style="text-align: center;">Phenotype</th>
+<th style="text-align: center;">Frequency</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">AA</td>
+<td style="text-align: center;">dark</td>
+<td style="text-align: center;">16</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Aa</td>
+<td style="text-align: center;">dark</td>
+<td style="text-align: center;">23</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">aa</td>
+<td style="text-align: center;">light</td>
+<td style="text-align: center;">11</td>
+</tr>
+</tbody>
+</table>
+<section id="allele-proportions-p-and-q" class="level2">
+<h2 class="anchored" data-anchor-id="allele-proportions-p-and-q">Allele proportions <em>p</em> and <em>q</em></h2>
+<p>Nor do we know how many alleles of type A there are, and how many of type a there are among the total of 100 alleles altogether. We will find it more useful to think anyway not of the number of A or of a alleles in the sample, but of the <em>proportion</em> of all of them that are A and the proportion that are a. Following convention, we will use <em>p</em> to denote the proportion of all the alleles that is the dominant one, A in this case, and <em>q</em> to denote the proportion of all alleles that are the recessive allele (a, in this case). Since every allele is either A or a, we know that the two proportions must add up to 1:</p>
+<p><span class="math display">\[p+q = 1\]</span></p>
+<p>To determine each of p, we need to divide the total number of A alleles by the total number of alleles of either type. This latter number, we know, is 2N = 100, since each hedgehog has tow alleles, either AA, Aa or aa. To determine the number of A alleles, we recall that each dark hedgehog that is homozygous AA will have two of these, while each hedgehog that is heterozygous Aa will have one. Thus,</p>
+<p><span class="math display">\[
+\begin{align*}
+p&amp;=\frac{\text{Total number of A alleles}}{\text{Total number of alleles}}\\
+&amp;=\frac{2 AA + Aa}{2N}\\
+&amp;=\frac{2\times 16 + 23}{2\times 50}\\
+&amp;=\frac{55}{100}\\
+&amp;=0.55
+\end{align*}
+\]</span></p>
+<p>where, here, AA denotes the number of individuals with genotype AA, Aa the number with genotype Aa and aa the number with genotype aa. A similar calculation for the a allele yields:</p>
+<p><span class="math display">\[
+\begin{align*}
+q&amp;=\frac{\text{Total number of a alleles}}{\text{Total number of alleles}}\\
+&amp;=\frac{2 aa + Aa}{2N}\\
+&amp;=\frac{2\times 11 + 23}{2\times 50}\\
+&amp;=\frac{45}{100}\\
+&amp;=0.45
+\end{align*}
+\]</span> We note that our values for p and q do add up to one, as they should..</p>
+</section>
+<section id="hardy-weinberg-expected-values-for-the-genotype-numbers" class="level2">
+<h2 class="anchored" data-anchor-id="hardy-weinberg-expected-values-for-the-genotype-numbers">Hardy-Weinberg expected values for the genotype numbers</h2>
+<p>So far, all the numbers observed or calculated are true for this population of hedgehogs, whether that is the number of each phenotype or genotype, or the allele propotions p and q.</p>
+<p>Now we calculate the genotype numbers we would <em>expect</em> if the Hardy-Weinberg assumptions hold. To imagine what this means, it helps here to think of the population of hedgehogs as arising from two big bags, one full of <em>N</em> male gametes, the other full of <em>N</em> female gametes. Each of the gametes will contain one copy of the chromosome on which our gene for spine colour sits (and also one copy of all the other chromosomes, but we can ignore them here). A proportion p of these gametes will have the A allele for our gene and a proportion q will have the a allele. This is true overall, and if the population is very large (another Hardy-Weinberg assumption) this will be separately true for both the female and the male gametes. Each hedgehog arises from the union of one female and one male gamete. Under the Hardy-Weinberg assumption of random mating throughout the population, each of these gametes is chosen randomly from its respective bag. The probability that any female gamete drawn from its bag has allele A is p.&nbsp;The same is true for the male gamete. Hence the probability that a hedgehog in our population has genotype AA is p<sup>2</sup>. Hence the proportion of the population that we can <em>expect</em> to have this genotype is also p<sup>2</sup>, and hence too, the number of hedgehogs we would expect to have this genotype is this proportion multiplied by the total size N of the population.</p>
+<p>Hence, if the Hardy-Weinberg assumptions hold, we would <em>expect</em> to have <em>N</em> x <em>p</em><sup>2</sup> = 50 x 0.55 x 0.55 = 15.1 homozygous AA hedgehogs.</p>
+<div class="note-font">
+<p>Note the usage of the word <em>expected</em>. Just because we expect 15.1 AA hedgehogs does not mean we would necessarily get exactly that many (even if fractional hedgehogs were possible!) even if the Hardy-Weinberg assumptions were met. It works probablistically. In the same way, if we had a fair coin, we would <em>expect</em> to get 50 heads if we tossed it 100 times, but not be phased if got a number slightly diferent from that. Each toss could go either way.</p>
+</div>
+<p>The expected number of homozygous aa individuals would likewise be <em>N</em> x <em>q</em><sup>2</sup> = 50 x 0.45 x 0.45 = 10.1</p>
+<p>Heterozygous individuals can be formed by getting an A allele from the male gamete and an a allele from the female gamete, or the reverse. Either way, the probability of that happening if Hardy-Weinberg holds and the gametes are selected randomly from their respective bags is <em>pq</em>, so that the total probability of an individual being heterozygous is 2 <em>pq</em> and thus the <em>expected</em> number of heterozygous individuals would be <em>N</em> x 2 <em>pq</em> = 50 x 2 x 0.55 x 0.45 = 24.8</p>
+<p>As a check that we have got our arithmetic right,</p>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

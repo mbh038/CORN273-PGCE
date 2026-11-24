@@ -1,0 +1,70 @@
+# Determining biodiversity
+
+```{r}
+library(tidyverse)
+```
+
+```{r}
+
+idmaker <- function(x)
+  {
+    max.val = x*100
+    count <- nchar(as.character(max.val))                       # find out how many 'numbers' each ID will have after the letter
+    size <- paste("%0",count,"d",sep="")                        # set the variable to be fed into 'sprintf' to ensure we have leading 0's
+    lets <- toupper(sample(letters,x, replace=T))               # randomising the letters 
+    nums <- sprintf(size,sample(1:max.val)[1:x])                # randominsing the numbers, and ensuing they all have the same number of characters
+    ids <- paste(lets,nums,sep="")                              # joining them together
+  return(ids)
+  }
+```
+
+```{r}
+n_species <- 100
+n_per_species <- 100
+ids <- idmaker(n_species)
+population <- rep(ids, n_per_species)
+```
+
+```{r}
+# Load required libraries
+library(abind)
+
+# 1. Define simulation parameters
+set.seed(123)
+n_sites <- 50          # Number of differing communities/sites
+n_surveys <- 3         # Repeated visits per site
+n_species <- 10        # Number of species in the community pool
+
+# True occupancy probability (psi) varying by community/species
+# Higher values in Community Type A vs Community Type B
+community_type <- rep(c("TypeA", "TypeB"), each = 25)
+psi_mean <- ifelse(community_type == "TypeA", 0.7, 0.3)
+
+# 2. Simulate true presence/absence (Z) for each site and species
+Z <- matrix(NA, nrow = n_sites, ncol = n_species)
+for (i in 1:n_sites) {
+  for (j in 1:n_species) {
+    Z[i, j] <- rbinom(1, 1, prob = psi_mean[i])
+  }
+}
+
+# 3. Simulate observed detection (Y) accounting for imperfect detection (p)
+p_detect <- 0.45 # Average detection probability
+Y <- array(0, dim = c(n_sites, n_surveys, n_species))
+
+for (i in 1:n_sites) {
+  for (k in 1:n_surveys) {
+    for (j in 1:n_species) {
+      # Detection only possible if species is truly present (Z[i,j] == 1)
+      Y[i, k, j] <- rbinom(1, 1, prob = Z[i, j] * p_detect)
+    }
+  }
+}
+
+# Summary of simulated detection history
+cat("Total detections recorded:", sum(Y), "\n")
+cat("Dimensions of detection array [Sites, Surveys, Species]:", dim(Y), "\n")
+```
+
+
+

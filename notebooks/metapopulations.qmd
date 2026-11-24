@@ -1,0 +1,10 @@
+# Metapoplations
+
+```{r}
+#| include: false
+source(here::here("_common.R"))
+```
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```

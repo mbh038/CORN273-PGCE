@@ -1,0 +1,24 @@
+# index
+
+
+This is the course text.
+
+The exam will cover:
+
+* Geographical distribution of biodiversity
+* Biodiversity and ecosystem function
+* Measuring biodiversity
+* Population fragmentation
+  * Factors affecting extinction risk of subpopulations
+  * Levin's model
+  * Key messages for conservation action
+* Population viability analysis
+  * Inclusion of stochasticity
+    * demographic
+    * environmental
+  * Usefulness of PVA
+  * Limitations of PVA
+  * Typical conservation strategies
+  * Utility of multiple conservation strategies
+
+

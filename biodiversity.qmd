@@ -1,0 +1,29 @@
+# Biodiversity
+
+## What is biodiversity
+
+```{r}
+#| include: false
+source(here::here("_common.R"))
+```
+
+
+
+```{r}
+library(terra)
+
+src(here("PE geospatial data","PE_geopackages","pe_drainage.gpkg"))
+
+# Read a specific layer from a GeoPackage
+pe_contours <- vect(here("PE geospatial data","PE_geopackages","pe_contours.gpkg"))
+
+pe_drainiage <- vect(here("PE geospatial data","PE_geopackages","pe_drainage.gpkg"))
+
+# Inspect the vector data
+print(pe_contours)
+```
+```{r}
+plot(pe_contours)
+```
+
+
