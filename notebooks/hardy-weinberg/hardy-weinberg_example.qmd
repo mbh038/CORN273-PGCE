@@ -175,6 +175,11 @@ a<- rbinom(trials,tosses,0.5)
 
 
 ## Doing the chi-square analysis using R - optional
+
+To actually calculate the $\chi^2$ statistic and p-value in a Hardy-Weinberg problem we would now almost always use software. Here is how to do it using R.
+
+For this to work, you will need to have installed [R](https://cloud.r-project.org) and [RStudio](https://docs.posit.co/ide/user/download.html). Then, open RStudio.
+
 In the console pane (bottom left of the RStudio window) we can type in the function `chisq.tst()`. We will give it two arguments between the parentheses. The first is a vector, denoted by `c()` of the observed numbers of the three genotypes, so we write `c(16, 23, 11)`. The second is a vector of the proportion that each genotype would have under the null hypothesis of Hardy -Weinberg equlibrium. These proportions will be the expected numbers divided by the total population. We can get this by writing `c(15.1, 24.8, 10.1)/50`. We need to include the name `p` of this argument to tell R which of several possible optional arguments we are using. Dividing the whole vector by 50 has the effect of dividing each individual element by 50, so what we are writing is equivalent to writing `c(0.302, 0.496, 0.202)`. Then, we press enter:
 
 ```{r, echo = TRUE}
