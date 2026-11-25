@@ -1,4 +1,4 @@
-# HW example
+# Hardy-Weinberg example
 
 ```{r}
 #| include: false
@@ -9,22 +9,22 @@ source(here::here("_common.R"))
 knitr::opts_chunk$set(message = FALSE, warning = FALSE, echo = FALSE)
 ```
 
-Suppose hedgehogs have a gene for spine colouration that has two alleles, A and a. Let allele A be dominant and give dark coloured spines, while allele a is recessive and gives light coloued spines.
+Suppose hedgehogs have a gene for spine colouration that has two alleles, A and a. Let allele A be dominant and give dark coloured spines, while allele a is recessive and gives light coloured spines.
 
 Hence there are two **phenotypes** - hedgehogs with dark spines and hedgehogs with light coloured spines.
 
 A sample of *N* = 50 hedgehogs is gathered, through arrivals at a local rescue centre. Of these it is found that 39 have dark spines and 11 have light spines. 
 
-What about the **genotypes** of these hedgehogs? Given that there are two alleles of this gene, and that each individal has two copies of the allele, three genotypes are possible: Homozygous AA, heterozygous Aa and homozygous aa. Further, the total number of alleles in the sample must be 2* _N_ = 100
+What about the **genotypes** of these hedgehogs? Given that there are two alleles of this gene, and that each individual has two copies of the allele, three genotypes are possible: Homozygous AA, heterozygous Aa and homozygous aa. Further, the total number of alleles in the sample must be 2* _N_ = 100
 
 
 
-We know that the hedgehogs with light coloured spines must be homozygous in the recessive allele aa. If they had even a single copy of the dominant A allele, they would have dark cooloured spines.
+We know that the hedgehogs with light coloured spines must be homozygous in the recessive allele aa. If they had even a single copy of the dominant A allele, they would have dark coloured spines.
 
 The 39 dark coloured hedgehogs must have genotype AA or Aa, but we cannot tell from simple observation how many of each there are among all 39. 
 
-To determine the genotype numbers among the dark hedgehogs, we send genetic material away to a genetic sequencing lab, they tell us that there 16 homozygous AA hedgehogs and 23 heterozygous Aa hedgehogs. So, in summary, our populations consists of
-
+To determine the genotype numbers among the dark hedgehogs, we send genetic material away to a genetic sequencing lab.They tell us that there are 16 homozygous AA hedgehogs and 23 heterozygous Aa hedgehogs. We know already that the other 11 hedgehogs, the ones that have light coloured spines, are of genotype aa, the only psossibl other genotype. So, in summary, our populations consists of
+ 
 
 | Genotype | Phenotype | Frequency |
 | :---------:| :---------: |:-----------:| 
@@ -147,14 +147,13 @@ ggplot() +
   annotate(geom = "text", x = 7, y = 0.17, label = "Total area under the curve = 1\n  Area shaded blue = 0.876\nThis is the p-value") +
   theme_cowplot()
 ```
-For our date, we find $\chi^2$ = 0.265. The area under a $\chi^2$ curve for three degrees of freedom, to the right of this value of $\chi^2$ is 0.876. We call this value the p-value of the the $\chi^2$ test: the probability of getting a $\chi^2$ value this big or bigger if the null were true. I'll repeat, this is the same thing as the probability of getting observed values as far or further from the expected values as oours were, if the null (Hardy-Winberg holds) were true.
+For our date, we find $\chi^2$ = 0.265. The area under a $\chi^2$ curve for two degrees of freedom, to the right of this value of $\chi^2$ is 0.876. We call this value the p-value of the the $\chi^2$ test: the probability of getting a $\chi^2$ value this big or bigger if the null were true. I'll repeat, this is the same thing as the probability of getting observed values as far or further from the expected values as oours were, if the null (Hardy-Winberg holds) were true.
 
 ## Conclusion
 
-The p-value we get is 0.966. This is almost as big as the largest value a p-value can have, which is 1. In particular, it is bigger than 0.05, the commonly used threshold (known as the significance level) for deciding whether or not to reject a null hypothesis. here, we emphatically do not reject the null. It is very likely that we could have got genotype numbers as different from the expected numbers predicted by Hardy-Weinberg equilibrium, even if all the assumptions of Hardy-Weinberg equlibrium are met.
+The p-value we get is 0.876. This is almost as big as the largest value a p-value can have, which is 1. In particular, it is bigger than 0.05, the commonly used threshold (known as the significance level) for deciding whether or not to reject a null hypothesis. Here, we emphatically do not reject the null. It is very likely that we could have got genotype numbers as different from the expected numbers predicted by Hardy-Weinberg equilibrium, even if all the assumptions of Hardy-Weinberg equlibrium are met.
 
-Thus our observations are consistent with Hardy-Weinberg. We find no evidence from the data that the hedgehog population is not in Hardy-Weinberg equilibrium for the spine colouration gene. That doesn't mean that is difeinitely *is*. It just means we have no evidence from this data that it *isn't*.
-
+Thus our observations are consistent with Hardy-Weinberg. We find no evidence from the data that the hedgehog population is not in Hardy-Weinberg equilibrium for the spine colouration gene. That doesn't mean that it definitely *is* in H-W equilibrium. It just means we have no evidence from this data that it *isn't*.
 
 In the same way, if we tossed a coin 100 times and got 48 heads and 52 tails, that would not constitute evidence that the coin is not fair (that is, one for which heads and tails are equally likely) despite that we didn't get exactly the *expected* results of 50 heads and 50 tails. If the coin is fair the probability of getting 48 or fewer heads and 52 or more tails turns out to be 0.76, so getting the results we got is quite likely even if the coin is fair. On the other hand, if we got 30 heads and 70 tails, the probability of that is very, very small with a fair coin, so we would reject the null and decide that the coin is not fair.
 
@@ -170,11 +169,11 @@ a<- rbinom(trials,tosses,0.5)
 
 
 ## Doing the chi-square analysis using R
-In the console pane (bottom left) of the RSTudio window we can type in the function `chisq.tst`. We will give it two arguments between the parentheses. The first is a vector, denoted by `c()` of the observed numbers of the three genotypes, so we write `c(16, 23, 11)`. The second is a vecotr of the proportion that each genotype would have under the null hypothesis of Hardy -Weinberg equlibrium. These proportions will be the expected numbers divided by the total population. We can get this by writing `c(15.1, 24.8, 10.1)/50`. We need to include tthe name `p` of this argument to tell R which of seveal possible optional arguments we ae using. Dividing thw whole vecotr by 50 has the effect of dividing each individual element by 50, so what we are writing is equivaent to writing `c(0.302, 0.496, 0.202)`. Then, we press enter:
+In the console pane (bottom left of the RStudio window) we can type in the function `chisq.tst()`. We will give it two arguments between the parentheses. The first is a vector, denoted by `c()` of the observed numbers of the three genotypes, so we write `c(16, 23, 11)`. The second is a vector of the proportion that each genotype would have under the null hypothesis of Hardy -Weinberg equlibrium. These proportions will be the expected numbers divided by the total population. We can get this by writing `c(15.1, 24.8, 10.1)/50`. We need to include the name `p` of this argument to tell R which of several possible optional arguments we are using. Dividing thw whole vector by 50 has the effect of dividing each individual element by 50, so what we are writing is equivalent to writing `c(0.302, 0.496, 0.202)`. Then, we press enter:
 
 ```{r, echo = TRUE}
 chisq.test(c(16,23,11), p = c(15.1, 24.8, 10.1)/50, correct = FALSE)
 ```
 
-In the output, look for the value of the test statistic $\\chi^2$, written here as X-squared, and the p value. Note that these have been rounded to 1 signficant figure.
+In the output, look for the value of the test statistic $\chi^2$, written here as X-squared, and the p value. Note that these have been rounded to 1 signficant figure.
 
