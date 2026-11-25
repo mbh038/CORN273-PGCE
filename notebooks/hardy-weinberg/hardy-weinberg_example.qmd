@@ -89,7 +89,7 @@ Check that sum of the expected numbers of the three genotypes is equal to the po
 :::  
 
 
-## Compare Observed with expected numbers
+## Compare observed with expected numbers
 
 So now we have our *expected* numbers *E* for the three genotypes, if the population is in Hardy-Weiberg equilibrium, that we can compare with the actual *observed* numbers *O*:
 
@@ -124,7 +124,7 @@ Note that this expression for $\chi^2$ is indeed a measure of how far the observ
 This $\chi^2$ follows a distribution, known as a $\chi^2$ distribution for (in this case) 2 degrees of freedom. It is plotted below in @fig-chi-square-pdf as a 'probability density function'. You may have met one of these before, for the normal distribution. The way to understand it is that the area under the curve between and two values of $\chi^2$ on the x-axis gives the probability of $\chi^2$ being in that range. In particular, the area under the curve to the right of a given value of $\chi^2$ gives the probability that $\chi^2$ would have that value, or greater. This probability is the famous p-value: the probability of gettng data as different from the null prediction as ours is, or more different, if the null were true. In this case that means the probability of getting a $\chi^2$ value, as big or bigger than the one we got.
 
 ::: {.callout-note title="Degrees of freedom"}
-You see the term 'degrees of freedom' a lot in statistics. It refers to the number of independent pieces of information in a problem. In our chi-square sum, we know that the observed and expected genotype numbers both have to add up to 50, since there are 50 hedgehogs. Once we know the numbers for two of the genotypes, say AA and Aa, the numbers for the third genotype are determined. Hence, only two of the terms in the chi-square sum are independent and so here we have two degrees of freedom.
+You see the term 'degrees of freedom' a lot in statistics. It refers to the number of independent pieces of information in a problem. In our chi-square sum, we know that the observed and expected genotype numbers both have to add up to 50, since there are 50 hedgehogs. Consider, for example, the observed numbers for AA, Aa and aa. In any population of 50 hedgehogs, the number with the AA genotype could be anything from 0 to 50. Suppose it was 14. Given that, the number with the Aa genotype could be anything from 0 to 36. Suppose it was 20. Now, the number with the aa genotype *has* to be 16 since the total is 50. It doesn't matter which two genotypes you start with, but while there is some freedom in choosing their numbers, there is no freedom in choosin the third, given that the total is 50. Once we know the numbers for two of the genotypes, say AA and Aa, the numbers for the third genotype are determined. Hence, only two of the terms in the chi-square sum are independent and so here we have two degrees of freedom.
 
 It turns out that $\chi^2$ terms follow a distribution, but the exact form of the distribution depends on the degrees of freedom. In our case, the distribution is that for two degrees of freedom
 :::

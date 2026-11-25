@@ -235,7 +235,7 @@ window.Quarto = {
   <ul>
   <li><a href="#allele-proportions-p-and-q" id="toc-allele-proportions-p-and-q" class="nav-link active" data-scroll-target="#allele-proportions-p-and-q"><span class="header-section-number">5.1</span> Allele proportions <em>p</em> and <em>q</em></a></li>
   <li><a href="#hardy-weinberg-expected-values-for-the-genotype-numbers" id="toc-hardy-weinberg-expected-values-for-the-genotype-numbers" class="nav-link" data-scroll-target="#hardy-weinberg-expected-values-for-the-genotype-numbers"><span class="header-section-number">5.2</span> Hardy-Weinberg expected values for the genotype numbers</a></li>
-  <li><a href="#compare-observed-with-expected-numbers" id="toc-compare-observed-with-expected-numbers" class="nav-link" data-scroll-target="#compare-observed-with-expected-numbers"><span class="header-section-number">5.3</span> Compare Observed with expected numbers</a></li>
+  <li><a href="#compare-observed-with-expected-numbers" id="toc-compare-observed-with-expected-numbers" class="nav-link" data-scroll-target="#compare-observed-with-expected-numbers"><span class="header-section-number">5.3</span> Compare observed with expected numbers</a></li>
   <li><a href="#chi-square-goodness-of-fit-test" id="toc-chi-square-goodness-of-fit-test" class="nav-link" data-scroll-target="#chi-square-goodness-of-fit-test"><span class="header-section-number">5.4</span> Chi-Square Goodness of Fit Test</a></li>
   <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">5.5</span> Conclusion</a></li>
   <li><a href="#doing-the-chi-square-analysis-using-r---optional" id="toc-doing-the-chi-square-analysis-using-r---optional" class="nav-link" data-scroll-target="#doing-the-chi-square-analysis-using-r---optional"><span class="header-section-number">5.6</span> Doing the chi-square analysis using R - optional</a></li>
@@ -359,7 +359,7 @@ Arithmetic check
 </div>
 </section>
 <section id="compare-observed-with-expected-numbers" class="level2" data-number="5.3">
-<h2 data-number="5.3" class="anchored" data-anchor-id="compare-observed-with-expected-numbers"><span class="header-section-number">5.3</span> Compare Observed with expected numbers</h2>
+<h2 data-number="5.3" class="anchored" data-anchor-id="compare-observed-with-expected-numbers"><span class="header-section-number">5.3</span> Compare observed with expected numbers</h2>
 <p>So now we have our <em>expected</em> numbers <em>E</em> for the three genotypes, if the population is in Hardy-Weiberg equilibrium, that we can compare with the actual <em>observed</em> numbers <em>O</em>:</p>
 <table class="caption-top table">
 <thead>
@@ -417,7 +417,7 @@ Degrees of freedom
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>You see the term ‘degrees of freedom’ a lot in statistics. It refers to the number of independent pieces of information in a problem. In our chi-square sum, we know that the observed and expected genotype numbers both have to add up to 50, since there are 50 hedgehogs. Once we know the numbers for two of the genotypes, say AA and Aa, the numbers for the third genotype are determined. Hence, only two of the terms in the chi-square sum are independent and so here we have two degrees of freedom.</p>
+<p>You see the term ‘degrees of freedom’ a lot in statistics. It refers to the number of independent pieces of information in a problem. In our chi-square sum, we know that the observed and expected genotype numbers both have to add up to 50, since there are 50 hedgehogs. Consider, for example, the observed numbers for AA, Aa and aa. In any population of 50 hedgehogs, the number with the AA genotype could be anything from 0 to 50. Suppose it was 14. Given that, the number with the Aa genotype could be anything from 0 to 36. Suppose it was 20. Now, the number with the aa genotype <em>has</em> to be 16 since the total is 50. It doesn’t matter which two genotypes you start with, but while there is some freedom in choosing their numbers, there is no freedom in choosin the third, given that the total is 50. Once we know the numbers for two of the genotypes, say AA and Aa, the numbers for the third genotype are determined. Hence, only two of the terms in the chi-square sum are independent and so here we have two degrees of freedom.</p>
 <p>It turns out that <span class="math inline">\(\chi^2\)</span> terms follow a distribution, but the exact form of the distribution depends on the degrees of freedom. In our case, the distribution is that for two degrees of freedom</p>
 </div>
 </div>
