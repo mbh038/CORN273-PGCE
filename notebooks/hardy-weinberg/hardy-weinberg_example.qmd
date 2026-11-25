@@ -38,7 +38,7 @@ Nor do we know how many alleles of type A there are, and how many of type a ther
 
 $$p+q = 1$$
 
-To determine each of p, we need to divide the total number of A alleles by the total number of alleles of either type. This latter number, we know, is 2N = 100, since each hedgehog has tow alleles, either AA, Aa or aa. To determine the number of A alleles, we recall that each dark hedgehog that is homozygous AA will have two of these, while each hedgehog that is heterozygous Aa will have one.  Thus,
+To determine each of p and q, we need to divide the total number of A alleles by the total number of alleles of either type. This latter number, we know, is 2N = 100, since each hedgehog has two alleles, either AA, Aa or aa. To determine the number of A alleles, we recall that each dark hedgehog that is homozygous AA will have two of these, while each hedgehog that is heterozygous Aa will have one.  Thus,
 
 $$
 \begin{align*}
@@ -101,7 +101,7 @@ So now we have our *expected* numbers *E* for the three genotypes, if the popula
 | aa       | light     | 11              | 10.1            |
 
 
-The observed and the expected numbers for each genotype are not exactly equal, but we shoud not be surprised by that. Are they, though, so far apart that we can no longer credibly believe that this hedgehog population is in Hardy-Weinberg equilibrium for the gene for spine coluration? Remember, it is only if H-W holds that 
+The observed and the expected numbers for each genotype are not exactly equal, but we shoud not be surprised by that. Are they, though, so far apart that we can no longer credibly believe that this hedgehog population is in Hardy-Weinberg equilibrium for the gene for spine colouration? 
 
 To find out, we need to use a **Chi-Square Goodness of Fit Test**.
 
@@ -121,7 +121,13 @@ $$
 $$
 Note that this expression for $\chi^2$ is indeed a measure of how far the observed values differ from the expected numbers, under the null of HW being true for this case. The more the observed values differ from the expected values, the bigger $\chi^2$ becomes. If they were exactly equal to the expected values then $\chi^2$ would be equal to zero. Note too that $\chi^2$ can never be zero, since it is the sum of terms that must each be positive.
 
-This $\chi^2$ follows a distribution, known as a $\chi^2$ distribution for (in this case) 3 degrees of freedom (the three genotypes). It is plotted below in @fig-chi-square-pdf as a 'probability density function'. You may have met one of these before, for the normal distribution. The way to understand it is that the area under the curve between and two values of $\chi^2$ on the x-axis gives the probability of $\chi^2$ being in that range. In particular, the area under the curve to the right of a given value of $\chi^2$ gives the probability that $\chi^2$ would have that value, or greater. This probability is the famous p-value: the probability of gettng data as different from the null prediction as ours is, or more different, if the null were true. In this case that means the probability of getting a $\chi^2$ value, as big or bigger than the one we got.
+This $\chi^2$ follows a distribution, known as a $\chi^2$ distribution for (in this case) 2 degrees of freedom. It is plotted below in @fig-chi-square-pdf as a 'probability density function'. You may have met one of these before, for the normal distribution. The way to understand it is that the area under the curve between and two values of $\chi^2$ on the x-axis gives the probability of $\chi^2$ being in that range. In particular, the area under the curve to the right of a given value of $\chi^2$ gives the probability that $\chi^2$ would have that value, or greater. This probability is the famous p-value: the probability of gettng data as different from the null prediction as ours is, or more different, if the null were true. In this case that means the probability of getting a $\chi^2$ value, as big or bigger than the one we got.
+
+::: {.callout-note title="Degrees of freedom"}
+You see the term 'degrees of freedom' a lot in statistics. It refers to the number of independent pieces of information in a problem. In our chi-square sum, we know that the observed and expected genotype numbers both have to add up to 50, since there are 50 hedgehogs. Once we know the numbers for two of the genotypes, say AA and Aa, the numbers for the third genotype are determined. Hence, only two of the terms in the chi-square sum are independent and so here we have two degrees of freedom.
+
+It turns out that $\chi^2$ terms follow a distribution, but the exact form of the distribution depends on the degrees of freedom. In our case, the distribution is that for two degrees of freedom
+:::
 
 ```{r, echo = FALSE}
 #| label: fig-chi-square-pdf
@@ -151,7 +157,7 @@ For our date, we find $\chi^2$ = 0.265. The area under a $\chi^2$ curve for two 
 
 ## Conclusion
 
-The p-value we get is 0.876. This is almost as big as the largest value a p-value can have, which is 1. In particular, it is bigger than 0.05, the commonly used threshold (known as the significance level) for deciding whether or not to reject a null hypothesis. Here, we emphatically do not reject the null. It is very likely that we could have got genotype numbers as different from the expected numbers predicted by Hardy-Weinberg equilibrium, even if all the assumptions of Hardy-Weinberg equlibrium are met.
+The p-value we get is 0.876. This is almost as big as the largest value a p-value can have, which is 1. In particular, it is bigger than 0.05, the commonly used threshold (known as the significance level) for deciding whether or not to reject a null hypothesis. If p is less than the chosen signficance level, we reject the null. If it isn't we do not reject the null.  Here, p is much bigger than 0.05 so we emphatically do not reject the null. It is very likely that we could have got genotype numbers as different as ours from the expected numbers predicted by Hardy-Weinberg equilibrium, even if all the assumptions of Hardy-Weinberg equlibrium are met.
 
 Thus our observations are consistent with Hardy-Weinberg. We find no evidence from the data that the hedgehog population is not in Hardy-Weinberg equilibrium for the spine colouration gene. That doesn't mean that it definitely *is* in H-W equilibrium. It just means we have no evidence from this data that it *isn't*.
 
@@ -168,11 +174,11 @@ a<- rbinom(trials,tosses,0.5)
 ```
 
 
-## Doing the chi-square analysis using R
-In the console pane (bottom left of the RStudio window) we can type in the function `chisq.tst()`. We will give it two arguments between the parentheses. The first is a vector, denoted by `c()` of the observed numbers of the three genotypes, so we write `c(16, 23, 11)`. The second is a vector of the proportion that each genotype would have under the null hypothesis of Hardy -Weinberg equlibrium. These proportions will be the expected numbers divided by the total population. We can get this by writing `c(15.1, 24.8, 10.1)/50`. We need to include the name `p` of this argument to tell R which of several possible optional arguments we are using. Dividing thw whole vector by 50 has the effect of dividing each individual element by 50, so what we are writing is equivalent to writing `c(0.302, 0.496, 0.202)`. Then, we press enter:
+## Doing the chi-square analysis using R - optional
+In the console pane (bottom left of the RStudio window) we can type in the function `chisq.tst()`. We will give it two arguments between the parentheses. The first is a vector, denoted by `c()` of the observed numbers of the three genotypes, so we write `c(16, 23, 11)`. The second is a vector of the proportion that each genotype would have under the null hypothesis of Hardy -Weinberg equlibrium. These proportions will be the expected numbers divided by the total population. We can get this by writing `c(15.1, 24.8, 10.1)/50`. We need to include the name `p` of this argument to tell R which of several possible optional arguments we are using. Dividing the whole vector by 50 has the effect of dividing each individual element by 50, so what we are writing is equivalent to writing `c(0.302, 0.496, 0.202)`. Then, we press enter:
 
 ```{r, echo = TRUE}
-chisq.test(c(16,23,11), p = c(15.1, 24.8, 10.1)/50, correct = FALSE)
+chisq.test(c(16,23,11), p = c(15.1, 24.8, 10.1)/50)
 ```
 
 In the output, look for the value of the test statistic $\chi^2$, written here as X-squared, and the p value. Note that these have been rounded to 1 signficant figure.
