@@ -144,7 +144,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../notebooks/hardy-weinberg/hardy-weinberg_example.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Hardy-Weinberg example</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../notebooks/hardy-weinberg/hardy-weinberg_example.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">HW example</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -196,7 +196,7 @@ window.Quarto = {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../notebooks/hardy-weinberg/hardy-weinberg_example.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Hardy-Weinberg example</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">HW example</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -326,7 +326,7 @@ q&amp;=\frac{\text{Total number of a alleles}}{\text{Total number of alleles}}\\
 <h2 data-number="5.2" class="anchored" data-anchor-id="hardy-weinberg-expected-values-for-the-genotype-numbers"><span class="header-section-number">5.2</span> Hardy-Weinberg expected values for the genotype numbers</h2>
 <p>So far, all the numbers observed or calculated are true for this population of hedgehogs, whether that is the number of each phenotype or genotype, or the allele propotions p and q.</p>
 <p>Now we calculate the genotype numbers we would <em>expect</em> if the Hardy-Weinberg assumptions hold. To imagine what this means, it helps here to think of the population of hedgehogs as arising from two big bags, one full of <em>N</em> male gametes, the other full of <em>N</em> female gametes. Each of the gametes will contain one copy of the chromosome on which our gene for spine colour sits (and also one copy of all the other chromosomes, but we can ignore them here). A proportion p of these gametes will have the A allele for our gene and a proportion q will have the a allele. This is true overall, and if the population is very large (another Hardy-Weinberg assumption) this will be separately true for both the female and the male gametes. Each hedgehog arises from the union of one female and one male gamete. Under the Hardy-Weinberg assumption of random mating throughout the population, each of these gametes is chosen randomly from its respective bag. The probability that any female gamete drawn from its bag has allele A is p.&nbsp;The same is true for the male gamete. Hence the probability that a hedgehog in our population has genotype AA is p<sup>2</sup>. Hence the proportion of the population that we can <em>expect</em> to have this genotype is also p<sup>2</sup>, and hence too, the number of hedgehogs we would expect to have this genotype is this proportion multiplied by the total size N of the population.</p>
-<p>Hence, if the Hardy-Weinberg assumptions hold, we would <em>expect</em> to have <em>N</em> x <em>p</em><sup>2</sup> = 50 x 0.55 x 0.55 = 15.1 homozygous AA hedgehogs.</p>
+<p>Hence, if the Hardy-Weinberg assumptions hold, we would <em>expect</em> to have <em>N</em> x <em>p</em><sup>2</sup> = 50 x 0.55 x 0.55 = 15.125 homozygous AA hedgehogs.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Meaning of the term 'expected' ">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -342,8 +342,8 @@ Meaning of the term ‘expected’
 <p>That is what we turn to next.</p>
 </div>
 </div>
-<p>The expected number of homozygous aa individuals would likewise be <em>N</em> x <em>q</em><sup>2</sup> = 50 x 0.45 x 0.45 = 10.1</p>
-<p>Heterozygous individuals can be formed by getting an A allele from the male gamete and an a allele from the female gamete, or the reverse. Either way, the probability of that happening if Hardy-Weinberg holds and the gametes are selected randomly from their respective bags is <em>pq</em>, so that the total probability of an individual being heterozygous is 2 <em>pq</em> and thus the <em>expected</em> number of heterozygous individuals would be <em>N</em> x 2 <em>pq</em> = 50 x 2 x 0.55 x 0.45 = 24.8</p>
+<p>The expected number of homozygous aa individuals would likewise be <em>N</em> x <em>q</em><sup>2</sup> = 50 x 0.45 x 0.45 = 10.125</p>
+<p>Heterozygous individuals can be formed by getting an A allele from the male gamete and an a allele from the female gamete, or the reverse. Either way, the probability of that happening if Hardy-Weinberg holds and the gametes are selected randomly from their respective bags is <em>pq</em>, so that the total probability of an individual being heterozygous is 2 <em>pq</em> and thus the <em>expected</em> number of heterozygous individuals would be <em>N</em> x 2 <em>pq</em> = 50 x 2 x 0.55 x 0.45 = 24.75</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Arithmetic check">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -375,19 +375,19 @@ Arithmetic check
 <td style="text-align: center;">AA</td>
 <td style="text-align: center;">dark</td>
 <td style="text-align: center;">16</td>
-<td style="text-align: center;">15.1</td>
+<td style="text-align: center;">15.125</td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">Aa</td>
 <td style="text-align: center;">dark</td>
 <td style="text-align: center;">23</td>
-<td style="text-align: center;">24.8</td>
+<td style="text-align: center;">24.75</td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">aa</td>
 <td style="text-align: center;">light</td>
 <td style="text-align: center;">11</td>
-<td style="text-align: center;">10.1</td>
+<td style="text-align: center;">10.125</td>
 </tr>
 </tbody>
 </table>
@@ -401,12 +401,12 @@ Arithmetic check
 <p><span class="math display">\[
 \begin{align*}
 \chi^2 &amp;= {\frac{(O-E)^2}{E}}_\text{AA} + {\frac{(O-E)^2}{E}}_\text{Aa} + {\frac{(O-E)^2}{E}}_\text{aa}\\
-&amp;=\frac{(16-15.1)^2}{15.1} +\frac{(23-24.8)^2}{24.8} + \frac{(11-10.1)^2}{10.1}\\
-&amp;= 0.0536 + 0.131 + 0.0802\\
-&amp;= 0.265
+&amp;=\frac{(16-15.125)^2}{15.125} +\frac{(23-24.75)^2}{24.75} + \frac{(11-10.125)^2}{10.125}\\
+&amp;= 0.0506 + 0.124 + 0.076\\
+&amp;= 0.250
 \end{align*}\\
 \]</span> Note that this expression for <span class="math inline">\(\chi^2\)</span> is indeed a measure of how far the observed values differ from the expected numbers, under the null of HW being true for this case. The more the observed values differ from the expected values, the bigger <span class="math inline">\(\chi^2\)</span> becomes. If they were exactly equal to the expected values then <span class="math inline">\(\chi^2\)</span> would be equal to zero. Note too that <span class="math inline">\(\chi^2\)</span> can never be zero, since it is the sum of terms that must each be positive.</p>
-<p>This <span class="math inline">\(\chi^2\)</span> follows a distribution, known as a <span class="math inline">\(\chi^2\)</span> distribution for (in this case) 2 degrees of freedom. It is plotted below in <a href="#fig-chi-square-pdf" class="quarto-xref">Figure&nbsp;<span>5.1</span></a> as a ‘probability density function’. You may have met one of these before, for the normal distribution. The way to understand it is that the area under the curve between and two values of <span class="math inline">\(\chi^2\)</span> on the x-axis gives the probability of <span class="math inline">\(\chi^2\)</span> being in that range. In particular, the area under the curve to the right of a given value of <span class="math inline">\(\chi^2\)</span> gives the probability that <span class="math inline">\(\chi^2\)</span> would have that value, or greater. This probability is the famous p-value: the probability of gettng data as different from the null prediction as ours is, or more different, if the null were true. In this case that means the probability of getting a <span class="math inline">\(\chi^2\)</span> value, as big or bigger than the one we got.</p>
+<p>This <span class="math inline">\(\chi^2\)</span> follows a distribution, known as a <span class="math inline">\(\chi^2\)</span> distribution for (in this case) 1 degree of freedom. It is plotted below in <a href="#fig-chi-square-pdf" class="quarto-xref">Figure&nbsp;<span>5.1</span></a> as a ‘probability density function’. You may have met one of these before, for the normal distribution. The way to understand it is that the area under the curve between and two values of <span class="math inline">\(\chi^2\)</span> on the x-axis gives the probability of <span class="math inline">\(\chi^2\)</span> being in that range. In particular, the area under the curve to the right of a given value of <span class="math inline">\(\chi^2\)</span> gives the probability that <span class="math inline">\(\chi^2\)</span> would have that value, or greater. This probability is the famous p-value: the probability of gettng data as different from the null prediction as ours is, or more different, if the null were true. In this case that means the probability of getting a <span class="math inline">\(\chi^2\)</span> value, as big or bigger than the one we got.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Degrees of freedom">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -417,8 +417,10 @@ Degrees of freedom
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>You see the term ‘degrees of freedom’ a lot in statistics. It refers to the number of independent pieces of information in a problem. In our chi-square sum, we know that the observed and expected genotype numbers both have to add up to 50, since there are 50 hedgehogs. Consider, for example, the observed numbers for AA, Aa and aa. In any population of 50 hedgehogs, the number with the AA genotype could be anything from 0 to 50. Suppose it was 14. Given that, the number with the Aa genotype could be anything from 0 to 36. Suppose it was 20. Now, the number with the aa genotype <em>has</em> to be 16 since the total is 50. It doesn’t matter which two genotypes you start with, but while there is some freedom in choosing their numbers, there is no freedom in choosin the third, given that the total is 50. Once we know the numbers for two of the genotypes, say AA and Aa, the numbers for the third genotype are determined. Hence, only two of the terms in the chi-square sum are independent and so here we have two degrees of freedom.</p>
-<p>It turns out that <span class="math inline">\(\chi^2\)</span> terms follow a distribution, but the exact form of the distribution depends on the degrees of freedom. In our case, the distribution is that for two degrees of freedom</p>
+<p>You see the term ‘degrees of freedom’ a lot in statistics. It refers to the number of independent pieces of information in a problem. In our chi-square sum, we know that the observed and expected genotype numbers both have to add up to 50, since there are 50 hedgehogs. Consider, for example, the observed numbers for AA, Aa and aa. In any population of 50 hedgehogs, the number with the AA genotype could be anything from 0 to 50. Suppose it was 14. Given that, the number with the Aa genotype could be anything from 0 to 36. Suppose it was 20. Now, the number with the aa genotype <em>has</em> to be 16 since the total is 50. It doesn’t matter which two genotypes you start with, but while there is some freedom in choosing their numbers, there is no freedom in choosing the third, given that the total is 50. Once we know the numbers for two of the genotypes, say AA and Aa, the numbers for the third genotype are determined. Hence, only two of the terms in the chi-square sum are independent and so here you would think we have two degrees of freedom.</p>
+<p>But, in fact, there is only one degree of freedom. In calculating the expected numbers from p and q, we know that p and q sum 1. Hence only one of these is ‘free’. Once we know p we know q and vice-versa. That takes away a degree of freedom</p>
+<p><strong>In general, in problems with two alleles and three genotypes, the degrees of freedom is one.</strong></p>
+<p>It turns out that <span class="math inline">\(\chi^2\)</span> terms follow a distribution, but the exact form of the distribution depends on the degrees of freedom. In our case, the distribution is that for one degree of freedom</p>
 </div>
 </div>
 <div class="cell">
@@ -429,37 +431,47 @@ Degrees of freedom
 <img src="hardy-weinberg_example_files/figure-html/fig-chi-square-pdf-1.png" class="img-fluid figure-img" style="width:90.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-chi-square-pdf-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;5.1: A Chi-square probability density function for two degrees of freedom. The total area under the curve is one and the area under it between any two values of <span class="math inline">\(\chi^2\)</span> is the probability of <span class="math inline">\(\chi^2\)</span> being in that range. The area shaded blue is the area under the curve to the right of the <span class="math inline">\(\chi^2\)</span> value of 0.265. This is the probsbility of getting a <span class="math inline">\(\chi^2\)</span> value of 0.265 or greater, and thus is the probability of getting genotype numbers as different, or more different, from the Hardy-Weinberg predictions as the ones we got
+Figure&nbsp;5.1: A Chi-square probability density function for one degree of freedom. The total area under the curve is one and the area under it between any two values of <span class="math inline">\(\chi^2\)</span> is the probability of <span class="math inline">\(\chi^2\)</span> being in that range. The area shaded blue is the area under the curve to the right of the <span class="math inline">\(\chi^2\)</span> value of 0.25. This is the probsbility of getting a <span class="math inline">\(\chi^2\)</span> value of 0.25 or greater, and thus is the probability of getting genotype numbers as different, or more different, from the Hardy-Weinberg predictions as the ones we got
 </figcaption>
 </figure>
 </div>
 </div>
 </div>
-<p>For our date, we find <span class="math inline">\(\chi^2\)</span> = 0.265. The area under a <span class="math inline">\(\chi^2\)</span> curve for two degrees of freedom, to the right of this value of <span class="math inline">\(\chi^2\)</span> is 0.876. We call this value the p-value of the the <span class="math inline">\(\chi^2\)</span> test: the probability of getting a <span class="math inline">\(\chi^2\)</span> value this big or bigger if the null were true. I’ll repeat, this is the same thing as the probability of getting observed values as far or further from the expected values as oours were, if the null (Hardy-Winberg holds) were true.</p>
+<p>For our date, we find <span class="math inline">\(\chi^2\)</span> = 0.25. The area under a <span class="math inline">\(\chi^2\)</span> curve for two degrees of freedom, to the right of this value of <span class="math inline">\(\chi^2\)</span> is 0.617. We call this value the p-value of the the <span class="math inline">\(\chi^2\)</span> test: the probability of getting a <span class="math inline">\(\chi^2\)</span> value this big or bigger if the null were true. I’ll repeat, this is the same thing as the probability of getting observed values as far or further from the expected values as oours were, if the null (Hardy-Winberg holds) were true.</p>
 </section>
 <section id="conclusion" class="level2" data-number="5.5">
 <h2 data-number="5.5" class="anchored" data-anchor-id="conclusion"><span class="header-section-number">5.5</span> Conclusion</h2>
-<p>The p-value we get is 0.876. This is almost as big as the largest value a p-value can have, which is 1. In particular, it is bigger than 0.05, the commonly used threshold (known as the significance level) for deciding whether or not to reject a null hypothesis. If p is less than the chosen signficance level, we reject the null. If it isn’t we do not reject the null. Here, p is much bigger than 0.05 so we emphatically do not reject the null. It is very likely that we could have got genotype numbers as different as ours from the expected numbers predicted by Hardy-Weinberg equilibrium, even if all the assumptions of Hardy-Weinberg equlibrium are met.</p>
+<p>The p-value we get is 0.617. Remember that p is a probability, os can only have values in the range 0 to 1. Our p-value is (much) bigger than 0.05, the commonly used threshold (known as the significance level) for deciding whether or not to reject a null hypothesis. If p is less than the chosen signficance level, we reject the null. If it isn’t we do not reject the null. Here, p is much bigger than 0.05 so we emphatically do not reject the null. It is very likely that we could have got genotype numbers as different as ours from the expected numbers predicted by Hardy-Weinberg equilibrium, even if all the assumptions of Hardy-Weinberg equlibrium are met.</p>
 <p>Thus our observations are consistent with Hardy-Weinberg. We find no evidence from the data that the hedgehog population is not in Hardy-Weinberg equilibrium for the spine colouration gene. That doesn’t mean that it definitely <em>is</em> in H-W equilibrium. It just means we have no evidence from this data that it <em>isn’t</em>.</p>
 <p>In the same way, if we tossed a coin 100 times and got 48 heads and 52 tails, that would not constitute evidence that the coin is not fair (that is, one for which heads and tails are equally likely) despite that we didn’t get exactly the <em>expected</em> results of 50 heads and 50 tails. If the coin is fair the probability of getting 48 or fewer heads and 52 or more tails turns out to be 0.76, so getting the results we got is quite likely even if the coin is fair. On the other hand, if we got 30 heads and 70 tails, the probability of that is very, very small with a fair coin, so we would reject the null and decide that the coin is not fair.</p>
 <p>So, don’t imagine that Hardy-Weinberg is not satisfied just because the observed numbers of the different genotypes are not exactly the same as the <em>expected</em> values. The question is, by how much do they differ, and how likely would that be if Hardy-Weinberg holds. A chi-square analysis tells you that.</p>
 </section>
 <section id="doing-the-chi-square-analysis-using-r---optional" class="level2" data-number="5.6">
 <h2 data-number="5.6" class="anchored" data-anchor-id="doing-the-chi-square-analysis-using-r---optional"><span class="header-section-number">5.6</span> Doing the chi-square analysis using R - optional</h2>
-<p>To actually calculate the <span class="math inline">\(\chi^2\)</span> statistic and p-value in a Hardy-Weinberg problem we would now almost always use software. Here is how to do it using R.</p>
+<p>To actually calculate the <span class="math inline">\(\chi^2\)</span> statistic and p-value in a Hardy-Weinberg problem we would now almost always use software. Here is one way to do it using R.</p>
 <p>For this to work, you will need to have installed <a href="https://cloud.r-project.org">R</a> and <a href="https://docs.posit.co/ide/user/download.html">RStudio</a>. Then, open RStudio.</p>
-<p>In the console pane (bottom left of the RStudio window) we can type in the function <code>chisq.tst()</code>. We will give it two arguments between the parentheses. The first is a vector, denoted by <code>c()</code> of the observed numbers of the three genotypes, so we write <code>c(16, 23, 11)</code>. The second is a vector of the proportion that each genotype would have under the null hypothesis of Hardy -Weinberg equlibrium. These proportions will be the expected numbers divided by the total population. We can get this by writing <code>c(15.1, 24.8, 10.1)/50</code>. We need to include the name <code>p</code> of this argument to tell R which of several possible optional arguments we are using. Dividing the whole vector by 50 has the effect of dividing each individual element by 50, so what we are writing is equivalent to writing <code>c(0.302, 0.496, 0.202)</code>. Then, we press enter:</p>
+<p>In the console pane (bottom left of the RStudio window) we can type in the following code, one line at a time. Don’t bother with the comments, which are those lines that begin with a # symbol.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">chisq.test</span>(<span class="fu">c</span>(<span class="dv">16</span>,<span class="dv">23</span>,<span class="dv">11</span>), <span class="at">p =</span> <span class="fu">c</span>(<span class="fl">15.1</span>, <span class="fl">24.8</span>, <span class="fl">10.1</span>)<span class="sc">/</span><span class="dv">50</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># observed counts</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>obs <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="at">AA =</span> <span class="dv">16</span>, <span class="at">Aa =</span>  <span class="dv">23</span>, <span class="at">aa =</span>  <span class="dv">11</span>)   </span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>N <span class="ot">&lt;-</span> <span class="fu">sum</span>(obs)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># allele frequencies</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>p <span class="ot">&lt;-</span> (<span class="dv">2</span> <span class="sc">*</span> obs[<span class="st">"AA"</span>] <span class="sc">+</span> obs[<span class="st">"Aa"</span>]) <span class="sc">/</span> (<span class="dv">2</span> <span class="sc">*</span> N)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>q <span class="ot">&lt;-</span> <span class="dv">1</span> <span class="sc">-</span> p</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co"># expected counts</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>exp <span class="ot">&lt;-</span> N <span class="sc">*</span> <span class="fu">c</span>(p<span class="sc">^</span><span class="dv">2</span>, <span class="dv">2</span> <span class="sc">*</span> p <span class="sc">*</span> q, q<span class="sc">^</span><span class="dv">2</span>)</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="co"># calculate chi-squared (X2 )statistic</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>X2 <span class="ot">&lt;-</span> <span class="fu">sum</span>((obs <span class="sc">-</span> exp)<span class="sc">^</span><span class="dv">2</span> <span class="sc">/</span> exp)</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="co"># calculate p-value</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="fu">pchisq</span>(X2, <span class="at">df =</span> <span class="dv">1</span>, <span class="at">lower.tail =</span> <span class="cn">FALSE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>
-    Chi-squared test for given probabilities
-
-data:  c(16, 23, 11)
-X-squared = 0.3, df = 2, p-value = 0.9</code></pre>
+<pre><code>[1] 0.617</code></pre>
 </div>
 </div>
-<p>In the output, look for the value of the test statistic <span class="math inline">\(\chi^2\)</span>, written here as X-squared, and the p value. Note that these have been rounded to 1 signficant figure.</p>
 
 
 </section>

@@ -69,7 +69,7 @@ So far, all the numbers observed or calculated are true for this population of h
 
 Now we calculate the genotype numbers we would *expect* if the Hardy-Weinberg assumptions hold. To imagine what this means, it helps here to think of the population of hedgehogs as arising from two big bags, one full of *N* male gametes, the other full of *N* female gametes. Each of the gametes will contain one copy of the chromosome on which our gene for spine colour sits (and also one copy of all the other chromosomes, but we can ignore them here). A proportion p of these gametes will have the A allele for our gene and a proportion q will have the a allele. This is true overall, and if the population is very large (another Hardy-Weinberg assumption) this will be separately true for both the female and the male gametes.  Each hedgehog arises from the union of one female and one male gamete. Under the Hardy-Weinberg assumption of random mating throughout the population, each of these gametes is chosen randomly from its respective bag. The probability that any female gamete drawn from its bag has allele A is p. The same is true for the male gamete. Hence the probability that a hedgehog in our population has genotype AA is p^2^. Hence the proportion of the population that we can *expect* to have this genotype is also p^2^, and hence too, the number of hedgehogs we would expect to have this genotype is this proportion multiplied by the total size N of the population. 
 
-Hence, if the Hardy-Weinberg assumptions hold, we would *expect* to have *N* x *p*^2^ = 50 x 0.55 x 0.55 = 15.1 homozygous AA hedgehogs.
+Hence, if the Hardy-Weinberg assumptions hold, we would *expect* to have *N* x *p*^2^ = 50 x 0.55 x 0.55 = 15.125 homozygous AA hedgehogs.
 
 ::: {.callout-note title="Meaning of the term 'expected' "}
 Note the usage of the word *expected*. Just because we say we *expect* 15.1 homozygous AA hedgehogs, that does not mean we would necessarily get exactly that many (even if fractional hedgehogs were possible!) even if the Hardy-Weinberg assumptions were met. It works probablistically. If a proportion p of the gametes of each sex contain allele A, then the probability that an individual hedgehog will have genotype AA is p^2^ = 0.303, assuming the H-W assumptions apply. In an infinitely large population of hedgehogs, the proportion that actually had that genotype would also be  *p*^2^, but in a finate population, especially one that was small, there would very likely be deviation eiather side of this *expected* proportion. In the same way, if we had a fair coin, we would *expect* to get heads roughly 50% 0f the time if we tossed it  a million or a squillion times, but would not be phased if we got a number slightly different from that when we tossed it a few times. Each toss could go either way.
@@ -80,9 +80,9 @@ That is what we turn to next.
 :::
 
 
-The expected number of homozygous aa individuals would likewise be *N* x *q*^2^ = 50 x 0.45 x 0.45 = 10.1
+The expected number of homozygous aa individuals would likewise be *N* x *q*^2^ = 50 x 0.45 x 0.45 = 10.125
 
-Heterozygous individuals can be formed by getting an A allele from the male gamete and an a allele from the female gamete, or the reverse. Either way, the probability of that happening if Hardy-Weinberg holds and the gametes are selected randomly from their respective bags is *pq*, so that the total probability of an individual being heterozygous is 2 *pq* and thus the *expected* number of heterozygous individuals would be *N* x 2 *pq* = 50 x 2 x 0.55 x 0.45 = 24.8
+Heterozygous individuals can be formed by getting an A allele from the male gamete and an a allele from the female gamete, or the reverse. Either way, the probability of that happening if Hardy-Weinberg holds and the gametes are selected randomly from their respective bags is *pq*, so that the total probability of an individual being heterozygous is 2 *pq* and thus the *expected* number of heterozygous individuals would be *N* x 2 *pq* = 50 x 2 x 0.55 x 0.45 = 24.75
 
 ::: {.callout-note title="Arithmetic check"}
 Check that sum of the expected numbers of the three genotypes is equal to the populations size *N* = 50.
@@ -96,9 +96,9 @@ So now we have our *expected* numbers *E* for the three genotypes, if the popula
 
 | Genotype | Phenotype | Observed number *O* | Expected number *E*|
 | :---------:| :---------: |:-----------:| :-------------: |
-| AA       | dark      | 16              | 15.1            |
-| Aa       | dark      | 23              | 24.8            |
-| aa       | light     | 11              | 10.1            |
+| AA       | dark      | 16              | 15.125           |
+| Aa       | dark      | 23              | 24.75            |
+| aa       | light     | 11              | 10.125            |
 
 
 The observed and the expected numbers for each genotype are not exactly equal, but we shoud not be surprised by that. Are they, though, so far apart that we can no longer credibly believe that this hedgehog population is in Hardy-Weinberg equilibrium for the gene for spine colouration? 
@@ -114,50 +114,55 @@ Let us calculate the Chi-square statistic, denoted as $\chi^2$. To do this we ta
 $$
 \begin{align*}
 \chi^2 &= {\frac{(O-E)^2}{E}}_\text{AA} + {\frac{(O-E)^2}{E}}_\text{Aa} + {\frac{(O-E)^2}{E}}_\text{aa}\\
-&=\frac{(16-15.1)^2}{15.1} +\frac{(23-24.8)^2}{24.8} + \frac{(11-10.1)^2}{10.1}\\
-&= 0.0536 + 0.131 + 0.0802\\
-&= 0.265
+&=\frac{(16-15.125)^2}{15.125} +\frac{(23-24.75)^2}{24.75} + \frac{(11-10.125)^2}{10.125}\\
+&= 0.0506 + 0.124 + 0.076\\
+&= 0.250
 \end{align*}\\
 $$
 Note that this expression for $\chi^2$ is indeed a measure of how far the observed values differ from the expected numbers, under the null of HW being true for this case. The more the observed values differ from the expected values, the bigger $\chi^2$ becomes. If they were exactly equal to the expected values then $\chi^2$ would be equal to zero. Note too that $\chi^2$ can never be zero, since it is the sum of terms that must each be positive.
 
-This $\chi^2$ follows a distribution, known as a $\chi^2$ distribution for (in this case) 2 degrees of freedom. It is plotted below in @fig-chi-square-pdf as a 'probability density function'. You may have met one of these before, for the normal distribution. The way to understand it is that the area under the curve between and two values of $\chi^2$ on the x-axis gives the probability of $\chi^2$ being in that range. In particular, the area under the curve to the right of a given value of $\chi^2$ gives the probability that $\chi^2$ would have that value, or greater. This probability is the famous p-value: the probability of gettng data as different from the null prediction as ours is, or more different, if the null were true. In this case that means the probability of getting a $\chi^2$ value, as big or bigger than the one we got.
+This $\chi^2$ follows a distribution, known as a $\chi^2$ distribution for (in this case) 1 degree of freedom. It is plotted below in @fig-chi-square-pdf as a 'probability density function'. You may have met one of these before, for the normal distribution. The way to understand it is that the area under the curve between and two values of $\chi^2$ on the x-axis gives the probability of $\chi^2$ being in that range. In particular, the area under the curve to the right of a given value of $\chi^2$ gives the probability that $\chi^2$ would have that value, or greater. This probability is the famous p-value: the probability of gettng data as different from the null prediction as ours is, or more different, if the null were true. In this case that means the probability of getting a $\chi^2$ value, as big or bigger than the one we got.
 
 ::: {.callout-note title="Degrees of freedom"}
-You see the term 'degrees of freedom' a lot in statistics. It refers to the number of independent pieces of information in a problem. In our chi-square sum, we know that the observed and expected genotype numbers both have to add up to 50, since there are 50 hedgehogs. Consider, for example, the observed numbers for AA, Aa and aa. In any population of 50 hedgehogs, the number with the AA genotype could be anything from 0 to 50. Suppose it was 14. Given that, the number with the Aa genotype could be anything from 0 to 36. Suppose it was 20. Now, the number with the aa genotype *has* to be 16 since the total is 50. It doesn't matter which two genotypes you start with, but while there is some freedom in choosing their numbers, there is no freedom in choosin the third, given that the total is 50. Once we know the numbers for two of the genotypes, say AA and Aa, the numbers for the third genotype are determined. Hence, only two of the terms in the chi-square sum are independent and so here we have two degrees of freedom.
+You see the term 'degrees of freedom' a lot in statistics. It refers to the number of independent pieces of information in a problem. In our chi-square sum, we know that the observed and expected genotype numbers both have to add up to 50, since there are 50 hedgehogs. Consider, for example, the observed numbers for AA, Aa and aa. In any population of 50 hedgehogs, the number with the AA genotype could be anything from 0 to 50. Suppose it was 14. Given that, the number with the Aa genotype could be anything from 0 to 36. Suppose it was 20. Now, the number with the aa genotype *has* to be 16 since the total is 50. It doesn't matter which two genotypes you start with, but while there is some freedom in choosing their numbers, there is no freedom in choosing the third, given that the total is 50. Once we know the numbers for two of the genotypes, say AA and Aa, the numbers for the third genotype are determined. Hence, only two of the terms in the chi-square sum are independent and so here you would think we have two degrees of freedom.
 
-It turns out that $\chi^2$ terms follow a distribution, but the exact form of the distribution depends on the degrees of freedom. In our case, the distribution is that for two degrees of freedom
+But, in fact, there is only one degree of freedom. In calculating the expected numbers from p and q, we know that p and q sum 1. Hence only one of these is 'free'. Once we know p we know q and vice-versa. That takes away a degree of freedom
+
+**In general, in problems with two alleles and three genotypes, the degrees of freedom is one.**
+
+It turns out that $\chi^2$ terms follow a distribution, but the exact form of the distribution depends on the degrees of freedom. In our case, the distribution is that for one degree of freedom
 :::
 
 ```{r, echo = FALSE}
 #| label: fig-chi-square-pdf
-#| fig-cap: "A Chi-square probability density function for two degrees of freedom. The total area under the curve is one and the area under it between any two values of $\\chi^2$ is the probability of $\\chi^2$ being in that range. The area shaded blue is the area under the curve to the right of the $\\chi^2$ value of 0.265. This is the probsbility of getting a $\\chi^2$ value of 0.265 or greater, and thus is the probability of getting genotype numbers as different, or more different, from the Hardy-Weinberg predictions as the ones we got"
+#| fig-cap: "A Chi-square probability density function for one degree of freedom. The total area under the curve is one and the area under it between any two values of $\\chi^2$ is the probability of $\\chi^2$ being in that range. The area shaded blue is the area under the curve to the right of the $\\chi^2$ value of 0.25. This is the probsbility of getting a $\\chi^2$ value of 0.25 or greater, and thus is the probability of getting genotype numbers as different, or more different, from the Hardy-Weinberg predictions as the ones we got"
 
 ggplot() +
-  scale_x_continuous(limits=c(0,12), breaks = seq(0,12,1)) +
+  scale_x_continuous(limits=c(0,8), breaks = seq(0,8,1)) +
+  scale_y_continuous(limits=c(0,1.1), breaks = seq(0,1,0.5)) +
   stat_function(
     fun = dchisq,
-    args = list(df =2),
+    args = list(df =1),
     geom = "area",
-    xlim = c(0.265, 12),
+    xlim = c(0.25, 8),
     fill = "steelblue",
     alpha = 0.5
   ) +
-  geom_function(fun = dchisq, args = list(df = 2), linewidth = 1) +
+  geom_function(fun = dchisq, args = list(df = 1), linewidth = 1) +
   labs(x = bquote("Test statistic"~(chi^2)), y = "Density") +
   # scale_x_continuous(limits=c(0,12), breaks = seq(0,12,1)) +
-  geom_segment(aes(x = 0.265, y = 0, xend = 0.265, yend = 0.55), colour = "red", linetype = "dashed") +
-  scale_y_continuous(expand = expansion(mult = c(0, 0.15))) +
-  annotate(geom = "text", x = 2., y = 0.05, label = "p-value = 0.876") +
-  annotate(geom = "text", x = .4, y = 0.57, label = "chi^2 == 0.265", parse = TRUE) +
-  annotate(geom = "text", x = 7, y = 0.17, label = "Total area under the curve = 1\n  Area shaded blue = 0.876\nThis is the p-value") +
+  geom_segment(aes(x = 0.25, y = 0, xend = 0.25, yend = 1.0), colour = "red", linetype = "dashed") +
+  # scale_y_continuous(expand = expansion(mult = c(0, 0.05))) +
+  annotate(geom = "text", x = 1.1, y = 0.08, label = "p-value = 0.617", size = 3) +
+  annotate(geom = "text", x = .4, y = 1.0, label = "chi^2 == 0.25", parse = TRUE, hjust = 0) +
+  annotate(geom = "text", x = 4, y = 0.6, label = "Total area under the curve = 1\n  Area shaded blue = 0.617\nThis is the p-value") +
   theme_cowplot()
 ```
-For our date, we find $\chi^2$ = 0.265. The area under a $\chi^2$ curve for two degrees of freedom, to the right of this value of $\chi^2$ is 0.876. We call this value the p-value of the the $\chi^2$ test: the probability of getting a $\chi^2$ value this big or bigger if the null were true. I'll repeat, this is the same thing as the probability of getting observed values as far or further from the expected values as oours were, if the null (Hardy-Winberg holds) were true.
+For our date, we find $\chi^2$ = 0.25. The area under a $\chi^2$ curve for two degrees of freedom, to the right of this value of $\chi^2$ is 0.617. We call this value the p-value of the the $\chi^2$ test: the probability of getting a $\chi^2$ value this big or bigger if the null were true. I'll repeat, this is the same thing as the probability of getting observed values as far or further from the expected values as oours were, if the null (Hardy-Winberg holds) were true.
 
 ## Conclusion
 
-The p-value we get is 0.876. This is almost as big as the largest value a p-value can have, which is 1. In particular, it is bigger than 0.05, the commonly used threshold (known as the significance level) for deciding whether or not to reject a null hypothesis. If p is less than the chosen signficance level, we reject the null. If it isn't we do not reject the null.  Here, p is much bigger than 0.05 so we emphatically do not reject the null. It is very likely that we could have got genotype numbers as different as ours from the expected numbers predicted by Hardy-Weinberg equilibrium, even if all the assumptions of Hardy-Weinberg equlibrium are met.
+The p-value we get is 0.617. Remember that p is a probability, os can only have values in the range 0 to 1. Our p-value is (much) bigger than 0.05, the commonly used threshold (known as the significance level) for deciding whether or not to reject a null hypothesis. If p is less than the chosen signficance level, we reject the null. If it isn't we do not reject the null.  Here, p is much bigger than 0.05 so we emphatically do not reject the null. It is very likely that we could have got genotype numbers as different as ours from the expected numbers predicted by Hardy-Weinberg equilibrium, even if all the assumptions of Hardy-Weinberg equlibrium are met.
 
 Thus our observations are consistent with Hardy-Weinberg. We find no evidence from the data that the hedgehog population is not in Hardy-Weinberg equilibrium for the spine colouration gene. That doesn't mean that it definitely *is* in H-W equilibrium. It just means we have no evidence from this data that it *isn't*.
 
@@ -176,15 +181,28 @@ a<- rbinom(trials,tosses,0.5)
 
 ## Doing the chi-square analysis using R - optional
 
-To actually calculate the $\chi^2$ statistic and p-value in a Hardy-Weinberg problem we would now almost always use software. Here is how to do it using R.
+To actually calculate the $\chi^2$ statistic and p-value in a Hardy-Weinberg problem we would now almost always use software. Here is one way to do it using R.
 
 For this to work, you will need to have installed [R](https://cloud.r-project.org) and [RStudio](https://docs.posit.co/ide/user/download.html). Then, open RStudio.
 
-In the console pane (bottom left of the RStudio window) we can type in the function `chisq.tst()`. We will give it two arguments between the parentheses. The first is a vector, denoted by `c()` of the observed numbers of the three genotypes, so we write `c(16, 23, 11)`. The second is a vector of the proportion that each genotype would have under the null hypothesis of Hardy -Weinberg equlibrium. These proportions will be the expected numbers divided by the total population. We can get this by writing `c(15.1, 24.8, 10.1)/50`. We need to include the name `p` of this argument to tell R which of several possible optional arguments we are using. Dividing the whole vector by 50 has the effect of dividing each individual element by 50, so what we are writing is equivalent to writing `c(0.302, 0.496, 0.202)`. Then, we press enter:
+In the console pane (bottom left of the RStudio window) we can type in the following code, one line at a time. Don't bother with the comments, which are those lines that begin with a # symbol.
 
 ```{r, echo = TRUE}
-chisq.test(c(16,23,11), p = c(15.1, 24.8, 10.1)/50)
-```
+# observed counts
+obs <- c(AA = 16, Aa =  23, aa =  11)   
+N <- sum(obs)
 
-In the output, look for the value of the test statistic $\chi^2$, written here as X-squared, and the p value. Note that these have been rounded to 1 signficant figure.
+# allele frequencies
+p <- (2 * obs["AA"] + obs["Aa"]) / (2 * N)
+q <- 1 - p
+
+# expected counts
+exp <- N * c(p^2, 2 * p * q, q^2)
+
+# calculate chi-squared (X2 )statistic
+X2 <- sum((obs - exp)^2 / exp)
+
+# calculate p-value
+pchisq(X2, df = 1, lower.tail = FALSE)
+```
 
