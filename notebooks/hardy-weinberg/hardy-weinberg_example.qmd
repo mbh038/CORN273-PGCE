@@ -1,4 +1,4 @@
-# Hardy-Weinberg example
+# Hardy-Weinberg example one
 
 ```{r}
 #| include: false
@@ -86,7 +86,15 @@ Heterozygous individuals can be formed by getting an A allele from the male game
 
 ::: {.callout-note title="Arithmetic check"}
 Check that sum of the expected numbers of the three genotypes is equal to the populations size *N* = 50.
-:::  
+::: 
+
+So, in summary, the expected numbers for each genotype are:
+
+| Genotype | Expected number *E*| Calculation
+| :---------:| :---------: |:-----------:| :-------------: |
+| AA                | 15.125           | *N* x *p*^2^ = 50 x 0.55 x 0.55 |
+| Aa                | 24.75            | *N* x 2 *pq* = 50 x 2 x 0.55 x 0.45 |
+| aa                 | 10.125            | *N* x *q*^2^ = 50 x 0.45 x 0.45 |
 
 
 ## Compare observed with expected numbers
@@ -167,11 +175,11 @@ ggplot() +
   annotate(geom = "text", x = 4, y = 0.6, label = "Total area under the curve = 1\n  Area shaded blue = 0.617\nThis is the p-value") +
   theme_cowplot()
 ```
-For our date, we find $\chi^2$ = 0.25. The area under a $\chi^2$ curve for two degrees of freedom, to the right of this value of $\chi^2$ is 0.617. We call this value the p-value of the the $\chi^2$ test: the probability of getting a $\chi^2$ value this big or bigger if the null were true. I'll repeat, this is the same thing as the probability of getting observed values as far or further from the expected values as oours were, if the null (Hardy-Winberg holds) were true.
+For our date, we find $\chi^2$ = 0.25. The area under a $\chi^2$ curve for one degree of freedom, to the right of this value of $\chi^2$ is 0.617. We call this value the p-value of the the $\chi^2$ test: the probability of getting a $\chi^2$ value this big or bigger if the null were true. I'll repeat, this is the same thing as the probability of getting observed values as far or further from the expected values as oours were, if the null (Hardy-Winberg holds) were true.
 
 ## Conclusion
 
-The p-value we get is 0.617. Remember that p is a probability, os can only have values in the range 0 to 1. Our p-value is (much) bigger than 0.05, the commonly used threshold (known as the significance level) for deciding whether or not to reject a null hypothesis. If p is less than the chosen signficance level, we reject the null. If it isn't we do not reject the null.  Here, p is much bigger than 0.05 so we emphatically do not reject the null. It is very likely that we could have got genotype numbers as different as ours from the expected numbers predicted by Hardy-Weinberg equilibrium, even if all the assumptions of Hardy-Weinberg equlibrium are met.
+The p-value we get is 0.617. Remember that p is a probability, so can only have values in the range 0 to 1. Our p-value is (much) bigger than 0.05, the commonly used threshold (known as the significance level) for deciding whether or not to reject a null hypothesis. If p is less than the chosen signficance level, we reject the null. If it isn't we do not reject the null.  Here, p is much bigger than 0.05 so we emphatically do not reject the null. It is very likely that we could have got genotype numbers as different as ours from the expected numbers predicted by Hardy-Weinberg equilibrium, even if all the assumptions of Hardy-Weinberg equlibrium are met.
 
 Thus our observations are consistent with Hardy-Weinberg. We find no evidence from the data that the hedgehog population is not in Hardy-Weinberg equilibrium for the spine colouration gene. That doesn't mean that it definitely *is* in H-W equilibrium. It just means we have no evidence from this data that it *isn't*.
 
@@ -214,4 +222,7 @@ X2 <- sum((observed - expected)^2 / expected)
 # calculate p-value
 pchisq(X2, df = 1, lower.tail = FALSE)
 ```
+
+
+
 

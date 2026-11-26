@@ -4,6 +4,16 @@ format: html
 editor: visual
 ---
 
+An iconic study by Milne and Robertson (1965) used protein electrophoresis to show that a population of Eider ducks in Scotland is known to have two codominant alleles of a gene that codes for egg-white protein. One variant of the protein migrates quickly through the gel used in the electrophoresis and one migrates slowly. We use F to denote the allele that codes for the fast protein and S for the one that codes for the slow.
+
+They found 
+
+| Genotype | Phenotype | Frequency |
+| :---------:| :---------: |:-----------:| 
+| FF       | Fast moving ovalbumin variant synthesised      | 37 |
+| FS       | Fast and slow moving ovalbumin variant synthesised     | 24 |
+| SS       | SLow moving ovalbumin variant synthesised     | 6 |.
+
 ```{r}
 # Hardy-Weinberg Equilibrium Chi-Squared Test
 # Eider duck protein polymorphism data

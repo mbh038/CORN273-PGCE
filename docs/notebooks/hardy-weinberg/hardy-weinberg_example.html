@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>5&nbsp; Hardy-Weinberg example – CORN273 Population Genetics and Community Ecology</title>
+<title>5&nbsp; Hardy-Weinberg example one – CORN273 Population Genetics and Community Ecology</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -144,7 +144,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../notebooks/hardy-weinberg/hardy-weinberg_example.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Hardy-Weinberg example</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../notebooks/hardy-weinberg/hardy-weinberg_example.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Hardy-Weinberg example one</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -196,7 +196,7 @@ window.Quarto = {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../notebooks/hardy-weinberg/hardy-weinberg_example.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Hardy-Weinberg example</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Hardy-Weinberg example one</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -247,7 +247,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Hardy-Weinberg example</span></h1>
+<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Hardy-Weinberg example one</span></h1>
 </div>
 
 
@@ -357,6 +357,43 @@ Arithmetic check
 <p>Check that sum of the expected numbers of the three genotypes is equal to the populations size <em>N</em> = 50.</p>
 </div>
 </div>
+<p>So, in summary, the expected numbers for each genotype are:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 22%">
+<col style="width: 22%">
+<col style="width: 26%">
+<col style="width: 30%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Genotype</th>
+<th style="text-align: center;">Expected number <em>E</em></th>
+<th style="text-align: center;">Calculation</th>
+<th style="text-align: center;"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">AA</td>
+<td style="text-align: center;">15.125</td>
+<td style="text-align: center;"><em>N</em> x <em>p</em><sup>2</sup> = 50 x 0.55 x 0.55</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Aa</td>
+<td style="text-align: center;">24.75</td>
+<td style="text-align: center;"><em>N</em> x 2 <em>pq</em> = 50 x 2 x 0.55 x 0.45</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">aa</td>
+<td style="text-align: center;">10.125</td>
+<td style="text-align: center;"><em>N</em> x <em>q</em><sup>2</sup> = 50 x 0.45 x 0.45</td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="compare-observed-with-expected-numbers" class="level2" data-number="5.3">
 <h2 data-number="5.3" class="anchored" data-anchor-id="compare-observed-with-expected-numbers"><span class="header-section-number">5.3</span> Compare observed with expected numbers</h2>
@@ -443,11 +480,11 @@ Figure&nbsp;5.1: A Chi-square probability density function for one degree of fre
 </div>
 </div>
 </div>
-<p>For our date, we find <span class="math inline">\(\chi^2\)</span> = 0.25. The area under a <span class="math inline">\(\chi^2\)</span> curve for two degrees of freedom, to the right of this value of <span class="math inline">\(\chi^2\)</span> is 0.617. We call this value the p-value of the the <span class="math inline">\(\chi^2\)</span> test: the probability of getting a <span class="math inline">\(\chi^2\)</span> value this big or bigger if the null were true. I’ll repeat, this is the same thing as the probability of getting observed values as far or further from the expected values as oours were, if the null (Hardy-Winberg holds) were true.</p>
+<p>For our date, we find <span class="math inline">\(\chi^2\)</span> = 0.25. The area under a <span class="math inline">\(\chi^2\)</span> curve for one degree of freedom, to the right of this value of <span class="math inline">\(\chi^2\)</span> is 0.617. We call this value the p-value of the the <span class="math inline">\(\chi^2\)</span> test: the probability of getting a <span class="math inline">\(\chi^2\)</span> value this big or bigger if the null were true. I’ll repeat, this is the same thing as the probability of getting observed values as far or further from the expected values as oours were, if the null (Hardy-Winberg holds) were true.</p>
 </section>
 <section id="conclusion" class="level2" data-number="5.5">
 <h2 data-number="5.5" class="anchored" data-anchor-id="conclusion"><span class="header-section-number">5.5</span> Conclusion</h2>
-<p>The p-value we get is 0.617. Remember that p is a probability, os can only have values in the range 0 to 1. Our p-value is (much) bigger than 0.05, the commonly used threshold (known as the significance level) for deciding whether or not to reject a null hypothesis. If p is less than the chosen signficance level, we reject the null. If it isn’t we do not reject the null. Here, p is much bigger than 0.05 so we emphatically do not reject the null. It is very likely that we could have got genotype numbers as different as ours from the expected numbers predicted by Hardy-Weinberg equilibrium, even if all the assumptions of Hardy-Weinberg equlibrium are met.</p>
+<p>The p-value we get is 0.617. Remember that p is a probability, so can only have values in the range 0 to 1. Our p-value is (much) bigger than 0.05, the commonly used threshold (known as the significance level) for deciding whether or not to reject a null hypothesis. If p is less than the chosen signficance level, we reject the null. If it isn’t we do not reject the null. Here, p is much bigger than 0.05 so we emphatically do not reject the null. It is very likely that we could have got genotype numbers as different as ours from the expected numbers predicted by Hardy-Weinberg equilibrium, even if all the assumptions of Hardy-Weinberg equlibrium are met.</p>
 <p>Thus our observations are consistent with Hardy-Weinberg. We find no evidence from the data that the hedgehog population is not in Hardy-Weinberg equilibrium for the spine colouration gene. That doesn’t mean that it definitely <em>is</em> in H-W equilibrium. It just means we have no evidence from this data that it <em>isn’t</em>.</p>
 <p>In the same way, if we tossed a coin 100 times and got 48 heads and 52 tails, that would not constitute evidence that the coin is not fair (that is, one for which heads and tails are equally likely) despite that we didn’t get exactly the <em>expected</em> results of 50 heads and 50 tails. If the coin is fair the probability of getting 48 or fewer heads and 52 or more tails turns out to be 0.76, so getting the results we got is quite likely even if the coin is fair. On the other hand, if we got 30 heads and 70 tails, the probability of that is very, very small with a fair coin, so we would reject the null and decide that the coin is not fair.</p>
 <p>So, don’t imagine that Hardy-Weinberg is not satisfied just because the observed numbers of the different genotypes are not exactly the same as the <em>expected</em> values. The question is, by how much do they differ, and how likely would that be if Hardy-Weinberg holds. A chi-square analysis tells you that.</p>
