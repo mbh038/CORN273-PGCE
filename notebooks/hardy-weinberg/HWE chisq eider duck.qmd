@@ -6,13 +6,57 @@ editor: visual
 
 An iconic study by Milne and Robertson (1965) used protein electrophoresis to show that a population of Eider ducks in Scotland is known to have two codominant alleles of a gene that codes for egg-white protein. One variant of the protein migrates quickly through the gel used in the electrophoresis and one migrates slowly. We use F to denote the allele that codes for the fast protein and S for the one that codes for the slow.
 
-They found 
+They studied 67 ducks and found 
 
 | Genotype | Phenotype | Frequency |
 | :---------:| :---------: |:-----------:| 
 | FF       | Fast moving ovalbumin variant synthesised      | 37 |
 | FS       | Fast and slow moving ovalbumin variant synthesised     | 24 |
-| SS       | SLow moving ovalbumin variant synthesised     | 6 |.
+| SS       | Slow moving ovalbumin variant synthesised     | 6 |.
+
+
+## Calculation of frequencies of F and S alleles.
+
+Let us use *p* to denote the frequency of the F allele and *q* to denote the frequency of the S allele.
+
+We know
+
+$$
+\begin{align*}
+p&=\frac{\text{Total number of F alleles}}{\text{Total number of alleles}}\\
+&=\frac{2 FF + FS}{2N}\\
+&=\frac{2\times 37 + 24}{2\times 67}\\
+&=\frac{98}{134}\\
+&=0.7313
+\end{align*}
+$$
+
+and
+
+$$
+\begin{align*}
+q&=\frac{\text{Total number of S alleles}}{\text{Total number of alleles}}\\
+&=\frac{2 SS + FS}{2N}\\
+&=\frac{2\times 6 + 24}{2\times 67}\\
+&=\frac{36}{134}\\
+&=0.2687
+\end{align*}
+$$
+
+Now check that p + q = 1!
+
+## Calculate expected number of each genotype under H-W
+
+| Genotype | Expected frequency | Expected number *E* |
+| :---------:| :---------: | :---------: | :-----------: | :-------------: |
+| FF         | *p*^2^ = 0.7313 x 0.7313  = 0.534863 | *N* x *p*^2^ = 67 x 0.534863 = 35.84 |
+| FS         | 2 *pq* = 2 x 0.7313 x 0.2687 = 0.3929606| *N* x 2 *pq* = 67 x 0.3929606 = 26.33 |
+| SS         | *q*^2^ = 0.2687 x 0.2687 = 0.07217643| *N* x *q*^2^ = 67 x 0.07217643|  = 4.84 |
+
+
+
+
+
 
 ```{r}
 # Hardy-Weinberg Equilibrium Chi-Squared Test

@@ -68,6 +68,35 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="HWE chisq eider duck_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="HWE chisq eider duck_files/libs/bootstrap/bootstrap-c0367b04c37547644fece4185067e4a7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -97,7 +126,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <p>An iconic study by Milne and Robertson (1965) used protein electrophoresis to show that a population of Eider ducks in Scotland is known to have two codominant alleles of a gene that codes for egg-white protein. One variant of the protein migrates quickly through the gel used in the electrophoresis and one migrates slowly. We use F to denote the allele that codes for the fast protein and S for the one that codes for the slow.</p>
-<p>They found</p>
+<p>They studied 67 ducks and found</p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 31%">
@@ -124,8 +153,76 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tr>
 <tr class="odd">
 <td style="text-align: center;">SS</td>
-<td style="text-align: center;">SLow moving ovalbumin variant synthesised</td>
+<td style="text-align: center;">Slow moving ovalbumin variant synthesised</td>
 <td style="text-align: center;">6</td>
+</tr>
+</tbody>
+</table>
+<section id="calculation-of-frequencies-of-f-and-s-alleles." class="level2">
+<h2 class="anchored" data-anchor-id="calculation-of-frequencies-of-f-and-s-alleles.">Calculation of frequencies of F and S alleles.</h2>
+<p>Let us use <em>p</em> to denote the frequency of the F allele and <em>q</em> to denote the frequency of the S allele.</p>
+<p>We know</p>
+<p><span class="math display">\[
+\begin{align*}
+p&amp;=\frac{\text{Total number of F alleles}}{\text{Total number of alleles}}\\
+&amp;=\frac{2 FF + FS}{2N}\\
+&amp;=\frac{2\times 37 + 24}{2\times 67}\\
+&amp;=\frac{98}{134}\\
+&amp;=0.7313
+\end{align*}
+\]</span></p>
+<p>and</p>
+<p><span class="math display">\[
+\begin{align*}
+q&amp;=\frac{\text{Total number of S alleles}}{\text{Total number of alleles}}\\
+&amp;=\frac{2 SS + FS}{2N}\\
+&amp;=\frac{2\times 6 + 24}{2\times 67}\\
+&amp;=\frac{36}{134}\\
+&amp;=0.2687
+\end{align*}
+\]</span></p>
+<p>Now check that p + q = 1!</p>
+</section>
+<section id="calculate-expected-number-of-each-genotype-under-h-w" class="level2">
+<h2 class="anchored" data-anchor-id="calculate-expected-number-of-each-genotype-under-h-w">Calculate expected number of each genotype under H-W</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 18%">
+<col style="width: 18%">
+<col style="width: 18%">
+<col style="width: 21%">
+<col style="width: 24%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Genotype</th>
+<th style="text-align: center;">Expected frequency</th>
+<th style="text-align: center;">Expected number <em>E</em></th>
+<th style="text-align: center;"></th>
+<th style="text-align: center;"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">FF</td>
+<td style="text-align: center;"><em>p</em><sup>2</sup> = 0.7313 x 0.7313 = 0.534863</td>
+<td style="text-align: center;"><em>N</em> x <em>p</em><sup>2</sup> = 67 x 0.534863 = 35.84</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">FS</td>
+<td style="text-align: center;">2 <em>pq</em> = 2 x 0.7313 x 0.2687 = 0.3929606</td>
+<td style="text-align: center;"><em>N</em> x 2 <em>pq</em> = 67 x 0.3929606 = 26.33</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">SS</td>
+<td style="text-align: center;"><em>q</em><sup>2</sup> = 0.2687 x 0.2687 = 0.07217643</td>
+<td style="text-align: center;"><em>N</em> x <em>q</em><sup>2</sup> = 67 x 0.07217643</td>
+<td style="text-align: center;">= 4.84</td>
+<td style="text-align: center;"></td>
 </tr>
 </tbody>
 </table>
@@ -274,6 +371,7 @@ Conclusion: Fail to reject the null hypothesis.
 The population appears to be in Hardy-Weinberg equilibrium.</code></pre>
 </div>
 </div>
+</section>
 
 </main>
 <!-- /main column -->
