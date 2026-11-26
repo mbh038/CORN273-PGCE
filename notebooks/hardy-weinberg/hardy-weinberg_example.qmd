@@ -124,13 +124,20 @@ Note that this expression for $\chi^2$ is indeed a measure of how far the observ
 This $\chi^2$ follows a distribution, known as a $\chi^2$ distribution for (in this case) 1 degree of freedom. It is plotted below in @fig-chi-square-pdf as a 'probability density function'. You may have met one of these before, for the normal distribution. The way to understand it is that the area under the curve between and two values of $\chi^2$ on the x-axis gives the probability of $\chi^2$ being in that range. In particular, the area under the curve to the right of a given value of $\chi^2$ gives the probability that $\chi^2$ would have that value, or greater. This probability is the famous p-value: the probability of gettng data as different from the null prediction as ours is, or more different, if the null were true. In this case that means the probability of getting a $\chi^2$ value, as big or bigger than the one we got.
 
 ::: {.callout-note title="Degrees of freedom"}
-You see the term 'degrees of freedom' a lot in statistics. It refers to the number of independent pieces of information in a problem. In our chi-square sum, we know that the observed and expected genotype numbers both have to add up to 50, since there are 50 hedgehogs. Consider, for example, the observed numbers for AA, Aa and aa. In any population of 50 hedgehogs, the number with the AA genotype could be anything from 0 to 50. Suppose it was 14. Given that, the number with the Aa genotype could be anything from 0 to 36. Suppose it was 20. Now, the number with the aa genotype *has* to be 16 since the total is 50. It doesn't matter which two genotypes you start with, but while there is some freedom in choosing their numbers, there is no freedom in choosing the third, given that the total is 50. Once we know the numbers for two of the genotypes, say AA and Aa, the numbers for the third genotype are determined. Hence, only two of the terms in the chi-square sum are independent and so here you would think we have two degrees of freedom.
+You see the term 'degrees of freedom' a lot in statistics. It refers to the number of independent ways that the data can deviate from the null. This opaque phrase translates as: the number of free dimensions in the observed data minus the number of free parameters fitted under the null. 
 
-But, in fact, there is only one degree of freedom. In calculating the expected numbers from p and q, we know that p and q sum 1. Hence only one of these is 'free'. Once we know p we know q and vice-versa. That takes away a degree of freedom
+tldr: In Hardy-Weinberg problms such as this, with two alleles and threee genotypes, there is **one** degree of freedom.
 
-**In general, in problems with two alleles and three genotypes, the degrees of freedom is one.**
+Let us consider the residual numbers for each genotype - that is, the difference O-E, for each genotype, between the observed and expected numbers.
 
-It turns out that $\chi^2$ terms follow a distribution, but the exact form of the distribution depends on the degrees of freedom. In our case, the distribution is that for one degree of freedom
+There are three residuals, one for each genotype - so our 'free dimension' number is three
+
+However, these residulas must satisfy two constraints:
+
+* They sum to zero, because both sets of counts sum to *N*: $O_{AA} + O_{Aa} + O_{aa} - E_{AA} +E_{Aa} +E{aa} = 0$
+* Because, from the observed allele counts, the observed and expected counts of A alleles agree exactly: $2(O_{AA} − E_{AA} + (O_{Aa} − E_{Aa}) = 0$
+
+Three residuals with two constraints leave one free residual, hence 1 df.
 :::
 
 ```{r, echo = FALSE}
@@ -189,18 +196,18 @@ In the console pane (bottom left of the RStudio window) we can type in the follo
 
 ```{r, echo = TRUE}
 # observed counts
-obs <- c(AA = 16, Aa =  23, aa =  11)   
-N <- sum(obs)
+observed <- c(AA = 16, Aa =  23, aa =  11)   
+N <- sum(observed)
 
 # allele frequencies
-p <- (2 * obs["AA"] + obs["Aa"]) / (2 * N)
+p <- (2 * observed["AA"] + observed["Aa"]) / (2 * N)
 q <- 1 - p
 
 # expected counts
-exp <- N * c(p^2, 2 * p * q, q^2)
+expected <- N * c(p^2, 2 * p * q, q^2)
 
 # calculate chi-squared (X2 )statistic
-X2 <- sum((obs - exp)^2 / exp)
+X2 <- sum((observed - expected)^2 / expected)
 
 # calculate p-value
 pchisq(X2, df = 1, lower.tail = FALSE)

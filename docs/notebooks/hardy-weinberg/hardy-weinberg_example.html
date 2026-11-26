@@ -144,7 +144,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../notebooks/hardy-weinberg/hardy-weinberg_example.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">HW example</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../notebooks/hardy-weinberg/hardy-weinberg_example.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Hardy-Weinberg example</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -196,7 +196,7 @@ window.Quarto = {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../notebooks/hardy-weinberg/hardy-weinberg_example.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">HW example</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Hardy-Weinberg example</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -417,10 +417,16 @@ Degrees of freedom
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>You see the term ‘degrees of freedom’ a lot in statistics. It refers to the number of independent pieces of information in a problem. In our chi-square sum, we know that the observed and expected genotype numbers both have to add up to 50, since there are 50 hedgehogs. Consider, for example, the observed numbers for AA, Aa and aa. In any population of 50 hedgehogs, the number with the AA genotype could be anything from 0 to 50. Suppose it was 14. Given that, the number with the Aa genotype could be anything from 0 to 36. Suppose it was 20. Now, the number with the aa genotype <em>has</em> to be 16 since the total is 50. It doesn’t matter which two genotypes you start with, but while there is some freedom in choosing their numbers, there is no freedom in choosing the third, given that the total is 50. Once we know the numbers for two of the genotypes, say AA and Aa, the numbers for the third genotype are determined. Hence, only two of the terms in the chi-square sum are independent and so here you would think we have two degrees of freedom.</p>
-<p>But, in fact, there is only one degree of freedom. In calculating the expected numbers from p and q, we know that p and q sum 1. Hence only one of these is ‘free’. Once we know p we know q and vice-versa. That takes away a degree of freedom</p>
-<p><strong>In general, in problems with two alleles and three genotypes, the degrees of freedom is one.</strong></p>
-<p>It turns out that <span class="math inline">\(\chi^2\)</span> terms follow a distribution, but the exact form of the distribution depends on the degrees of freedom. In our case, the distribution is that for one degree of freedom</p>
+<p>You see the term ‘degrees of freedom’ a lot in statistics. It refers to the number of independent ways that the data can deviate from the null. This opaque phrase translates as: the number of free dimensions in the observed data minus the number of free parameters fitted under the null.</p>
+<p>tldr: In Hardy-Weinberg problms such as this, with two alleles and threee genotypes, there is <strong>one</strong> degree of freedom.</p>
+<p>Let us consider the residual numbers for each genotype - that is, the difference O-E, for each genotype, between the observed and expected numbers.</p>
+<p>There are three residuals, one for each genotype - so our ‘free dimension’ number is three</p>
+<p>However, these residulas must satisfy two constraints:</p>
+<ul>
+<li>They sum to zero, because both sets of counts sum to <em>N</em>: <span class="math inline">\(O_{AA} + O_{Aa} + O_{aa} - E_{AA} +E_{Aa} +E{aa} = 0\)</span></li>
+<li>Because, from the observed allele counts, the observed and expected counts of A alleles agree exactly: <span class="math inline">\(2(O_{AA} − E_{AA} + (O_{Aa} − E_{Aa}) = 0\)</span></li>
+</ul>
+<p>Three residuals with two constraints leave one free residual, hence 1 df.</p>
 </div>
 </div>
 <div class="cell">
@@ -453,18 +459,18 @@ Figure&nbsp;5.1: A Chi-square probability density function for one degree of fre
 <p>In the console pane (bottom left of the RStudio window) we can type in the following code, one line at a time. Don’t bother with the comments, which are those lines that begin with a # symbol.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># observed counts</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>obs <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="at">AA =</span> <span class="dv">16</span>, <span class="at">Aa =</span>  <span class="dv">23</span>, <span class="at">aa =</span>  <span class="dv">11</span>)   </span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>N <span class="ot">&lt;-</span> <span class="fu">sum</span>(obs)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>observed <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="at">AA =</span> <span class="dv">16</span>, <span class="at">Aa =</span>  <span class="dv">23</span>, <span class="at">aa =</span>  <span class="dv">11</span>)   </span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>N <span class="ot">&lt;-</span> <span class="fu">sum</span>(observed)</span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># allele frequencies</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>p <span class="ot">&lt;-</span> (<span class="dv">2</span> <span class="sc">*</span> obs[<span class="st">"AA"</span>] <span class="sc">+</span> obs[<span class="st">"Aa"</span>]) <span class="sc">/</span> (<span class="dv">2</span> <span class="sc">*</span> N)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>p <span class="ot">&lt;-</span> (<span class="dv">2</span> <span class="sc">*</span> observed[<span class="st">"AA"</span>] <span class="sc">+</span> observed[<span class="st">"Aa"</span>]) <span class="sc">/</span> (<span class="dv">2</span> <span class="sc">*</span> N)</span>
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>q <span class="ot">&lt;-</span> <span class="dv">1</span> <span class="sc">-</span> p</span>
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co"># expected counts</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>exp <span class="ot">&lt;-</span> N <span class="sc">*</span> <span class="fu">c</span>(p<span class="sc">^</span><span class="dv">2</span>, <span class="dv">2</span> <span class="sc">*</span> p <span class="sc">*</span> q, q<span class="sc">^</span><span class="dv">2</span>)</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>expected <span class="ot">&lt;-</span> N <span class="sc">*</span> <span class="fu">c</span>(p<span class="sc">^</span><span class="dv">2</span>, <span class="dv">2</span> <span class="sc">*</span> p <span class="sc">*</span> q, q<span class="sc">^</span><span class="dv">2</span>)</span>
 <span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="co"># calculate chi-squared (X2 )statistic</span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>X2 <span class="ot">&lt;-</span> <span class="fu">sum</span>((obs <span class="sc">-</span> exp)<span class="sc">^</span><span class="dv">2</span> <span class="sc">/</span> exp)</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>X2 <span class="ot">&lt;-</span> <span class="fu">sum</span>((observed <span class="sc">-</span> expected)<span class="sc">^</span><span class="dv">2</span> <span class="sc">/</span> expected)</span>
 <span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="co"># calculate p-value</span></span>
 <span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="fu">pchisq</span>(X2, <span class="at">df =</span> <span class="dv">1</span>, <span class="at">lower.tail =</span> <span class="cn">FALSE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
