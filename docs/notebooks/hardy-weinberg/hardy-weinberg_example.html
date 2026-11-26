@@ -418,15 +418,15 @@ Degrees of freedom
 </div>
 <div class="callout-body-container callout-body">
 <p>You see the term ‘degrees of freedom’ a lot in statistics. It refers to the number of independent ways that the data can deviate from the null. This opaque phrase translates as: the number of free dimensions in the observed data minus the number of free parameters fitted under the null.</p>
-<p>tldr: In Hardy-Weinberg problms such as this, with two alleles and threee genotypes, there is <strong>one</strong> degree of freedom.</p>
+<p><strong>tldr</strong>: In Hardy-Weinberg problms such as this, with two alleles and threee genotypes, there is <strong>one</strong> degree of freedom.</p>
 <p>Let us consider the residual numbers for each genotype - that is, the difference O-E, for each genotype, between the observed and expected numbers.</p>
 <p>There are three residuals, one for each genotype - so our ‘free dimension’ number is three</p>
-<p>However, these residulas must satisfy two constraints:</p>
+<p>However, these residuals must satisfy two constraints:</p>
 <ul>
-<li>They sum to zero, because both sets of counts sum to <em>N</em>: <span class="math inline">\(O_{AA} + O_{Aa} + O_{aa} - E_{AA} +E_{Aa} +E{aa} = 0\)</span></li>
-<li>Because, from the observed allele counts, the observed and expected counts of A alleles agree exactly: <span class="math inline">\(2(O_{AA} − E_{AA} + (O_{Aa} − E_{Aa}) = 0\)</span></li>
+<li>They sum to zero, because both sets of counts sum to <em>N</em>: <span class="math display">\[O_{AA} + O_{Aa} + O_{aa} - (E_{AA} +E_{Aa} +E{aa}) = 0\]</span></li>
+<li>Because, from the observed allele counts, the observed and expected counts of A alleles agree exactly: <span class="math display">\[2(O_{AA} − E_{AA} + (O_{Aa} − E_{Aa}) = 0\]</span></li>
 </ul>
-<p>Three residuals with two constraints leave one free residual, hence 1 df.</p>
+<p>Three residuals with two constraints leaves one free residual, hence 1 df.</p>
 </div>
 </div>
 <div class="cell">

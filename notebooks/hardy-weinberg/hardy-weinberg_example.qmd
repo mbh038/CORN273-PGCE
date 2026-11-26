@@ -126,18 +126,20 @@ This $\chi^2$ follows a distribution, known as a $\chi^2$ distribution for (in t
 ::: {.callout-note title="Degrees of freedom"}
 You see the term 'degrees of freedom' a lot in statistics. It refers to the number of independent ways that the data can deviate from the null. This opaque phrase translates as: the number of free dimensions in the observed data minus the number of free parameters fitted under the null. 
 
-tldr: In Hardy-Weinberg problms such as this, with two alleles and threee genotypes, there is **one** degree of freedom.
+**tldr**: In Hardy-Weinberg problms such as this, with two alleles and threee genotypes, there is **one** degree of freedom.
 
 Let us consider the residual numbers for each genotype - that is, the difference O-E, for each genotype, between the observed and expected numbers.
 
 There are three residuals, one for each genotype - so our 'free dimension' number is three
 
-However, these residulas must satisfy two constraints:
+However, these residuals must satisfy two constraints:
 
-* They sum to zero, because both sets of counts sum to *N*: $O_{AA} + O_{Aa} + O_{aa} - E_{AA} +E_{Aa} +E{aa} = 0$
-* Because, from the observed allele counts, the observed and expected counts of A alleles agree exactly: $2(O_{AA} − E_{AA} + (O_{Aa} − E_{Aa}) = 0$
+* They sum to zero, because both sets of counts sum to *N*: 
+$$O_{AA} + O_{Aa} + O_{aa} - (E_{AA} +E_{Aa} +E{aa}) = 0$$
+* Because, from the observed allele counts, the observed and expected counts of A alleles agree exactly: 
+$$2(O_{AA} − E_{AA} + (O_{Aa} − E_{Aa}) = 0$$
 
-Three residuals with two constraints leave one free residual, hence 1 df.
+Three residuals with two constraints leaves one free residual, hence 1 df.
 :::
 
 ```{r, echo = FALSE}
