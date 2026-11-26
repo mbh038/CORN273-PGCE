@@ -90,11 +90,11 @@ Check that sum of the expected numbers of the three genotypes is equal to the po
 
 So, in summary, the expected numbers for each genotype are:
 
-| Genotype | Expected number *E*| Calculation
+| Genotype | Calculation| Expected number *E* |
 | :---------:| :---------: |:-----------:| :-------------: |
-| AA                | 15.125           | *N* x *p*^2^ = 50 x 0.55 x 0.55 |
-| Aa                | 24.75            | *N* x 2 *pq* = 50 x 2 x 0.55 x 0.45 |
-| aa                 | 10.125            | *N* x *q*^2^ = 50 x 0.45 x 0.45 |
+| AA         | *N* x *p*^2^ = 50 x 0.55 x 0.55 | 15.125 |
+| Aa         | *N* x 2 *pq* = 50 x 2 x 0.55 x 0.45 | 24.75 |
+| aa         | *N* x *q*^2^ = 50 x 0.45 x 0.45 | 10.125 |
 
 
 ## Compare observed with expected numbers
