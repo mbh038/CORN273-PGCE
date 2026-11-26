@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>HWE chi-square eider duck</title>
+<title>hwe-chisq-eider-duck</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -106,26 +106,12 @@ window.Quarto = {
 
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">HWE chi-square eider duck</h1>
-</div>
 
 
 
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<p>An iconic study by Milne and Robertson (1965) used protein electrophoresis to show that a population of Eider ducks in Scotland is known to have two codominant alleles of a gene that codes for egg-white protein. One variant of the protein migrates quickly through the gel used in the electrophoresis and one migrates slowly. We use F to denote the allele that codes for the fast protein and S for the one that codes for the slow.</p>
+<section id="hardy-weinberg-equilibrium-eider-duck-exercise" class="level1">
+<h1>Hardy-Weinberg Equilibrium: Eider Duck exercise</h1>
+<p>An iconic study by Milne and Robertson (1965) used protein electrophoresis to show that a population of eider ducks (Somateria mollissima) around the Ythan estuary of north-east Scotland has two codominant alleles of a gene that codes for egg-white protein. One variant of the protein migrates quickly through the gel used in the electrophoresis and one migrates slowly. In the following, we use F to denote the allele that codes for the fast protein and S for the one that codes for the slow.</p>
 <p>They studied 67 ducks and found</p>
 <table class="caption-top table">
 <colgroup>
@@ -135,29 +121,30 @@ window.Quarto = {
 </colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: center;">Genotype</th>
-<th style="text-align: center;">Phenotype</th>
-<th style="text-align: center;">Frequency</th>
+<th style="text-align: left;">Genotype</th>
+<th style="text-align: left;">Phenotype</th>
+<th style="text-align: left;">Frequency</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: center;">FF</td>
-<td style="text-align: center;">Fast moving ovalbumin variant synthesised</td>
-<td style="text-align: center;">37</td>
+<td style="text-align: left;">FF</td>
+<td style="text-align: left;">Fast moving ovalbumin variant synthesised</td>
+<td style="text-align: left;">37</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">FS</td>
-<td style="text-align: center;">Fast and slow moving ovalbumin variant synthesised</td>
-<td style="text-align: center;">24</td>
+<td style="text-align: left;">FS</td>
+<td style="text-align: left;">Fast and slow moving ovalbumin variant synthesised</td>
+<td style="text-align: left;">24</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;">SS</td>
-<td style="text-align: center;">Slow moving ovalbumin variant synthesised</td>
-<td style="text-align: center;">6</td>
+<td style="text-align: left;">SS</td>
+<td style="text-align: left;">Slow moving ovalbumin variant synthesised</td>
+<td style="text-align: left;">6</td>
 </tr>
 </tbody>
 </table>
+<p><strong>Is this population of ducks in Hardy-Weinberg equlibrium?</strong></p>
 <section id="calculation-of-frequencies-of-f-and-s-alleles." class="level2">
 <h2 class="anchored" data-anchor-id="calculation-of-frequencies-of-f-and-s-alleles.">Calculation of frequencies of F and S alleles.</h2>
 <p>Let us use <em>p</em> to denote the frequency of the F allele and <em>q</em> to denote the frequency of the S allele.</p>
@@ -181,196 +168,147 @@ q&amp;=\frac{\text{Total number of S alleles}}{\text{Total number of alleles}}\\
 &amp;=0.2687
 \end{align*}
 \]</span></p>
-<p>Now check that p + q = 1!</p>
+<p>Note that <span class="math inline">\(p + q = 1\)</span>, as they must.</p>
 </section>
 <section id="calculate-expected-number-of-each-genotype-under-h-w" class="level2">
 <h2 class="anchored" data-anchor-id="calculate-expected-number-of-each-genotype-under-h-w">Calculate expected number of each genotype under H-W</h2>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 18%">
-<col style="width: 18%">
-<col style="width: 18%">
-<col style="width: 21%">
-<col style="width: 24%">
+<col style="width: 17%">
+<col style="width: 17%">
+<col style="width: 13%">
+<col style="width: 17%">
+<col style="width: 13%">
+<col style="width: 10%">
+<col style="width: 10%">
 </colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: center;">Genotype</th>
-<th style="text-align: center;">Expected frequency</th>
-<th style="text-align: center;">Expected number <em>E</em></th>
-<th style="text-align: center;"></th>
-<th style="text-align: center;"></th>
+<th style="text-align: left;">Genotype</th>
+<th style="text-align: left;">Expected frequency</th>
+<th style="text-align: left;"></th>
+<th style="text-align: left;"></th>
+<th style="text-align: left;">Expected number <em>E</em></th>
+<th style="text-align: left;"></th>
+<th style="text-align: left;"></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: center;">FF</td>
-<td style="text-align: center;"><em>p</em><sup>2</sup> = 0.7313 x 0.7313 = 0.534863</td>
-<td style="text-align: center;"><em>N</em> x <em>p</em><sup>2</sup> = 67 x 0.534863 = 35.84</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
+<td style="text-align: left;">FF</td>
+<td style="text-align: left;"><em>p</em><sup>2</sup></td>
+<td style="text-align: left;">= 0.7313 x 0.7313</td>
+<td style="text-align: left;">= 0.5349</td>
+<td style="text-align: left;"><em>N</em> x <em>p</em><sup>2</sup></td>
+<td style="text-align: left;">= 67 x 0.5349</td>
+<td style="text-align: left;">= 35.84</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">FS</td>
-<td style="text-align: center;">2 <em>pq</em> = 2 x 0.7313 x 0.2687 = 0.3929606</td>
-<td style="text-align: center;"><em>N</em> x 2 <em>pq</em> = 67 x 0.3929606 = 26.33</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
+<td style="text-align: left;">FS</td>
+<td style="text-align: left;">2 <em>pq</em></td>
+<td style="text-align: left;">= 2 x 0.7313 x 0.2687</td>
+<td style="text-align: left;">= 0.3930</td>
+<td style="text-align: left;"><em>N</em> x 2 <em>pq</em></td>
+<td style="text-align: left;">= 67 x 0.3930</td>
+<td style="text-align: left;">= 26.33</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;">SS</td>
-<td style="text-align: center;"><em>q</em><sup>2</sup> = 0.2687 x 0.2687 = 0.07217643</td>
-<td style="text-align: center;"><em>N</em> x <em>q</em><sup>2</sup> = 67 x 0.07217643</td>
-<td style="text-align: center;">= 4.84</td>
-<td style="text-align: center;"></td>
+<td style="text-align: left;">SS</td>
+<td style="text-align: left;"><em>q</em><sup>2</sup></td>
+<td style="text-align: left;">= 0.2687 x 0.2687</td>
+<td style="text-align: left;">= 0.07218</td>
+<td style="text-align: left;"><em>N</em> x <em>q</em><sup>2</sup></td>
+<td style="text-align: left;">= 67 x 0.07218</td>
+<td style="text-align: left;">= 4.84</td>
 </tr>
 </tbody>
 </table>
+</section>
+<section id="compare-observed-and-expected-numbers" class="level2">
+<h2 class="anchored" data-anchor-id="compare-observed-and-expected-numbers">Compare observed and expected numbers</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Genotype</th>
+<th style="text-align: center;">Observed number</th>
+<th style="text-align: center;">Expected number</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">FF.</td>
+<td style="text-align: center;">37</td>
+<td style="text-align: center;">35.84</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">FS.</td>
+<td style="text-align: center;">24</td>
+<td style="text-align: center;">26.33</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">SS.</td>
+<td style="text-align: center;">6.</td>
+<td style="text-align: center;">4.84.</td>
+</tr>
+</tbody>
+</table>
+<p>These look very similar. It looks as though the duck population is in Hardy-Weinberg equilibrium. To check, we carry out a Chi-square goodness of fit test, with one degree of freedom</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Hardy-Weinberg Equilibrium Chi-Squared Test</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Eider duck protein polymorphism data</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Observed genotype counts</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>obs_FF <span class="ot">&lt;-</span> <span class="dv">37</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>obs_FS <span class="ot">&lt;-</span> <span class="dv">24</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>obs_SS <span class="ot">&lt;-</span> <span class="dv">6</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>N <span class="ot">&lt;-</span> obs_FF <span class="sc">+</span> obs_FS <span class="sc">+</span> obs_SS  <span class="co"># Total individuals = 67</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Step 1: Calculate allele frequencies</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>total_alleles <span class="ot">&lt;-</span> <span class="dv">2</span> <span class="sc">*</span> N</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>freq_F <span class="ot">&lt;-</span> (<span class="dv">2</span> <span class="sc">*</span> obs_FF <span class="sc">+</span> obs_FS) <span class="sc">/</span> total_alleles  <span class="co"># p</span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>freq_S <span class="ot">&lt;-</span> (obs_FS <span class="sc">+</span> <span class="dv">2</span> <span class="sc">*</span> obs_SS) <span class="sc">/</span> total_alleles  <span class="co"># q</span></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"Allele Frequencies:</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># observed counts</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>observed <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="at">AA =</span> <span class="dv">37</span>, <span class="at">Aa =</span>  <span class="dv">24</span>, <span class="at">aa =</span>  <span class="dv">6</span>)   </span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>N <span class="ot">&lt;-</span> <span class="fu">sum</span>(observed)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># allele frequencies</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>p <span class="ot">&lt;-</span> (<span class="dv">2</span> <span class="sc">*</span> observed[<span class="st">"AA"</span>] <span class="sc">+</span> observed[<span class="st">"Aa"</span>]) <span class="sc">/</span> (<span class="dv">2</span> <span class="sc">*</span> N)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>q <span class="ot">&lt;-</span> <span class="dv">1</span> <span class="sc">-</span> p</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
 <div class="cell-output cell-output-stdout">
 <pre><code>Allele Frequencies:</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="fu">sprintf</span>(<span class="st">"p (F allele) = %.4f</span><span class="sc">\n</span><span class="st">"</span>, freq_F))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>p (F allele) = 0.7313</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="fu">sprintf</span>(<span class="st">"q (S allele) = %.4f</span><span class="sc">\n</span><span class="st">"</span>, freq_S))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>q (S allele) = 0.2687</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="fu">sprintf</span>(<span class="st">"p + q = %.4f</span><span class="sc">\n\n</span><span class="st">"</span>, freq_F <span class="sc">+</span> freq_S))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>p + q = 1.0000</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Step 2: Calculate expected genotype frequencies under HWE</span></span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>exp_FF <span class="ot">&lt;-</span> N <span class="sc">*</span> freq_F<span class="sc">^</span><span class="dv">2</span></span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>exp_FS <span class="ot">&lt;-</span> N <span class="sc">*</span> <span class="dv">2</span> <span class="sc">*</span> freq_F <span class="sc">*</span> freq_S</span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>exp_SS <span class="ot">&lt;-</span> N <span class="sc">*</span> freq_S<span class="sc">^</span><span class="dv">2</span></span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"Expected Genotype Counts (under HWE):</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># expected counts</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>expected <span class="ot">&lt;-</span> N <span class="sc">*</span> <span class="fu">c</span>(p<span class="sc">^</span><span class="dv">2</span>, <span class="dv">2</span> <span class="sc">*</span> p <span class="sc">*</span> q, q<span class="sc">^</span><span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
 <div class="cell-output cell-output-stdout">
-<pre><code>Expected Genotype Counts (under HWE):</code></pre>
+<pre><code>Observed</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="fu">sprintf</span>(<span class="st">"FF: %.2f</span><span class="sc">\n</span><span class="st">"</span>, exp_FF))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>FF: 35.84</code></pre>
+<pre><code>37 24 6</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="fu">sprintf</span>(<span class="st">"FS: %.2f</span><span class="sc">\n</span><span class="st">"</span>, exp_FS))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>FS: 26.33</code></pre>
+<pre><code>Expected</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="fu">sprintf</span>(<span class="st">"SS: %.2f</span><span class="sc">\n\n</span><span class="st">"</span>, exp_SS))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>SS: 4.84</code></pre>
+<pre><code>35.84 26.33 4.84</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Step 3: Chi-squared test using chisq.test()</span></span>
-<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>observed <span class="ot">&lt;-</span> <span class="fu">c</span>(obs_FF, obs_FS, obs_SS)</span>
-<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>expected <span class="ot">&lt;-</span> <span class="fu">c</span>(exp_FF, exp_FS, exp_SS)</span>
-<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a summary table</span></span>
-<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a>results_table <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
-<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">Genotype =</span> <span class="fu">c</span>(<span class="st">"FF"</span>, <span class="st">"FS"</span>, <span class="st">"SS"</span>),</span>
-<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">Observed =</span> observed,</span>
-<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">Expected =</span> <span class="fu">round</span>(expected, <span class="dv">2</span>),</span>
-<span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">Difference =</span> observed <span class="sc">-</span> expected,</span>
-<span id="cb17-11"><a href="#cb17-11" aria-hidden="true" tabindex="-1"></a>  <span class="at">Chi_sq_component =</span> (observed <span class="sc">-</span> expected)<span class="sc">^</span><span class="dv">2</span> <span class="sc">/</span> expected</span>
-<span id="cb17-12"><a href="#cb17-12" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb17-13"><a href="#cb17-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-14"><a href="#cb17-14" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"Chi-Squared Analysis Table:</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># calculate chi-squared (X2 )statistic</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>X2 <span class="ot">&lt;-</span> <span class="fu">sum</span>((observed <span class="sc">-</span> expected)<span class="sc">^</span><span class="dv">2</span> <span class="sc">/</span> expected)</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="co"># calculate p-value</span></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="fu">pchisq</span>(X2, <span class="at">df =</span> <span class="dv">1</span>, <span class="at">lower.tail =</span> <span class="cn">FALSE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Chi-Squared Analysis Table:</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(results_table)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>  Genotype Observed Expected Difference Chi_sq_component
-1       FF       37    35.84   1.164179       0.03782006
-2       FS       24    26.33  -2.328358       0.20590923
-3       SS        6     4.84   1.164179       0.28026534</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Perform chi-squared test</span></span>
-<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Note: We use df = 1 because we estimated 1 parameter (p) from the data</span></span>
-<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>chi_test <span class="ot">&lt;-</span> <span class="fu">chisq.test</span>(observed, <span class="at">p =</span> expected<span class="sc">/</span>N, <span class="at">rescale.p =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning in chisq.test(observed, p = expected/N, rescale.p = TRUE): Chi-squared
-approximation may be incorrect</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"Chi-Squared Test Results:</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>Chi-Squared Test Results:</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="fu">sprintf</span>(<span class="st">"χ² statistic: %.4f</span><span class="sc">\n</span><span class="st">"</span>, chi_test<span class="sc">$</span>statistic))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>χ² statistic: 0.5240</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="fu">sprintf</span>(<span class="st">"Degrees of freedom: %d</span><span class="sc">\n</span><span class="st">"</span>, chi_test<span class="sc">$</span>parameter))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>Degrees of freedom: 2</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="fu">sprintf</span>(<span class="st">"P-value: %.4f</span><span class="sc">\n\n</span><span class="st">"</span>, chi_test<span class="sc">$</span>p.value))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>P-value: 0.7695</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Alternative: Manual calculation</span></span>
-<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>chi_sq_manual <span class="ot">&lt;-</span> <span class="fu">sum</span>((observed <span class="sc">-</span> expected)<span class="sc">^</span><span class="dv">2</span> <span class="sc">/</span> expected)</span>
-<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a>p_value_manual <span class="ot">&lt;-</span> <span class="fu">pchisq</span>(chi_sq_manual, <span class="at">df =</span> <span class="dv">1</span>, <span class="at">lower.tail =</span> <span class="cn">FALSE</span>)</span>
-<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb32-5"><a href="#cb32-5" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"Manual Calculation (for verification):</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>Manual Calculation (for verification):</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="fu">sprintf</span>(<span class="st">"χ² statistic: %.4f</span><span class="sc">\n</span><span class="st">"</span>, chi_sq_manual))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>χ² statistic: 0.5240</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="fu">sprintf</span>(<span class="st">"P-value (df=1): %.4f</span><span class="sc">\n\n</span><span class="st">"</span>, p_value_manual))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>P-value (df=1): 0.4691</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Conclusion</span></span>
-<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a>alpha <span class="ot">&lt;-</span> <span class="fl">0.05</span></span>
-<span id="cb38-3"><a href="#cb38-3" aria-hidden="true" tabindex="-1"></a>critical_value <span class="ot">&lt;-</span> <span class="fu">qchisq</span>(<span class="dv">1</span> <span class="sc">-</span> alpha, <span class="at">df =</span> <span class="dv">1</span>)</span>
-<span id="cb38-4"><a href="#cb38-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb38-5"><a href="#cb38-5" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"Statistical Decision:</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>Statistical Decision:</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="fu">sprintf</span>(<span class="st">"Significance level (α): %.2f</span><span class="sc">\n</span><span class="st">"</span>, alpha))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>Significance level (α): 0.05</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="fu">sprintf</span>(<span class="st">"Critical value (χ²₀.₀₅,₁): %.3f</span><span class="sc">\n</span><span class="st">"</span>, critical_value))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>Critical value (χ²₀.₀₅,₁): 3.841</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (chi_sq_manual <span class="sc">&lt;</span> critical_value) {</span>
-<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="st">"</span><span class="sc">\n</span><span class="st">Conclusion: Fail to reject the null hypothesis.</span><span class="sc">\n</span><span class="st">"</span>)</span>
-<span id="cb44-3"><a href="#cb44-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="st">"The population appears to be in Hardy-Weinberg equilibrium.</span><span class="sc">\n</span><span class="st">"</span>)</span>
-<span id="cb44-4"><a href="#cb44-4" aria-hidden="true" tabindex="-1"></a>} <span class="cf">else</span> {</span>
-<span id="cb44-5"><a href="#cb44-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="st">"</span><span class="sc">\n</span><span class="st">Conclusion: Reject the null hypothesis.</span><span class="sc">\n</span><span class="st">"</span>)</span>
-<span id="cb44-6"><a href="#cb44-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="st">"The population shows significant deviation from Hardy-Weinberg equilibrium.</span><span class="sc">\n</span><span class="st">"</span>)</span>
-<span id="cb44-7"><a href="#cb44-7" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>
-Conclusion: Fail to reject the null hypothesis.
-The population appears to be in Hardy-Weinberg equilibrium.</code></pre>
+<pre><code>[1] 0.4691426</code></pre>
 </div>
 </div>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>The Chi-square goodness of fit test gives a p-value of 0.469. This is much greater than 0.05, so we do not reject the null hypothesis, which is that the duck population is in Hardy-Weinberg equilibrium. We would normally expect this for any large outbreeding population.</p>
+</section>
 </section>
 
 </main>

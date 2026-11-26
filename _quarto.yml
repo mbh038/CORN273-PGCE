@@ -11,6 +11,7 @@ book:
     - notebooks/darwins-lizards/darwins-lizards.qmd
     - notebooks/hardy-weinberg/hardy-weinberg.qmd
     - notebooks/hardy-weinberg/hardy-weinberg_example.qmd
+    - notebooks/hardy-weinberg/hardy-weinberg-chisq-eider-duck.qmd
     - notebooks/genetic-drift.qmd
     - notebooks/metapopulations.qmd
     - notebooks/PVA/PVA.qmd

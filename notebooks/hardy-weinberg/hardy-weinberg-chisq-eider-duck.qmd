@@ -1,19 +1,20 @@
 ---
-title: "HWE chi-square eider duck"
-format: html
-editor: visual
+bibliography: references.bib
 ---
 
-An iconic study by Milne and Robertson (1965) used protein electrophoresis to show that a population of Eider ducks in Scotland is known to have two codominant alleles of a gene that codes for egg-white protein. One variant of the protein migrates quickly through the gel used in the electrophoresis and one migrates slowly. We use F to denote the allele that codes for the fast protein and S for the one that codes for the slow.
+# Hardy-Weinberg Equilibrium: Eider Duck exercise
 
-They studied 67 ducks and found 
+An iconic study by Milne and Robertson [-@milne1965] used protein electrophoresis to show that a population of eider ducks (Somateria mollissima) around the Ythan estuary of north-east Scotland has two codominant alleles of a gene that codes for egg-white protein. One variant of the protein migrates quickly through the gel used in the electrophoresis and one migrates slowly. In the following, we use F to denote the allele that codes for the fast protein and S for the one that codes for the slow.
 
-| Genotype | Phenotype | Frequency |
-| :---------:| :---------: |:-----------:| 
-| FF       | Fast moving ovalbumin variant synthesised      | 37 |
-| FS       | Fast and slow moving ovalbumin variant synthesised     | 24 |
-| SS       | Slow moving ovalbumin variant synthesised     | 6 |.
+They studied 67 ducks and found
 
+| Genotype | Phenotype                                          | Frequency |
+|:---------|:---------------------------------------------------|:----------|
+| FF       | Fast moving ovalbumin variant synthesised          | 37        |
+| FS       | Fast and slow moving ovalbumin variant synthesised | 24        |
+| SS       | Slow moving ovalbumin variant synthesised          | 6         |
+
+**Is this population of ducks in Hardy-Weinberg equlibrium?**
 
 ## Calculation of frequencies of F and S alleles.
 
@@ -43,22 +44,69 @@ q&=\frac{\text{Total number of S alleles}}{\text{Total number of alleles}}\\
 \end{align*}
 $$
 
-Now check that p + q = 1!
+Note that $p + q = 1$, as they must.
 
 ## Calculate expected number of each genotype under H-W
 
-| Genotype | Expected frequency | Expected number *E* |
-| :---------:| :---------: | :---------: | :-----------: | :-------------: |
-| FF         | *p*^2^ = 0.7313 x 0.7313  = 0.534863 | *N* x *p*^2^ = 67 x 0.534863 = 35.84 |
-| FS         | 2 *pq* = 2 x 0.7313 x 0.2687 = 0.3929606| *N* x 2 *pq* = 67 x 0.3929606 = 26.33 |
-| SS         | *q*^2^ = 0.2687 x 0.2687 = 0.07217643| *N* x *q*^2^ = 67 x 0.07217643|  = 4.84 |
+| Genotype | Expected frequency |   |   | Expected number *E* |   |   |
+|:---|:---|:---|:---|:---|:---|:---|
+| FF | *p*^2^ | = 0.7313 x 0.7313 | = 0.5349 | *N* x *p*^2^ | = 67 x 0.5349 | = 35.84 |
+| FS | 2 *pq* | = 2 x 0.7313 x 0.2687 | = 0.3930 | *N* x 2 *pq* | = 67 x 0.3930 | = 26.33 |
+| SS | *q*^2^ | = 0.2687 x 0.2687 | = 0.07218 | *N* x *q*^2^ | = 67 x 0.07218 | = 4.84 |
 
+## Compare observed and expected numbers
 
+| Genotype | Observed number | Expected number |
+|:--------:|:---------------:|:---------------:|
+|   FF.    |       37        |      35.84      |
+|   FS.    |       24        |      26.33      |
+|   SS.    |       6\.       |      4.84.      |
 
+These look very similar. It looks as though the duck population is in Hardy-Weinberg equilibrium. To check, we carry out a Chi-square goodness of fit test, with one degree of freedom
 
+```{r, echo = TRUE}
+# observed counts
+observed <- c(AA = 37, Aa =  24, aa =  6)   
+N <- sum(observed)
 
+# allele frequencies
+p <- (2 * observed["AA"] + observed["Aa"]) / (2 * N)
+q <- 1 - p
+```
 
-```{r}
+```{r, echo = FALSE}
+cat("Allele Frequencies:\n")
+cat(sprintf("p (F allele) = %.4f\n", p))
+cat(sprintf("q (S allele) = %.4f\n", q))
+cat(sprintf("p + q = %.4f\n\n", p + q))
+```
+
+```{r, echo = TRUE}
+# expected counts
+expected <- N * c(p^2, 2 * p * q, q^2)
+```
+
+```{r, echo = FALSE}
+cat(sprintf("Observed"))
+cat(sprintf("%.0f", observed))
+cat(sprintf("\n\n"))
+cat(sprintf("Expected"))
+cat(sprintf("%.2f", expected))
+```
+
+```{r, echo = TRUE}
+# calculate chi-squared (X2 )statistic
+X2 <- sum((observed - expected)^2 / expected)
+
+# calculate p-value
+pchisq(X2, df = 1, lower.tail = FALSE)
+```
+
+## Conclusion
+
+The Chi-square goodness of fit test gives a p-value of 0.469. This is much greater than 0.05, so we do not reject the null hypothesis, which is that the duck population is in Hardy-Weinberg equilibrium. We would normally expect this for any large outbreeding population.
+
+```{r, include = FALSE}
 # Hardy-Weinberg Equilibrium Chi-Squared Test
 # Eider duck protein polymorphism data
 
