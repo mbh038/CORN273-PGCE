@@ -35,7 +35,7 @@ They studied 67 individual ducks and found
 | FS       | Fast and slow moving ovalbumin variant synthesised | 24        |
 | SS       | Slow moving ovalbumin variant synthesised          | 6         |
 
-**Is this population of ducks in Hardy-Weinberg equlibrium?** To answer that, we need to find out what counts would be *expected* under Hardy_weinberg equilibrium, based on the probabilities that any individual would have any of the three possible genotypes.
+**Is this population of ducks in Hardy-Weinberg equlibrium?** To answer that, we need to find out what counts would be *expected* under Hardy-Weinberg equilibrium, based on the probabilities that any individual would have any one of the three possible genotypes.
 
 ## Calculation of frequencies of F and S alleles.
 
