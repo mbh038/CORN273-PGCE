@@ -17,6 +17,7 @@ We assume here that you have aleady followed the previous exercise on hedgehog s
 
 
 ```{r, echo = FALSE}
+#| fig-label: fig-eider-ducks
 #| fig-cap: "A male and female Eider. Source: RSPB"
 knitr::include_graphics(here::here("figures", "eider-ducks-m-f.jpg"))
 ```
