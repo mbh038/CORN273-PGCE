@@ -29,13 +29,13 @@ By studying the frequencies of these alleles and comparing the results with the 
 
 They studied 67 individual ducks and found
 
-| Genotype | Phenotype                                          | Count     |
+| Genotype | Phenotype                                          | Observed Count     |
 |:---------|:---------------------------------------------------|:----------|
 | FF       | Fast moving ovalbumin variant synthesised          | 37        |
 | FS       | Fast and slow moving ovalbumin variant synthesised | 24        |
 | SS       | Slow moving ovalbumin variant synthesised          | 6         |
 
-**Is this population of ducks in Hardy-Weinberg equlibrium?**
+**Is this population of ducks in Hardy-Weinberg equlibrium?** To answer that, we need to find out what counts would be *expected* under Hardy_weinberg equilibrium, based on the probabilities that any individual would have any of the three possible genotypes.
 
 ## Calculation of frequencies of F and S alleles.
 
@@ -73,7 +73,7 @@ Note that $p + q = 1$, as they must. There are two alleles, so their respective 
 
 ## Calculate expected number of each genotype under H-W
 
-| Genotype | Expected frequency |   |   | Expected number *E* |   |   |
+| Genotype | Expected frequency |   |   | Expected count *E* |   |   |
 |:---|:---|:---|:---|:---|:---|:---|
 | FF | *p*^2^ | = 0.7313 x 0.7313 | = 0.5349 | *N* x *p*^2^ | = 67 x 0.5349 | = 35.84 |
 | FS | 2 *pq* | = 2 x 0.7313 x 0.2687 | = 0.3930 | *N* x 2 *pq* | = 67 x 0.3930 | = 26.33 |
