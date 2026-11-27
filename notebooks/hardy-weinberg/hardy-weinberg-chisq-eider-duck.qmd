@@ -15,7 +15,6 @@ knitr::opts_chunk$set(message = FALSE, warning = FALSE, echo = FALSE)
 
 We assume here that you have already followed the previous exercise on hedgehog spine colouration.
 
-
 ```{r, echo = FALSE}
 #| label: fig-eider-ducks
 #| fig-cap: "A male and female Eider. Source: RSPB"
@@ -25,7 +24,7 @@ knitr::include_graphics(here::here("figures", "eider-ducks-m-f.jpg"))
 
 An iconic study by Milne and Robertson [-@milne1965] used protein electrophoresis to show that a population of Eider ducks (Somateria mollissima) around the Ythan estuary of north-east Scotland has two codominant alleles of a gene that codes for egg-white protein. One variant of the protein migrates quickly through the gel used in the electrophoresis and one migrates slowly. In the following, we use F to denote the allele that codes for the fast protein and S for the one that codes for the slow.
 
-By studying the frequencies of these alleles and comparing the reults with the exepectations under Hardy-Weinberg (HW) equilibrium, they could establish whether this population of Eiders met the assumptions of HW - large population, random mating, no mutation, no natural selection, no gene flow in. or out of the population.
+By studying the frequencies of these alleles and comparing the results with the expectations under Hardy-Weinberg (HW) equilibrium, they could establish whether this population of Eiders met the assumptions of HW - large population, random mating, no mutation, no natural selection, no gene flow in or out of the population.
 
 
 They studied 67 individual ducks and found
@@ -40,7 +39,11 @@ They studied 67 individual ducks and found
 
 ## Calculation of frequencies of F and S alleles.
 
-Let us use *p* to denote the frequency of the F allele and *q* to denote the frequency of the S allele.
+Let us use *p* to denote the frequency of the F allele and *q* to denote the frequency of the S allele. 
+
+:::{.callout-note title="Frequency"}
+In this context, 'frequency' means proportion. So, if an allele of a gene had a frequency of 0.64 that would mean that 64% of the alleles of that gene were of that type. When there are two alleles of a gene, their frequencies are commonly referred to as  p and q, with p usually denoting the dominant allele, if there is one. The frequencies of all the alleles of a gene must add up to one. 
+:::
 
 We know
 
