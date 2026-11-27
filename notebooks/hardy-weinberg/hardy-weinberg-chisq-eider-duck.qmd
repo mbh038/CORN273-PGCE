@@ -13,11 +13,11 @@ source(here::here("_common.R"))
 knitr::opts_chunk$set(message = FALSE, warning = FALSE, echo = FALSE)
 ```
 
-We assume here that you have aleady followed the previous exercise on hedgehog spine colouration.
+We assume here that you have already followed the previous exercise on hedgehog spine colouration.
 
 
 ```{r, echo = FALSE}
-#| fig-label: fig-eider-ducks
+#| label: fig-eider-ducks
 #| fig-cap: "A male and female Eider. Source: RSPB"
 knitr::include_graphics(here::here("figures", "eider-ducks-m-f.jpg"))
 ```
