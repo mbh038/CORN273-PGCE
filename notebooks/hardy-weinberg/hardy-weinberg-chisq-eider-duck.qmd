@@ -17,7 +17,7 @@ We assume here that you have aleady follwoed the previous exercise on hedgehog s
 
 
 ```{r, echo = FALSE}
-knitr::include_graphics(here::here("figures", "eider-duck.png"))
+knitr::include_graphics(here::here("figures", "eider-ducks-m-f.jpg"))
 ```
 
 
@@ -132,10 +132,10 @@ p_value <- pchisq(X2, df = 1, lower.tail = FALSE)
 cat(sprintf("p-value: %.4f\n", p_value))
 ```
 
-In a figure, this result looks like:
+@fig-chi-square-pdf-eider shows what this results looks like:
 
 ```{r, echo = FALSE}
-#| label: fig-chi-square-pdf
+#| label: fig-chi-square-pdf-eider
 #| fig-cap: "A Chi-square probability density function for one degree of freedom. The total area under the curve is one and the area under it between any two values of $\\chi^2$ is the probability of $\\chi^2$ being in that range. The area shaded blue is the area under the curve to the right of the $\\chi^2$ value of 0.524. This is the probsbility of getting a $\\chi^2$ value of 0.524 or greater, and thus is the probability of getting genotype numbers as different, or more different, from the Hardy-Weinberg predictions as the ones we got"
 
 ggplot() +
