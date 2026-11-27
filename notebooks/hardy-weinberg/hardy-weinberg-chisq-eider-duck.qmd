@@ -53,7 +53,7 @@ p&=\frac{\text{Total number of F alleles}}{\text{Total number of alleles}}\\
 \end{align*}
 $$
 
-and
+We know that $q = p-1 = 0.2687$, but let's caclulate it here from first principles just as we did for p, as a check on our arithmetic:
 
 $$
 \begin{align*}
@@ -65,7 +65,7 @@ q&=\frac{\text{Total number of S alleles}}{\text{Total number of alleles}}\\
 \end{align*}
 $$
 
-Note that $p + q = 1$, as they must.
+Note that $p + q = 1$, as they must. There are two alleles, so their respective proportions must add up to one.
 
 ## Calculate expected number of each genotype under H-W
 
@@ -74,6 +74,9 @@ Note that $p + q = 1$, as they must.
 | FF | *p*^2^ | = 0.7313 x 0.7313 | = 0.5349 | *N* x *p*^2^ | = 67 x 0.5349 | = 35.84 |
 | FS | 2 *pq* | = 2 x 0.7313 x 0.2687 | = 0.3930 | *N* x 2 *pq* | = 67 x 0.3930 | = 26.33 |
 | SS | *q*^2^ | = 0.2687 x 0.2687 | = 0.07218 | *N* x *q*^2^ | = 67 x 0.07218 | = 4.84 |
+
+
+Note that $p^2 + 2pq + q^2 = 1$, as must also be the case. There are three genotypes, so their respective proportions under HW (or any other scenario) must add up to 1.
 
 ## Compare observed and expected numbers
 
