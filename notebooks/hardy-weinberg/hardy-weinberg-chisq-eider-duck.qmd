@@ -29,7 +29,7 @@ By studying the frequencies of these alleles and comparing the results with the 
 
 They studied 67 individual ducks and found
 
-| Genotype | Phenotype                                          | Frequency |
+| Genotype | Phenotype                                          | Count     |
 |:---------|:---------------------------------------------------|:----------|
 | FF       | Fast moving ovalbumin variant synthesised          | 37        |
 | FS       | Fast and slow moving ovalbumin variant synthesised | 24        |
@@ -84,7 +84,7 @@ Note that $p^2 + 2pq + q^2 = 1$, as must also be the case. There are three genot
 
 ## Compare observed and expected numbers
 
-| Genotype | Observed number | Expected number |
+| Genotype | Observed count  | Expected count  |
 |:--------:|:---------------:|:---------------:|
 |   FF.    |       37        |      35.84      |
 |   FS.    |       24        |      26.33      |
