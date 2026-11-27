@@ -1,4 +1,4 @@
-# Hardy-Weinberg example one
+# Hardy-Weinberg example one: hedgehog spines
 
 ```{r}
 #| include: false
@@ -23,17 +23,22 @@ We know that the hedgehogs with light coloured spines must be homozygous in the 
 
 The 39 dark coloured hedgehogs must have genotype AA or Aa, but we cannot tell from simple observation how many of each there are among all 39. 
 
-To determine the genotype numbers among the dark hedgehogs, we send genetic material away to a genetic sequencing lab.They tell us that there are 16 homozygous AA hedgehogs and 23 heterozygous Aa hedgehogs. We know already that the other 11 hedgehogs, the ones that have light coloured spines, are of genotype aa, the only psossibl other genotype. So, in summary, our populations consists of
+To determine the genotype counts among the dark hedgehogs, we send genetic material away to a genetic sequencing lab.They tell us that there are 16 homozygous AA hedgehogs and 23 heterozygous Aa hedgehogs. We know already that the other 11 hedgehogs, the ones that have light coloured spines, are of genotype aa, the only psossibl other genotype. So, in summary, our populations consists of
  
 
-| Genotype | Phenotype | Frequency |
+| Genotype | Phenotype | Count |
 | :---------:| :---------: |:-----------:| 
 | AA       | dark      | 16 |
 | Aa       | dark      | 23 |
 | aa       | light     | 11 |.
 
 
-## Allele proportions *p* and *q*
+## Allele frequencies *p* and *q*
+
+:::{.callout-note title="Frequency"}
+In this context, 'frequency' means proportion and we will sometimes use the terms interchangeably. So, if an allele of a gene had a frequency of 0.64 that would mean that 64% of the alleles of that gene were of that type. When there are two alleles of a gene, their frequencies are commonly referred to as  p and q, with p usually denoting the dominant allele, if there is one. The frequencies of all the alleles of a gene must add up to one. 
+:::
+
 Nor do we know how many alleles of type A there are, and how many of type a there are among the total of 100 alleles altogether. We will find it more useful to think anyway not of the number of A or of a alleles in the sample, but of the *proportion* of all of them that are A and the proportion that are a. Following convention, we will use *p* to denote the proportion of all the alleles that is the dominant one, A in this case, and *q* to denote the proportion of all alleles that are the recessive allele (a, in this case). Since every allele is either A or a, we know that the two proportions must add up to 1:
 
 $$p+q = 1$$
@@ -63,9 +68,9 @@ q&=\frac{\text{Total number of a alleles}}{\text{Total number of alleles}}\\
 $$
 We note that our values for p and q do add up to one, as they should..
 
-## Hardy-Weinberg expected values for the genotype numbers
+## Hardy-Weinberg expected values for the genotype counts
 
-So far, all the numbers observed or calculated are true for this population of hedgehogs, whether that is the number of each phenotype or genotype, or the allele propotions p and q.
+So far, all the numberss observed or calculated are true for this population of hedgehogs, whether that is the number of each phenotype or genotype, or the allele propotions p and q.
 
 Now we calculate the genotype numbers we would *expect* if the Hardy-Weinberg assumptions hold. To imagine what this means, it helps here to think of the population of hedgehogs as arising from two big bags, one full of *N* male gametes, the other full of *N* female gametes. Each of the gametes will contain one copy of the chromosome on which our gene for spine colour sits (and also one copy of all the other chromosomes, but we can ignore them here). A proportion p of these gametes will have the A allele for our gene and a proportion q will have the a allele. This is true overall, and if the population is very large (another Hardy-Weinberg assumption) this will be separately true for both the female and the male gametes.  Each hedgehog arises from the union of one female and one male gamete. Under the Hardy-Weinberg assumption of random mating throughout the population, each of these gametes is chosen randomly from its respective bag. The probability that any female gamete drawn from its bag has allele A is p. The same is true for the male gamete. Hence the probability that a hedgehog in our population has genotype AA is p^2^. Hence the proportion of the population that we can *expect* to have this genotype is also p^2^, and hence too, the number of hedgehogs we would expect to have this genotype is this proportion multiplied by the total size N of the population. 
 
@@ -99,23 +104,23 @@ So, in summary, the expected numbers for each genotype are:
 
 ## Compare observed with expected numbers
 
-So now we have our *expected* numbers *E* for the three genotypes, if the population is in Hardy-Weiberg equilibrium, that we can compare with the actual *observed* numbers *O*:
+So now we have our *expected* counts *E* for the three genotypes, if the population is in Hardy-Weiberg equilibrium, that we can compare with the actual *observed* counts *O*:
 
 
-| Genotype | Phenotype | Observed number *O* | Expected number *E*|
+| Genotype | Phenotype | Observed count *O* | Expected count *E*|
 | :---------:| :---------: |:-----------:| :-------------: |
 | AA       | dark      | 16              | 15.125           |
 | Aa       | dark      | 23              | 24.75            |
 | aa       | light     | 11              | 10.125            |
 
 
-The observed and the expected numbers for each genotype are not exactly equal, but we shoud not be surprised by that. Are they, though, so far apart that we can no longer credibly believe that this hedgehog population is in Hardy-Weinberg equilibrium for the gene for spine colouration? 
+The observed and the expected countss for each genotype are not exactly equal, but we should not be surprised by that. Are they, though, so far apart that we can no longer credibly believe that this hedgehog population is in Hardy-Weinberg equilibrium for the gene for spine colouration? 
 
 To find out, we need to use a **Chi-Square Goodness of Fit Test**.
 
 ## Chi-Square Goodness of Fit Test
 
-The idea of this test is, first,  to create a measure, the so-called chi-square statistic, of how far the observed genotype numbers are from the expected numbers, under a null hypothesis that the Hardy-Weinberg conditions are met and, second, to determine how likely it is that that difference would be as large as it is, or larger, if the null hypothesis were true.
+The idea of this test is, first,  to create a measure, the so-called chi-square statistic, of how far the observed genotype counts are from the expected counts, under a null hypothesis that the Hardy-Weinberg conditions are met and, second, to determine how likely it is that that difference would be as large as it is, or larger, if the null hypothesis were true.
 
 Let us calculate the Chi-square statistic, denoted as $\chi^2$. To do this we take the difference betwen the observed and expected number for each of the genotypes, we square this difference and then we divide by the expected number for the genotype. Then we add all these terms together:
 
@@ -127,7 +132,7 @@ $$
 &= 0.250
 \end{align*}\\
 $$
-Note that this expression for $\chi^2$ is indeed a measure of how far the observed values differ from the expected numbers, under the null of HW being true for this case. The more the observed values differ from the expected values, the bigger $\chi^2$ becomes. If they were exactly equal to the expected values then $\chi^2$ would be equal to zero. Note too that $\chi^2$ can never be zero, since it is the sum of terms that must each be positive.
+Note that this expression for $\chi^2$ is indeed a measure of how far the observed counts differ from the expected values, under the null of HW being true for this case. The more the observed counts differ from the expected values, the bigger $\chi^2$ becomes. If they were exactly equal to the expected values then $\chi^2$ would be equal to zero. Note too that $\chi^2$ can never be zero, since it is the sum of terms that must each be positive.
 
 This $\chi^2$ follows a distribution, known as a $\chi^2$ distribution for (in this case) 1 degree of freedom. It is plotted below in @fig-chi-square-pdf as a 'probability density function'. You may have met one of these before, for the normal distribution. The way to understand it is that the area under the curve between and two values of $\chi^2$ on the x-axis gives the probability of $\chi^2$ being in that range. In particular, the area under the curve to the right of a given value of $\chi^2$ gives the probability that $\chi^2$ would have that value, or greater. This probability is the famous p-value: the probability of gettng data as different from the null prediction as ours is, or more different, if the null were true. In this case that means the probability of getting a $\chi^2$ value, as big or bigger than the one we got.
 
@@ -136,7 +141,7 @@ You see the term 'degrees of freedom' a lot in statistics. It refers to the numb
 
 **tldr**: In Hardy-Weinberg problms such as this, with two alleles and threee genotypes, there is **one** degree of freedom.
 
-Let us consider the residual numbers for each genotype - that is, the difference O-E, for each genotype, between the observed and expected numbers.
+Let us consider the residual values for each genotype - that is, the difference O-E, for each genotype, between the observed and expected values.
 
 There are three residuals, one for each genotype - so our 'free dimension' number is three
 
@@ -152,7 +157,7 @@ Three residuals with two constraints leaves one free residual, hence 1 df.
 
 ```{r, echo = FALSE}
 #| label: fig-chi-square-pdf
-#| fig-cap: "A Chi-square probability density function for one degree of freedom. The total area under the curve is one and the area under it between any two values of $\\chi^2$ is the probability of $\\chi^2$ being in that range. The area shaded blue is the area under the curve to the right of the $\\chi^2$ value of 0.25. This is the probsbility of getting a $\\chi^2$ value of 0.25 or greater, and thus is the probability of getting genotype numbers as different, or more different, from the Hardy-Weinberg predictions as the ones we got"
+#| fig-cap: "A Chi-square probability density function for one degree of freedom. The total area under the curve is one and the area under it between any two values of $\\chi^2$ is the probability of $\\chi^2$ being in that range. The area shaded blue is the area under the curve to the right of the $\\chi^2$ value of 0.25. This is the probsbility of getting a $\\chi^2$ value of 0.25 or greater, and thus is the probability of getting genotype counts as different, or more different, from the Hardy-Weinberg predictions as the ones we got"
 
 ggplot() +
   scale_x_continuous(limits=c(0,8), breaks = seq(0,8,1)) +
@@ -179,13 +184,13 @@ For our date, we find $\chi^2$ = 0.25. The area under a $\chi^2$ curve for one d
 
 ## Conclusion
 
-The p-value we get is 0.617. Remember that p is a probability, so can only have values in the range 0 to 1. Our p-value is (much) bigger than 0.05, the commonly used threshold (known as the significance level) for deciding whether or not to reject a null hypothesis. If p is less than the chosen signficance level, we reject the null. If it isn't we do not reject the null.  Here, p is much bigger than 0.05 so we emphatically do not reject the null. It is very likely that we could have got genotype numbers as different as ours from the expected numbers predicted by Hardy-Weinberg equilibrium, even if all the assumptions of Hardy-Weinberg equlibrium are met.
+The p-value we get is 0.617. Remember that p is a probability, so can only have values in the range 0 to 1. Our p-value is (much) bigger than 0.05, the commonly used threshold (known as the significance level) for deciding whether or not to reject a null hypothesis. If p is less than the chosen signficance level, we reject the null. If it isn't we do not reject the null.  Here, p is much bigger than 0.05 so we emphatically do not reject the null. It is very likely that we could have got genotype counts as different as ours from the expected values predicted by Hardy-Weinberg equilibrium, even if all the assumptions of Hardy-Weinberg equlibrium are met.
 
 Thus our observations are consistent with Hardy-Weinberg. We find no evidence from the data that the hedgehog population is not in Hardy-Weinberg equilibrium for the spine colouration gene. That doesn't mean that it definitely *is* in H-W equilibrium. It just means we have no evidence from this data that it *isn't*.
 
 In the same way, if we tossed a coin 100 times and got 48 heads and 52 tails, that would not constitute evidence that the coin is not fair (that is, one for which heads and tails are equally likely) despite that we didn't get exactly the *expected* results of 50 heads and 50 tails. If the coin is fair the probability of getting 48 or fewer heads and 52 or more tails turns out to be 0.76, so getting the results we got is quite likely even if the coin is fair. On the other hand, if we got 30 heads and 70 tails, the probability of that is very, very small with a fair coin, so we would reject the null and decide that the coin is not fair.
 
-So, don't imagine that Hardy-Weinberg is not satisfied just because the observed numbers of the different genotypes are not exactly the same as the *expected* values. The question is, by how much do they differ, and how likely would that be if Hardy-Weinberg holds. A chi-square analysis tells you that. 
+So, don't imagine that Hardy-Weinberg is not satisfied just because the observed countss of the different genotypes are not exactly the same as the *expected* values. The question is, by how much do they differ, and how likely would that be if Hardy-Weinberg holds. A chi-square analysis tells you that. 
 
 ```{r, include = FALSE}
 trials <- 1000

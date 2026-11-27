@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>5&nbsp; Hardy-Weinberg example one – CORN273 Population Genetics and Community Ecology</title>
+<title>5&nbsp; Hardy-Weinberg example one: hedgehog spines – CORN273 Population Genetics and Community Ecology</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -144,7 +144,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../notebooks/hardy-weinberg/hardy-weinberg_example.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Hardy-Weinberg example one</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../notebooks/hardy-weinberg/hardy-weinberg_example.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Hardy-Weinberg example one: hedgehog spines</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -196,7 +196,7 @@ window.Quarto = {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../notebooks/hardy-weinberg/hardy-weinberg_example.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Hardy-Weinberg example one</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Hardy-Weinberg example one: hedgehog spines</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -239,8 +239,8 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#allele-proportions-p-and-q" id="toc-allele-proportions-p-and-q" class="nav-link active" data-scroll-target="#allele-proportions-p-and-q"><span class="header-section-number">5.1</span> Allele proportions <em>p</em> and <em>q</em></a></li>
-  <li><a href="#hardy-weinberg-expected-values-for-the-genotype-numbers" id="toc-hardy-weinberg-expected-values-for-the-genotype-numbers" class="nav-link" data-scroll-target="#hardy-weinberg-expected-values-for-the-genotype-numbers"><span class="header-section-number">5.2</span> Hardy-Weinberg expected values for the genotype numbers</a></li>
+  <li><a href="#allele-frequencies-p-and-q" id="toc-allele-frequencies-p-and-q" class="nav-link active" data-scroll-target="#allele-frequencies-p-and-q"><span class="header-section-number">5.1</span> Allele frequencies <em>p</em> and <em>q</em></a></li>
+  <li><a href="#hardy-weinberg-expected-values-for-the-genotype-counts" id="toc-hardy-weinberg-expected-values-for-the-genotype-counts" class="nav-link" data-scroll-target="#hardy-weinberg-expected-values-for-the-genotype-counts"><span class="header-section-number">5.2</span> Hardy-Weinberg expected values for the genotype counts</a></li>
   <li><a href="#compare-observed-with-expected-numbers" id="toc-compare-observed-with-expected-numbers" class="nav-link" data-scroll-target="#compare-observed-with-expected-numbers"><span class="header-section-number">5.3</span> Compare observed with expected numbers</a></li>
   <li><a href="#chi-square-goodness-of-fit-test" id="toc-chi-square-goodness-of-fit-test" class="nav-link" data-scroll-target="#chi-square-goodness-of-fit-test"><span class="header-section-number">5.4</span> Chi-Square Goodness of Fit Test</a></li>
   <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">5.5</span> Conclusion</a></li>
@@ -253,7 +253,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Hardy-Weinberg example one</span></h1>
+<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Hardy-Weinberg example one: hedgehog spines</span></h1>
 </div>
 
 
@@ -276,13 +276,13 @@ window.Quarto = {
 <p>What about the <strong>genotypes</strong> of these hedgehogs? Given that there are two alleles of this gene, and that each individual has two copies of the allele, three genotypes are possible: Homozygous AA, heterozygous Aa and homozygous aa. Further, the total number of alleles in the sample must be 2* <em>N</em> = 100</p>
 <p>We know that the hedgehogs with light coloured spines must be homozygous in the recessive allele aa. If they had even a single copy of the dominant A allele, they would have dark coloured spines.</p>
 <p>The 39 dark coloured hedgehogs must have genotype AA or Aa, but we cannot tell from simple observation how many of each there are among all 39.</p>
-<p>To determine the genotype numbers among the dark hedgehogs, we send genetic material away to a genetic sequencing lab.They tell us that there are 16 homozygous AA hedgehogs and 23 heterozygous Aa hedgehogs. We know already that the other 11 hedgehogs, the ones that have light coloured spines, are of genotype aa, the only psossibl other genotype. So, in summary, our populations consists of</p>
+<p>To determine the genotype counts among the dark hedgehogs, we send genetic material away to a genetic sequencing lab.They tell us that there are 16 homozygous AA hedgehogs and 23 heterozygous Aa hedgehogs. We know already that the other 11 hedgehogs, the ones that have light coloured spines, are of genotype aa, the only psossibl other genotype. So, in summary, our populations consists of</p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
 <th style="text-align: center;">Genotype</th>
 <th style="text-align: center;">Phenotype</th>
-<th style="text-align: center;">Frequency</th>
+<th style="text-align: center;">Count</th>
 </tr>
 </thead>
 <tbody>
@@ -303,8 +303,21 @@ window.Quarto = {
 </tr>
 </tbody>
 </table>
-<section id="allele-proportions-p-and-q" class="level2" data-number="5.1">
-<h2 data-number="5.1" class="anchored" data-anchor-id="allele-proportions-p-and-q"><span class="header-section-number">5.1</span> Allele proportions <em>p</em> and <em>q</em></h2>
+<section id="allele-frequencies-p-and-q" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="allele-frequencies-p-and-q"><span class="header-section-number">5.1</span> Allele frequencies <em>p</em> and <em>q</em></h2>
+<div class="callout callout-style-default callout-note callout-titled" title="Frequency">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Frequency
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In this context, ‘frequency’ means proportion and we will sometimes use the terms interchangeably. So, if an allele of a gene had a frequency of 0.64 that would mean that 64% of the alleles of that gene were of that type. When there are two alleles of a gene, their frequencies are commonly referred to as p and q, with p usually denoting the dominant allele, if there is one. The frequencies of all the alleles of a gene must add up to one.</p>
+</div>
+</div>
 <p>Nor do we know how many alleles of type A there are, and how many of type a there are among the total of 100 alleles altogether. We will find it more useful to think anyway not of the number of A or of a alleles in the sample, but of the <em>proportion</em> of all of them that are A and the proportion that are a. Following convention, we will use <em>p</em> to denote the proportion of all the alleles that is the dominant one, A in this case, and <em>q</em> to denote the proportion of all alleles that are the recessive allele (a, in this case). Since every allele is either A or a, we know that the two proportions must add up to 1:</p>
 <p><span class="math display">\[p+q = 1\]</span></p>
 <p>To determine each of p and q, we need to divide the total number of A alleles by the total number of alleles of either type. This latter number, we know, is 2N = 100, since each hedgehog has two alleles, either AA, Aa or aa. To determine the number of A alleles, we recall that each dark hedgehog that is homozygous AA will have two of these, while each hedgehog that is heterozygous Aa will have one. Thus,</p>
@@ -328,9 +341,9 @@ q&amp;=\frac{\text{Total number of a alleles}}{\text{Total number of alleles}}\\
 \end{align*}
 \]</span> We note that our values for p and q do add up to one, as they should..</p>
 </section>
-<section id="hardy-weinberg-expected-values-for-the-genotype-numbers" class="level2" data-number="5.2">
-<h2 data-number="5.2" class="anchored" data-anchor-id="hardy-weinberg-expected-values-for-the-genotype-numbers"><span class="header-section-number">5.2</span> Hardy-Weinberg expected values for the genotype numbers</h2>
-<p>So far, all the numbers observed or calculated are true for this population of hedgehogs, whether that is the number of each phenotype or genotype, or the allele propotions p and q.</p>
+<section id="hardy-weinberg-expected-values-for-the-genotype-counts" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="hardy-weinberg-expected-values-for-the-genotype-counts"><span class="header-section-number">5.2</span> Hardy-Weinberg expected values for the genotype counts</h2>
+<p>So far, all the numberss observed or calculated are true for this population of hedgehogs, whether that is the number of each phenotype or genotype, or the allele propotions p and q.</p>
 <p>Now we calculate the genotype numbers we would <em>expect</em> if the Hardy-Weinberg assumptions hold. To imagine what this means, it helps here to think of the population of hedgehogs as arising from two big bags, one full of <em>N</em> male gametes, the other full of <em>N</em> female gametes. Each of the gametes will contain one copy of the chromosome on which our gene for spine colour sits (and also one copy of all the other chromosomes, but we can ignore them here). A proportion p of these gametes will have the A allele for our gene and a proportion q will have the a allele. This is true overall, and if the population is very large (another Hardy-Weinberg assumption) this will be separately true for both the female and the male gametes. Each hedgehog arises from the union of one female and one male gamete. Under the Hardy-Weinberg assumption of random mating throughout the population, each of these gametes is chosen randomly from its respective bag. The probability that any female gamete drawn from its bag has allele A is p.&nbsp;The same is true for the male gamete. Hence the probability that a hedgehog in our population has genotype AA is p<sup>2</sup>. Hence the proportion of the population that we can <em>expect</em> to have this genotype is also p<sup>2</sup>, and hence too, the number of hedgehogs we would expect to have this genotype is this proportion multiplied by the total size N of the population.</p>
 <p>Hence, if the Hardy-Weinberg assumptions hold, we would <em>expect</em> to have <em>N</em> x <em>p</em><sup>2</sup> = 50 x 0.55 x 0.55 = 15.125 homozygous AA hedgehogs.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Meaning of the term 'expected' ">
@@ -397,14 +410,14 @@ Arithmetic check
 </section>
 <section id="compare-observed-with-expected-numbers" class="level2" data-number="5.3">
 <h2 data-number="5.3" class="anchored" data-anchor-id="compare-observed-with-expected-numbers"><span class="header-section-number">5.3</span> Compare observed with expected numbers</h2>
-<p>So now we have our <em>expected</em> numbers <em>E</em> for the three genotypes, if the population is in Hardy-Weiberg equilibrium, that we can compare with the actual <em>observed</em> numbers <em>O</em>:</p>
+<p>So now we have our <em>expected</em> counts <em>E</em> for the three genotypes, if the population is in Hardy-Weiberg equilibrium, that we can compare with the actual <em>observed</em> counts <em>O</em>:</p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
 <th style="text-align: center;">Genotype</th>
 <th style="text-align: center;">Phenotype</th>
-<th style="text-align: center;">Observed number <em>O</em></th>
-<th style="text-align: center;">Expected number <em>E</em></th>
+<th style="text-align: center;">Observed count <em>O</em></th>
+<th style="text-align: center;">Expected count <em>E</em></th>
 </tr>
 </thead>
 <tbody>
@@ -428,12 +441,12 @@ Arithmetic check
 </tr>
 </tbody>
 </table>
-<p>The observed and the expected numbers for each genotype are not exactly equal, but we shoud not be surprised by that. Are they, though, so far apart that we can no longer credibly believe that this hedgehog population is in Hardy-Weinberg equilibrium for the gene for spine colouration?</p>
+<p>The observed and the expected countss for each genotype are not exactly equal, but we should not be surprised by that. Are they, though, so far apart that we can no longer credibly believe that this hedgehog population is in Hardy-Weinberg equilibrium for the gene for spine colouration?</p>
 <p>To find out, we need to use a <strong>Chi-Square Goodness of Fit Test</strong>.</p>
 </section>
 <section id="chi-square-goodness-of-fit-test" class="level2" data-number="5.4">
 <h2 data-number="5.4" class="anchored" data-anchor-id="chi-square-goodness-of-fit-test"><span class="header-section-number">5.4</span> Chi-Square Goodness of Fit Test</h2>
-<p>The idea of this test is, first, to create a measure, the so-called chi-square statistic, of how far the observed genotype numbers are from the expected numbers, under a null hypothesis that the Hardy-Weinberg conditions are met and, second, to determine how likely it is that that difference would be as large as it is, or larger, if the null hypothesis were true.</p>
+<p>The idea of this test is, first, to create a measure, the so-called chi-square statistic, of how far the observed genotype counts are from the expected counts, under a null hypothesis that the Hardy-Weinberg conditions are met and, second, to determine how likely it is that that difference would be as large as it is, or larger, if the null hypothesis were true.</p>
 <p>Let us calculate the Chi-square statistic, denoted as <span class="math inline">\(\chi^2\)</span>. To do this we take the difference betwen the observed and expected number for each of the genotypes, we square this difference and then we divide by the expected number for the genotype. Then we add all these terms together:</p>
 <p><span class="math display">\[
 \begin{align*}
@@ -442,7 +455,7 @@ Arithmetic check
 &amp;= 0.0506 + 0.124 + 0.076\\
 &amp;= 0.250
 \end{align*}\\
-\]</span> Note that this expression for <span class="math inline">\(\chi^2\)</span> is indeed a measure of how far the observed values differ from the expected numbers, under the null of HW being true for this case. The more the observed values differ from the expected values, the bigger <span class="math inline">\(\chi^2\)</span> becomes. If they were exactly equal to the expected values then <span class="math inline">\(\chi^2\)</span> would be equal to zero. Note too that <span class="math inline">\(\chi^2\)</span> can never be zero, since it is the sum of terms that must each be positive.</p>
+\]</span> Note that this expression for <span class="math inline">\(\chi^2\)</span> is indeed a measure of how far the observed counts differ from the expected values, under the null of HW being true for this case. The more the observed counts differ from the expected values, the bigger <span class="math inline">\(\chi^2\)</span> becomes. If they were exactly equal to the expected values then <span class="math inline">\(\chi^2\)</span> would be equal to zero. Note too that <span class="math inline">\(\chi^2\)</span> can never be zero, since it is the sum of terms that must each be positive.</p>
 <p>This <span class="math inline">\(\chi^2\)</span> follows a distribution, known as a <span class="math inline">\(\chi^2\)</span> distribution for (in this case) 1 degree of freedom. It is plotted below in <a href="#fig-chi-square-pdf" class="quarto-xref">Figure&nbsp;<span>5.1</span></a> as a ‘probability density function’. You may have met one of these before, for the normal distribution. The way to understand it is that the area under the curve between and two values of <span class="math inline">\(\chi^2\)</span> on the x-axis gives the probability of <span class="math inline">\(\chi^2\)</span> being in that range. In particular, the area under the curve to the right of a given value of <span class="math inline">\(\chi^2\)</span> gives the probability that <span class="math inline">\(\chi^2\)</span> would have that value, or greater. This probability is the famous p-value: the probability of gettng data as different from the null prediction as ours is, or more different, if the null were true. In this case that means the probability of getting a <span class="math inline">\(\chi^2\)</span> value, as big or bigger than the one we got.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Degrees of freedom">
 <div class="callout-header d-flex align-content-center">
@@ -456,7 +469,7 @@ Degrees of freedom
 <div class="callout-body-container callout-body">
 <p>You see the term ‘degrees of freedom’ a lot in statistics. It refers to the number of independent ways that the data can deviate from the null. This opaque phrase translates as: the number of free dimensions in the observed data minus the number of free parameters fitted under the null.</p>
 <p><strong>tldr</strong>: In Hardy-Weinberg problms such as this, with two alleles and threee genotypes, there is <strong>one</strong> degree of freedom.</p>
-<p>Let us consider the residual numbers for each genotype - that is, the difference O-E, for each genotype, between the observed and expected numbers.</p>
+<p>Let us consider the residual values for each genotype - that is, the difference O-E, for each genotype, between the observed and expected values.</p>
 <p>There are three residuals, one for each genotype - so our ‘free dimension’ number is three</p>
 <p>However, these residuals must satisfy two constraints:</p>
 <ul>
@@ -474,7 +487,7 @@ Degrees of freedom
 <img src="hardy-weinberg_example_files/figure-html/fig-chi-square-pdf-1.png" class="img-fluid figure-img" style="width:90.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-chi-square-pdf-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;5.1: A Chi-square probability density function for one degree of freedom. The total area under the curve is one and the area under it between any two values of <span class="math inline">\(\chi^2\)</span> is the probability of <span class="math inline">\(\chi^2\)</span> being in that range. The area shaded blue is the area under the curve to the right of the <span class="math inline">\(\chi^2\)</span> value of 0.25. This is the probsbility of getting a <span class="math inline">\(\chi^2\)</span> value of 0.25 or greater, and thus is the probability of getting genotype numbers as different, or more different, from the Hardy-Weinberg predictions as the ones we got
+Figure&nbsp;5.1: A Chi-square probability density function for one degree of freedom. The total area under the curve is one and the area under it between any two values of <span class="math inline">\(\chi^2\)</span> is the probability of <span class="math inline">\(\chi^2\)</span> being in that range. The area shaded blue is the area under the curve to the right of the <span class="math inline">\(\chi^2\)</span> value of 0.25. This is the probsbility of getting a <span class="math inline">\(\chi^2\)</span> value of 0.25 or greater, and thus is the probability of getting genotype counts as different, or more different, from the Hardy-Weinberg predictions as the ones we got
 </figcaption>
 </figure>
 </div>
@@ -484,10 +497,10 @@ Figure&nbsp;5.1: A Chi-square probability density function for one degree of fre
 </section>
 <section id="conclusion" class="level2" data-number="5.5">
 <h2 data-number="5.5" class="anchored" data-anchor-id="conclusion"><span class="header-section-number">5.5</span> Conclusion</h2>
-<p>The p-value we get is 0.617. Remember that p is a probability, so can only have values in the range 0 to 1. Our p-value is (much) bigger than 0.05, the commonly used threshold (known as the significance level) for deciding whether or not to reject a null hypothesis. If p is less than the chosen signficance level, we reject the null. If it isn’t we do not reject the null. Here, p is much bigger than 0.05 so we emphatically do not reject the null. It is very likely that we could have got genotype numbers as different as ours from the expected numbers predicted by Hardy-Weinberg equilibrium, even if all the assumptions of Hardy-Weinberg equlibrium are met.</p>
+<p>The p-value we get is 0.617. Remember that p is a probability, so can only have values in the range 0 to 1. Our p-value is (much) bigger than 0.05, the commonly used threshold (known as the significance level) for deciding whether or not to reject a null hypothesis. If p is less than the chosen signficance level, we reject the null. If it isn’t we do not reject the null. Here, p is much bigger than 0.05 so we emphatically do not reject the null. It is very likely that we could have got genotype counts as different as ours from the expected values predicted by Hardy-Weinberg equilibrium, even if all the assumptions of Hardy-Weinberg equlibrium are met.</p>
 <p>Thus our observations are consistent with Hardy-Weinberg. We find no evidence from the data that the hedgehog population is not in Hardy-Weinberg equilibrium for the spine colouration gene. That doesn’t mean that it definitely <em>is</em> in H-W equilibrium. It just means we have no evidence from this data that it <em>isn’t</em>.</p>
 <p>In the same way, if we tossed a coin 100 times and got 48 heads and 52 tails, that would not constitute evidence that the coin is not fair (that is, one for which heads and tails are equally likely) despite that we didn’t get exactly the <em>expected</em> results of 50 heads and 50 tails. If the coin is fair the probability of getting 48 or fewer heads and 52 or more tails turns out to be 0.76, so getting the results we got is quite likely even if the coin is fair. On the other hand, if we got 30 heads and 70 tails, the probability of that is very, very small with a fair coin, so we would reject the null and decide that the coin is not fair.</p>
-<p>So, don’t imagine that Hardy-Weinberg is not satisfied just because the observed numbers of the different genotypes are not exactly the same as the <em>expected</em> values. The question is, by how much do they differ, and how likely would that be if Hardy-Weinberg holds. A chi-square analysis tells you that.</p>
+<p>So, don’t imagine that Hardy-Weinberg is not satisfied just because the observed countss of the different genotypes are not exactly the same as the <em>expected</em> values. The question is, by how much do they differ, and how likely would that be if Hardy-Weinberg holds. A chi-square analysis tells you that.</p>
 </section>
 <section id="doing-the-chi-square-analysis-using-r---optional" class="level2" data-number="5.6">
 <h2 data-number="5.6" class="anchored" data-anchor-id="doing-the-chi-square-analysis-using-r---optional"><span class="header-section-number">5.6</span> Doing the chi-square analysis using R - optional</h2>
