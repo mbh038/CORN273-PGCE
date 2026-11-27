@@ -288,7 +288,18 @@ window.Quarto = {
 </header>
 
 
+<p>We assume here that you have aleady follwoed the previous exercise on hedgehog spine colouration.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="../../figures/eider-duck.png" class="img-fluid figure-img" style="width:90.0%"></p>
+</figure>
+</div>
+</div>
+</div>
 <p>An iconic study by Milne and Robertson <span class="citation" data-cites="milne1965">(<a href="#ref-milne1965" role="doc-biblioref">1965</a>)</span> used protein electrophoresis to show that a population of eider ducks (Somateria mollissima) around the Ythan estuary of north-east Scotland has two codominant alleles of a gene that codes for egg-white protein. One variant of the protein migrates quickly through the gel used in the electrophoresis and one migrates slowly. In the following, we use F to denote the allele that codes for the fast protein and S for the one that codes for the slow.</p>
+<p>By studying the frequencies of these alleles and comparing the reults with the exepectations under Hardy-Weinberg (HW) equilibrium, they could establish whether this population met the assumptions of HW - large population, random mating, no mutation, no natural selection, no gene flow in. or out of the population.</p>
 <p>They studied 67 ducks and found</p>
 <table class="caption-top table">
 <colgroup>
@@ -459,13 +470,13 @@ q&amp;=\frac{\text{Total number of S alleles}}{\text{Total number of alleles}}\\
 </div>
 <div class="cell">
 <div class="cell-output cell-output-stdout">
-<pre><code>Observed</code></pre>
+<pre><code>Observed: </code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
 <pre><code>37 24 6</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Expected</code></pre>
+<pre><code>Expected: </code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
 <pre><code>35.84 26.33 4.84</code></pre>
@@ -473,18 +484,41 @@ q&amp;=\frac{\text{Total number of S alleles}}{\text{Total number of alleles}}\\
 </div>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># calculate chi-squared (X2 )statistic</span></span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>X2 <span class="ot">&lt;-</span> <span class="fu">sum</span>((observed <span class="sc">-</span> expected)<span class="sc">^</span><span class="dv">2</span> <span class="sc">/</span> expected)</span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="co"># calculate p-value</span></span>
-<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="fu">pchisq</span>(X2, <span class="at">df =</span> <span class="dv">1</span>, <span class="at">lower.tail =</span> <span class="cn">FALSE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>X2 <span class="ot">&lt;-</span> <span class="fu">sum</span>((observed <span class="sc">-</span> expected)<span class="sc">^</span><span class="dv">2</span> <span class="sc">/</span> expected)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 0.4691426</code></pre>
+<pre><code>χ² statistic: 0.5240</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># calculate p-value</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>p_value <span class="ot">&lt;-</span> <span class="fu">pchisq</span>(X2, <span class="at">df =</span> <span class="dv">1</span>, <span class="at">lower.tail =</span> <span class="cn">FALSE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>p-value: 0.4691</code></pre>
+</div>
+</div>
+<p>In a figure, this result looks like:</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-chi-square-pdf" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-chi-square-pdf-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="hardy-weinberg-chisq-eider-duck_files/figure-html/fig-chi-square-pdf-1.png" class="img-fluid figure-img" style="width:90.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-chi-square-pdf-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6.1: A Chi-square probability density function for one degree of freedom. The total area under the curve is one and the area under it between any two values of <span class="math inline">\(\chi^2\)</span> is the probability of <span class="math inline">\(\chi^2\)</span> being in that range. The area shaded blue is the area under the curve to the right of the <span class="math inline">\(\chi^2\)</span> value of 0.524. This is the probsbility of getting a <span class="math inline">\(\chi^2\)</span> value of 0.524 or greater, and thus is the probability of getting genotype numbers as different, or more different, from the Hardy-Weinberg predictions as the ones we got
+</figcaption>
+</figure>
+</div>
 </div>
 </div>
 </section>
 <section id="conclusion" class="level2" data-number="6.4">
 <h2 data-number="6.4" class="anchored" data-anchor-id="conclusion"><span class="header-section-number">6.4</span> Conclusion</h2>
-<p>The Chi-square goodness of fit test gives a p-value of 0.469. This is much greater than 0.05, so we do not reject the null hypothesis, which is that the duck population is in Hardy-Weinberg equilibrium. We would normally expect this for any large outbreeding population.</p>
+<p>The Chi-square goodness of fit test gives a p-value of 0.469. This is much greater than 0.05, so we do not reject the null hypothesis, which is that the duck population is in Hardy-Weinberg equilibrium. We would normally expect this for any large outbreeding population. if mutation or natural selection are occurring (they must be, at some pace or other) then their effects must be small.</p>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
