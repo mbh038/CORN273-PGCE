@@ -104,6 +104,19 @@ cat(sprintf("p (F allele) = %.4f\n", p))
 cat(sprintf("q (S allele) = %.4f\n", q))
 cat(sprintf("p + q = %.4f\n\n", p + q))
 ```
+```{r, echo = TRUE}
+# Expected genotype frequencies under HW
+expected_frequencies <- c(p^2, 2 * p * q, q^2)
+```
+
+```{r, echo = FALSE}
+cat("Expected genotype Frequencies:\n")
+cat(sprintf("p^2 (FF genotype) = %.4f\n", p^2))
+cat(sprintf("2pq (FS genotype) = %.4f\n", 2*p*q))
+cat(sprintf("q^2 (SS genotype) = %.4f\n", q^2))
+cat(sprintf("p^2 + 2pq + q^2 = %.4f\n\n", p^2 + 2*p*q + q^2))
+```
+
 
 ```{r, echo = TRUE}
 # expected counts
@@ -111,10 +124,10 @@ expected <- N * c(p^2, 2 * p * q, q^2)
 ```
 
 ```{r, echo = FALSE}
-cat(sprintf("Observed: "))
+cat(sprintf("Observed counts: "))
 cat(sprintf("%.0f", observed))
 cat(sprintf("\n\n"))
-cat(sprintf("Expected: "))
+cat(sprintf("Expected counts: "))
 cat(sprintf("%.2f", expected))
 ```
 

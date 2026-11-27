@@ -467,26 +467,47 @@ q&amp;=\frac{\text{Total number of S alleles}}{\text{Total number of alleles}}\\
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># expected counts</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>expected <span class="ot">&lt;-</span> N <span class="sc">*</span> <span class="fu">c</span>(p<span class="sc">^</span><span class="dv">2</span>, <span class="dv">2</span> <span class="sc">*</span> p <span class="sc">*</span> q, q<span class="sc">^</span><span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Expected genotype frequencies under HW</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>expected_frequencies <span class="ot">&lt;-</span> <span class="fu">c</span>(p<span class="sc">^</span><span class="dv">2</span>, <span class="dv">2</span> <span class="sc">*</span> p <span class="sc">*</span> q, q<span class="sc">^</span><span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
 <div class="cell-output cell-output-stdout">
-<pre><code>Observed: </code></pre>
+<pre><code>Expected genotype Frequencies:</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>p^2 (FF genotype) = 0.5349</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>2pq (FS genotype) = 0.3930</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>q^2 (SS genotype) = 0.0722</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>p^2 + 2pq + q^2 = 1.0000</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># expected counts</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>expected <span class="ot">&lt;-</span> N <span class="sc">*</span> <span class="fu">c</span>(p<span class="sc">^</span><span class="dv">2</span>, <span class="dv">2</span> <span class="sc">*</span> p <span class="sc">*</span> q, q<span class="sc">^</span><span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>Observed counts: </code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
 <pre><code>37 24 6</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Expected: </code></pre>
+<pre><code>Expected counts: </code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
 <pre><code>35.84 26.33 4.84</code></pre>
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># calculate chi-squared (X2 )statistic</span></span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>X2 <span class="ot">&lt;-</span> <span class="fu">sum</span>((observed <span class="sc">-</span> expected)<span class="sc">^</span><span class="dv">2</span> <span class="sc">/</span> expected)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># calculate chi-squared (X2 )statistic</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>X2 <span class="ot">&lt;-</span> <span class="fu">sum</span>((observed <span class="sc">-</span> expected)<span class="sc">^</span><span class="dv">2</span> <span class="sc">/</span> expected)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
 <div class="cell-output cell-output-stdout">
@@ -494,8 +515,8 @@ q&amp;=\frac{\text{Total number of S alleles}}{\text{Total number of alleles}}\\
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># calculate p-value</span></span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>p_value <span class="ot">&lt;-</span> <span class="fu">pchisq</span>(X2, <span class="at">df =</span> <span class="dv">1</span>, <span class="at">lower.tail =</span> <span class="cn">FALSE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># calculate p-value</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>p_value <span class="ot">&lt;-</span> <span class="fu">pchisq</span>(X2, <span class="at">df =</span> <span class="dv">1</span>, <span class="at">lower.tail =</span> <span class="cn">FALSE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
 <div class="cell-output cell-output-stdout">
