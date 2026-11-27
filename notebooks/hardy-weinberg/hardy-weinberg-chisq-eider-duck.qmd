@@ -13,20 +13,21 @@ source(here::here("_common.R"))
 knitr::opts_chunk$set(message = FALSE, warning = FALSE, echo = FALSE)
 ```
 
-We assume here that you have aleady follwoed the previous exercise on hedgehog spine colouration.
+We assume here that you have aleady followed the previous exercise on hedgehog spine colouration.
 
 
 ```{r, echo = FALSE}
+#| fig-cap: "A male and female Eider. Source: RSPB"
 knitr::include_graphics(here::here("figures", "eider-ducks-m-f.jpg"))
 ```
 
 
-An iconic study by Milne and Robertson [-@milne1965] used protein electrophoresis to show that a population of eider ducks (Somateria mollissima) around the Ythan estuary of north-east Scotland has two codominant alleles of a gene that codes for egg-white protein. One variant of the protein migrates quickly through the gel used in the electrophoresis and one migrates slowly. In the following, we use F to denote the allele that codes for the fast protein and S for the one that codes for the slow.
+An iconic study by Milne and Robertson [-@milne1965] used protein electrophoresis to show that a population of Eider ducks (Somateria mollissima) around the Ythan estuary of north-east Scotland has two codominant alleles of a gene that codes for egg-white protein. One variant of the protein migrates quickly through the gel used in the electrophoresis and one migrates slowly. In the following, we use F to denote the allele that codes for the fast protein and S for the one that codes for the slow.
 
-By studying the frequencies of these alleles and comparing the reults with the exepectations under Hardy-Weinberg (HW) equilibrium, they could establish whether this population met the assumptions of HW - large population, random mating, no mutation, no natural selection, no gene flow in. or out of the population.
+By studying the frequencies of these alleles and comparing the reults with the exepectations under Hardy-Weinberg (HW) equilibrium, they could establish whether this population of Eiders met the assumptions of HW - large population, random mating, no mutation, no natural selection, no gene flow in. or out of the population.
 
 
-They studied 67 ducks and found
+They studied 67 individual ducks and found
 
 | Genotype | Phenotype                                          | Frequency |
 |:---------|:---------------------------------------------------|:----------|
