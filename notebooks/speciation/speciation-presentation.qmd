@@ -1,32 +1,5 @@
 # Speciation: Mechanisms of Biodiversity Generation
 
-# ---
-# title: "Speciation: Mechanisms of Biodiversity Generation"
-# subtitle: "How Diversity Arises in Ecosystems"
-# author: "Michael Hunt"
-# institute: "Cornwall College University Centre: Newquay"
-# format:
-#   pdf: default
-  # revealjs:
-  #   theme: sky
-  #   transition: slide
-  #   slide-number: true
-  #   chalkboard: true
-  #   preview-links: auto
-  #   css: custom.css
-  # html:
-  #   code-fold: true
-  #   include-in-header:
-  #     text: |
-  #       <style>
-  #       .note-font {
-  #         font-size: 0.8em;
-  #       }
-  #       </style>
-execute:
-  echo: false
-# ---
-
 ## Learning Objectives {.smaller}
 
 By the end of this session, you will be able to:
@@ -745,34 +718,5 @@ Work in groups (10 minutes):
 4.  **Geographic isolation + ecological opportunity + small populations**
 5.  **Yes!** If gene flow resumes before complete isolation (e.g., Darwin's finch "despeciation")
 
-## Take-Home Problem Set {.smaller}
 
-*Due next session - discuss in small groups*
 
-**Problem 1:** New island with 15 bird species from single colonist (2 MYA). Predict patterns in: geographic distributions, morphological traits, genetic relationships.
-
-**Problem 2:** Design an experiment to test if two butterfly populations are incipient species. What would you measure?
-
-**Problem 3:** Climate change causes poleward range shifts. Effects on: hybrid zones, speciation opportunities, endemic species?
-
-## Take-Home Problem Set (cont.)
-
-**Problem 4:** British Isles recolonized after last ice age (\~10,000 years ago). Why don't we see extensive speciation in British fauna compared to African rift lake fishes?
-
-::: fragment
-**Hint:** Think about time scales, geographic isolation, ecological opportunity, and population sizes.
-:::
-
-## Key Takeaways
-
--   Speciation is a **process, not an event** - populations exist on a continuum
--   **Four geographic modes:** allopatric, peripatric, parapatric, sympatric
--   **Multiple barriers** typically accumulate during speciation
--   **Time scales vary enormously** depending on many factors
--   Understanding speciation is **critical for conservation** decision-making
-
-## Questions?
-
-### Next Session: Genetic Mechanisms of Speciation
-
-Office hours: \[Thursday and Friday afternoons\]
