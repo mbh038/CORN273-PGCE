@@ -2,7 +2,7 @@
 bibliography: references.bib
 ---
 
-# Hardy-Weinberg Equilibrium: Eider Duck exercise
+# Hardy-Weinberg example two: Eider Duck exercise
 
 ```{r}
 #| include: false

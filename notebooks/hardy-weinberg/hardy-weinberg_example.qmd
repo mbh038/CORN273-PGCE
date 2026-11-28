@@ -136,10 +136,11 @@ Note that this expression for $\chi^2$ is indeed a measure of how far the observ
 
 This $\chi^2$ follows a distribution, known as a $\chi^2$ distribution for (in this case) 1 degree of freedom. It is plotted below in @fig-chi-square-pdf as a 'probability density function'. You may have met one of these before, for the normal distribution. The way to understand it is that the area under the curve between and two values of $\chi^2$ on the x-axis gives the probability of $\chi^2$ being in that range. In particular, the area under the curve to the right of a given value of $\chi^2$ gives the probability that $\chi^2$ would have that value, or greater. This probability is the famous p-value: the probability of gettng data as different from the null prediction as ours is, or more different, if the null were true. In this case that means the probability of getting a $\chi^2$ value, as big or bigger than the one we got.
 
-::: {.callout-note title="Degrees of freedom"}
-You see the term 'degrees of freedom' a lot in statistics. It refers to the number of independent ways that the data can deviate from the null. This opaque phrase translates as: the number of free dimensions in the observed data minus the number of free parameters fitted under the null. 
+::: {.callout-note title="Degrees of freedom - optional"}
 
 **tldr**: In Hardy-Weinberg problms such as this, with two alleles and threee genotypes, there is **one** degree of freedom.
+
+You see the term 'degrees of freedom' a lot in statistics. It refers to the number of independent ways that the data can deviate from the null. This opaque phrase translates as: the number of free dimensions in the observed data minus the number of free parameters fitted under the null. 
 
 Let us consider the residual values for each genotype - that is, the difference O-E, for each genotype, between the observed and expected values.
 
@@ -180,7 +181,7 @@ ggplot() +
   annotate(geom = "text", x = 4, y = 0.6, label = "Total area under the curve = 1\n  Area shaded blue = 0.617\nThis is the p-value") +
   theme_cowplot()
 ```
-For our date, we find $\chi^2$ = 0.25. The area under a $\chi^2$ curve for one degree of freedom, to the right of this value of $\chi^2$ is 0.617. We call this value the p-value of the the $\chi^2$ test: the probability of getting a $\chi^2$ value this big or bigger if the null were true. I'll repeat, this is the same thing as the probability of getting observed values as far or further from the expected values as oours were, if the null (Hardy-Winberg holds) were true.
+For our data, we find $\chi^2$ = 0.25. The area under a $\chi^2$ curve for one degree of freedom, to the right of this value of $\chi^2$ is 0.617. We call this value the p-value of the the $\chi^2$ test: the probability of getting a $\chi^2$ value this big or bigger if the null were true. I'll repeat, this is the same thing as the probability of getting observed values as far or further from the expected values as oours were, if the null (Hardy-Winberg holds) were true.
 
 ## Conclusion
 

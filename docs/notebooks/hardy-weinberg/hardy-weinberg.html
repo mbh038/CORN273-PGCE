@@ -168,7 +168,7 @@ window.Quarto = {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../notebooks/hardy-weinberg/hardy-weinberg-chisq-eider-duck.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Hardy-Weinberg Equilibrium: Eider Duck exercise</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Hardy-Weinberg example two: Eider Duck exercise</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -256,7 +256,7 @@ window.Quarto = {
 
 <ul>
 <li><p>When a population is in Hardy-Weinberg equilibrium for a gene, it is not evolving for that gene, and allele frequencies for that gene will stay the same across generations.</p></li>
-<li><p>For a population to actually be in Hardy-Weinberg equilibrium, five things must be true at once:</p>
+<li><p>For a population to actually be in Hardy-Weinberg equilibrium, five things must be at least approximately true at once:</p>
 <ul>
 <li>no mutation</li>
 <li>random mating</li>
@@ -270,7 +270,7 @@ window.Quarto = {
 <h2 data-number="4.1" class="anchored" data-anchor-id="violation-of-hw-assumptions"><span class="header-section-number">4.1</span> Violation of HW assumptions</h2>
 <ul>
 <li><p>If the assumptions are not met for a gene, the population may evolve for that gene (the gene’s allele frequencies may change).</p></li>
-<li><p>Mechanisms of evolution correspond to violations of different Hardy-Weinberg assumptions. They are:</p>
+<li><p>Reasons for evolution correspond to violations of different Hardy-Weinberg assumptions. They are:</p>
 <ul>
 <li>mutation</li>
 <li>non-random mating</li>
@@ -285,7 +285,6 @@ window.Quarto = {
 <ul>
 <li>In nature, populations are usually evolving.</li>
 <li>All of these populations are likely to be evolving for at least some of their genes.</li>
-<li>Evolution is happening right here, right now!</li>
 <li>Evolution means that a population is changing in its genetic makeup over generations.</li>
 <li>Sometimes, this type of change is due to natural selection. Other times, it comes from migration of new organisms into the population, or from random events—the evolutionary “luck of the draw.”</li>
 </ul>
@@ -303,7 +302,7 @@ window.Quarto = {
 <h2 data-number="4.4" class="anchored" data-anchor-id="beetle-example"><span class="header-section-number">4.4</span> Beetle example</h2>
 <p>Imagine we have a large population of beetles.</p>
 <ul>
-<li>This population is infinitely large.</li>
+<li>This population is infinitely large. Or, at least, large enough that it can be treated as such.</li>
 <li><strong>Phenotype</strong>: The beetles of our infinitely large population come in two colours, dark grey and light grey.</li>
 <li>Their colour is determined by the A gene.</li>
 <li><strong>Genotype</strong>: AA and Aa beetles are dark grey, and aa beetles are light grey.</li>
@@ -313,13 +312,13 @@ window.Quarto = {
 <h2 data-number="4.5" class="anchored" data-anchor-id="allele-frequencies"><span class="header-section-number">4.5</span> Allele Frequencies</h2>
 <p>Suppose the A allele has a frequency of 0.3, while the a allele has a frequency of 0.7.</p>
 <ul>
-<li>If a population is in Hardy-Weinberg equilibrium, genotype frequencies will be related to allele frequencies by the Hardy-Weinberg equation.</li>
+<li>If a population is in Hardy-Weinberg equilibrium, genotype frequencies will be related to allele frequencies by the Hardy-Weinberg equation, which we will soon meet.</li>
 <li>So, we can predict the genotype frequencies we’d expect to see (if the population is in Hardy-Weinberg equilibrium) by plugging in allele frequencies as shown below:</li>
 </ul>
 </section>
 <section id="hardy-weinberg-equation" class="level2" data-number="4.6">
 <h2 data-number="4.6" class="anchored" data-anchor-id="hardy-weinberg-equation"><span class="header-section-number">4.6</span> Hardy Weinberg Equation</h2>
-<p><img src="images/hardy weinberg1.png" class="img-fluid"></p>
+<p><img src="images/hardy_weinberg1.png" class="img-fluid"></p>
 </section>
 <section id="the-next-generation" class="level2" data-number="4.7">
 <h2 data-number="4.7" class="anchored" data-anchor-id="the-next-generation"><span class="header-section-number">4.7</span> The next generation?</h2>
@@ -340,7 +339,7 @@ window.Quarto = {
 </section>
 <section id="the-next-generation-1" class="level2" data-number="4.9">
 <h2 data-number="4.9" class="anchored" data-anchor-id="the-next-generation-1"><span class="header-section-number">4.9</span> The next generation</h2>
-<p><img src="images/hardy weinberg2.png" class="img-fluid"></p>
+<p><img src="images/hardy_weinberg2.png" class="img-fluid"></p>
 </section>
 <section id="in-summary" class="level2" data-number="4.10">
 <h2 data-number="4.10" class="anchored" data-anchor-id="in-summary"><span class="header-section-number">4.10</span> In summary</h2>
@@ -415,12 +414,12 @@ window.Quarto = {
 <section id="non-infinite-population-size-genetic-drift." class="level2 smaller" data-number="4.19">
 <h2 class="smaller anchored" data-number="4.19" data-anchor-id="non-infinite-population-size-genetic-drift."><span class="header-section-number">4.19</span> Non-infinite population size (genetic drift).</h2>
 <p>Genetic drift involves changes in allele frequency due to chance events – literally, “sampling error” in selecting alleles for the next generation. Drift can occur in any population of non-infinite size, but it has a stronger effect on small populations.</p>
-<p><img src="images/hardy weinberg6.png" class="img-fluid"></p>
+<p><img src="images/hardy_weinberg6.png" class="img-fluid"></p>
 </section>
 <section id="natural-selection." class="level2 smaller" data-number="4.20">
 <h2 class="smaller anchored" data-number="4.20" data-anchor-id="natural-selection."><span class="header-section-number">4.20</span> Natural selection.</h2>
 <p>Finally, the most famous mechanism of evolution! Natural selection occurs when one allele (or combination of alleles of different genes) makes an organism more or less fit, that is, able to survive and reproduce in a given environment. If an allele reduces fitness, its frequency will tend to drop from one generation to the next.</p>
-<p><img src="images/hardy weinberg7.png" class="img-fluid"></p>
+<p><img src="images/hardy_weinberg7.png" class="img-fluid"></p>
 </section>
 <section id="example-calculations" class="level2" data-number="4.21">
 <h2 data-number="4.21" class="anchored" data-anchor-id="example-calculations"><span class="header-section-number">4.21</span> Example calculations</h2>

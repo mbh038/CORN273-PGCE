@@ -2,7 +2,7 @@
 
 -   When a population is in Hardy-Weinberg equilibrium for a gene, it is not evolving for that gene, and allele frequencies for that gene will stay the same across generations.
 
--   For a population to actually be in Hardy-Weinberg equilibrium, five things must be true at once:
+-   For a population to actually be in Hardy-Weinberg equilibrium, five things must be at least approximately true at once:
 
     -   no mutation
     -   random mating
@@ -16,7 +16,7 @@ These are often referred to as the Hardy-Weinberg assumptions.
 
 -   If the assumptions are not met for a gene, the population may evolve for that gene (the gene's allele frequencies may change).
 
--   Mechanisms of evolution correspond to violations of different Hardy-Weinberg assumptions. They are:
+-   Reasons for evolution correspond to violations of different Hardy-Weinberg assumptions. They are:
 
     -   mutation
     -   non-random mating
@@ -28,7 +28,6 @@ These are often referred to as the Hardy-Weinberg assumptions.
 
 -   In nature, populations are usually evolving.
 -   All of these populations are likely to be evolving for at least some of their genes.
--   Evolution is happening right here, right now!
 -   Evolution means that a population is changing in its genetic makeup over generations.
 -   Sometimes, this type of change is due to natural selection. Other times, it comes from migration of new organisms into the population, or from random events—the evolutionary "luck of the draw."
 
@@ -44,7 +43,7 @@ What does it look like when a population is not evolving?
 
 Imagine we have a large population of beetles.
 
--   This population is infinitely large.
+-   This population is infinitely large. Or, at least, large enough that it can be treated as such.
 -   **Phenotype**: The beetles of our infinitely large population come in two colours, dark grey and light grey.
 -   Their colour is determined by the A gene.
 -   **Genotype**: AA and Aa beetles are dark grey, and aa beetles are light grey.
@@ -53,12 +52,12 @@ Imagine we have a large population of beetles.
 
 Suppose the A allele has a frequency of 0.3, while the a allele has a frequency of 0.7.
 
--   If a population is in Hardy-Weinberg equilibrium, genotype frequencies will be related to allele frequencies by the Hardy-Weinberg equation.
+-   If a population is in Hardy-Weinberg equilibrium, genotype frequencies will be related to allele frequencies by the Hardy-Weinberg equation, which we will soon meet.
 -   So, we can predict the genotype frequencies we'd expect to see (if the population is in Hardy-Weinberg equilibrium) by plugging in allele frequencies as shown below:
 
 ## Hardy Weinberg Equation
 
-![](images/hardy%20weinberg1.png)
+![](images/hardy_weinberg1.png)
 
 ## The next generation?
 
@@ -78,7 +77,7 @@ $$9\% \text{AA}, \quad 42\% \text{Aa}, \quad 49\% \text{aa}$$
 
 ## The next generation
 
-![](images/hardy%20weinberg2.png)
+![](images/hardy_weinberg2.png)
 
 ## In summary
 
@@ -150,13 +149,13 @@ Gene flow involves the movement of genes into or out of a population, due to eit
 
 Genetic drift involves changes in allele frequency due to chance events – literally, "sampling error" in selecting alleles for the next generation. Drift can occur in any population of non-infinite size, but it has a stronger effect on small populations.
 
-![](images/hardy%20weinberg6.png)
+![](images/hardy_weinberg6.png)
 
 ## Natural selection. {.smaller}
 
 Finally, the most famous mechanism of evolution! Natural selection occurs when one allele (or combination of alleles of different genes) makes an organism more or less fit, that is, able to survive and reproduce in a given environment. If an allele reduces fitness, its frequency will tend to drop from one generation to the next.
 
-![](images/hardy%20weinberg7.png)
+![](images/hardy_weinberg7.png)
 
 ## Example calculations
 
